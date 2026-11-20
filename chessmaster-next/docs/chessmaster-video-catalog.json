@@ -1,0 +1,2535 @@
+{
+  "generatedAt": "2026-11-05T10:44:18.272Z",
+  "count": 48,
+  "videos": [
+    {
+      "id": "V-CH01-L001",
+      "type": "concept_explanation",
+      "titleEn": "Understanding the Board & Coordinates",
+      "titleAr": "Understanding the Board & Coordinates",
+      "descriptionEn": "Identify squares by file/rank and read algebraic coordinates.",
+      "objectiveEn": "Identify squares by file/rank and read algebraic coordinates.",
+      "objectiveAr": "تمييز المربعات بالملف والصف وقراءة الإحداثيات.",
+      "skillIds": [],
+      "chapterIds": [
+        "CH01"
+      ],
+      "levelIds": [
+        "CH01-L001"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "8×8 board",
+        "files a–h",
+        "ranks 1–8",
+        "light/dark squares",
+        "algebraic notation"
+      ],
+      "productionBrief": {
+        "purpose": "Teach understanding the board & coordinates to an absolute beginner.",
+        "outcome": "Identify squares by file/rank and read algebraic coordinates.",
+        "hook": "A simple question that reveals why 8×8 board matters.",
+        "outline": [
+          "concept",
+          "board demo",
+          "practice",
+          "recap"
+        ],
+        "boardDemos": "interactive square/coordinate practice",
+        "misconceptions": "Beginner misconceptions specific to this rule.",
+        "recap": "Identify squares by file/rank and read algebraic coordinates.",
+        "followUp": "Complete CH01-L001 interactive practice in ChessMaster.",
+        "requiredMedia": "Board diagrams, highlighted squares, arrows, move animation.",
+        "expectedLength": "estimated 3–6 min"
+      },
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "supplied"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "ar",
+      "scriptStatus": "script_ready",
+      "state": "script_ready",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH01-L002",
+      "type": "concept_explanation",
+      "titleEn": "King & Queen Movement",
+      "titleAr": "King & Queen Movement",
+      "descriptionEn": "Move the king (one square) and the queen (lines & diagonals).",
+      "objectiveEn": "Move the king (one square) and the queen (lines & diagonals).",
+      "objectiveAr": "تحريك الملك (مربع واحد) والوزير (خطوط وأقطار).",
+      "skillIds": [],
+      "chapterIds": [
+        "CH01"
+      ],
+      "levelIds": [
+        "CH01-L002"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "king one square",
+        "queen any distance straight/diagonal"
+      ],
+      "productionBrief": {
+        "purpose": "Teach king & queen movement to an absolute beginner.",
+        "outcome": "Move the king (one square) and the queen (lines & diagonals).",
+        "hook": "A simple question that reveals why king one square matters.",
+        "outline": [
+          "concept",
+          "board demo",
+          "practice",
+          "recap"
+        ],
+        "boardDemos": "DEMO-CH01-KING (movement), DEMO-CH01-QUEEN (movement)",
+        "misconceptions": "Beginner misconceptions specific to this rule.",
+        "recap": "Move the king (one square) and the queen (lines & diagonals).",
+        "followUp": "Complete CH01-L002 interactive practice in ChessMaster.",
+        "requiredMedia": "Board diagrams, highlighted squares, arrows, move animation.",
+        "expectedLength": "estimated 3–6 min"
+      },
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "supplied"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "ar",
+      "scriptStatus": "script_ready",
+      "state": "script_ready",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH01-L003",
+      "type": "concept_explanation",
+      "titleEn": "Rook, Bishop & Knight Movement",
+      "titleAr": "Rook, Bishop & Knight Movement",
+      "descriptionEn": "Move the rook (ranks/files), bishop (diagonals) and the jumping knight.",
+      "objectiveEn": "Move the rook (ranks/files), bishop (diagonals) and the jumping knight.",
+      "objectiveAr": "تحريك الطابية والفيل والحصان القافز.",
+      "skillIds": [],
+      "chapterIds": [
+        "CH01"
+      ],
+      "levelIds": [
+        "CH01-L003"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "rook straight",
+        "bishop diagonal",
+        "knight L-shape jump"
+      ],
+      "productionBrief": {
+        "purpose": "Teach rook, bishop & knight movement to an absolute beginner.",
+        "outcome": "Move the rook (ranks/files), bishop (diagonals) and the jumping knight.",
+        "hook": "A simple question that reveals why rook straight matters.",
+        "outline": [
+          "concept",
+          "board demo",
+          "practice",
+          "recap"
+        ],
+        "boardDemos": "DEMO-CH01-KNIGHT (movement)",
+        "misconceptions": "Beginner misconceptions specific to this rule.",
+        "recap": "Move the rook (ranks/files), bishop (diagonals) and the jumping knight.",
+        "followUp": "Complete CH01-L003 interactive practice in ChessMaster.",
+        "requiredMedia": "Board diagrams, highlighted squares, arrows, move animation.",
+        "expectedLength": "estimated 3–6 min"
+      },
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "supplied"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "ar",
+      "scriptStatus": "script_ready",
+      "state": "script_ready",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH01-L004",
+      "type": "concept_explanation",
+      "titleEn": "Pawn Movement & Captures",
+      "titleAr": "Pawn Movement & Captures",
+      "descriptionEn": "Move pawns forward but capture diagonally.",
+      "objectiveEn": "Move pawns forward but capture diagonally.",
+      "objectiveAr": "البيدق يتقدّم للأمام ويأخذ قطريّاً.",
+      "skillIds": [],
+      "chapterIds": [
+        "CH01"
+      ],
+      "levelIds": [
+        "CH01-L004"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "forward move",
+        "first-move double step",
+        "diagonal capture"
+      ],
+      "productionBrief": {
+        "purpose": "Teach pawn movement & captures to an absolute beginner.",
+        "outcome": "Move pawns forward but capture diagonally.",
+        "hook": "A simple question that reveals why forward move matters.",
+        "outline": [
+          "concept",
+          "board demo",
+          "practice",
+          "recap"
+        ],
+        "boardDemos": "DEMO-CH01-PAWN-FWD (movement), DEMO-CH01-PAWN-CAP (capture)",
+        "misconceptions": "Beginner misconceptions specific to this rule.",
+        "recap": "Move pawns forward but capture diagonally.",
+        "followUp": "Complete CH01-L004 interactive practice in ChessMaster.",
+        "requiredMedia": "Board diagrams, highlighted squares, arrows, move animation.",
+        "expectedLength": "estimated 3–6 min"
+      },
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "supplied"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "ar",
+      "scriptStatus": "script_ready",
+      "state": "script_ready",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH01-L005",
+      "type": "concept_explanation",
+      "titleEn": "Blocking & Legal Captures",
+      "titleAr": "Blocking & Legal Captures",
+      "descriptionEn": "Understand that most pieces cannot pass through others.",
+      "objectiveEn": "Understand that most pieces cannot pass through others.",
+      "objectiveAr": "معظم القطع لا تعدّي فوق غيرها.",
+      "skillIds": [],
+      "chapterIds": [
+        "CH01"
+      ],
+      "levelIds": [
+        "CH01-L005"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "blocked paths",
+        "friendly pieces block",
+        "enemy pieces are targets",
+        "knight exception"
+      ],
+      "productionBrief": {
+        "purpose": "Teach blocking & legal captures to an absolute beginner.",
+        "outcome": "Understand that most pieces cannot pass through others.",
+        "hook": "A simple question that reveals why blocked paths matters.",
+        "outline": [
+          "concept",
+          "board demo",
+          "practice",
+          "recap"
+        ],
+        "boardDemos": "DEMO-CH01-BLOCK (blocking)",
+        "misconceptions": "Beginner misconceptions specific to this rule.",
+        "recap": "Understand that most pieces cannot pass through others.",
+        "followUp": "Complete CH01-L005 interactive practice in ChessMaster.",
+        "requiredMedia": "Board diagrams, highlighted squares, arrows, move animation.",
+        "expectedLength": "estimated 3–6 min"
+      },
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "supplied"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "ar",
+      "scriptStatus": "script_ready",
+      "state": "script_ready",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH01-L006",
+      "type": "concept_explanation",
+      "titleEn": "Understanding Check",
+      "titleAr": "Understanding Check",
+      "descriptionEn": "Recognise when a king is in check.",
+      "objectiveEn": "Recognise when a king is in check.",
+      "objectiveAr": "تمييز وجود الملك في كش.",
+      "skillIds": [],
+      "chapterIds": [
+        "CH01"
+      ],
+      "levelIds": [
+        "CH01-L006"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "king attacked",
+        "check vs ordinary attack"
+      ],
+      "productionBrief": {
+        "purpose": "Teach understanding check to an absolute beginner.",
+        "outcome": "Recognise when a king is in check.",
+        "hook": "A simple question that reveals why king attacked matters.",
+        "outline": [
+          "concept",
+          "board demo",
+          "practice",
+          "recap"
+        ],
+        "boardDemos": "DEMO-CH01-CHECK (check)",
+        "misconceptions": "Beginner misconceptions specific to this rule.",
+        "recap": "Recognise when a king is in check.",
+        "followUp": "Complete CH01-L006 interactive practice in ChessMaster.",
+        "requiredMedia": "Board diagrams, highlighted squares, arrows, move animation.",
+        "expectedLength": "estimated 3–6 min"
+      },
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "supplied"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "ar",
+      "scriptStatus": "script_ready",
+      "state": "script_ready",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH01-L007",
+      "type": "concept_explanation",
+      "titleEn": "Responding to Check",
+      "titleAr": "Responding to Check",
+      "descriptionEn": "Respond to check by moving, capturing or blocking.",
+      "objectiveEn": "Respond to check by moving, capturing or blocking.",
+      "objectiveAr": "الرد على الكش: تحريك/أخذ/حجب.",
+      "skillIds": [],
+      "chapterIds": [
+        "CH01"
+      ],
+      "levelIds": [
+        "CH01-L007"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "move the king",
+        "capture the checker",
+        "block the check"
+      ],
+      "productionBrief": {
+        "purpose": "Teach responding to check to an absolute beginner.",
+        "outcome": "Respond to check by moving, capturing or blocking.",
+        "hook": "A simple question that reveals why move the king matters.",
+        "outline": [
+          "concept",
+          "board demo",
+          "practice",
+          "recap"
+        ],
+        "boardDemos": "interactive square/coordinate practice",
+        "misconceptions": "Beginner misconceptions specific to this rule.",
+        "recap": "Respond to check by moving, capturing or blocking.",
+        "followUp": "Complete CH01-L007 interactive practice in ChessMaster.",
+        "requiredMedia": "Board diagrams, highlighted squares, arrows, move animation.",
+        "expectedLength": "estimated 3–6 min"
+      },
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "supplied"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "ar",
+      "scriptStatus": "script_ready",
+      "state": "script_ready",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH01-L008",
+      "type": "concept_explanation",
+      "titleEn": "Checkmate & Stalemate",
+      "titleAr": "Checkmate & Stalemate",
+      "descriptionEn": "Distinguish checkmate from stalemate.",
+      "objectiveEn": "Distinguish checkmate from stalemate.",
+      "objectiveAr": "التفرقة بين الكش مات والتعادل بالخنق.",
+      "skillIds": [],
+      "chapterIds": [
+        "CH01"
+      ],
+      "levelIds": [
+        "CH01-L008"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "checkmate = check + no reply",
+        "stalemate = no check + no move"
+      ],
+      "productionBrief": {
+        "purpose": "Teach checkmate & stalemate to an absolute beginner.",
+        "outcome": "Distinguish checkmate from stalemate.",
+        "hook": "A simple question that reveals why checkmate = check + no reply matters.",
+        "outline": [
+          "concept",
+          "board demo",
+          "practice",
+          "recap"
+        ],
+        "boardDemos": "DEMO-CH01-MATE (checkmate), DEMO-CH01-STALE (stalemate)",
+        "misconceptions": "Beginner misconceptions specific to this rule.",
+        "recap": "Distinguish checkmate from stalemate.",
+        "followUp": "Complete CH01-L008 interactive practice in ChessMaster.",
+        "requiredMedia": "Board diagrams, highlighted squares, arrows, move animation.",
+        "expectedLength": "estimated 3–6 min"
+      },
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "supplied"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "ar",
+      "scriptStatus": "script_ready",
+      "state": "script_ready",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH01-L009",
+      "type": "concept_explanation",
+      "titleEn": "Castling",
+      "titleAr": "Castling",
+      "descriptionEn": "Castle legally and recognise when castling is forbidden.",
+      "objectiveEn": "Castle legally and recognise when castling is forbidden.",
+      "objectiveAr": "التبييت القانوني ومتى يُمنع.",
+      "skillIds": [],
+      "chapterIds": [
+        "CH01"
+      ],
+      "levelIds": [
+        "CH01-L009"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "king + rook unmoved",
+        "squares empty",
+        "not through/into check"
+      ],
+      "productionBrief": {
+        "purpose": "Teach castling to an absolute beginner.",
+        "outcome": "Castle legally and recognise when castling is forbidden.",
+        "hook": "A simple question that reveals why king + rook unmoved matters.",
+        "outline": [
+          "concept",
+          "board demo",
+          "practice",
+          "recap"
+        ],
+        "boardDemos": "DEMO-CH01-CASTLE-OK (castling), DEMO-CH01-CASTLE-NO (castling)",
+        "misconceptions": "Beginner misconceptions specific to this rule.",
+        "recap": "Castle legally and recognise when castling is forbidden.",
+        "followUp": "Complete CH01-L009 interactive practice in ChessMaster.",
+        "requiredMedia": "Board diagrams, highlighted squares, arrows, move animation.",
+        "expectedLength": "estimated 3–6 min"
+      },
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "supplied"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "ar",
+      "scriptStatus": "script_ready",
+      "state": "script_ready",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH01-L010",
+      "type": "concept_explanation",
+      "titleEn": "En Passant",
+      "titleAr": "En Passant",
+      "descriptionEn": "Perform en passant and know its timing.",
+      "objectiveEn": "Perform en passant and know its timing.",
+      "objectiveAr": "الأخذ بالتجاوز وتوقيته.",
+      "skillIds": [],
+      "chapterIds": [
+        "CH01"
+      ],
+      "levelIds": [
+        "CH01-L010"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "immediate opportunity",
+        "diagonal pawn capture"
+      ],
+      "productionBrief": {
+        "purpose": "Teach en passant to an absolute beginner.",
+        "outcome": "Perform en passant and know its timing.",
+        "hook": "A simple question that reveals why immediate opportunity matters.",
+        "outline": [
+          "concept",
+          "board demo",
+          "practice",
+          "recap"
+        ],
+        "boardDemos": "DEMO-CH01-EP-OK (en_passant), DEMO-CH01-EP-NO (en_passant)",
+        "misconceptions": "Beginner misconceptions specific to this rule.",
+        "recap": "Perform en passant and know its timing.",
+        "followUp": "Complete CH01-L010 interactive practice in ChessMaster.",
+        "requiredMedia": "Board diagrams, highlighted squares, arrows, move animation.",
+        "expectedLength": "estimated 3–6 min"
+      },
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "supplied"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "ar",
+      "scriptStatus": "script_ready",
+      "state": "script_ready",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH01-L011",
+      "type": "concept_explanation",
+      "titleEn": "Promotion",
+      "titleAr": "Promotion",
+      "descriptionEn": "Promote a pawn and choose the piece.",
+      "objectiveEn": "Promote a pawn and choose the piece.",
+      "objectiveAr": "ترقية البيدق واختيار القطعة.",
+      "skillIds": [],
+      "chapterIds": [
+        "CH01"
+      ],
+      "levelIds": [
+        "CH01-L011"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "reach last rank",
+        "choose Q/R/B/N"
+      ],
+      "productionBrief": {
+        "purpose": "Teach promotion to an absolute beginner.",
+        "outcome": "Promote a pawn and choose the piece.",
+        "hook": "A simple question that reveals why reach last rank matters.",
+        "outline": [
+          "concept",
+          "board demo",
+          "practice",
+          "recap"
+        ],
+        "boardDemos": "DEMO-CH01-PROMO (promotion)",
+        "misconceptions": "Beginner misconceptions specific to this rule.",
+        "recap": "Promote a pawn and choose the piece.",
+        "followUp": "Complete CH01-L011 interactive practice in ChessMaster.",
+        "requiredMedia": "Board diagrams, highlighted squares, arrows, move animation.",
+        "expectedLength": "estimated 3–6 min"
+      },
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "supplied"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "ar",
+      "scriptStatus": "script_ready",
+      "state": "script_ready",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH01-L012",
+      "type": "level_review",
+      "titleEn": "Beginner Rules Assessment",
+      "titleAr": "Beginner Rules Assessment",
+      "descriptionEn": "Demonstrate the fundamentals in a graded, server-verified assessment.",
+      "objectiveEn": "Demonstrate the fundamentals in a graded, server-verified assessment.",
+      "objectiveAr": "إثبات الأساسيات في اختبار مُقيَّم ومُتحقَّق على الخادم.",
+      "skillIds": [],
+      "chapterIds": [
+        "CH01"
+      ],
+      "levelIds": [
+        "CH01-L012"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "all CH01 rules"
+      ],
+      "productionBrief": {
+        "purpose": "Teach beginner rules assessment to an absolute beginner.",
+        "outcome": "Demonstrate the fundamentals in a graded, server-verified assessment.",
+        "hook": "A simple question that reveals why all CH01 rules matters.",
+        "outline": [
+          "concept",
+          "board demo",
+          "practice",
+          "recap"
+        ],
+        "boardDemos": "interactive square/coordinate practice",
+        "misconceptions": "Beginner misconceptions specific to this rule.",
+        "recap": "Demonstrate the fundamentals in a graded, server-verified assessment.",
+        "followUp": "Complete CH01-L012 interactive practice in ChessMaster.",
+        "requiredMedia": "Board diagrams, highlighted squares, arrows, move animation.",
+        "expectedLength": "estimated 3–6 min"
+      },
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "supplied"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "ar",
+      "scriptStatus": "script_ready",
+      "state": "script_ready",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH02-CONCEPT",
+      "type": "concept_explanation",
+      "titleEn": "Check & Checkmate Recognition: Concept",
+      "titleAr": "الكش والكش مات: المفهوم",
+      "descriptionEn": "Explains the core idea of \"Check & Checkmate Recognition\".",
+      "objectiveEn": "Recognise check and deliver immediate checkmate in one move.",
+      "objectiveAr": "تمييز الكش عن الكش مات ومعرفة متى يكون الكش نهاية للمباراة.",
+      "levelIds": [
+        "CH02-L001",
+        "CH02-L002",
+        "CH02-L003",
+        "CH02-L004",
+        "CH02-L005",
+        "CH02-L006",
+        "CH02-L007"
+      ],
+      "supportingPuzzleSkill": "mate_in_one",
+      "keyConcepts": [
+        "check vs checkmate",
+        "king escape squares",
+        "back-rank idea"
+      ],
+      "productionBrief": {
+        "purpose": "Teach the central idea of check & checkmate recognition before practice.",
+        "outcome": "The learner spots a one-move checkmate reliably.",
+        "hook": "Pose a position where check vs checkmate decides the game.",
+        "outline": [
+          "what is check",
+          "what makes it mate",
+          "spotting mate in one"
+        ],
+        "boardDemos": "Demonstrate check vs checkmate, king escape squares, back-rank idea on verified example positions.",
+        "misconceptions": "giving check that is not mate; missing a king escape square; ignoring interposition",
+        "recap": "Recap: Recognise check and deliver immediate checkmate in one move.",
+        "followUp": "Then attempt the Check & Checkmate Recognition practice levels.",
+        "requiredMedia": "Board diagrams with highlighted squares and arrows for each demonstrated idea.",
+        "expectedLength": "estimated 4–8 min (based on the outline)"
+      },
+      "skillIds": [
+        "mate_in_one"
+      ],
+      "chapterIds": [
+        "CH02"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "supplied"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "ar",
+      "scriptStatus": "script_ready",
+      "state": "script_ready",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH02-DEMO",
+      "type": "guided_example",
+      "titleEn": "Check & Checkmate Recognition: Worked Examples",
+      "titleAr": "أمثلة محلولة على الكش مات",
+      "descriptionEn": "Worked, verified examples of check & checkmate recognition.",
+      "objectiveEn": "Walk through solved check & checkmate recognition exercises step by step.",
+      "objectiveAr": "تنفيذ كش مات في نقلة واحدة عبر أنماط الصف الأخير ومات الصندوق.",
+      "levelIds": [
+        "CH02-L002",
+        "CH02-L003",
+        "CH02-L004",
+        "CH02-L005"
+      ],
+      "supportingPuzzleSkill": "mate_in_one",
+      "keyConcepts": [
+        "check vs checkmate",
+        "king escape squares",
+        "back-rank idea"
+      ],
+      "productionBrief": {
+        "purpose": "Show the solving method on real verified check & checkmate recognition positions.",
+        "outcome": "Learner can reproduce the method on new positions.",
+        "hook": "Start from a position the learner will soon face in practice.",
+        "outline": [
+          "present the position",
+          "find candidate moves",
+          "calculate the critical line",
+          "confirm the result"
+        ],
+        "boardDemos": "Step through 2–3 verified puzzles of this skill (ids resolved from the server-only corpus).",
+        "misconceptions": "giving check that is not mate; missing a king escape square; ignoring interposition",
+        "recap": "Recap the repeatable method.",
+        "followUp": "Attempt the independent-practice levels.",
+        "requiredMedia": "Move-by-move board animation with arrows.",
+        "expectedLength": "estimated 5–10 min"
+      },
+      "skillIds": [
+        "mate_in_one"
+      ],
+      "chapterIds": [
+        "CH02"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "supplied"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "ar",
+      "scriptStatus": "script_ready",
+      "state": "script_ready",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH02-REVIEW",
+      "type": "boss_challenge_explanation",
+      "titleEn": "Check & Checkmate Recognition: Boss Review",
+      "titleAr": "مراجعة تحدي زعيم الفصل",
+      "descriptionEn": "How to approach the Check & Checkmate Recognition boss challenge.",
+      "objectiveEn": "Prepare the learner for the multi-step check & checkmate recognition boss.",
+      "objectiveAr": "الاستعداد لتحدي الزعيم: إيجاد المات في نقلة والتأكد من عدم وجود مهرب.",
+      "levelIds": [
+        "CH02-L006",
+        "CH02-L007"
+      ],
+      "supportingPuzzleSkill": "mate_in_one",
+      "keyConcepts": [
+        "check vs checkmate",
+        "king escape squares",
+        "back-rank idea"
+      ],
+      "productionBrief": {
+        "purpose": "Prepare the learner for the cumulative boss.",
+        "outcome": "Learner passes the boss.",
+        "hook": "Preview a boss-style multi-step position.",
+        "outline": [
+          "recap the chapter",
+          "boss strategy",
+          "time to attempt"
+        ],
+        "boardDemos": "One representative boss-style sequence.",
+        "misconceptions": "giving check that is not mate; missing a king escape square; ignoring interposition",
+        "recap": "Recap the chapter before the boss.",
+        "followUp": "Attempt the boss.",
+        "requiredMedia": "Board animation of a representative boss sequence.",
+        "expectedLength": "estimated 4–7 min"
+      },
+      "skillIds": [
+        "mate_in_one"
+      ],
+      "chapterIds": [
+        "CH02"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "supplied"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "ar",
+      "scriptStatus": "script_ready",
+      "state": "script_ready",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH03-CONCEPT",
+      "type": "concept_explanation",
+      "titleEn": "Tactical Vision: Concept",
+      "titleAr": "",
+      "descriptionEn": "Explains the core idea of \"Tactical Vision\".",
+      "objectiveEn": "Recognise and play the move that wins material.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH03-L001",
+        "CH03-L002",
+        "CH03-L003",
+        "CH03-L004",
+        "CH03-L005",
+        "CH03-L006",
+        "CH03-L007",
+        "CH03-L008",
+        "CH03-L009",
+        "CH03-L010",
+        "CH03-L011"
+      ],
+      "supportingPuzzleSkill": "tactical_recognition",
+      "keyConcepts": [
+        "undefended pieces",
+        "double attack / fork",
+        "winning material",
+        "discovered attack"
+      ],
+      "productionBrief": {
+        "purpose": "Teach the central idea of tactical vision before practice.",
+        "outcome": "The learner finds a winning tactic in a variety of positions.",
+        "hook": "Pose a position where undefended pieces decides the game.",
+        "outline": [
+          "spotting loose pieces",
+          "attacking two targets",
+          "winning the exchange",
+          "calculating the grab"
+        ],
+        "boardDemos": "Demonstrate undefended pieces, double attack / fork, winning material, discovered attack on verified example positions.",
+        "misconceptions": "grabbing a defended piece; missing the opponent's recapture; overlooking a zwischenzug",
+        "recap": "Recap: Recognise and play the move that wins material.",
+        "followUp": "Then attempt the Tactical Vision practice levels.",
+        "requiredMedia": "Board diagrams with highlighted squares and arrows for each demonstrated idea.",
+        "expectedLength": "estimated 4–8 min (based on the outline)"
+      },
+      "skillIds": [
+        "tactical_recognition"
+      ],
+      "chapterIds": [
+        "CH03"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH03-DEMO",
+      "type": "guided_example",
+      "titleEn": "Tactical Vision: Worked Examples",
+      "titleAr": "",
+      "descriptionEn": "Worked, verified examples of tactical vision.",
+      "objectiveEn": "Walk through solved tactical vision exercises step by step.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH03-L002",
+        "CH03-L003",
+        "CH03-L004",
+        "CH03-L005",
+        "CH03-L006",
+        "CH03-L007",
+        "CH03-L008",
+        "CH03-L009"
+      ],
+      "supportingPuzzleSkill": "tactical_recognition",
+      "keyConcepts": [
+        "undefended pieces",
+        "double attack / fork",
+        "winning material",
+        "discovered attack"
+      ],
+      "productionBrief": {
+        "purpose": "Show the solving method on real verified tactical vision positions.",
+        "outcome": "Learner can reproduce the method on new positions.",
+        "hook": "Start from a position the learner will soon face in practice.",
+        "outline": [
+          "present the position",
+          "find candidate moves",
+          "calculate the critical line",
+          "confirm the result"
+        ],
+        "boardDemos": "Step through 2–3 verified puzzles of this skill (ids resolved from the server-only corpus).",
+        "misconceptions": "grabbing a defended piece; missing the opponent's recapture; overlooking a zwischenzug",
+        "recap": "Recap the repeatable method.",
+        "followUp": "Attempt the independent-practice levels.",
+        "requiredMedia": "Move-by-move board animation with arrows.",
+        "expectedLength": "estimated 5–10 min"
+      },
+      "skillIds": [
+        "tactical_recognition"
+      ],
+      "chapterIds": [
+        "CH03"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH03-REVIEW",
+      "type": "boss_challenge_explanation",
+      "titleEn": "Tactical Vision: Boss Review",
+      "titleAr": "",
+      "descriptionEn": "How to approach the Tactical Vision boss challenge.",
+      "objectiveEn": "Prepare the learner for the multi-step tactical vision boss.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH03-L010",
+        "CH03-L011"
+      ],
+      "supportingPuzzleSkill": "tactical_recognition",
+      "keyConcepts": [
+        "undefended pieces",
+        "double attack / fork",
+        "winning material",
+        "discovered attack"
+      ],
+      "productionBrief": {
+        "purpose": "Prepare the learner for the cumulative boss.",
+        "outcome": "Learner passes the boss.",
+        "hook": "Preview a boss-style multi-step position.",
+        "outline": [
+          "recap the chapter",
+          "boss strategy",
+          "time to attempt"
+        ],
+        "boardDemos": "One representative boss-style sequence.",
+        "misconceptions": "grabbing a defended piece; missing the opponent's recapture; overlooking a zwischenzug",
+        "recap": "Recap the chapter before the boss.",
+        "followUp": "Attempt the boss.",
+        "requiredMedia": "Board animation of a representative boss sequence.",
+        "expectedLength": "estimated 4–7 min"
+      },
+      "skillIds": [
+        "tactical_recognition"
+      ],
+      "chapterIds": [
+        "CH03"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH04-CONCEPT",
+      "type": "concept_explanation",
+      "titleEn": "Mate in One: Concept",
+      "titleAr": "",
+      "descriptionEn": "Explains the core idea of \"Mate in One\".",
+      "objectiveEn": "Deliver forced checkmate in a single move across patterns.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH04-L001",
+        "CH04-L002",
+        "CH04-L003",
+        "CH04-L004",
+        "CH04-L005",
+        "CH04-L006",
+        "CH04-L007",
+        "CH04-L008",
+        "CH04-L009"
+      ],
+      "supportingPuzzleSkill": "mate_in_one",
+      "keyConcepts": [
+        "back-rank mate",
+        "corner mate",
+        "support mate"
+      ],
+      "productionBrief": {
+        "purpose": "Teach the central idea of mate in one before practice.",
+        "outcome": "The learner reliably finds one-move mates including back-rank and corner patterns.",
+        "hook": "Pose a position where back-rank mate decides the game.",
+        "outline": [
+          "back-rank",
+          "heavy-piece corner",
+          "supported mates"
+        ],
+        "boardDemos": "Demonstrate back-rank mate, corner mate, support mate on verified example positions.",
+        "misconceptions": "unsupported checking piece; allowing a flight square; allowing a block",
+        "recap": "Recap: Deliver forced checkmate in a single move across patterns.",
+        "followUp": "Then attempt the Mate in One practice levels.",
+        "requiredMedia": "Board diagrams with highlighted squares and arrows for each demonstrated idea.",
+        "expectedLength": "estimated 4–8 min (based on the outline)"
+      },
+      "skillIds": [
+        "mate_in_one"
+      ],
+      "chapterIds": [
+        "CH04"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH04-DEMO",
+      "type": "guided_example",
+      "titleEn": "Mate in One: Worked Examples",
+      "titleAr": "",
+      "descriptionEn": "Worked, verified examples of mate in one.",
+      "objectiveEn": "Walk through solved mate in one exercises step by step.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH04-L002",
+        "CH04-L003",
+        "CH04-L004",
+        "CH04-L005",
+        "CH04-L006",
+        "CH04-L007"
+      ],
+      "supportingPuzzleSkill": "mate_in_one",
+      "keyConcepts": [
+        "back-rank mate",
+        "corner mate",
+        "support mate"
+      ],
+      "productionBrief": {
+        "purpose": "Show the solving method on real verified mate in one positions.",
+        "outcome": "Learner can reproduce the method on new positions.",
+        "hook": "Start from a position the learner will soon face in practice.",
+        "outline": [
+          "present the position",
+          "find candidate moves",
+          "calculate the critical line",
+          "confirm the result"
+        ],
+        "boardDemos": "Step through 2–3 verified puzzles of this skill (ids resolved from the server-only corpus).",
+        "misconceptions": "unsupported checking piece; allowing a flight square; allowing a block",
+        "recap": "Recap the repeatable method.",
+        "followUp": "Attempt the independent-practice levels.",
+        "requiredMedia": "Move-by-move board animation with arrows.",
+        "expectedLength": "estimated 5–10 min"
+      },
+      "skillIds": [
+        "mate_in_one"
+      ],
+      "chapterIds": [
+        "CH04"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH04-REVIEW",
+      "type": "chapter_review",
+      "titleEn": "Mate in One: Chapter Review",
+      "titleAr": "",
+      "descriptionEn": "How to approach the Mate in One review & assessment.",
+      "objectiveEn": "Prepare the learner for the multi-step mate in one boss.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH04-L008",
+        "CH04-L009"
+      ],
+      "supportingPuzzleSkill": "mate_in_one",
+      "keyConcepts": [
+        "back-rank mate",
+        "corner mate",
+        "support mate"
+      ],
+      "productionBrief": {
+        "purpose": "Prepare the learner for the cumulative boss.",
+        "outcome": "Learner passes the boss.",
+        "hook": "Preview a boss-style multi-step position.",
+        "outline": [
+          "recap the chapter",
+          "boss strategy",
+          "time to attempt"
+        ],
+        "boardDemos": "One representative boss-style sequence.",
+        "misconceptions": "unsupported checking piece; allowing a flight square; allowing a block",
+        "recap": "Recap the chapter before the boss.",
+        "followUp": "Attempt the boss.",
+        "requiredMedia": "Board animation of a representative boss sequence.",
+        "expectedLength": "estimated 4–7 min"
+      },
+      "skillIds": [
+        "mate_in_one"
+      ],
+      "chapterIds": [
+        "CH04"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH05-CONCEPT",
+      "type": "concept_explanation",
+      "titleEn": "Forced Mating Sequences: Concept",
+      "titleAr": "",
+      "descriptionEn": "Explains the core idea of \"Forced Mating Sequences\".",
+      "objectiveEn": "Calculate a forced mate two to three moves deep.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH05-L001",
+        "CH05-L002",
+        "CH05-L003",
+        "CH05-L004",
+        "CH05-L005",
+        "CH05-L006",
+        "CH05-L007",
+        "CH05-L008",
+        "CH05-L009"
+      ],
+      "supportingPuzzleSkill": "forced_mate",
+      "keyConcepts": [
+        "forcing checks",
+        "driving the king",
+        "mating net"
+      ],
+      "productionBrief": {
+        "purpose": "Teach the central idea of forced mating sequences before practice.",
+        "outcome": "The learner calculates a short forced mate against every defence.",
+        "hook": "Pose a position where forcing checks decides the game.",
+        "outline": [
+          "forcing the king",
+          "each defence refuted",
+          "the final blow"
+        ],
+        "boardDemos": "Demonstrate forcing checks, driving the king, mating net on verified example positions.",
+        "misconceptions": "a non-forcing first move; missing a defensive interposition; stalemate instead of mate",
+        "recap": "Recap: Calculate a forced mate two to three moves deep.",
+        "followUp": "Then attempt the Forced Mating Sequences practice levels.",
+        "requiredMedia": "Board diagrams with highlighted squares and arrows for each demonstrated idea.",
+        "expectedLength": "estimated 4–8 min (based on the outline)"
+      },
+      "skillIds": [
+        "forced_mate"
+      ],
+      "chapterIds": [
+        "CH05"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH05-DEMO",
+      "type": "guided_example",
+      "titleEn": "Forced Mating Sequences: Worked Examples",
+      "titleAr": "",
+      "descriptionEn": "Worked, verified examples of forced mating sequences.",
+      "objectiveEn": "Walk through solved forced mating sequences exercises step by step.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH05-L002",
+        "CH05-L003",
+        "CH05-L004",
+        "CH05-L005",
+        "CH05-L006",
+        "CH05-L007"
+      ],
+      "supportingPuzzleSkill": "forced_mate",
+      "keyConcepts": [
+        "forcing checks",
+        "driving the king",
+        "mating net"
+      ],
+      "productionBrief": {
+        "purpose": "Show the solving method on real verified forced mating sequences positions.",
+        "outcome": "Learner can reproduce the method on new positions.",
+        "hook": "Start from a position the learner will soon face in practice.",
+        "outline": [
+          "present the position",
+          "find candidate moves",
+          "calculate the critical line",
+          "confirm the result"
+        ],
+        "boardDemos": "Step through 2–3 verified puzzles of this skill (ids resolved from the server-only corpus).",
+        "misconceptions": "a non-forcing first move; missing a defensive interposition; stalemate instead of mate",
+        "recap": "Recap the repeatable method.",
+        "followUp": "Attempt the independent-practice levels.",
+        "requiredMedia": "Move-by-move board animation with arrows.",
+        "expectedLength": "estimated 5–10 min"
+      },
+      "skillIds": [
+        "forced_mate"
+      ],
+      "chapterIds": [
+        "CH05"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH05-REVIEW",
+      "type": "boss_challenge_explanation",
+      "titleEn": "Forced Mating Sequences: Boss Review",
+      "titleAr": "",
+      "descriptionEn": "How to approach the Forced Mating Sequences boss challenge.",
+      "objectiveEn": "Prepare the learner for the multi-step forced mating sequences boss.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH05-L008",
+        "CH05-L009"
+      ],
+      "supportingPuzzleSkill": "forced_mate",
+      "keyConcepts": [
+        "forcing checks",
+        "driving the king",
+        "mating net"
+      ],
+      "productionBrief": {
+        "purpose": "Prepare the learner for the cumulative boss.",
+        "outcome": "Learner passes the boss.",
+        "hook": "Preview a boss-style multi-step position.",
+        "outline": [
+          "recap the chapter",
+          "boss strategy",
+          "time to attempt"
+        ],
+        "boardDemos": "One representative boss-style sequence.",
+        "misconceptions": "a non-forcing first move; missing a defensive interposition; stalemate instead of mate",
+        "recap": "Recap the chapter before the boss.",
+        "followUp": "Attempt the boss.",
+        "requiredMedia": "Board animation of a representative boss sequence.",
+        "expectedLength": "estimated 4–7 min"
+      },
+      "skillIds": [
+        "forced_mate"
+      ],
+      "chapterIds": [
+        "CH05"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH06-CONCEPT",
+      "type": "calculation_lesson",
+      "titleEn": "Calculating Combinations: Concept",
+      "titleAr": "",
+      "descriptionEn": "Explains the core idea of \"Calculating Combinations\".",
+      "objectiveEn": "Calculate a multi-move forcing sequence to a winning material result.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH06-L001",
+        "CH06-L002",
+        "CH06-L003",
+        "CH06-L004",
+        "CH06-L005",
+        "CH06-L006",
+        "CH06-L007",
+        "CH06-L008",
+        "CH06-L009"
+      ],
+      "supportingPuzzleSkill": "calculation_combinations",
+      "keyConcepts": [
+        "candidate moves",
+        "forcing continuations",
+        "opponent's best reply",
+        "stopping point"
+      ],
+      "productionBrief": {
+        "purpose": "Teach the central idea of calculating combinations before practice.",
+        "outcome": "The learner calculates the opponent's best reply and reaches a reliable stopping point.",
+        "hook": "Pose a position where candidate moves decides the game.",
+        "outline": [
+          "list candidates",
+          "follow the forcing line",
+          "check the defence",
+          "evaluate the result"
+        ],
+        "boardDemos": "Demonstrate candidate moves, forcing continuations, opponent's best reply, stopping point on verified example positions.",
+        "misconceptions": "assuming the opponent cooperates; stopping calculation too early; choosing a pretty but refuted line",
+        "recap": "Recap: Calculate a multi-move forcing sequence to a winning material result.",
+        "followUp": "Then attempt the Calculating Combinations practice levels.",
+        "requiredMedia": "Board diagrams with highlighted squares and arrows for each demonstrated idea.",
+        "expectedLength": "estimated 4–8 min (based on the outline)"
+      },
+      "skillIds": [
+        "calculation_combinations"
+      ],
+      "chapterIds": [
+        "CH06"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH06-DEMO",
+      "type": "guided_example",
+      "titleEn": "Calculating Combinations: Worked Examples",
+      "titleAr": "",
+      "descriptionEn": "Worked, verified examples of calculating combinations.",
+      "objectiveEn": "Walk through solved calculating combinations exercises step by step.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH06-L002",
+        "CH06-L003",
+        "CH06-L004",
+        "CH06-L005",
+        "CH06-L006",
+        "CH06-L007"
+      ],
+      "supportingPuzzleSkill": "calculation_combinations",
+      "keyConcepts": [
+        "candidate moves",
+        "forcing continuations",
+        "opponent's best reply",
+        "stopping point"
+      ],
+      "productionBrief": {
+        "purpose": "Show the solving method on real verified calculating combinations positions.",
+        "outcome": "Learner can reproduce the method on new positions.",
+        "hook": "Start from a position the learner will soon face in practice.",
+        "outline": [
+          "present the position",
+          "find candidate moves",
+          "calculate the critical line",
+          "confirm the result"
+        ],
+        "boardDemos": "Step through 2–3 verified puzzles of this skill (ids resolved from the server-only corpus).",
+        "misconceptions": "assuming the opponent cooperates; stopping calculation too early; choosing a pretty but refuted line",
+        "recap": "Recap the repeatable method.",
+        "followUp": "Attempt the independent-practice levels.",
+        "requiredMedia": "Move-by-move board animation with arrows.",
+        "expectedLength": "estimated 5–10 min"
+      },
+      "skillIds": [
+        "calculation_combinations"
+      ],
+      "chapterIds": [
+        "CH06"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH06-REVIEW",
+      "type": "boss_challenge_explanation",
+      "titleEn": "Calculating Combinations: Boss Review",
+      "titleAr": "",
+      "descriptionEn": "How to approach the Calculating Combinations boss challenge.",
+      "objectiveEn": "Prepare the learner for the multi-step calculating combinations boss.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH06-L008",
+        "CH06-L009"
+      ],
+      "supportingPuzzleSkill": "calculation_combinations",
+      "keyConcepts": [
+        "candidate moves",
+        "forcing continuations",
+        "opponent's best reply",
+        "stopping point"
+      ],
+      "productionBrief": {
+        "purpose": "Prepare the learner for the cumulative boss.",
+        "outcome": "Learner passes the boss.",
+        "hook": "Preview a boss-style multi-step position.",
+        "outline": [
+          "recap the chapter",
+          "boss strategy",
+          "time to attempt"
+        ],
+        "boardDemos": "One representative boss-style sequence.",
+        "misconceptions": "assuming the opponent cooperates; stopping calculation too early; choosing a pretty but refuted line",
+        "recap": "Recap the chapter before the boss.",
+        "followUp": "Attempt the boss.",
+        "requiredMedia": "Board animation of a representative boss sequence.",
+        "expectedLength": "estimated 4–7 min"
+      },
+      "skillIds": [
+        "calculation_combinations"
+      ],
+      "chapterIds": [
+        "CH06"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH07-CONCEPT",
+      "type": "defensive_lesson",
+      "titleEn": "Defensive Resources: Concept",
+      "titleAr": "",
+      "descriptionEn": "Explains the core idea of \"Defensive Resources\".",
+      "objectiveEn": "Find the only move that avoids losing material or being mated.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH07-L001",
+        "CH07-L002",
+        "CH07-L003",
+        "CH07-L004",
+        "CH07-L005",
+        "CH07-L006",
+        "CH07-L007",
+        "CH07-L008",
+        "CH07-L009",
+        "CH07-L010",
+        "CH07-L011"
+      ],
+      "supportingPuzzleSkill": "defensive_resources",
+      "keyConcepts": [
+        "identifying the threat",
+        "only-move defence",
+        "counterattack as defence"
+      ],
+      "productionBrief": {
+        "purpose": "Teach the central idea of defensive resources before practice.",
+        "outcome": "The learner identifies the threat and the unique saving resource.",
+        "hook": "Pose a position where identifying the threat decides the game.",
+        "outline": [
+          "spot the threat",
+          "list defensive candidates",
+          "verify the only adequate one"
+        ],
+        "boardDemos": "Demonstrate identifying the threat, only-move defence, counterattack as defence on verified example positions.",
+        "misconceptions": "defending the wrong threat; a passive move that still loses; missing an in-between defence",
+        "recap": "Recap: Find the only move that avoids losing material or being mated.",
+        "followUp": "Then attempt the Defensive Resources practice levels.",
+        "requiredMedia": "Board diagrams with highlighted squares and arrows for each demonstrated idea.",
+        "expectedLength": "estimated 4–8 min (based on the outline)"
+      },
+      "skillIds": [
+        "defensive_resources"
+      ],
+      "chapterIds": [
+        "CH07"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH07-DEMO",
+      "type": "guided_example",
+      "titleEn": "Defensive Resources: Worked Examples",
+      "titleAr": "",
+      "descriptionEn": "Worked, verified examples of defensive resources.",
+      "objectiveEn": "Walk through solved defensive resources exercises step by step.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH07-L002",
+        "CH07-L003",
+        "CH07-L004",
+        "CH07-L005",
+        "CH07-L006",
+        "CH07-L007",
+        "CH07-L008",
+        "CH07-L009"
+      ],
+      "supportingPuzzleSkill": "defensive_resources",
+      "keyConcepts": [
+        "identifying the threat",
+        "only-move defence",
+        "counterattack as defence"
+      ],
+      "productionBrief": {
+        "purpose": "Show the solving method on real verified defensive resources positions.",
+        "outcome": "Learner can reproduce the method on new positions.",
+        "hook": "Start from a position the learner will soon face in practice.",
+        "outline": [
+          "present the position",
+          "find candidate moves",
+          "calculate the critical line",
+          "confirm the result"
+        ],
+        "boardDemos": "Step through 2–3 verified puzzles of this skill (ids resolved from the server-only corpus).",
+        "misconceptions": "defending the wrong threat; a passive move that still loses; missing an in-between defence",
+        "recap": "Recap the repeatable method.",
+        "followUp": "Attempt the independent-practice levels.",
+        "requiredMedia": "Move-by-move board animation with arrows.",
+        "expectedLength": "estimated 5–10 min"
+      },
+      "skillIds": [
+        "defensive_resources"
+      ],
+      "chapterIds": [
+        "CH07"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH07-REVIEW",
+      "type": "boss_challenge_explanation",
+      "titleEn": "Defensive Resources: Boss Review",
+      "titleAr": "",
+      "descriptionEn": "How to approach the Defensive Resources boss challenge.",
+      "objectiveEn": "Prepare the learner for the multi-step defensive resources boss.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH07-L010",
+        "CH07-L011"
+      ],
+      "supportingPuzzleSkill": "defensive_resources",
+      "keyConcepts": [
+        "identifying the threat",
+        "only-move defence",
+        "counterattack as defence"
+      ],
+      "productionBrief": {
+        "purpose": "Prepare the learner for the cumulative boss.",
+        "outcome": "Learner passes the boss.",
+        "hook": "Preview a boss-style multi-step position.",
+        "outline": [
+          "recap the chapter",
+          "boss strategy",
+          "time to attempt"
+        ],
+        "boardDemos": "One representative boss-style sequence.",
+        "misconceptions": "defending the wrong threat; a passive move that still loses; missing an in-between defence",
+        "recap": "Recap the chapter before the boss.",
+        "followUp": "Attempt the boss.",
+        "requiredMedia": "Board animation of a representative boss sequence.",
+        "expectedLength": "estimated 4–7 min"
+      },
+      "skillIds": [
+        "defensive_resources"
+      ],
+      "chapterIds": [
+        "CH07"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH08-CONCEPT",
+      "type": "endgame_lesson",
+      "titleEn": "Endgame Conversion: Concept",
+      "titleAr": "",
+      "descriptionEn": "Explains the core idea of \"Endgame Conversion\".",
+      "objectiveEn": "Convert a reduced-material position by winning material or promoting.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH08-L001",
+        "CH08-L002",
+        "CH08-L003",
+        "CH08-L004",
+        "CH08-L005",
+        "CH08-L006",
+        "CH08-L007",
+        "CH08-L008",
+        "CH08-L009",
+        "CH08-L010",
+        "CH08-L011"
+      ],
+      "supportingPuzzleSkill": "endgame_conversion",
+      "keyConcepts": [
+        "forcing promotion",
+        "winning the last defender",
+        "simplest conversion"
+      ],
+      "productionBrief": {
+        "purpose": "Teach the central idea of endgame conversion before practice.",
+        "outcome": "The learner converts a won endgame by force (material gain or promotion).",
+        "hook": "Pose a position where forcing promotion decides the game.",
+        "outline": [
+          "identify the winning idea",
+          "force it",
+          "convert cleanly"
+        ],
+        "boardDemos": "Demonstrate forcing promotion, winning the last defender, simplest conversion on verified example positions.",
+        "misconceptions": "allowing counterplay; stalemate traps; promoting into a fork",
+        "recap": "Recap: Convert a reduced-material position by winning material or promoting.",
+        "followUp": "Then attempt the Endgame Conversion practice levels.",
+        "requiredMedia": "Board diagrams with highlighted squares and arrows for each demonstrated idea.",
+        "expectedLength": "estimated 4–8 min (based on the outline)"
+      },
+      "skillIds": [
+        "endgame_conversion"
+      ],
+      "chapterIds": [
+        "CH08"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH08-DEMO",
+      "type": "guided_example",
+      "titleEn": "Endgame Conversion: Worked Examples",
+      "titleAr": "",
+      "descriptionEn": "Worked, verified examples of endgame conversion.",
+      "objectiveEn": "Walk through solved endgame conversion exercises step by step.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH08-L002",
+        "CH08-L003",
+        "CH08-L004",
+        "CH08-L005",
+        "CH08-L006",
+        "CH08-L007",
+        "CH08-L008",
+        "CH08-L009"
+      ],
+      "supportingPuzzleSkill": "endgame_conversion",
+      "keyConcepts": [
+        "forcing promotion",
+        "winning the last defender",
+        "simplest conversion"
+      ],
+      "productionBrief": {
+        "purpose": "Show the solving method on real verified endgame conversion positions.",
+        "outcome": "Learner can reproduce the method on new positions.",
+        "hook": "Start from a position the learner will soon face in practice.",
+        "outline": [
+          "present the position",
+          "find candidate moves",
+          "calculate the critical line",
+          "confirm the result"
+        ],
+        "boardDemos": "Step through 2–3 verified puzzles of this skill (ids resolved from the server-only corpus).",
+        "misconceptions": "allowing counterplay; stalemate traps; promoting into a fork",
+        "recap": "Recap the repeatable method.",
+        "followUp": "Attempt the independent-practice levels.",
+        "requiredMedia": "Move-by-move board animation with arrows.",
+        "expectedLength": "estimated 5–10 min"
+      },
+      "skillIds": [
+        "endgame_conversion"
+      ],
+      "chapterIds": [
+        "CH08"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH08-REVIEW",
+      "type": "boss_challenge_explanation",
+      "titleEn": "Endgame Conversion: Boss Review",
+      "titleAr": "",
+      "descriptionEn": "How to approach the Endgame Conversion boss challenge.",
+      "objectiveEn": "Prepare the learner for the multi-step endgame conversion boss.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH08-L010",
+        "CH08-L011"
+      ],
+      "supportingPuzzleSkill": "endgame_conversion",
+      "keyConcepts": [
+        "forcing promotion",
+        "winning the last defender",
+        "simplest conversion"
+      ],
+      "productionBrief": {
+        "purpose": "Prepare the learner for the cumulative boss.",
+        "outcome": "Learner passes the boss.",
+        "hook": "Preview a boss-style multi-step position.",
+        "outline": [
+          "recap the chapter",
+          "boss strategy",
+          "time to attempt"
+        ],
+        "boardDemos": "One representative boss-style sequence.",
+        "misconceptions": "allowing counterplay; stalemate traps; promoting into a fork",
+        "recap": "Recap the chapter before the boss.",
+        "followUp": "Attempt the boss.",
+        "requiredMedia": "Board animation of a representative boss sequence.",
+        "expectedLength": "estimated 4–7 min"
+      },
+      "skillIds": [
+        "endgame_conversion"
+      ],
+      "chapterIds": [
+        "CH08"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH09-CONCEPT",
+      "type": "endgame_lesson",
+      "titleEn": "Endgame Theory (Opposition & Key Squares): Concept",
+      "titleAr": "",
+      "descriptionEn": "Explains the core idea of \"Endgame Theory (Opposition & Key Squares)\".",
+      "objectiveEn": "Master opposition, key squares and theoretical draws in king-and-pawn endings.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH09-L001"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "opposition",
+        "key squares",
+        "triangulation",
+        "theoretical draw"
+      ],
+      "productionBrief": {
+        "purpose": "Teach the central idea of endgame theory (opposition & key squares) before practice.",
+        "outcome": "The learner applies opposition and key-square rules.",
+        "hook": "Pose a position where opposition decides the game.",
+        "outline": [
+          "opposition",
+          "key squares",
+          "triangulation",
+          "drawn structures"
+        ],
+        "boardDemos": "Demonstrate opposition, key squares, triangulation, theoretical draw on verified example positions.",
+        "misconceptions": "losing the opposition; wrong-coloured rook-pawn; misjudging a draw",
+        "recap": "Recap: Master opposition, key squares and theoretical draws in king-and-pawn endings.",
+        "followUp": "Then attempt the Endgame Theory (Opposition & Key Squares) practice levels.",
+        "requiredMedia": "Board diagrams with highlighted squares and arrows for each demonstrated idea.",
+        "expectedLength": "TBD (content not yet available)"
+      },
+      "skillIds": [],
+      "chapterIds": [
+        "CH09"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH10-CONCEPT",
+      "type": "opening_lesson",
+      "titleEn": "Opening Principles & Lines: Concept",
+      "titleAr": "",
+      "descriptionEn": "Explains the core idea of \"Opening Principles & Lines\".",
+      "objectiveEn": "Follow a verified opening line and understand its plan: development, centre, king safety.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH10-L001",
+        "CH10-L002",
+        "CH10-L003",
+        "CH10-L004",
+        "CH10-L005",
+        "CH10-L006",
+        "CH10-L007",
+        "CH10-L008",
+        "CH10-L009"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "development",
+        "centre control",
+        "king safety",
+        "typical plan"
+      ],
+      "productionBrief": {
+        "purpose": "Teach the central idea of opening principles & lines before practice.",
+        "outcome": "The learner can play a main opening line and state its plan.",
+        "hook": "Pose a position where development decides the game.",
+        "outline": [
+          "opening principles",
+          "a concrete line",
+          "the resulting plan"
+        ],
+        "boardDemos": "Demonstrate development, centre control, king safety, typical plan on verified example positions.",
+        "misconceptions": "moving the same piece twice; neglecting king safety; premature attacks",
+        "recap": "Recap: Follow a verified opening line and understand its plan: development, centre, king safety.",
+        "followUp": "Then attempt the Opening Principles & Lines practice levels.",
+        "requiredMedia": "Board diagrams with highlighted squares and arrows for each demonstrated idea.",
+        "expectedLength": "estimated 4–8 min (based on the outline)"
+      },
+      "skillIds": [],
+      "chapterIds": [
+        "CH10"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH10-DEMO",
+      "type": "opening_lesson",
+      "titleEn": "Opening Principles & Lines: Worked Examples",
+      "titleAr": "",
+      "descriptionEn": "Worked, verified examples of opening principles & lines.",
+      "objectiveEn": "Walk through solved opening principles & lines exercises step by step.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH10-L002",
+        "CH10-L003",
+        "CH10-L004",
+        "CH10-L005",
+        "CH10-L006",
+        "CH10-L007"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "development",
+        "centre control",
+        "king safety",
+        "typical plan"
+      ],
+      "productionBrief": {
+        "purpose": "Show the solving method on real verified opening principles & lines positions.",
+        "outcome": "Learner can reproduce the method on new positions.",
+        "hook": "Start from a position the learner will soon face in practice.",
+        "outline": [
+          "present the position",
+          "find candidate moves",
+          "calculate the critical line",
+          "confirm the result"
+        ],
+        "boardDemos": "Step through 2–3 verified puzzles of this skill (ids resolved from the server-only corpus).",
+        "misconceptions": "moving the same piece twice; neglecting king safety; premature attacks",
+        "recap": "Recap the repeatable method.",
+        "followUp": "Attempt the independent-practice levels.",
+        "requiredMedia": "Move-by-move board animation with arrows.",
+        "expectedLength": "estimated 5–10 min"
+      },
+      "skillIds": [],
+      "chapterIds": [
+        "CH10"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH10-REVIEW",
+      "type": "boss_challenge_explanation",
+      "titleEn": "Opening Principles & Lines: Boss Review",
+      "titleAr": "",
+      "descriptionEn": "How to approach the Opening Principles & Lines boss challenge.",
+      "objectiveEn": "Prepare the learner for the multi-step opening principles & lines boss.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH10-L008",
+        "CH10-L009"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "development",
+        "centre control",
+        "king safety",
+        "typical plan"
+      ],
+      "productionBrief": {
+        "purpose": "Prepare the learner for the cumulative boss.",
+        "outcome": "Learner passes the boss.",
+        "hook": "Preview a boss-style multi-step position.",
+        "outline": [
+          "recap the chapter",
+          "boss strategy",
+          "time to attempt"
+        ],
+        "boardDemos": "One representative boss-style sequence.",
+        "misconceptions": "moving the same piece twice; neglecting king safety; premature attacks",
+        "recap": "Recap the chapter before the boss.",
+        "followUp": "Attempt the boss.",
+        "requiredMedia": "Board animation of a representative boss sequence.",
+        "expectedLength": "estimated 4–7 min"
+      },
+      "skillIds": [],
+      "chapterIds": [
+        "CH10"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH11-CONCEPT",
+      "type": "opening_lesson",
+      "titleEn": "Opening-Stage Tactics (provisional): Concept",
+      "titleAr": "",
+      "descriptionEn": "Explains the core idea of \"Opening-Stage Tactics (provisional)\".",
+      "objectiveEn": "Apply tactical vision to positions arising in the opening stage.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH11-L001",
+        "CH11-L002",
+        "CH11-L003",
+        "CH11-L004",
+        "CH11-L005",
+        "CH11-L006",
+        "CH11-L007",
+        "CH11-L008",
+        "CH11-L009"
+      ],
+      "supportingPuzzleSkill": "opening_stage_tactics",
+      "keyConcepts": [
+        "early development tactics",
+        "punishing a loose move"
+      ],
+      "productionBrief": {
+        "purpose": "Teach the central idea of opening-stage tactics (provisional) before practice.",
+        "outcome": "The learner punishes typical opening mistakes tactically.",
+        "hook": "Pose a position where early development tactics decides the game.",
+        "outline": [
+          "spot the early tactic",
+          "convert it"
+        ],
+        "boardDemos": "Demonstrate early development tactics, punishing a loose move on verified example positions.",
+        "misconceptions": "confusing an opening tactic with a theory move",
+        "recap": "Recap: Apply tactical vision to positions arising in the opening stage.",
+        "followUp": "Then attempt the Opening-Stage Tactics (provisional) practice levels.",
+        "requiredMedia": "Board diagrams with highlighted squares and arrows for each demonstrated idea.",
+        "expectedLength": "estimated 4–8 min (based on the outline)"
+      },
+      "skillIds": [
+        "opening_stage_tactics"
+      ],
+      "chapterIds": [
+        "CH11"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH11-DEMO",
+      "type": "opening_lesson",
+      "titleEn": "Opening-Stage Tactics (provisional): Worked Examples",
+      "titleAr": "",
+      "descriptionEn": "Worked, verified examples of opening-stage tactics (provisional).",
+      "objectiveEn": "Walk through solved opening-stage tactics (provisional) exercises step by step.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH11-L002",
+        "CH11-L003",
+        "CH11-L004",
+        "CH11-L005",
+        "CH11-L006",
+        "CH11-L007"
+      ],
+      "supportingPuzzleSkill": "opening_stage_tactics",
+      "keyConcepts": [
+        "early development tactics",
+        "punishing a loose move"
+      ],
+      "productionBrief": {
+        "purpose": "Show the solving method on real verified opening-stage tactics (provisional) positions.",
+        "outcome": "Learner can reproduce the method on new positions.",
+        "hook": "Start from a position the learner will soon face in practice.",
+        "outline": [
+          "present the position",
+          "find candidate moves",
+          "calculate the critical line",
+          "confirm the result"
+        ],
+        "boardDemos": "Step through 2–3 verified puzzles of this skill (ids resolved from the server-only corpus).",
+        "misconceptions": "confusing an opening tactic with a theory move",
+        "recap": "Recap the repeatable method.",
+        "followUp": "Attempt the independent-practice levels.",
+        "requiredMedia": "Move-by-move board animation with arrows.",
+        "expectedLength": "estimated 5–10 min"
+      },
+      "skillIds": [
+        "opening_stage_tactics"
+      ],
+      "chapterIds": [
+        "CH11"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH11-REVIEW",
+      "type": "chapter_review",
+      "titleEn": "Opening-Stage Tactics (provisional): Chapter Review",
+      "titleAr": "",
+      "descriptionEn": "How to approach the Opening-Stage Tactics (provisional) review & assessment.",
+      "objectiveEn": "Prepare the learner for the multi-step opening-stage tactics (provisional) boss.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH11-L008",
+        "CH11-L009"
+      ],
+      "supportingPuzzleSkill": "opening_stage_tactics",
+      "keyConcepts": [
+        "early development tactics",
+        "punishing a loose move"
+      ],
+      "productionBrief": {
+        "purpose": "Prepare the learner for the cumulative boss.",
+        "outcome": "Learner passes the boss.",
+        "hook": "Preview a boss-style multi-step position.",
+        "outline": [
+          "recap the chapter",
+          "boss strategy",
+          "time to attempt"
+        ],
+        "boardDemos": "One representative boss-style sequence.",
+        "misconceptions": "confusing an opening tactic with a theory move",
+        "recap": "Recap the chapter before the boss.",
+        "followUp": "Attempt the boss.",
+        "requiredMedia": "Board animation of a representative boss sequence.",
+        "expectedLength": "estimated 4–7 min"
+      },
+      "skillIds": [
+        "opening_stage_tactics"
+      ],
+      "chapterIds": [
+        "CH11"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH12-CONCEPT",
+      "type": "concept_explanation",
+      "titleEn": "Combined Skills: Concept",
+      "titleAr": "",
+      "descriptionEn": "Explains the core idea of \"Combined Skills\".",
+      "objectiveEn": "Apply tactical, calculation and defensive skills in mixed positions.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH12-L001",
+        "CH12-L002",
+        "CH12-L003",
+        "CH12-L004",
+        "CH12-L005",
+        "CH12-L006",
+        "CH12-L007"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "skill selection",
+        "mixed tactics/defence/conversion"
+      ],
+      "productionBrief": {
+        "purpose": "Teach the central idea of combined skills before practice.",
+        "outcome": "The learner selects the right skill under uncertainty.",
+        "hook": "Pose a position where skill selection decides the game.",
+        "outline": [
+          "assess the position",
+          "pick the right method",
+          "execute"
+        ],
+        "boardDemos": "Demonstrate skill selection, mixed tactics/defence/conversion on verified example positions.",
+        "misconceptions": "applying the wrong method; tunnel vision",
+        "recap": "Recap: Apply tactical, calculation and defensive skills in mixed positions.",
+        "followUp": "Then attempt the Combined Skills practice levels.",
+        "requiredMedia": "Board diagrams with highlighted squares and arrows for each demonstrated idea.",
+        "expectedLength": "estimated 4–8 min (based on the outline)"
+      },
+      "skillIds": [],
+      "chapterIds": [
+        "CH12"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH12-DEMO",
+      "type": "guided_example",
+      "titleEn": "Combined Skills: Worked Examples",
+      "titleAr": "",
+      "descriptionEn": "Worked, verified examples of combined skills.",
+      "objectiveEn": "Walk through solved combined skills exercises step by step.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH12-L002",
+        "CH12-L003",
+        "CH12-L004",
+        "CH12-L005"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "skill selection",
+        "mixed tactics/defence/conversion"
+      ],
+      "productionBrief": {
+        "purpose": "Show the solving method on real verified combined skills positions.",
+        "outcome": "Learner can reproduce the method on new positions.",
+        "hook": "Start from a position the learner will soon face in practice.",
+        "outline": [
+          "present the position",
+          "find candidate moves",
+          "calculate the critical line",
+          "confirm the result"
+        ],
+        "boardDemos": "Step through 2–3 verified puzzles of this skill (ids resolved from the server-only corpus).",
+        "misconceptions": "applying the wrong method; tunnel vision",
+        "recap": "Recap the repeatable method.",
+        "followUp": "Attempt the independent-practice levels.",
+        "requiredMedia": "Move-by-move board animation with arrows.",
+        "expectedLength": "estimated 5–10 min"
+      },
+      "skillIds": [],
+      "chapterIds": [
+        "CH12"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH12-REVIEW",
+      "type": "boss_challenge_explanation",
+      "titleEn": "Combined Skills: Boss Review",
+      "titleAr": "",
+      "descriptionEn": "How to approach the Combined Skills boss challenge.",
+      "objectiveEn": "Prepare the learner for the multi-step combined skills boss.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH12-L006",
+        "CH12-L007"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "skill selection",
+        "mixed tactics/defence/conversion"
+      ],
+      "productionBrief": {
+        "purpose": "Prepare the learner for the cumulative boss.",
+        "outcome": "Learner passes the boss.",
+        "hook": "Preview a boss-style multi-step position.",
+        "outline": [
+          "recap the chapter",
+          "boss strategy",
+          "time to attempt"
+        ],
+        "boardDemos": "One representative boss-style sequence.",
+        "misconceptions": "applying the wrong method; tunnel vision",
+        "recap": "Recap the chapter before the boss.",
+        "followUp": "Attempt the boss.",
+        "requiredMedia": "Board animation of a representative boss sequence.",
+        "expectedLength": "estimated 4–7 min"
+      },
+      "skillIds": [],
+      "chapterIds": [
+        "CH12"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH13-CONCEPT",
+      "type": "concept_explanation",
+      "titleEn": "Advanced Combinations: Concept",
+      "titleAr": "",
+      "descriptionEn": "Explains the core idea of \"Advanced Combinations\".",
+      "objectiveEn": "Solve the hardest verified combinations across domains.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH13-L001",
+        "CH13-L002",
+        "CH13-L003",
+        "CH13-L004",
+        "CH13-L005",
+        "CH13-L006",
+        "CH13-L007"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "deep calculation",
+        "sacrifice",
+        "precise conversion"
+      ],
+      "productionBrief": {
+        "purpose": "Teach the central idea of advanced combinations before practice.",
+        "outcome": "The learner solves expert-level verified tactics, mates and conversions.",
+        "hook": "Pose a position where deep calculation decides the game.",
+        "outline": [
+          "recognise the idea",
+          "calculate deeply",
+          "convert"
+        ],
+        "boardDemos": "Demonstrate deep calculation, sacrifice, precise conversion on verified example positions.",
+        "misconceptions": "shallow calculation; missing the quiet move",
+        "recap": "Recap: Solve the hardest verified combinations across domains.",
+        "followUp": "Then attempt the Advanced Combinations practice levels.",
+        "requiredMedia": "Board diagrams with highlighted squares and arrows for each demonstrated idea.",
+        "expectedLength": "estimated 4–8 min (based on the outline)"
+      },
+      "skillIds": [],
+      "chapterIds": [
+        "CH13"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH13-DEMO",
+      "type": "guided_example",
+      "titleEn": "Advanced Combinations: Worked Examples",
+      "titleAr": "",
+      "descriptionEn": "Worked, verified examples of advanced combinations.",
+      "objectiveEn": "Walk through solved advanced combinations exercises step by step.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH13-L002",
+        "CH13-L003",
+        "CH13-L004",
+        "CH13-L005"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "deep calculation",
+        "sacrifice",
+        "precise conversion"
+      ],
+      "productionBrief": {
+        "purpose": "Show the solving method on real verified advanced combinations positions.",
+        "outcome": "Learner can reproduce the method on new positions.",
+        "hook": "Start from a position the learner will soon face in practice.",
+        "outline": [
+          "present the position",
+          "find candidate moves",
+          "calculate the critical line",
+          "confirm the result"
+        ],
+        "boardDemos": "Step through 2–3 verified puzzles of this skill (ids resolved from the server-only corpus).",
+        "misconceptions": "shallow calculation; missing the quiet move",
+        "recap": "Recap the repeatable method.",
+        "followUp": "Attempt the independent-practice levels.",
+        "requiredMedia": "Move-by-move board animation with arrows.",
+        "expectedLength": "estimated 5–10 min"
+      },
+      "skillIds": [],
+      "chapterIds": [
+        "CH13"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH13-REVIEW",
+      "type": "boss_challenge_explanation",
+      "titleEn": "Advanced Combinations: Boss Review",
+      "titleAr": "",
+      "descriptionEn": "How to approach the Advanced Combinations boss challenge.",
+      "objectiveEn": "Prepare the learner for the multi-step advanced combinations boss.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH13-L006",
+        "CH13-L007"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "deep calculation",
+        "sacrifice",
+        "precise conversion"
+      ],
+      "productionBrief": {
+        "purpose": "Prepare the learner for the cumulative boss.",
+        "outcome": "Learner passes the boss.",
+        "hook": "Preview a boss-style multi-step position.",
+        "outline": [
+          "recap the chapter",
+          "boss strategy",
+          "time to attempt"
+        ],
+        "boardDemos": "One representative boss-style sequence.",
+        "misconceptions": "shallow calculation; missing the quiet move",
+        "recap": "Recap the chapter before the boss.",
+        "followUp": "Attempt the boss.",
+        "requiredMedia": "Board animation of a representative boss sequence.",
+        "expectedLength": "estimated 4–7 min"
+      },
+      "skillIds": [],
+      "chapterIds": [
+        "CH13"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH14-CONCEPT",
+      "type": "concept_explanation",
+      "titleEn": "Final Challenges & Strategic Application: Concept",
+      "titleAr": "",
+      "descriptionEn": "Explains the core idea of \"Final Challenges & Strategic Application\".",
+      "objectiveEn": "Cumulative assessments across every taught skill; strategic application remains future content.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH14-L001",
+        "CH14-L002"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "cumulative assessment",
+        "multi-skill boss"
+      ],
+      "productionBrief": {
+        "purpose": "Teach the central idea of final challenges & strategic application before practice.",
+        "outcome": "The learner demonstrates cumulative skill; strategic play is deferred.",
+        "hook": "Pose a position where cumulative assessment decides the game.",
+        "outline": [
+          "review",
+          "cumulative boss"
+        ],
+        "boardDemos": "Demonstrate cumulative assessment, multi-skill boss on verified example positions.",
+        "misconceptions": "fatigue errors; misapplying a learned pattern",
+        "recap": "Recap: Cumulative assessments across every taught skill; strategic application remains future content.",
+        "followUp": "Then attempt the Final Challenges & Strategic Application practice levels.",
+        "requiredMedia": "Board diagrams with highlighted squares and arrows for each demonstrated idea.",
+        "expectedLength": "estimated 4–8 min (based on the outline)"
+      },
+      "skillIds": [],
+      "chapterIds": [
+        "CH14"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    },
+    {
+      "id": "V-CH14-REVIEW",
+      "type": "boss_challenge_explanation",
+      "titleEn": "Final Challenges & Strategic Application: Boss Review",
+      "titleAr": "",
+      "descriptionEn": "How to approach the Final Challenges & Strategic Application boss challenge.",
+      "objectiveEn": "Prepare the learner for the multi-step final challenges & strategic application boss.",
+      "objectiveAr": "",
+      "levelIds": [
+        "CH14-L002"
+      ],
+      "supportingPuzzleSkill": null,
+      "keyConcepts": [
+        "cumulative assessment",
+        "multi-skill boss"
+      ],
+      "productionBrief": {
+        "purpose": "Prepare the learner for the cumulative boss.",
+        "outcome": "Learner passes the boss.",
+        "hook": "Preview a boss-style multi-step position.",
+        "outline": [
+          "recap the chapter",
+          "boss strategy",
+          "time to attempt"
+        ],
+        "boardDemos": "One representative boss-style sequence.",
+        "misconceptions": "fatigue errors; misapplying a learned pattern",
+        "recap": "Recap the chapter before the boss.",
+        "followUp": "Attempt the boss.",
+        "requiredMedia": "Board animation of a representative boss sequence.",
+        "expectedLength": "estimated 4–7 min"
+      },
+      "skillIds": [],
+      "chapterIds": [
+        "CH14"
+      ],
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "missing"
+      },
+      "captionsStatus": "none",
+      "transcriptStatus": "none",
+      "scriptStatus": "planned",
+      "state": "planned",
+      "asset": null,
+      "segments": []
+    }
+  ]
+}

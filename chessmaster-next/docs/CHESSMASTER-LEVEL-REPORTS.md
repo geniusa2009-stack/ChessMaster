@@ -1,0 +1,4107 @@
+# ChessMaster Level Reports
+
+Generated from the authoritative catalog. Every one of the 114 levels is below.
+
+---
+
+## CH01-L001 — Understanding the Board & Coordinates
+- **Level number (seq):** 1
+- **World / Chapter:** Chess Foundations / Board & Piece Movement
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** none
+- **Prerequisite reason:** Entry lesson — no chess knowledge assumed.
+- **Primary domain:** n/a
+- **Primary skill:** n/a
+- **Secondary skills:** none
+- **Learning objective:** Identify squares by file/rank and read algebraic coordinates.
+- **Measurable outcome:** Complete the interactive lesson and demonstrations.
+- **Before:** No chess knowledge.
+- **After:** Identify squares by file/rank and read algebraic coordinates.
+- **Key concepts:** 8×8 board, files a–h, ranks 1–8, light/dark squares, algebraic notation
+- **Teaching sequence:** concept → board demonstration → interactive practice → recap
+- **Explanation plan:** Teach understanding the board & coordinates with validated board demonstrations and interactive practice.
+- **Common mistakes:** 
+- **Practice material:** 0 lesson (ids: none yet)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Interactive lesson (ungraded; the gate is the final assessment).
+- **Mastery condition:** n/a (lesson)
+- **Failure / retry:** Re-read / replay the demonstration.
+- **Remediation:** n/a
+- **Review rule:** Foundations are not spaced-review items.
+- **Video lesson references:** V-CH01-L001
+- **Video production brief:** Teach understanding the board & coordinates to an absolute beginner. Outline: concept → board demo → practice → recap. Media: Board diagrams, highlighted squares, arrows, move animation. Length: estimated 3–6 min. State: script_ready (script script_ready).
+- **Next level:** CH01-L002
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH01-L002 — King & Queen Movement
+- **Level number (seq):** 2
+- **World / Chapter:** Chess Foundations / Board & Piece Movement
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH01-L001
+- **Prerequisite reason:** Builds on the previous foundation lesson.
+- **Primary domain:** n/a
+- **Primary skill:** n/a
+- **Secondary skills:** none
+- **Learning objective:** Move the king (one square) and the queen (lines & diagonals).
+- **Measurable outcome:** Complete the interactive lesson and demonstrations.
+- **Before:** Understanding the Board & Coordinates
+- **After:** Move the king (one square) and the queen (lines & diagonals).
+- **Key concepts:** king one square, queen any distance straight/diagonal
+- **Teaching sequence:** concept → board demonstration → interactive practice → recap
+- **Explanation plan:** Teach king & queen movement with validated board demonstrations and interactive practice.
+- **Common mistakes:** 
+- **Practice material:** 2 lesson (ids: DEMO-CH01-KING, DEMO-CH01-QUEEN)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Interactive lesson (ungraded; the gate is the final assessment).
+- **Mastery condition:** n/a (lesson)
+- **Failure / retry:** Re-read / replay the demonstration.
+- **Remediation:** n/a
+- **Review rule:** Foundations are not spaced-review items.
+- **Video lesson references:** V-CH01-L002
+- **Video production brief:** Teach king & queen movement to an absolute beginner. Outline: concept → board demo → practice → recap. Media: Board diagrams, highlighted squares, arrows, move animation. Length: estimated 3–6 min. State: script_ready (script script_ready).
+- **Next level:** CH01-L003
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH01-L003 — Rook, Bishop & Knight Movement
+- **Level number (seq):** 3
+- **World / Chapter:** Chess Foundations / Board & Piece Movement
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH01-L002
+- **Prerequisite reason:** Builds on the previous foundation lesson.
+- **Primary domain:** n/a
+- **Primary skill:** n/a
+- **Secondary skills:** none
+- **Learning objective:** Move the rook (ranks/files), bishop (diagonals) and the jumping knight.
+- **Measurable outcome:** Complete the interactive lesson and demonstrations.
+- **Before:** King & Queen Movement
+- **After:** Move the rook (ranks/files), bishop (diagonals) and the jumping knight.
+- **Key concepts:** rook straight, bishop diagonal, knight L-shape jump
+- **Teaching sequence:** concept → board demonstration → interactive practice → recap
+- **Explanation plan:** Teach rook, bishop & knight movement with validated board demonstrations and interactive practice.
+- **Common mistakes:** 
+- **Practice material:** 1 lesson (ids: DEMO-CH01-KNIGHT)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Interactive lesson (ungraded; the gate is the final assessment).
+- **Mastery condition:** n/a (lesson)
+- **Failure / retry:** Re-read / replay the demonstration.
+- **Remediation:** n/a
+- **Review rule:** Foundations are not spaced-review items.
+- **Video lesson references:** V-CH01-L003
+- **Video production brief:** Teach rook, bishop & knight movement to an absolute beginner. Outline: concept → board demo → practice → recap. Media: Board diagrams, highlighted squares, arrows, move animation. Length: estimated 3–6 min. State: script_ready (script script_ready).
+- **Next level:** CH01-L004
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH01-L004 — Pawn Movement & Captures
+- **Level number (seq):** 4
+- **World / Chapter:** Chess Foundations / Board & Piece Movement
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH01-L003
+- **Prerequisite reason:** Builds on the previous foundation lesson.
+- **Primary domain:** n/a
+- **Primary skill:** n/a
+- **Secondary skills:** none
+- **Learning objective:** Move pawns forward but capture diagonally.
+- **Measurable outcome:** Complete the interactive lesson and demonstrations.
+- **Before:** Rook, Bishop & Knight Movement
+- **After:** Move pawns forward but capture diagonally.
+- **Key concepts:** forward move, first-move double step, diagonal capture
+- **Teaching sequence:** concept → board demonstration → interactive practice → recap
+- **Explanation plan:** Teach pawn movement & captures with validated board demonstrations and interactive practice.
+- **Common mistakes:** 
+- **Practice material:** 2 lesson (ids: DEMO-CH01-PAWN-FWD, DEMO-CH01-PAWN-CAP)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Interactive lesson (ungraded; the gate is the final assessment).
+- **Mastery condition:** n/a (lesson)
+- **Failure / retry:** Re-read / replay the demonstration.
+- **Remediation:** n/a
+- **Review rule:** Foundations are not spaced-review items.
+- **Video lesson references:** V-CH01-L004
+- **Video production brief:** Teach pawn movement & captures to an absolute beginner. Outline: concept → board demo → practice → recap. Media: Board diagrams, highlighted squares, arrows, move animation. Length: estimated 3–6 min. State: script_ready (script script_ready).
+- **Next level:** CH01-L005
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH01-L005 — Blocking & Legal Captures
+- **Level number (seq):** 5
+- **World / Chapter:** Chess Foundations / Board & Piece Movement
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH01-L004
+- **Prerequisite reason:** Builds on the previous foundation lesson.
+- **Primary domain:** n/a
+- **Primary skill:** n/a
+- **Secondary skills:** none
+- **Learning objective:** Understand that most pieces cannot pass through others.
+- **Measurable outcome:** Complete the interactive lesson and demonstrations.
+- **Before:** Pawn Movement & Captures
+- **After:** Understand that most pieces cannot pass through others.
+- **Key concepts:** blocked paths, friendly pieces block, enemy pieces are targets, knight exception
+- **Teaching sequence:** concept → board demonstration → interactive practice → recap
+- **Explanation plan:** Teach blocking & legal captures with validated board demonstrations and interactive practice.
+- **Common mistakes:** 
+- **Practice material:** 1 lesson (ids: DEMO-CH01-BLOCK)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Interactive lesson (ungraded; the gate is the final assessment).
+- **Mastery condition:** n/a (lesson)
+- **Failure / retry:** Re-read / replay the demonstration.
+- **Remediation:** n/a
+- **Review rule:** Foundations are not spaced-review items.
+- **Video lesson references:** V-CH01-L005
+- **Video production brief:** Teach blocking & legal captures to an absolute beginner. Outline: concept → board demo → practice → recap. Media: Board diagrams, highlighted squares, arrows, move animation. Length: estimated 3–6 min. State: script_ready (script script_ready).
+- **Next level:** CH01-L006
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH01-L006 — Understanding Check
+- **Level number (seq):** 6
+- **World / Chapter:** Chess Foundations / Board & Piece Movement
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH01-L005
+- **Prerequisite reason:** Builds on the previous foundation lesson.
+- **Primary domain:** n/a
+- **Primary skill:** n/a
+- **Secondary skills:** none
+- **Learning objective:** Recognise when a king is in check.
+- **Measurable outcome:** Complete the interactive lesson and demonstrations.
+- **Before:** Blocking & Legal Captures
+- **After:** Recognise when a king is in check.
+- **Key concepts:** king attacked, check vs ordinary attack
+- **Teaching sequence:** concept → board demonstration → interactive practice → recap
+- **Explanation plan:** Teach understanding check with validated board demonstrations and interactive practice.
+- **Common mistakes:** 
+- **Practice material:** 1 lesson (ids: DEMO-CH01-CHECK)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Interactive lesson (ungraded; the gate is the final assessment).
+- **Mastery condition:** n/a (lesson)
+- **Failure / retry:** Re-read / replay the demonstration.
+- **Remediation:** n/a
+- **Review rule:** Foundations are not spaced-review items.
+- **Video lesson references:** V-CH01-L006
+- **Video production brief:** Teach understanding check to an absolute beginner. Outline: concept → board demo → practice → recap. Media: Board diagrams, highlighted squares, arrows, move animation. Length: estimated 3–6 min. State: script_ready (script script_ready).
+- **Next level:** CH01-L007
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH01-L007 — Responding to Check
+- **Level number (seq):** 7
+- **World / Chapter:** Chess Foundations / Board & Piece Movement
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH01-L006
+- **Prerequisite reason:** Builds on the previous foundation lesson.
+- **Primary domain:** n/a
+- **Primary skill:** n/a
+- **Secondary skills:** none
+- **Learning objective:** Respond to check by moving, capturing or blocking.
+- **Measurable outcome:** Complete the interactive lesson and demonstrations.
+- **Before:** Understanding Check
+- **After:** Respond to check by moving, capturing or blocking.
+- **Key concepts:** move the king, capture the checker, block the check
+- **Teaching sequence:** concept → board demonstration → interactive practice → recap
+- **Explanation plan:** Teach responding to check with validated board demonstrations and interactive practice.
+- **Common mistakes:** 
+- **Practice material:** 0 lesson (ids: none yet)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Interactive lesson (ungraded; the gate is the final assessment).
+- **Mastery condition:** n/a (lesson)
+- **Failure / retry:** Re-read / replay the demonstration.
+- **Remediation:** n/a
+- **Review rule:** Foundations are not spaced-review items.
+- **Video lesson references:** V-CH01-L007
+- **Video production brief:** Teach responding to check to an absolute beginner. Outline: concept → board demo → practice → recap. Media: Board diagrams, highlighted squares, arrows, move animation. Length: estimated 3–6 min. State: script_ready (script script_ready).
+- **Next level:** CH01-L008
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH01-L008 — Checkmate & Stalemate
+- **Level number (seq):** 8
+- **World / Chapter:** Chess Foundations / Board & Piece Movement
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH01-L007
+- **Prerequisite reason:** Builds on the previous foundation lesson.
+- **Primary domain:** n/a
+- **Primary skill:** n/a
+- **Secondary skills:** none
+- **Learning objective:** Distinguish checkmate from stalemate.
+- **Measurable outcome:** Complete the interactive lesson and demonstrations.
+- **Before:** Responding to Check
+- **After:** Distinguish checkmate from stalemate.
+- **Key concepts:** checkmate = check + no reply, stalemate = no check + no move
+- **Teaching sequence:** concept → board demonstration → interactive practice → recap
+- **Explanation plan:** Teach checkmate & stalemate with validated board demonstrations and interactive practice.
+- **Common mistakes:** 
+- **Practice material:** 2 lesson (ids: DEMO-CH01-MATE, DEMO-CH01-STALE)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Interactive lesson (ungraded; the gate is the final assessment).
+- **Mastery condition:** n/a (lesson)
+- **Failure / retry:** Re-read / replay the demonstration.
+- **Remediation:** n/a
+- **Review rule:** Foundations are not spaced-review items.
+- **Video lesson references:** V-CH01-L008
+- **Video production brief:** Teach checkmate & stalemate to an absolute beginner. Outline: concept → board demo → practice → recap. Media: Board diagrams, highlighted squares, arrows, move animation. Length: estimated 3–6 min. State: script_ready (script script_ready).
+- **Next level:** CH01-L009
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH01-L009 — Castling
+- **Level number (seq):** 9
+- **World / Chapter:** Chess Foundations / Board & Piece Movement
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH01-L008
+- **Prerequisite reason:** Builds on the previous foundation lesson.
+- **Primary domain:** n/a
+- **Primary skill:** n/a
+- **Secondary skills:** none
+- **Learning objective:** Castle legally and recognise when castling is forbidden.
+- **Measurable outcome:** Complete the interactive lesson and demonstrations.
+- **Before:** Checkmate & Stalemate
+- **After:** Castle legally and recognise when castling is forbidden.
+- **Key concepts:** king + rook unmoved, squares empty, not through/into check
+- **Teaching sequence:** concept → board demonstration → interactive practice → recap
+- **Explanation plan:** Teach castling with validated board demonstrations and interactive practice.
+- **Common mistakes:** 
+- **Practice material:** 2 lesson (ids: DEMO-CH01-CASTLE-OK, DEMO-CH01-CASTLE-NO)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Interactive lesson (ungraded; the gate is the final assessment).
+- **Mastery condition:** n/a (lesson)
+- **Failure / retry:** Re-read / replay the demonstration.
+- **Remediation:** n/a
+- **Review rule:** Foundations are not spaced-review items.
+- **Video lesson references:** V-CH01-L009
+- **Video production brief:** Teach castling to an absolute beginner. Outline: concept → board demo → practice → recap. Media: Board diagrams, highlighted squares, arrows, move animation. Length: estimated 3–6 min. State: script_ready (script script_ready).
+- **Next level:** CH01-L010
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH01-L010 — En Passant
+- **Level number (seq):** 10
+- **World / Chapter:** Chess Foundations / Board & Piece Movement
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH01-L009
+- **Prerequisite reason:** Builds on the previous foundation lesson.
+- **Primary domain:** n/a
+- **Primary skill:** n/a
+- **Secondary skills:** none
+- **Learning objective:** Perform en passant and know its timing.
+- **Measurable outcome:** Complete the interactive lesson and demonstrations.
+- **Before:** Castling
+- **After:** Perform en passant and know its timing.
+- **Key concepts:** immediate opportunity, diagonal pawn capture
+- **Teaching sequence:** concept → board demonstration → interactive practice → recap
+- **Explanation plan:** Teach en passant with validated board demonstrations and interactive practice.
+- **Common mistakes:** 
+- **Practice material:** 2 lesson (ids: DEMO-CH01-EP-OK, DEMO-CH01-EP-NO)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Interactive lesson (ungraded; the gate is the final assessment).
+- **Mastery condition:** n/a (lesson)
+- **Failure / retry:** Re-read / replay the demonstration.
+- **Remediation:** n/a
+- **Review rule:** Foundations are not spaced-review items.
+- **Video lesson references:** V-CH01-L010
+- **Video production brief:** Teach en passant to an absolute beginner. Outline: concept → board demo → practice → recap. Media: Board diagrams, highlighted squares, arrows, move animation. Length: estimated 3–6 min. State: script_ready (script script_ready).
+- **Next level:** CH01-L011
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH01-L011 — Promotion
+- **Level number (seq):** 11
+- **World / Chapter:** Chess Foundations / Board & Piece Movement
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH01-L010
+- **Prerequisite reason:** Builds on the previous foundation lesson.
+- **Primary domain:** n/a
+- **Primary skill:** n/a
+- **Secondary skills:** none
+- **Learning objective:** Promote a pawn and choose the piece.
+- **Measurable outcome:** Complete the interactive lesson and demonstrations.
+- **Before:** En Passant
+- **After:** Promote a pawn and choose the piece.
+- **Key concepts:** reach last rank, choose Q/R/B/N
+- **Teaching sequence:** concept → board demonstration → interactive practice → recap
+- **Explanation plan:** Teach promotion with validated board demonstrations and interactive practice.
+- **Common mistakes:** 
+- **Practice material:** 1 lesson (ids: DEMO-CH01-PROMO)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Interactive lesson (ungraded; the gate is the final assessment).
+- **Mastery condition:** n/a (lesson)
+- **Failure / retry:** Re-read / replay the demonstration.
+- **Remediation:** n/a
+- **Review rule:** Foundations are not spaced-review items.
+- **Video lesson references:** V-CH01-L011
+- **Video production brief:** Teach promotion to an absolute beginner. Outline: concept → board demo → practice → recap. Media: Board diagrams, highlighted squares, arrows, move animation. Length: estimated 3–6 min. State: script_ready (script script_ready).
+- **Next level:** CH01-L012
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH01-L012 — Beginner Rules Assessment
+- **Level number (seq):** 12
+- **World / Chapter:** Chess Foundations / Board & Piece Movement
+- **Type:** assessment
+- **Difficulty band:** n/a
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH01-L011
+- **Prerequisite reason:** Builds on the previous foundation lesson.
+- **Primary domain:** n/a
+- **Primary skill:** __foundation__
+- **Secondary skills:** none
+- **Learning objective:** Demonstrate the fundamentals in a graded, server-verified assessment.
+- **Measurable outcome:** Pass the server-verified rules assessment.
+- **Before:** Promotion
+- **After:** Demonstrate the fundamentals in a graded, server-verified assessment.
+- **Key concepts:** all CH01 rules
+- **Teaching sequence:** concept → board demonstration → interactive practice → recap
+- **Explanation plan:** Teach beginner rules assessment with validated board demonstrations and interactive practice.
+- **Common mistakes:** 
+- **Practice material:** 1 rules_assessment (ids: FOUNDATION)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 1 items
+- **Pass criteria:** Score at least the pass threshold on the rules assessment (server-authoritative).
+- **Mastery condition:** Foundations completion recorded server-side.
+- **Failure / retry:** Retry the assessment; remediation to the relevant lesson.
+- **Remediation:** CH01-L001
+- **Review rule:** Foundations are not spaced-review items.
+- **Video lesson references:** V-CH01-L012
+- **Video production brief:** Teach beginner rules assessment to an absolute beginner. Outline: concept → board demo → practice → recap. Media: Board diagrams, highlighted squares, arrows, move animation. Length: estimated 3–6 min. State: script_ready (script script_ready).
+- **Next level:** CH02-L001
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH02-L001 — Check & Checkmate Recognition: Concepts
+- **Level number (seq):** 13
+- **World / Chapter:** Chess Foundations / Check & Checkmate Recognition
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** CH01-L012
+- **Prerequisite reason:** Requires completing the CH01 Beginner Rules Assessment (foundations).
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** mate_in_one
+- **Secondary skills:** none
+- **Learning objective:** Recognise check and deliver immediate checkmate in one move.
+- **Measurable outcome:** Learner proceeds after reading/watching the concept lesson.
+- **Before:** Legal moves and what check means.
+- **After:** The learner spots a one-move checkmate reliably.
+- **Key concepts:** check vs checkmate, king escape squares, back-rank idea
+- **Teaching sequence:** what is check → what makes it mate → spotting mate in one
+- **Explanation plan:** Contrast check with checkmate; show that mate means no legal reply; practise one-movers.
+- **Common mistakes:** giving check that is not mate; missing a king escape square; ignoring interposition
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Acknowledge the concept lesson (no graded exercise).
+- **Mastery condition:** n/a (concept only)
+- **Failure / retry:** Re-read the lesson.
+- **Remediation:** n/a
+- **Review rule:** Not review-scheduled (concept).
+- **Video lesson references:** V-CH02-CONCEPT
+- **Video production brief:** Teach the central idea of check & checkmate recognition before practice. Outline: what is check → what makes it mate → spotting mate in one. Media: Board diagrams with highlighted squares and arrows for each demonstrated idea. Length: estimated 4–8 min (based on the outline). State: script_ready (script script_ready).
+- **Next level:** CH02-L002
+- **Content coverage:** partial
+- **Known limitations:** Text lesson available; explanatory video is planned, not yet recorded.
+
+---
+
+## CH02-L002 — Check & Checkmate Recognition: Easy Practice A
+- **Level number (seq):** 14
+- **World / Chapter:** Chess Foundations / Check & Checkmate Recognition
+- **Type:** guided_practice
+- **Difficulty band:** easy
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH02-L001
+- **Prerequisite reason:** Requires the chapter concept before practising.
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** mate_in_one
+- **Secondary skills:** none
+- **Learning objective:** Recognise check and deliver immediate checkmate in one move. (easy difficulty, set A)
+- **Measurable outcome:** Solve the required easy exercises (distinct set A) with server-verified correctness.
+- **Before:** Legal moves and what check means.
+- **After:** The learner spots a one-move checkmate reliably.
+- **Key concepts:** check vs checkmate, king escape squares, back-rank idea
+- **Teaching sequence:** what is check → what makes it mate → spotting mate in one
+- **Explanation plan:** Contrast check with checkmate; show that mate means no legal reply; practise one-movers.
+- **Common mistakes:** giving check that is not mate; missing a king escape square; ignoring interposition
+- **Practice material:** 3 puzzles (ids: 13, 14, 15)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 3 items
+- **Pass criteria:** Solve at least the required number of easy exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH02-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH02-DEMO
+- **Video production brief:** Show the solving method on real verified check & checkmate recognition positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: script_ready (script script_ready).
+- **Next level:** CH02-L003
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH02-L003 — Check & Checkmate Recognition: Easy Practice B
+- **Level number (seq):** 15
+- **World / Chapter:** Chess Foundations / Check & Checkmate Recognition
+- **Type:** independent_practice
+- **Difficulty band:** easy
+- **Publication status:** future_content_required
+- **Prerequisites:** CH02-L002
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** mate_in_one
+- **Secondary skills:** none
+- **Learning objective:** Recognise check and deliver immediate checkmate in one move. (easy difficulty, set B)
+- **Measurable outcome:** Solve the required easy exercises (distinct set B) with server-verified correctness.
+- **Before:** Legal moves and what check means.
+- **After:** The learner spots a one-move checkmate reliably.
+- **Key concepts:** check vs checkmate, king escape squares, back-rank idea
+- **Teaching sequence:** what is check → what makes it mate → spotting mate in one
+- **Explanation plan:** Contrast check with checkmate; show that mate means no legal reply; practise one-movers.
+- **Common mistakes:** giving check that is not mate; missing a king escape square; ignoring interposition
+- **Practice material:** 0 puzzles (ids: none yet)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of easy exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH02-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH02-DEMO
+- **Video production brief:** Show the solving method on real verified check & checkmate recognition positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: script_ready (script script_ready).
+- **Next level:** CH02-L004
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH02-L004 — Check & Checkmate Recognition: Medium Practice A
+- **Level number (seq):** 16
+- **World / Chapter:** Chess Foundations / Check & Checkmate Recognition
+- **Type:** independent_practice
+- **Difficulty band:** medium
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH02-L003
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** mate_in_one
+- **Secondary skills:** none
+- **Learning objective:** Recognise check and deliver immediate checkmate in one move. (medium difficulty, set A)
+- **Measurable outcome:** Solve the required medium exercises (distinct set A) with server-verified correctness.
+- **Before:** Legal moves and what check means.
+- **After:** The learner spots a one-move checkmate reliably.
+- **Key concepts:** check vs checkmate, king escape squares, back-rank idea
+- **Teaching sequence:** what is check → what makes it mate → spotting mate in one
+- **Explanation plan:** Contrast check with checkmate; show that mate means no legal reply; practise one-movers.
+- **Common mistakes:** giving check that is not mate; missing a king escape square; ignoring interposition
+- **Practice material:** 5 puzzles (ids: 101, 104, 105, 108, 110)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH02-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH02-DEMO
+- **Video production brief:** Show the solving method on real verified check & checkmate recognition positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: script_ready (script script_ready).
+- **Next level:** CH02-L005
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH02-L005 — Check & Checkmate Recognition: Medium Practice B
+- **Level number (seq):** 17
+- **World / Chapter:** Chess Foundations / Check & Checkmate Recognition
+- **Type:** independent_practice
+- **Difficulty band:** medium
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH02-L004
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** mate_in_one
+- **Secondary skills:** none
+- **Learning objective:** Recognise check and deliver immediate checkmate in one move. (medium difficulty, set B)
+- **Measurable outcome:** Solve the required medium exercises (distinct set B) with server-verified correctness.
+- **Before:** Legal moves and what check means.
+- **After:** The learner spots a one-move checkmate reliably.
+- **Key concepts:** check vs checkmate, king escape squares, back-rank idea
+- **Teaching sequence:** what is check → what makes it mate → spotting mate in one
+- **Explanation plan:** Contrast check with checkmate; show that mate means no legal reply; practise one-movers.
+- **Common mistakes:** giving check that is not mate; missing a king escape square; ignoring interposition
+- **Practice material:** 4 puzzles (ids: 111, 114, 116, 117)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH02-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH02-DEMO
+- **Video production brief:** Show the solving method on real verified check & checkmate recognition positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: script_ready (script script_ready).
+- **Next level:** CH02-L006
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH02-L006 — Check & Checkmate Recognition: Review
+- **Level number (seq):** 18
+- **World / Chapter:** Chess Foundations / Check & Checkmate Recognition
+- **Type:** review
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** CH02-L001
+- **Prerequisite reason:** Reviews items already practised in this chapter.
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** mate_in_one
+- **Secondary skills:** none
+- **Learning objective:** Retain check & checkmate recognition via spaced review.
+- **Measurable outcome:** Clear all due review items for this skill.
+- **Before:** The learner spots a one-move checkmate reliably.
+- **After:** Retained skill after a delay.
+- **Key concepts:** check vs checkmate, king escape squares, back-rank idea
+- **Teaching sequence:** review due items
+- **Explanation plan:** No new teaching; spaced repetition of previously solved items.
+- **Common mistakes:** giving check that is not mate; missing a king escape square; ignoring interposition
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** No review items currently due, or all due items cleared.
+- **Mastery condition:** Retention reflected by R2 review state.
+- **Failure / retry:** Items reschedule per SM-2.
+- **Remediation:** CH02-L001
+- **Review rule:** This level IS the review surface for the chapter.
+- **Video lesson references:** V-CH02-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: script_ready (script script_ready).
+- **Next level:** CH02-L007
+- **Content coverage:** partial
+- **Known limitations:** Depends on prior practice; empty until items are due.
+
+---
+
+## CH02-L007 — Check & Checkmate Recognition: Chapter Boss
+- **Level number (seq):** 19
+- **World / Chapter:** Chess Foundations / Check & Checkmate Recognition
+- **Type:** boss_challenge
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH02-L002, CH02-L003, CH02-L004, CH02-L005
+- **Prerequisite reason:** Must practise the chapter's exercises before the cumulative boss.
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** mate_in_one
+- **Secondary skills:** none
+- **Learning objective:** Apply check & checkmate recognition under assessment across multiple exercises.
+- **Measurable outcome:** Pass the multi-exercise boss with the required success rate (server-authoritative).
+- **Before:** The learner spots a one-move checkmate reliably.
+- **After:** Demonstrated chapter mastery.
+- **Key concepts:** check vs checkmate, king escape squares, back-rank idea
+- **Teaching sequence:** recognise → calculate → execute
+- **Explanation plan:** No new teaching; a graded multi-step assessment.
+- **Common mistakes:** giving check that is not mate; missing a king escape square; ignoring interposition
+- **Practice material:** 5 puzzles (ids: 13, 14, 15, 101, 104)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 5 items
+- **Pass criteria:** Solve the required boss exercises at the chapter difficulty (server-verified).
+- **Mastery condition:** Boss pass + sufficient R2 evidence in the backing skill.
+- **Failure / retry:** Retry allowed; remediation to the chapter practice levels on failure.
+- **Remediation:** CH02-L001
+- **Review rule:** Boss items are review-eligible like any solved puzzle.
+- **Video lesson references:** V-CH02-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: script_ready (script script_ready).
+- **Next level:** CH03-L001
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH03-L001 — Tactical Vision: Concepts
+- **Level number (seq):** 20
+- **World / Chapter:** Tactical Vision / Tactical Vision
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** none
+- **Prerequisite reason:** Introductory concept level.
+- **Primary domain:** tactical_vision
+- **Primary skill:** tactical_recognition
+- **Secondary skills:** none
+- **Learning objective:** Recognise and play the move that wins material.
+- **Measurable outcome:** Learner proceeds after reading/watching the concept lesson.
+- **Before:** Legal moves, piece values and checkmate recognition.
+- **After:** The learner finds a winning tactic in a variety of positions.
+- **Key concepts:** undefended pieces, double attack / fork, winning material, discovered attack
+- **Teaching sequence:** spotting loose pieces → attacking two targets → winning the exchange → calculating the grab
+- **Explanation plan:** Teach how to scan for undefended and double-attackable targets, then convert to a material win.
+- **Common mistakes:** grabbing a defended piece; missing the opponent's recapture; overlooking a zwischenzug
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Acknowledge the concept lesson (no graded exercise).
+- **Mastery condition:** n/a (concept only)
+- **Failure / retry:** Re-read the lesson.
+- **Remediation:** n/a
+- **Review rule:** Not review-scheduled (concept).
+- **Video lesson references:** V-CH03-CONCEPT
+- **Video production brief:** Teach the central idea of tactical vision before practice. Outline: spotting loose pieces → attacking two targets → winning the exchange → calculating the grab. Media: Board diagrams with highlighted squares and arrows for each demonstrated idea. Length: estimated 4–8 min (based on the outline). State: planned (script planned).
+- **Next level:** CH03-L002
+- **Content coverage:** partial
+- **Known limitations:** Text lesson available; explanatory video is planned, not yet recorded.
+
+---
+
+## CH03-L002 — Tactical Vision: Easy Practice A
+- **Level number (seq):** 21
+- **World / Chapter:** Tactical Vision / Tactical Vision
+- **Type:** guided_practice
+- **Difficulty band:** easy
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH03-L001
+- **Prerequisite reason:** Requires the chapter concept before practising.
+- **Primary domain:** tactical_vision
+- **Primary skill:** tactical_recognition
+- **Secondary skills:** none
+- **Learning objective:** Recognise and play the move that wins material. (easy difficulty, set A)
+- **Measurable outcome:** Solve the required easy exercises (distinct set A) with server-verified correctness.
+- **Before:** Legal moves, piece values and checkmate recognition.
+- **After:** The learner finds a winning tactic in a variety of positions.
+- **Key concepts:** undefended pieces, double attack / fork, winning material, discovered attack
+- **Teaching sequence:** spotting loose pieces → attacking two targets → winning the exchange → calculating the grab
+- **Explanation plan:** Teach how to scan for undefended and double-attackable targets, then convert to a material win.
+- **Common mistakes:** grabbing a defended piece; missing the opponent's recapture; overlooking a zwischenzug
+- **Practice material:** 5 puzzles (ids: 130, 131, 133, 136, 137)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 3 items
+- **Pass criteria:** Solve at least the required number of easy exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH03-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH03-DEMO
+- **Video production brief:** Show the solving method on real verified tactical vision positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH03-L003
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH03-L003 — Tactical Vision: Easy Practice B
+- **Level number (seq):** 22
+- **World / Chapter:** Tactical Vision / Tactical Vision
+- **Type:** independent_practice
+- **Difficulty band:** easy
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH03-L002
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** tactical_vision
+- **Primary skill:** tactical_recognition
+- **Secondary skills:** none
+- **Learning objective:** Recognise and play the move that wins material. (easy difficulty, set B)
+- **Measurable outcome:** Solve the required easy exercises (distinct set B) with server-verified correctness.
+- **Before:** Legal moves, piece values and checkmate recognition.
+- **After:** The learner finds a winning tactic in a variety of positions.
+- **Key concepts:** undefended pieces, double attack / fork, winning material, discovered attack
+- **Teaching sequence:** spotting loose pieces → attacking two targets → winning the exchange → calculating the grab
+- **Explanation plan:** Teach how to scan for undefended and double-attackable targets, then convert to a material win.
+- **Common mistakes:** grabbing a defended piece; missing the opponent's recapture; overlooking a zwischenzug
+- **Practice material:** 5 puzzles (ids: 138, 143, 144, 146, 148)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of easy exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH03-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH03-DEMO
+- **Video production brief:** Show the solving method on real verified tactical vision positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH03-L004
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH03-L004 — Tactical Vision: Medium Practice A
+- **Level number (seq):** 23
+- **World / Chapter:** Tactical Vision / Tactical Vision
+- **Type:** independent_practice
+- **Difficulty band:** medium
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH03-L003
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** tactical_vision
+- **Primary skill:** tactical_recognition
+- **Secondary skills:** none
+- **Learning objective:** Recognise and play the move that wins material. (medium difficulty, set A)
+- **Measurable outcome:** Solve the required medium exercises (distinct set A) with server-verified correctness.
+- **Before:** Legal moves, piece values and checkmate recognition.
+- **After:** The learner finds a winning tactic in a variety of positions.
+- **Key concepts:** undefended pieces, double attack / fork, winning material, discovered attack
+- **Teaching sequence:** spotting loose pieces → attacking two targets → winning the exchange → calculating the grab
+- **Explanation plan:** Teach how to scan for undefended and double-attackable targets, then convert to a material win.
+- **Common mistakes:** grabbing a defended piece; missing the opponent's recapture; overlooking a zwischenzug
+- **Practice material:** 5 puzzles (ids: 132, 139, 152, 155, 160)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH03-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH03-DEMO
+- **Video production brief:** Show the solving method on real verified tactical vision positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH03-L005
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH03-L005 — Tactical Vision: Medium Practice B
+- **Level number (seq):** 24
+- **World / Chapter:** Tactical Vision / Tactical Vision
+- **Type:** independent_practice
+- **Difficulty band:** medium
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH03-L004
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** tactical_vision
+- **Primary skill:** tactical_recognition
+- **Secondary skills:** none
+- **Learning objective:** Recognise and play the move that wins material. (medium difficulty, set B)
+- **Measurable outcome:** Solve the required medium exercises (distinct set B) with server-verified correctness.
+- **Before:** Legal moves, piece values and checkmate recognition.
+- **After:** The learner finds a winning tactic in a variety of positions.
+- **Key concepts:** undefended pieces, double attack / fork, winning material, discovered attack
+- **Teaching sequence:** spotting loose pieces → attacking two targets → winning the exchange → calculating the grab
+- **Explanation plan:** Teach how to scan for undefended and double-attackable targets, then convert to a material win.
+- **Common mistakes:** grabbing a defended piece; missing the opponent's recapture; overlooking a zwischenzug
+- **Practice material:** 5 puzzles (ids: 161, 162, 163, 166, 168)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH03-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH03-DEMO
+- **Video production brief:** Show the solving method on real verified tactical vision positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH03-L006
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH03-L006 — Tactical Vision: Hard Practice A
+- **Level number (seq):** 25
+- **World / Chapter:** Tactical Vision / Tactical Vision
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** future_content_required
+- **Prerequisites:** CH03-L005
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** tactical_vision
+- **Primary skill:** tactical_recognition
+- **Secondary skills:** none
+- **Learning objective:** Recognise and play the move that wins material. (hard difficulty, set A)
+- **Measurable outcome:** Solve the required hard exercises (distinct set A) with server-verified correctness.
+- **Before:** Legal moves, piece values and checkmate recognition.
+- **After:** The learner finds a winning tactic in a variety of positions.
+- **Key concepts:** undefended pieces, double attack / fork, winning material, discovered attack
+- **Teaching sequence:** spotting loose pieces → attacking two targets → winning the exchange → calculating the grab
+- **Explanation plan:** Teach how to scan for undefended and double-attackable targets, then convert to a material win.
+- **Common mistakes:** grabbing a defended piece; missing the opponent's recapture; overlooking a zwischenzug
+- **Practice material:** 0 puzzles (ids: none yet)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH03-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH03-DEMO
+- **Video production brief:** Show the solving method on real verified tactical vision positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH03-L007
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH03-L007 — Tactical Vision: Hard Practice B
+- **Level number (seq):** 26
+- **World / Chapter:** Tactical Vision / Tactical Vision
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** future_content_required
+- **Prerequisites:** CH03-L006
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** tactical_vision
+- **Primary skill:** tactical_recognition
+- **Secondary skills:** none
+- **Learning objective:** Recognise and play the move that wins material. (hard difficulty, set B)
+- **Measurable outcome:** Solve the required hard exercises (distinct set B) with server-verified correctness.
+- **Before:** Legal moves, piece values and checkmate recognition.
+- **After:** The learner finds a winning tactic in a variety of positions.
+- **Key concepts:** undefended pieces, double attack / fork, winning material, discovered attack
+- **Teaching sequence:** spotting loose pieces → attacking two targets → winning the exchange → calculating the grab
+- **Explanation plan:** Teach how to scan for undefended and double-attackable targets, then convert to a material win.
+- **Common mistakes:** grabbing a defended piece; missing the opponent's recapture; overlooking a zwischenzug
+- **Practice material:** 0 puzzles (ids: none yet)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH03-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH03-DEMO
+- **Video production brief:** Show the solving method on real verified tactical vision positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH03-L008
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH03-L008 — Tactical Vision: Expert Practice A
+- **Level number (seq):** 27
+- **World / Chapter:** Tactical Vision / Tactical Vision
+- **Type:** independent_practice
+- **Difficulty band:** expert
+- **Publication status:** future_content_required
+- **Prerequisites:** CH03-L007
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** tactical_vision
+- **Primary skill:** tactical_recognition
+- **Secondary skills:** none
+- **Learning objective:** Recognise and play the move that wins material. (expert difficulty, set A)
+- **Measurable outcome:** Solve the required expert exercises (distinct set A) with server-verified correctness.
+- **Before:** Legal moves, piece values and checkmate recognition.
+- **After:** The learner finds a winning tactic in a variety of positions.
+- **Key concepts:** undefended pieces, double attack / fork, winning material, discovered attack
+- **Teaching sequence:** spotting loose pieces → attacking two targets → winning the exchange → calculating the grab
+- **Explanation plan:** Teach how to scan for undefended and double-attackable targets, then convert to a material win.
+- **Common mistakes:** grabbing a defended piece; missing the opponent's recapture; overlooking a zwischenzug
+- **Practice material:** 0 puzzles (ids: none yet)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of expert exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH03-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH03-DEMO
+- **Video production brief:** Show the solving method on real verified tactical vision positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH03-L009
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH03-L009 — Tactical Vision: Expert Practice B
+- **Level number (seq):** 28
+- **World / Chapter:** Tactical Vision / Tactical Vision
+- **Type:** independent_practice
+- **Difficulty band:** expert
+- **Publication status:** future_content_required
+- **Prerequisites:** CH03-L008
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** tactical_vision
+- **Primary skill:** tactical_recognition
+- **Secondary skills:** none
+- **Learning objective:** Recognise and play the move that wins material. (expert difficulty, set B)
+- **Measurable outcome:** Solve the required expert exercises (distinct set B) with server-verified correctness.
+- **Before:** Legal moves, piece values and checkmate recognition.
+- **After:** The learner finds a winning tactic in a variety of positions.
+- **Key concepts:** undefended pieces, double attack / fork, winning material, discovered attack
+- **Teaching sequence:** spotting loose pieces → attacking two targets → winning the exchange → calculating the grab
+- **Explanation plan:** Teach how to scan for undefended and double-attackable targets, then convert to a material win.
+- **Common mistakes:** grabbing a defended piece; missing the opponent's recapture; overlooking a zwischenzug
+- **Practice material:** 0 puzzles (ids: none yet)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of expert exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH03-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH03-DEMO
+- **Video production brief:** Show the solving method on real verified tactical vision positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH03-L010
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH03-L010 — Tactical Vision: Review
+- **Level number (seq):** 29
+- **World / Chapter:** Tactical Vision / Tactical Vision
+- **Type:** review
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** CH03-L001
+- **Prerequisite reason:** Reviews items already practised in this chapter.
+- **Primary domain:** tactical_vision
+- **Primary skill:** tactical_recognition
+- **Secondary skills:** none
+- **Learning objective:** Retain tactical vision via spaced review.
+- **Measurable outcome:** Clear all due review items for this skill.
+- **Before:** The learner finds a winning tactic in a variety of positions.
+- **After:** Retained skill after a delay.
+- **Key concepts:** undefended pieces, double attack / fork, winning material, discovered attack
+- **Teaching sequence:** review due items
+- **Explanation plan:** No new teaching; spaced repetition of previously solved items.
+- **Common mistakes:** grabbing a defended piece; missing the opponent's recapture; overlooking a zwischenzug
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** No review items currently due, or all due items cleared.
+- **Mastery condition:** Retention reflected by R2 review state.
+- **Failure / retry:** Items reschedule per SM-2.
+- **Remediation:** CH03-L001
+- **Review rule:** This level IS the review surface for the chapter.
+- **Video lesson references:** V-CH03-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH03-L011
+- **Content coverage:** partial
+- **Known limitations:** Depends on prior practice; empty until items are due.
+
+---
+
+## CH03-L011 — Tactical Vision: Chapter Boss
+- **Level number (seq):** 30
+- **World / Chapter:** Tactical Vision / Tactical Vision
+- **Type:** boss_challenge
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH03-L002, CH03-L003, CH03-L004, CH03-L005, CH03-L006, CH03-L007, CH03-L008, CH03-L009
+- **Prerequisite reason:** Must practise the chapter's exercises before the cumulative boss.
+- **Primary domain:** tactical_vision
+- **Primary skill:** tactical_recognition
+- **Secondary skills:** none
+- **Learning objective:** Apply tactical vision under assessment across multiple exercises.
+- **Measurable outcome:** Pass the multi-exercise boss with the required success rate (server-authoritative).
+- **Before:** The learner finds a winning tactic in a variety of positions.
+- **After:** Demonstrated chapter mastery.
+- **Key concepts:** undefended pieces, double attack / fork, winning material, discovered attack
+- **Teaching sequence:** recognise → calculate → execute
+- **Explanation plan:** No new teaching; a graded multi-step assessment.
+- **Common mistakes:** grabbing a defended piece; missing the opponent's recapture; overlooking a zwischenzug
+- **Practice material:** 5 puzzles (ids: 130, 131, 132, 133, 136)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 5 items
+- **Pass criteria:** Solve the required boss exercises at the chapter difficulty (server-verified).
+- **Mastery condition:** Boss pass + sufficient R2 evidence in the backing skill.
+- **Failure / retry:** Retry allowed; remediation to the chapter practice levels on failure.
+- **Remediation:** CH03-L001
+- **Review rule:** Boss items are review-eligible like any solved puzzle.
+- **Video lesson references:** V-CH03-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH04-L001
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH04-L001 — Mate in One: Concepts
+- **Level number (seq):** 31
+- **World / Chapter:** Checkmate Patterns / Mate in One
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** none
+- **Prerequisite reason:** Introductory concept level.
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** mate_in_one
+- **Secondary skills:** none
+- **Learning objective:** Deliver forced checkmate in a single move across patterns.
+- **Measurable outcome:** Learner proceeds after reading/watching the concept lesson.
+- **Before:** Checkmate recognition.
+- **After:** The learner reliably finds one-move mates including back-rank and corner patterns.
+- **Key concepts:** back-rank mate, corner mate, support mate
+- **Teaching sequence:** back-rank → heavy-piece corner → supported mates
+- **Explanation plan:** Show each mating pattern's geometry and how to confirm the king has no escape.
+- **Common mistakes:** unsupported checking piece; allowing a flight square; allowing a block
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Acknowledge the concept lesson (no graded exercise).
+- **Mastery condition:** n/a (concept only)
+- **Failure / retry:** Re-read the lesson.
+- **Remediation:** n/a
+- **Review rule:** Not review-scheduled (concept).
+- **Video lesson references:** V-CH04-CONCEPT
+- **Video production brief:** Teach the central idea of mate in one before practice. Outline: back-rank → heavy-piece corner → supported mates. Media: Board diagrams with highlighted squares and arrows for each demonstrated idea. Length: estimated 4–8 min (based on the outline). State: planned (script planned).
+- **Next level:** CH04-L002
+- **Content coverage:** partial
+- **Known limitations:** Text lesson available; explanatory video is planned, not yet recorded.
+
+---
+
+## CH04-L002 — Mate in One: Easy Practice A
+- **Level number (seq):** 32
+- **World / Chapter:** Checkmate Patterns / Mate in One
+- **Type:** guided_practice
+- **Difficulty band:** easy
+- **Publication status:** future_content_required
+- **Prerequisites:** CH04-L001
+- **Prerequisite reason:** Requires the chapter concept before practising.
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** mate_in_one
+- **Secondary skills:** none
+- **Learning objective:** Deliver forced checkmate in a single move across patterns. (easy difficulty, set A)
+- **Measurable outcome:** Solve the required easy exercises (distinct set A) with server-verified correctness.
+- **Before:** Checkmate recognition.
+- **After:** The learner reliably finds one-move mates including back-rank and corner patterns.
+- **Key concepts:** back-rank mate, corner mate, support mate
+- **Teaching sequence:** back-rank → heavy-piece corner → supported mates
+- **Explanation plan:** Show each mating pattern's geometry and how to confirm the king has no escape.
+- **Common mistakes:** unsupported checking piece; allowing a flight square; allowing a block
+- **Practice material:** 0 puzzles (ids: none yet)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 3 items
+- **Pass criteria:** Solve at least the required number of easy exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH04-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH04-DEMO
+- **Video production brief:** Show the solving method on real verified mate in one positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH04-L003
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH04-L003 — Mate in One: Easy Practice B
+- **Level number (seq):** 33
+- **World / Chapter:** Checkmate Patterns / Mate in One
+- **Type:** independent_practice
+- **Difficulty band:** easy
+- **Publication status:** future_content_required
+- **Prerequisites:** CH04-L002
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** mate_in_one
+- **Secondary skills:** none
+- **Learning objective:** Deliver forced checkmate in a single move across patterns. (easy difficulty, set B)
+- **Measurable outcome:** Solve the required easy exercises (distinct set B) with server-verified correctness.
+- **Before:** Checkmate recognition.
+- **After:** The learner reliably finds one-move mates including back-rank and corner patterns.
+- **Key concepts:** back-rank mate, corner mate, support mate
+- **Teaching sequence:** back-rank → heavy-piece corner → supported mates
+- **Explanation plan:** Show each mating pattern's geometry and how to confirm the king has no escape.
+- **Common mistakes:** unsupported checking piece; allowing a flight square; allowing a block
+- **Practice material:** 0 puzzles (ids: none yet)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of easy exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH04-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH04-DEMO
+- **Video production brief:** Show the solving method on real verified mate in one positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH04-L004
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH04-L004 — Mate in One: Medium Practice A
+- **Level number (seq):** 34
+- **World / Chapter:** Checkmate Patterns / Mate in One
+- **Type:** independent_practice
+- **Difficulty band:** medium
+- **Publication status:** future_content_required
+- **Prerequisites:** CH04-L003
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** mate_in_one
+- **Secondary skills:** none
+- **Learning objective:** Deliver forced checkmate in a single move across patterns. (medium difficulty, set A)
+- **Measurable outcome:** Solve the required medium exercises (distinct set A) with server-verified correctness.
+- **Before:** Checkmate recognition.
+- **After:** The learner reliably finds one-move mates including back-rank and corner patterns.
+- **Key concepts:** back-rank mate, corner mate, support mate
+- **Teaching sequence:** back-rank → heavy-piece corner → supported mates
+- **Explanation plan:** Show each mating pattern's geometry and how to confirm the king has no escape.
+- **Common mistakes:** unsupported checking piece; allowing a flight square; allowing a block
+- **Practice material:** 0 puzzles (ids: none yet)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH04-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH04-DEMO
+- **Video production brief:** Show the solving method on real verified mate in one positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH04-L005
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH04-L005 — Mate in One: Medium Practice B
+- **Level number (seq):** 35
+- **World / Chapter:** Checkmate Patterns / Mate in One
+- **Type:** independent_practice
+- **Difficulty band:** medium
+- **Publication status:** future_content_required
+- **Prerequisites:** CH04-L004
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** mate_in_one
+- **Secondary skills:** none
+- **Learning objective:** Deliver forced checkmate in a single move across patterns. (medium difficulty, set B)
+- **Measurable outcome:** Solve the required medium exercises (distinct set B) with server-verified correctness.
+- **Before:** Checkmate recognition.
+- **After:** The learner reliably finds one-move mates including back-rank and corner patterns.
+- **Key concepts:** back-rank mate, corner mate, support mate
+- **Teaching sequence:** back-rank → heavy-piece corner → supported mates
+- **Explanation plan:** Show each mating pattern's geometry and how to confirm the king has no escape.
+- **Common mistakes:** unsupported checking piece; allowing a flight square; allowing a block
+- **Practice material:** 0 puzzles (ids: none yet)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH04-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH04-DEMO
+- **Video production brief:** Show the solving method on real verified mate in one positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH04-L006
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH04-L006 — Mate in One: Hard Practice A
+- **Level number (seq):** 36
+- **World / Chapter:** Checkmate Patterns / Mate in One
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH04-L005
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** mate_in_one
+- **Secondary skills:** none
+- **Learning objective:** Deliver forced checkmate in a single move across patterns. (hard difficulty, set A)
+- **Measurable outcome:** Solve the required hard exercises (distinct set A) with server-verified correctness.
+- **Before:** Checkmate recognition.
+- **After:** The learner reliably finds one-move mates including back-rank and corner patterns.
+- **Key concepts:** back-rank mate, corner mate, support mate
+- **Teaching sequence:** back-rank → heavy-piece corner → supported mates
+- **Explanation plan:** Show each mating pattern's geometry and how to confirm the king has no escape.
+- **Common mistakes:** unsupported checking piece; allowing a flight square; allowing a block
+- **Practice material:** 5 puzzles (ids: 126, 128, 134, 151, 181)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH04-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH04-DEMO
+- **Video production brief:** Show the solving method on real verified mate in one positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH04-L007
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH04-L007 — Mate in One: Hard Practice B
+- **Level number (seq):** 37
+- **World / Chapter:** Checkmate Patterns / Mate in One
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** future_content_required
+- **Prerequisites:** CH04-L006
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** mate_in_one
+- **Secondary skills:** none
+- **Learning objective:** Deliver forced checkmate in a single move across patterns. (hard difficulty, set B)
+- **Measurable outcome:** Solve the required hard exercises (distinct set B) with server-verified correctness.
+- **Before:** Checkmate recognition.
+- **After:** The learner reliably finds one-move mates including back-rank and corner patterns.
+- **Key concepts:** back-rank mate, corner mate, support mate
+- **Teaching sequence:** back-rank → heavy-piece corner → supported mates
+- **Explanation plan:** Show each mating pattern's geometry and how to confirm the king has no escape.
+- **Common mistakes:** unsupported checking piece; allowing a flight square; allowing a block
+- **Practice material:** 3 puzzles (ids: 205, 241, 280)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH04-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH04-DEMO
+- **Video production brief:** Show the solving method on real verified mate in one positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH04-L008
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH04-L008 — Mate in One: Review
+- **Level number (seq):** 38
+- **World / Chapter:** Checkmate Patterns / Mate in One
+- **Type:** review
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** CH04-L001
+- **Prerequisite reason:** Reviews items already practised in this chapter.
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** mate_in_one
+- **Secondary skills:** none
+- **Learning objective:** Retain mate in one via spaced review.
+- **Measurable outcome:** Clear all due review items for this skill.
+- **Before:** The learner reliably finds one-move mates including back-rank and corner patterns.
+- **After:** Retained skill after a delay.
+- **Key concepts:** back-rank mate, corner mate, support mate
+- **Teaching sequence:** review due items
+- **Explanation plan:** No new teaching; spaced repetition of previously solved items.
+- **Common mistakes:** unsupported checking piece; allowing a flight square; allowing a block
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** No review items currently due, or all due items cleared.
+- **Mastery condition:** Retention reflected by R2 review state.
+- **Failure / retry:** Items reschedule per SM-2.
+- **Remediation:** CH04-L001
+- **Review rule:** This level IS the review surface for the chapter.
+- **Video lesson references:** V-CH04-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH04-L009
+- **Content coverage:** partial
+- **Known limitations:** Depends on prior practice; empty until items are due.
+
+---
+
+## CH04-L009 — Mate in One: Assessment
+- **Level number (seq):** 39
+- **World / Chapter:** Checkmate Patterns / Mate in One
+- **Type:** assessment
+- **Difficulty band:** medium
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH04-L002, CH04-L003, CH04-L004, CH04-L005, CH04-L006, CH04-L007
+- **Prerequisite reason:** Assesses after the chapter's practice.
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** mate_in_one
+- **Secondary skills:** none
+- **Learning objective:** Demonstrate mate in one on fresh exercises.
+- **Measurable outcome:** Pass the assessment set (server-authoritative).
+- **Before:** The learner reliably finds one-move mates including back-rank and corner patterns.
+- **After:** Verified chapter skill.
+- **Key concepts:** back-rank mate, corner mate, support mate
+- **Teaching sequence:** assess
+- **Explanation plan:** Graded assessment, no new teaching.
+- **Common mistakes:** unsupported checking piece; allowing a flight square; allowing a block
+- **Practice material:** 5 puzzles (ids: 105, 108, 110, 111, 114)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve the required assessment exercises (server-verified).
+- **Mastery condition:** Assessment pass + R2 evidence.
+- **Failure / retry:** Retry; remediation to practice.
+- **Remediation:** CH04-L001
+- **Review rule:** Review-eligible.
+- **Video lesson references:** V-CH04-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH05-L001
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH05-L001 — Forced Mating Sequences: Concepts
+- **Level number (seq):** 40
+- **World / Chapter:** Checkmate Patterns / Forced Mating Sequences
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** none
+- **Prerequisite reason:** Introductory concept level.
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** forced_mate
+- **Secondary skills:** none
+- **Learning objective:** Calculate a forced mate two to three moves deep.
+- **Measurable outcome:** Learner proceeds after reading/watching the concept lesson.
+- **Before:** Mate in one.
+- **After:** The learner calculates a short forced mate against every defence.
+- **Key concepts:** forcing checks, driving the king, mating net
+- **Teaching sequence:** forcing the king → each defence refuted → the final blow
+- **Explanation plan:** Teach checking sequences that leave the defender no adequate reply, verified against all replies.
+- **Common mistakes:** a non-forcing first move; missing a defensive interposition; stalemate instead of mate
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Acknowledge the concept lesson (no graded exercise).
+- **Mastery condition:** n/a (concept only)
+- **Failure / retry:** Re-read the lesson.
+- **Remediation:** n/a
+- **Review rule:** Not review-scheduled (concept).
+- **Video lesson references:** V-CH05-CONCEPT
+- **Video production brief:** Teach the central idea of forced mating sequences before practice. Outline: forcing the king → each defence refuted → the final blow. Media: Board diagrams with highlighted squares and arrows for each demonstrated idea. Length: estimated 4–8 min (based on the outline). State: planned (script planned).
+- **Next level:** CH05-L002
+- **Content coverage:** partial
+- **Known limitations:** Text lesson available; explanatory video is planned, not yet recorded.
+
+---
+
+## CH05-L002 — Forced Mating Sequences: Medium Practice A
+- **Level number (seq):** 41
+- **World / Chapter:** Checkmate Patterns / Forced Mating Sequences
+- **Type:** guided_practice
+- **Difficulty band:** medium
+- **Publication status:** future_content_required
+- **Prerequisites:** CH05-L001
+- **Prerequisite reason:** Requires the chapter concept before practising.
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** forced_mate
+- **Secondary skills:** none
+- **Learning objective:** Calculate a forced mate two to three moves deep. (medium difficulty, set A)
+- **Measurable outcome:** Solve the required medium exercises (distinct set A) with server-verified correctness.
+- **Before:** Mate in one.
+- **After:** The learner calculates a short forced mate against every defence.
+- **Key concepts:** forcing checks, driving the king, mating net
+- **Teaching sequence:** forcing the king → each defence refuted → the final blow
+- **Explanation plan:** Teach checking sequences that leave the defender no adequate reply, verified against all replies.
+- **Common mistakes:** a non-forcing first move; missing a defensive interposition; stalemate instead of mate
+- **Practice material:** 0 puzzles (ids: none yet)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 3 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH05-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH05-DEMO
+- **Video production brief:** Show the solving method on real verified forced mating sequences positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH05-L003
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH05-L003 — Forced Mating Sequences: Medium Practice B
+- **Level number (seq):** 42
+- **World / Chapter:** Checkmate Patterns / Forced Mating Sequences
+- **Type:** independent_practice
+- **Difficulty band:** medium
+- **Publication status:** future_content_required
+- **Prerequisites:** CH05-L002
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** forced_mate
+- **Secondary skills:** none
+- **Learning objective:** Calculate a forced mate two to three moves deep. (medium difficulty, set B)
+- **Measurable outcome:** Solve the required medium exercises (distinct set B) with server-verified correctness.
+- **Before:** Mate in one.
+- **After:** The learner calculates a short forced mate against every defence.
+- **Key concepts:** forcing checks, driving the king, mating net
+- **Teaching sequence:** forcing the king → each defence refuted → the final blow
+- **Explanation plan:** Teach checking sequences that leave the defender no adequate reply, verified against all replies.
+- **Common mistakes:** a non-forcing first move; missing a defensive interposition; stalemate instead of mate
+- **Practice material:** 0 puzzles (ids: none yet)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH05-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH05-DEMO
+- **Video production brief:** Show the solving method on real verified forced mating sequences positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH05-L004
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH05-L004 — Forced Mating Sequences: Hard Practice A
+- **Level number (seq):** 43
+- **World / Chapter:** Checkmate Patterns / Forced Mating Sequences
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH05-L003
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** forced_mate
+- **Secondary skills:** none
+- **Learning objective:** Calculate a forced mate two to three moves deep. (hard difficulty, set A)
+- **Measurable outcome:** Solve the required hard exercises (distinct set A) with server-verified correctness.
+- **Before:** Mate in one.
+- **After:** The learner calculates a short forced mate against every defence.
+- **Key concepts:** forcing checks, driving the king, mating net
+- **Teaching sequence:** forcing the king → each defence refuted → the final blow
+- **Explanation plan:** Teach checking sequences that leave the defender no adequate reply, verified against all replies.
+- **Common mistakes:** a non-forcing first move; missing a defensive interposition; stalemate instead of mate
+- **Practice material:** 5 puzzles (ids: 1, 2, 4, 5, 6)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH05-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH05-DEMO
+- **Video production brief:** Show the solving method on real verified forced mating sequences positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH05-L005
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH05-L005 — Forced Mating Sequences: Hard Practice B
+- **Level number (seq):** 44
+- **World / Chapter:** Checkmate Patterns / Forced Mating Sequences
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH05-L004
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** forced_mate
+- **Secondary skills:** none
+- **Learning objective:** Calculate a forced mate two to three moves deep. (hard difficulty, set B)
+- **Measurable outcome:** Solve the required hard exercises (distinct set B) with server-verified correctness.
+- **Before:** Mate in one.
+- **After:** The learner calculates a short forced mate against every defence.
+- **Key concepts:** forcing checks, driving the king, mating net
+- **Teaching sequence:** forcing the king → each defence refuted → the final blow
+- **Explanation plan:** Teach checking sequences that leave the defender no adequate reply, verified against all replies.
+- **Common mistakes:** a non-forcing first move; missing a defensive interposition; stalemate instead of mate
+- **Practice material:** 5 puzzles (ids: 7, 8, 9, 16, 17)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH05-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH05-DEMO
+- **Video production brief:** Show the solving method on real verified forced mating sequences positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH05-L006
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH05-L006 — Forced Mating Sequences: Expert Practice A
+- **Level number (seq):** 45
+- **World / Chapter:** Checkmate Patterns / Forced Mating Sequences
+- **Type:** independent_practice
+- **Difficulty band:** expert
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH05-L005
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** forced_mate
+- **Secondary skills:** none
+- **Learning objective:** Calculate a forced mate two to three moves deep. (expert difficulty, set A)
+- **Measurable outcome:** Solve the required expert exercises (distinct set A) with server-verified correctness.
+- **Before:** Mate in one.
+- **After:** The learner calculates a short forced mate against every defence.
+- **Key concepts:** forcing checks, driving the king, mating net
+- **Teaching sequence:** forcing the king → each defence refuted → the final blow
+- **Explanation plan:** Teach checking sequences that leave the defender no adequate reply, verified against all replies.
+- **Common mistakes:** a non-forcing first move; missing a defensive interposition; stalemate instead of mate
+- **Practice material:** 5 puzzles (ids: 10, 11, 12, 129, 142)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of expert exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH05-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH05-DEMO
+- **Video production brief:** Show the solving method on real verified forced mating sequences positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH05-L007
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH05-L007 — Forced Mating Sequences: Expert Practice B
+- **Level number (seq):** 46
+- **World / Chapter:** Checkmate Patterns / Forced Mating Sequences
+- **Type:** independent_practice
+- **Difficulty band:** expert
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH05-L006
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** forced_mate
+- **Secondary skills:** none
+- **Learning objective:** Calculate a forced mate two to three moves deep. (expert difficulty, set B)
+- **Measurable outcome:** Solve the required expert exercises (distinct set B) with server-verified correctness.
+- **Before:** Mate in one.
+- **After:** The learner calculates a short forced mate against every defence.
+- **Key concepts:** forcing checks, driving the king, mating net
+- **Teaching sequence:** forcing the king → each defence refuted → the final blow
+- **Explanation plan:** Teach checking sequences that leave the defender no adequate reply, verified against all replies.
+- **Common mistakes:** a non-forcing first move; missing a defensive interposition; stalemate instead of mate
+- **Practice material:** 5 puzzles (ids: 204, 211, 213, 230, 264)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of expert exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH05-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH05-DEMO
+- **Video production brief:** Show the solving method on real verified forced mating sequences positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH05-L008
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH05-L008 — Forced Mating Sequences: Review
+- **Level number (seq):** 47
+- **World / Chapter:** Checkmate Patterns / Forced Mating Sequences
+- **Type:** review
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** CH05-L001
+- **Prerequisite reason:** Reviews items already practised in this chapter.
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** forced_mate
+- **Secondary skills:** none
+- **Learning objective:** Retain forced mating sequences via spaced review.
+- **Measurable outcome:** Clear all due review items for this skill.
+- **Before:** The learner calculates a short forced mate against every defence.
+- **After:** Retained skill after a delay.
+- **Key concepts:** forcing checks, driving the king, mating net
+- **Teaching sequence:** review due items
+- **Explanation plan:** No new teaching; spaced repetition of previously solved items.
+- **Common mistakes:** a non-forcing first move; missing a defensive interposition; stalemate instead of mate
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** No review items currently due, or all due items cleared.
+- **Mastery condition:** Retention reflected by R2 review state.
+- **Failure / retry:** Items reschedule per SM-2.
+- **Remediation:** CH05-L001
+- **Review rule:** This level IS the review surface for the chapter.
+- **Video lesson references:** V-CH05-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH05-L009
+- **Content coverage:** partial
+- **Known limitations:** Depends on prior practice; empty until items are due.
+
+---
+
+## CH05-L009 — Forced Mating Sequences: Chapter Boss
+- **Level number (seq):** 48
+- **World / Chapter:** Checkmate Patterns / Forced Mating Sequences
+- **Type:** boss_challenge
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH05-L002, CH05-L003, CH05-L004, CH05-L005, CH05-L006, CH05-L007
+- **Prerequisite reason:** Must practise the chapter's exercises before the cumulative boss.
+- **Primary domain:** checkmate_patterns
+- **Primary skill:** forced_mate
+- **Secondary skills:** none
+- **Learning objective:** Apply forced mating sequences under assessment across multiple exercises.
+- **Measurable outcome:** Pass the multi-exercise boss with the required success rate (server-authoritative).
+- **Before:** The learner calculates a short forced mate against every defence.
+- **After:** Demonstrated chapter mastery.
+- **Key concepts:** forcing checks, driving the king, mating net
+- **Teaching sequence:** recognise → calculate → execute
+- **Explanation plan:** No new teaching; a graded multi-step assessment.
+- **Common mistakes:** a non-forcing first move; missing a defensive interposition; stalemate instead of mate
+- **Practice material:** 5 puzzles (ids: 1, 2, 4, 5, 6)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 5 items
+- **Pass criteria:** Solve the required boss exercises at the chapter difficulty (server-verified).
+- **Mastery condition:** Boss pass + sufficient R2 evidence in the backing skill.
+- **Failure / retry:** Retry allowed; remediation to the chapter practice levels on failure.
+- **Remediation:** CH05-L001
+- **Review rule:** Boss items are review-eligible like any solved puzzle.
+- **Video lesson references:** V-CH05-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH06-L001
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH06-L001 — Calculating Combinations: Concepts
+- **Level number (seq):** 49
+- **World / Chapter:** Calculation / Calculating Combinations
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** none
+- **Prerequisite reason:** Introductory concept level.
+- **Primary domain:** calculation
+- **Primary skill:** calculation_combinations
+- **Secondary skills:** none
+- **Learning objective:** Calculate a multi-move forcing sequence to a winning material result.
+- **Measurable outcome:** Learner proceeds after reading/watching the concept lesson.
+- **Before:** Tactical recognition.
+- **After:** The learner calculates the opponent's best reply and reaches a reliable stopping point.
+- **Key concepts:** candidate moves, forcing continuations, opponent's best reply, stopping point
+- **Teaching sequence:** list candidates → follow the forcing line → check the defence → evaluate the result
+- **Explanation plan:** Teach disciplined calculation: candidates, forcing moves, the critical defence, and when to stop.
+- **Common mistakes:** assuming the opponent cooperates; stopping calculation too early; choosing a pretty but refuted line
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Acknowledge the concept lesson (no graded exercise).
+- **Mastery condition:** n/a (concept only)
+- **Failure / retry:** Re-read the lesson.
+- **Remediation:** n/a
+- **Review rule:** Not review-scheduled (concept).
+- **Video lesson references:** V-CH06-CONCEPT
+- **Video production brief:** Teach the central idea of calculating combinations before practice. Outline: list candidates → follow the forcing line → check the defence → evaluate the result. Media: Board diagrams with highlighted squares and arrows for each demonstrated idea. Length: estimated 4–8 min (based on the outline). State: planned (script planned).
+- **Next level:** CH06-L002
+- **Content coverage:** partial
+- **Known limitations:** Text lesson available; explanatory video is planned, not yet recorded.
+
+---
+
+## CH06-L002 — Calculating Combinations: Medium Practice A
+- **Level number (seq):** 50
+- **World / Chapter:** Calculation / Calculating Combinations
+- **Type:** guided_practice
+- **Difficulty band:** medium
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH06-L001
+- **Prerequisite reason:** Requires the chapter concept before practising.
+- **Primary domain:** calculation
+- **Primary skill:** calculation_combinations
+- **Secondary skills:** none
+- **Learning objective:** Calculate a multi-move forcing sequence to a winning material result. (medium difficulty, set A)
+- **Measurable outcome:** Solve the required medium exercises (distinct set A) with server-verified correctness.
+- **Before:** Tactical recognition.
+- **After:** The learner calculates the opponent's best reply and reaches a reliable stopping point.
+- **Key concepts:** candidate moves, forcing continuations, opponent's best reply, stopping point
+- **Teaching sequence:** list candidates → follow the forcing line → check the defence → evaluate the result
+- **Explanation plan:** Teach disciplined calculation: candidates, forcing moves, the critical defence, and when to stop.
+- **Common mistakes:** assuming the opponent cooperates; stopping calculation too early; choosing a pretty but refuted line
+- **Practice material:** 4 puzzles (ids: 140, 153, 192, 278)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 3 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH06-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH06-DEMO
+- **Video production brief:** Show the solving method on real verified calculating combinations positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH06-L003
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH06-L003 — Calculating Combinations: Medium Practice B
+- **Level number (seq):** 51
+- **World / Chapter:** Calculation / Calculating Combinations
+- **Type:** independent_practice
+- **Difficulty band:** medium
+- **Publication status:** future_content_required
+- **Prerequisites:** CH06-L002
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** calculation
+- **Primary skill:** calculation_combinations
+- **Secondary skills:** none
+- **Learning objective:** Calculate a multi-move forcing sequence to a winning material result. (medium difficulty, set B)
+- **Measurable outcome:** Solve the required medium exercises (distinct set B) with server-verified correctness.
+- **Before:** Tactical recognition.
+- **After:** The learner calculates the opponent's best reply and reaches a reliable stopping point.
+- **Key concepts:** candidate moves, forcing continuations, opponent's best reply, stopping point
+- **Teaching sequence:** list candidates → follow the forcing line → check the defence → evaluate the result
+- **Explanation plan:** Teach disciplined calculation: candidates, forcing moves, the critical defence, and when to stop.
+- **Common mistakes:** assuming the opponent cooperates; stopping calculation too early; choosing a pretty but refuted line
+- **Practice material:** 0 puzzles (ids: none yet)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH06-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH06-DEMO
+- **Video production brief:** Show the solving method on real verified calculating combinations positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH06-L004
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH06-L004 — Calculating Combinations: Hard Practice A
+- **Level number (seq):** 52
+- **World / Chapter:** Calculation / Calculating Combinations
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH06-L003
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** calculation
+- **Primary skill:** calculation_combinations
+- **Secondary skills:** none
+- **Learning objective:** Calculate a multi-move forcing sequence to a winning material result. (hard difficulty, set A)
+- **Measurable outcome:** Solve the required hard exercises (distinct set A) with server-verified correctness.
+- **Before:** Tactical recognition.
+- **After:** The learner calculates the opponent's best reply and reaches a reliable stopping point.
+- **Key concepts:** candidate moves, forcing continuations, opponent's best reply, stopping point
+- **Teaching sequence:** list candidates → follow the forcing line → check the defence → evaluate the result
+- **Explanation plan:** Teach disciplined calculation: candidates, forcing moves, the critical defence, and when to stop.
+- **Common mistakes:** assuming the opponent cooperates; stopping calculation too early; choosing a pretty but refuted line
+- **Practice material:** 5 puzzles (ids: 127, 147, 154, 159, 164)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH06-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH06-DEMO
+- **Video production brief:** Show the solving method on real verified calculating combinations positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH06-L005
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH06-L005 — Calculating Combinations: Hard Practice B
+- **Level number (seq):** 53
+- **World / Chapter:** Calculation / Calculating Combinations
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH06-L004
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** calculation
+- **Primary skill:** calculation_combinations
+- **Secondary skills:** none
+- **Learning objective:** Calculate a multi-move forcing sequence to a winning material result. (hard difficulty, set B)
+- **Measurable outcome:** Solve the required hard exercises (distinct set B) with server-verified correctness.
+- **Before:** Tactical recognition.
+- **After:** The learner calculates the opponent's best reply and reaches a reliable stopping point.
+- **Key concepts:** candidate moves, forcing continuations, opponent's best reply, stopping point
+- **Teaching sequence:** list candidates → follow the forcing line → check the defence → evaluate the result
+- **Explanation plan:** Teach disciplined calculation: candidates, forcing moves, the critical defence, and when to stop.
+- **Common mistakes:** assuming the opponent cooperates; stopping calculation too early; choosing a pretty but refuted line
+- **Practice material:** 5 puzzles (ids: 171, 172, 187, 188, 190)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH06-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH06-DEMO
+- **Video production brief:** Show the solving method on real verified calculating combinations positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH06-L006
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH06-L006 — Calculating Combinations: Expert Practice A
+- **Level number (seq):** 54
+- **World / Chapter:** Calculation / Calculating Combinations
+- **Type:** independent_practice
+- **Difficulty band:** expert
+- **Publication status:** future_content_required
+- **Prerequisites:** CH06-L005
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** calculation
+- **Primary skill:** calculation_combinations
+- **Secondary skills:** none
+- **Learning objective:** Calculate a multi-move forcing sequence to a winning material result. (expert difficulty, set A)
+- **Measurable outcome:** Solve the required expert exercises (distinct set A) with server-verified correctness.
+- **Before:** Tactical recognition.
+- **After:** The learner calculates the opponent's best reply and reaches a reliable stopping point.
+- **Key concepts:** candidate moves, forcing continuations, opponent's best reply, stopping point
+- **Teaching sequence:** list candidates → follow the forcing line → check the defence → evaluate the result
+- **Explanation plan:** Teach disciplined calculation: candidates, forcing moves, the critical defence, and when to stop.
+- **Common mistakes:** assuming the opponent cooperates; stopping calculation too early; choosing a pretty but refuted line
+- **Practice material:** 3 puzzles (ids: 145, 281, 390)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of expert exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH06-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH06-DEMO
+- **Video production brief:** Show the solving method on real verified calculating combinations positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH06-L007
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH06-L007 — Calculating Combinations: Expert Practice B
+- **Level number (seq):** 55
+- **World / Chapter:** Calculation / Calculating Combinations
+- **Type:** independent_practice
+- **Difficulty band:** expert
+- **Publication status:** future_content_required
+- **Prerequisites:** CH06-L006
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** calculation
+- **Primary skill:** calculation_combinations
+- **Secondary skills:** none
+- **Learning objective:** Calculate a multi-move forcing sequence to a winning material result. (expert difficulty, set B)
+- **Measurable outcome:** Solve the required expert exercises (distinct set B) with server-verified correctness.
+- **Before:** Tactical recognition.
+- **After:** The learner calculates the opponent's best reply and reaches a reliable stopping point.
+- **Key concepts:** candidate moves, forcing continuations, opponent's best reply, stopping point
+- **Teaching sequence:** list candidates → follow the forcing line → check the defence → evaluate the result
+- **Explanation plan:** Teach disciplined calculation: candidates, forcing moves, the critical defence, and when to stop.
+- **Common mistakes:** assuming the opponent cooperates; stopping calculation too early; choosing a pretty but refuted line
+- **Practice material:** 0 puzzles (ids: none yet)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of expert exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH06-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH06-DEMO
+- **Video production brief:** Show the solving method on real verified calculating combinations positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH06-L008
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH06-L008 — Calculating Combinations: Review
+- **Level number (seq):** 56
+- **World / Chapter:** Calculation / Calculating Combinations
+- **Type:** review
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** CH06-L001
+- **Prerequisite reason:** Reviews items already practised in this chapter.
+- **Primary domain:** calculation
+- **Primary skill:** calculation_combinations
+- **Secondary skills:** none
+- **Learning objective:** Retain calculating combinations via spaced review.
+- **Measurable outcome:** Clear all due review items for this skill.
+- **Before:** The learner calculates the opponent's best reply and reaches a reliable stopping point.
+- **After:** Retained skill after a delay.
+- **Key concepts:** candidate moves, forcing continuations, opponent's best reply, stopping point
+- **Teaching sequence:** review due items
+- **Explanation plan:** No new teaching; spaced repetition of previously solved items.
+- **Common mistakes:** assuming the opponent cooperates; stopping calculation too early; choosing a pretty but refuted line
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** No review items currently due, or all due items cleared.
+- **Mastery condition:** Retention reflected by R2 review state.
+- **Failure / retry:** Items reschedule per SM-2.
+- **Remediation:** CH06-L001
+- **Review rule:** This level IS the review surface for the chapter.
+- **Video lesson references:** V-CH06-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH06-L009
+- **Content coverage:** partial
+- **Known limitations:** Depends on prior practice; empty until items are due.
+
+---
+
+## CH06-L009 — Calculating Combinations: Chapter Boss
+- **Level number (seq):** 57
+- **World / Chapter:** Calculation / Calculating Combinations
+- **Type:** boss_challenge
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH06-L002, CH06-L003, CH06-L004, CH06-L005, CH06-L006, CH06-L007
+- **Prerequisite reason:** Must practise the chapter's exercises before the cumulative boss.
+- **Primary domain:** calculation
+- **Primary skill:** calculation_combinations
+- **Secondary skills:** none
+- **Learning objective:** Apply calculating combinations under assessment across multiple exercises.
+- **Measurable outcome:** Pass the multi-exercise boss with the required success rate (server-authoritative).
+- **Before:** The learner calculates the opponent's best reply and reaches a reliable stopping point.
+- **After:** Demonstrated chapter mastery.
+- **Key concepts:** candidate moves, forcing continuations, opponent's best reply, stopping point
+- **Teaching sequence:** recognise → calculate → execute
+- **Explanation plan:** No new teaching; a graded multi-step assessment.
+- **Common mistakes:** assuming the opponent cooperates; stopping calculation too early; choosing a pretty but refuted line
+- **Practice material:** 5 puzzles (ids: 127, 140, 145, 147, 153)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 5 items
+- **Pass criteria:** Solve the required boss exercises at the chapter difficulty (server-verified).
+- **Mastery condition:** Boss pass + sufficient R2 evidence in the backing skill.
+- **Failure / retry:** Retry allowed; remediation to the chapter practice levels on failure.
+- **Remediation:** CH06-L001
+- **Review rule:** Boss items are review-eligible like any solved puzzle.
+- **Video lesson references:** V-CH06-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH07-L001
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH07-L001 — Defensive Resources: Concepts
+- **Level number (seq):** 58
+- **World / Chapter:** Defensive Thinking / Defensive Resources
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** none
+- **Prerequisite reason:** Introductory concept level.
+- **Primary domain:** defensive_play
+- **Primary skill:** defensive_resources
+- **Secondary skills:** none
+- **Learning objective:** Find the only move that avoids losing material or being mated.
+- **Measurable outcome:** Learner proceeds after reading/watching the concept lesson.
+- **Before:** Tactical recognition (to see the threat).
+- **After:** The learner identifies the threat and the unique saving resource.
+- **Key concepts:** identifying the threat, only-move defence, counterattack as defence
+- **Teaching sequence:** spot the threat → list defensive candidates → verify the only adequate one
+- **Explanation plan:** Teach threat-identification first, then comparing defensive candidates to find the one that holds.
+- **Common mistakes:** defending the wrong threat; a passive move that still loses; missing an in-between defence
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Acknowledge the concept lesson (no graded exercise).
+- **Mastery condition:** n/a (concept only)
+- **Failure / retry:** Re-read the lesson.
+- **Remediation:** n/a
+- **Review rule:** Not review-scheduled (concept).
+- **Video lesson references:** V-CH07-CONCEPT
+- **Video production brief:** Teach the central idea of defensive resources before practice. Outline: spot the threat → list defensive candidates → verify the only adequate one. Media: Board diagrams with highlighted squares and arrows for each demonstrated idea. Length: estimated 4–8 min (based on the outline). State: planned (script planned).
+- **Next level:** CH07-L002
+- **Content coverage:** partial
+- **Known limitations:** Text lesson available; explanatory video is planned, not yet recorded.
+
+---
+
+## CH07-L002 — Defensive Resources: Easy Practice A
+- **Level number (seq):** 59
+- **World / Chapter:** Defensive Thinking / Defensive Resources
+- **Type:** guided_practice
+- **Difficulty band:** easy
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH07-L001
+- **Prerequisite reason:** Requires the chapter concept before practising.
+- **Primary domain:** defensive_play
+- **Primary skill:** defensive_resources
+- **Secondary skills:** none
+- **Learning objective:** Find the only move that avoids losing material or being mated. (easy difficulty, set A)
+- **Measurable outcome:** Solve the required easy exercises (distinct set A) with server-verified correctness.
+- **Before:** Tactical recognition (to see the threat).
+- **After:** The learner identifies the threat and the unique saving resource.
+- **Key concepts:** identifying the threat, only-move defence, counterattack as defence
+- **Teaching sequence:** spot the threat → list defensive candidates → verify the only adequate one
+- **Explanation plan:** Teach threat-identification first, then comparing defensive candidates to find the one that holds.
+- **Common mistakes:** defending the wrong threat; a passive move that still loses; missing an in-between defence
+- **Practice material:** 5 puzzles (ids: 135, 158, 216, 239, 357)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 3 items
+- **Pass criteria:** Solve at least the required number of easy exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH07-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH07-DEMO
+- **Video production brief:** Show the solving method on real verified defensive resources positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH07-L003
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH07-L003 — Defensive Resources: Easy Practice B
+- **Level number (seq):** 60
+- **World / Chapter:** Defensive Thinking / Defensive Resources
+- **Type:** independent_practice
+- **Difficulty band:** easy
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH07-L002
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** defensive_play
+- **Primary skill:** defensive_resources
+- **Secondary skills:** none
+- **Learning objective:** Find the only move that avoids losing material or being mated. (easy difficulty, set B)
+- **Measurable outcome:** Solve the required easy exercises (distinct set B) with server-verified correctness.
+- **Before:** Tactical recognition (to see the threat).
+- **After:** The learner identifies the threat and the unique saving resource.
+- **Key concepts:** identifying the threat, only-move defence, counterattack as defence
+- **Teaching sequence:** spot the threat → list defensive candidates → verify the only adequate one
+- **Explanation plan:** Teach threat-identification first, then comparing defensive candidates to find the one that holds.
+- **Common mistakes:** defending the wrong threat; a passive move that still loses; missing an in-between defence
+- **Practice material:** 5 puzzles (ids: 361, 363, 365, 367, 368)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of easy exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH07-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH07-DEMO
+- **Video production brief:** Show the solving method on real verified defensive resources positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH07-L004
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH07-L004 — Defensive Resources: Medium Practice A
+- **Level number (seq):** 61
+- **World / Chapter:** Defensive Thinking / Defensive Resources
+- **Type:** independent_practice
+- **Difficulty band:** medium
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH07-L003
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** defensive_play
+- **Primary skill:** defensive_resources
+- **Secondary skills:** none
+- **Learning objective:** Find the only move that avoids losing material or being mated. (medium difficulty, set A)
+- **Measurable outcome:** Solve the required medium exercises (distinct set A) with server-verified correctness.
+- **Before:** Tactical recognition (to see the threat).
+- **After:** The learner identifies the threat and the unique saving resource.
+- **Key concepts:** identifying the threat, only-move defence, counterattack as defence
+- **Teaching sequence:** spot the threat → list defensive candidates → verify the only adequate one
+- **Explanation plan:** Teach threat-identification first, then comparing defensive candidates to find the one that holds.
+- **Common mistakes:** defending the wrong threat; a passive move that still loses; missing an in-between defence
+- **Practice material:** 5 puzzles (ids: 191, 217, 219, 355, 356)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH07-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH07-DEMO
+- **Video production brief:** Show the solving method on real verified defensive resources positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH07-L005
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH07-L005 — Defensive Resources: Medium Practice B
+- **Level number (seq):** 62
+- **World / Chapter:** Defensive Thinking / Defensive Resources
+- **Type:** independent_practice
+- **Difficulty band:** medium
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH07-L004
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** defensive_play
+- **Primary skill:** defensive_resources
+- **Secondary skills:** none
+- **Learning objective:** Find the only move that avoids losing material or being mated. (medium difficulty, set B)
+- **Measurable outcome:** Solve the required medium exercises (distinct set B) with server-verified correctness.
+- **Before:** Tactical recognition (to see the threat).
+- **After:** The learner identifies the threat and the unique saving resource.
+- **Key concepts:** identifying the threat, only-move defence, counterattack as defence
+- **Teaching sequence:** spot the threat → list defensive candidates → verify the only adequate one
+- **Explanation plan:** Teach threat-identification first, then comparing defensive candidates to find the one that holds.
+- **Common mistakes:** defending the wrong threat; a passive move that still loses; missing an in-between defence
+- **Practice material:** 5 puzzles (ids: 358, 359, 360, 362, 366)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH07-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH07-DEMO
+- **Video production brief:** Show the solving method on real verified defensive resources positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH07-L006
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH07-L006 — Defensive Resources: Hard Practice A
+- **Level number (seq):** 63
+- **World / Chapter:** Defensive Thinking / Defensive Resources
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH07-L005
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** defensive_play
+- **Primary skill:** defensive_resources
+- **Secondary skills:** none
+- **Learning objective:** Find the only move that avoids losing material or being mated. (hard difficulty, set A)
+- **Measurable outcome:** Solve the required hard exercises (distinct set A) with server-verified correctness.
+- **Before:** Tactical recognition (to see the threat).
+- **After:** The learner identifies the threat and the unique saving resource.
+- **Key concepts:** identifying the threat, only-move defence, counterattack as defence
+- **Teaching sequence:** spot the threat → list defensive candidates → verify the only adequate one
+- **Explanation plan:** Teach threat-identification first, then comparing defensive candidates to find the one that holds.
+- **Common mistakes:** defending the wrong threat; a passive move that still loses; missing an in-between defence
+- **Practice material:** 5 puzzles (ids: 141, 165, 249, 364, 369)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH07-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH07-DEMO
+- **Video production brief:** Show the solving method on real verified defensive resources positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH07-L007
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH07-L007 — Defensive Resources: Hard Practice B
+- **Level number (seq):** 64
+- **World / Chapter:** Defensive Thinking / Defensive Resources
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** future_content_required
+- **Prerequisites:** CH07-L006
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** defensive_play
+- **Primary skill:** defensive_resources
+- **Secondary skills:** none
+- **Learning objective:** Find the only move that avoids losing material or being mated. (hard difficulty, set B)
+- **Measurable outcome:** Solve the required hard exercises (distinct set B) with server-verified correctness.
+- **Before:** Tactical recognition (to see the threat).
+- **After:** The learner identifies the threat and the unique saving resource.
+- **Key concepts:** identifying the threat, only-move defence, counterattack as defence
+- **Teaching sequence:** spot the threat → list defensive candidates → verify the only adequate one
+- **Explanation plan:** Teach threat-identification first, then comparing defensive candidates to find the one that holds.
+- **Common mistakes:** defending the wrong threat; a passive move that still loses; missing an in-between defence
+- **Practice material:** 2 puzzles (ids: 371, 374)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH07-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH07-DEMO
+- **Video production brief:** Show the solving method on real verified defensive resources positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH07-L008
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH07-L008 — Defensive Resources: Expert Practice A
+- **Level number (seq):** 65
+- **World / Chapter:** Defensive Thinking / Defensive Resources
+- **Type:** independent_practice
+- **Difficulty band:** expert
+- **Publication status:** future_content_required
+- **Prerequisites:** CH07-L007
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** defensive_play
+- **Primary skill:** defensive_resources
+- **Secondary skills:** none
+- **Learning objective:** Find the only move that avoids losing material or being mated. (expert difficulty, set A)
+- **Measurable outcome:** Solve the required expert exercises (distinct set A) with server-verified correctness.
+- **Before:** Tactical recognition (to see the threat).
+- **After:** The learner identifies the threat and the unique saving resource.
+- **Key concepts:** identifying the threat, only-move defence, counterattack as defence
+- **Teaching sequence:** spot the threat → list defensive candidates → verify the only adequate one
+- **Explanation plan:** Teach threat-identification first, then comparing defensive candidates to find the one that holds.
+- **Common mistakes:** defending the wrong threat; a passive move that still loses; missing an in-between defence
+- **Practice material:** 1 puzzles (ids: 377)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of expert exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH07-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH07-DEMO
+- **Video production brief:** Show the solving method on real verified defensive resources positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH07-L009
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH07-L009 — Defensive Resources: Expert Practice B
+- **Level number (seq):** 66
+- **World / Chapter:** Defensive Thinking / Defensive Resources
+- **Type:** independent_practice
+- **Difficulty band:** expert
+- **Publication status:** future_content_required
+- **Prerequisites:** CH07-L008
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** defensive_play
+- **Primary skill:** defensive_resources
+- **Secondary skills:** none
+- **Learning objective:** Find the only move that avoids losing material or being mated. (expert difficulty, set B)
+- **Measurable outcome:** Solve the required expert exercises (distinct set B) with server-verified correctness.
+- **Before:** Tactical recognition (to see the threat).
+- **After:** The learner identifies the threat and the unique saving resource.
+- **Key concepts:** identifying the threat, only-move defence, counterattack as defence
+- **Teaching sequence:** spot the threat → list defensive candidates → verify the only adequate one
+- **Explanation plan:** Teach threat-identification first, then comparing defensive candidates to find the one that holds.
+- **Common mistakes:** defending the wrong threat; a passive move that still loses; missing an in-between defence
+- **Practice material:** 0 puzzles (ids: none yet)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of expert exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH07-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH07-DEMO
+- **Video production brief:** Show the solving method on real verified defensive resources positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH07-L010
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH07-L010 — Defensive Resources: Review
+- **Level number (seq):** 67
+- **World / Chapter:** Defensive Thinking / Defensive Resources
+- **Type:** review
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** CH07-L001
+- **Prerequisite reason:** Reviews items already practised in this chapter.
+- **Primary domain:** defensive_play
+- **Primary skill:** defensive_resources
+- **Secondary skills:** none
+- **Learning objective:** Retain defensive resources via spaced review.
+- **Measurable outcome:** Clear all due review items for this skill.
+- **Before:** The learner identifies the threat and the unique saving resource.
+- **After:** Retained skill after a delay.
+- **Key concepts:** identifying the threat, only-move defence, counterattack as defence
+- **Teaching sequence:** review due items
+- **Explanation plan:** No new teaching; spaced repetition of previously solved items.
+- **Common mistakes:** defending the wrong threat; a passive move that still loses; missing an in-between defence
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** No review items currently due, or all due items cleared.
+- **Mastery condition:** Retention reflected by R2 review state.
+- **Failure / retry:** Items reschedule per SM-2.
+- **Remediation:** CH07-L001
+- **Review rule:** This level IS the review surface for the chapter.
+- **Video lesson references:** V-CH07-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH07-L011
+- **Content coverage:** partial
+- **Known limitations:** Depends on prior practice; empty until items are due.
+
+---
+
+## CH07-L011 — Defensive Resources: Chapter Boss
+- **Level number (seq):** 68
+- **World / Chapter:** Defensive Thinking / Defensive Resources
+- **Type:** boss_challenge
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH07-L002, CH07-L003, CH07-L004, CH07-L005, CH07-L006, CH07-L007, CH07-L008, CH07-L009
+- **Prerequisite reason:** Must practise the chapter's exercises before the cumulative boss.
+- **Primary domain:** defensive_play
+- **Primary skill:** defensive_resources
+- **Secondary skills:** none
+- **Learning objective:** Apply defensive resources under assessment across multiple exercises.
+- **Measurable outcome:** Pass the multi-exercise boss with the required success rate (server-authoritative).
+- **Before:** The learner identifies the threat and the unique saving resource.
+- **After:** Demonstrated chapter mastery.
+- **Key concepts:** identifying the threat, only-move defence, counterattack as defence
+- **Teaching sequence:** recognise → calculate → execute
+- **Explanation plan:** No new teaching; a graded multi-step assessment.
+- **Common mistakes:** defending the wrong threat; a passive move that still loses; missing an in-between defence
+- **Practice material:** 5 puzzles (ids: 135, 141, 158, 165, 191)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 5 items
+- **Pass criteria:** Solve the required boss exercises at the chapter difficulty (server-verified).
+- **Mastery condition:** Boss pass + sufficient R2 evidence in the backing skill.
+- **Failure / retry:** Retry allowed; remediation to the chapter practice levels on failure.
+- **Remediation:** CH07-L001
+- **Review rule:** Boss items are review-eligible like any solved puzzle.
+- **Video lesson references:** V-CH07-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH08-L001
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH08-L001 — Endgame Conversion: Concepts
+- **Level number (seq):** 69
+- **World / Chapter:** Endgame Technique / Endgame Conversion
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** none
+- **Prerequisite reason:** Introductory concept level.
+- **Primary domain:** endgame
+- **Primary skill:** endgame_conversion
+- **Secondary skills:** none
+- **Learning objective:** Convert a reduced-material position by winning material or promoting.
+- **Measurable outcome:** Learner proceeds after reading/watching the concept lesson.
+- **Before:** Basic tactics.
+- **After:** The learner converts a won endgame by force (material gain or promotion).
+- **Key concepts:** forcing promotion, winning the last defender, simplest conversion
+- **Teaching sequence:** identify the winning idea → force it → convert cleanly
+- **Explanation plan:** Teach converting concrete, force-verified endings; focus on the forcing path, not general theory.
+- **Common mistakes:** allowing counterplay; stalemate traps; promoting into a fork
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Acknowledge the concept lesson (no graded exercise).
+- **Mastery condition:** n/a (concept only)
+- **Failure / retry:** Re-read the lesson.
+- **Remediation:** n/a
+- **Review rule:** Not review-scheduled (concept).
+- **Video lesson references:** V-CH08-CONCEPT
+- **Video production brief:** Teach the central idea of endgame conversion before practice. Outline: identify the winning idea → force it → convert cleanly. Media: Board diagrams with highlighted squares and arrows for each demonstrated idea. Length: estimated 4–8 min (based on the outline). State: planned (script planned).
+- **Next level:** CH08-L002
+- **Content coverage:** partial
+- **Known limitations:** Text lesson available; explanatory video is planned, not yet recorded.
+
+---
+
+## CH08-L002 — Endgame Conversion: Easy Practice A
+- **Level number (seq):** 70
+- **World / Chapter:** Endgame Technique / Endgame Conversion
+- **Type:** guided_practice
+- **Difficulty band:** easy
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH08-L001
+- **Prerequisite reason:** Requires the chapter concept before practising.
+- **Primary domain:** endgame
+- **Primary skill:** endgame_conversion
+- **Secondary skills:** none
+- **Learning objective:** Convert a reduced-material position by winning material or promoting. (easy difficulty, set A)
+- **Measurable outcome:** Solve the required easy exercises (distinct set A) with server-verified correctness.
+- **Before:** Basic tactics.
+- **After:** The learner converts a won endgame by force (material gain or promotion).
+- **Key concepts:** forcing promotion, winning the last defender, simplest conversion
+- **Teaching sequence:** identify the winning idea → force it → convert cleanly
+- **Explanation plan:** Teach converting concrete, force-verified endings; focus on the forcing path, not general theory.
+- **Common mistakes:** allowing counterplay; stalemate traps; promoting into a fork
+- **Practice material:** 5 puzzles (ids: 212, 214, 267, 268, 269)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 3 items
+- **Pass criteria:** Solve at least the required number of easy exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH08-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH08-DEMO
+- **Video production brief:** Show the solving method on real verified endgame conversion positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH08-L003
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH08-L003 — Endgame Conversion: Easy Practice B
+- **Level number (seq):** 71
+- **World / Chapter:** Endgame Technique / Endgame Conversion
+- **Type:** independent_practice
+- **Difficulty band:** easy
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH08-L002
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** endgame
+- **Primary skill:** endgame_conversion
+- **Secondary skills:** none
+- **Learning objective:** Convert a reduced-material position by winning material or promoting. (easy difficulty, set B)
+- **Measurable outcome:** Solve the required easy exercises (distinct set B) with server-verified correctness.
+- **Before:** Basic tactics.
+- **After:** The learner converts a won endgame by force (material gain or promotion).
+- **Key concepts:** forcing promotion, winning the last defender, simplest conversion
+- **Teaching sequence:** identify the winning idea → force it → convert cleanly
+- **Explanation plan:** Teach converting concrete, force-verified endings; focus on the forcing path, not general theory.
+- **Common mistakes:** allowing counterplay; stalemate traps; promoting into a fork
+- **Practice material:** 5 puzzles (ids: 273, 274, 275, 289, 290)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of easy exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH08-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH08-DEMO
+- **Video production brief:** Show the solving method on real verified endgame conversion positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH08-L004
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH08-L004 — Endgame Conversion: Medium Practice A
+- **Level number (seq):** 72
+- **World / Chapter:** Endgame Technique / Endgame Conversion
+- **Type:** independent_practice
+- **Difficulty band:** medium
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH08-L003
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** endgame
+- **Primary skill:** endgame_conversion
+- **Secondary skills:** none
+- **Learning objective:** Convert a reduced-material position by winning material or promoting. (medium difficulty, set A)
+- **Measurable outcome:** Solve the required medium exercises (distinct set A) with server-verified correctness.
+- **Before:** Basic tactics.
+- **After:** The learner converts a won endgame by force (material gain or promotion).
+- **Key concepts:** forcing promotion, winning the last defender, simplest conversion
+- **Teaching sequence:** identify the winning idea → force it → convert cleanly
+- **Explanation plan:** Teach converting concrete, force-verified endings; focus on the forcing path, not general theory.
+- **Common mistakes:** allowing counterplay; stalemate traps; promoting into a fork
+- **Practice material:** 5 puzzles (ids: 209, 210, 266, 270, 272)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH08-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH08-DEMO
+- **Video production brief:** Show the solving method on real verified endgame conversion positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH08-L005
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH08-L005 — Endgame Conversion: Medium Practice B
+- **Level number (seq):** 73
+- **World / Chapter:** Endgame Technique / Endgame Conversion
+- **Type:** independent_practice
+- **Difficulty band:** medium
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH08-L004
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** endgame
+- **Primary skill:** endgame_conversion
+- **Secondary skills:** none
+- **Learning objective:** Convert a reduced-material position by winning material or promoting. (medium difficulty, set B)
+- **Measurable outcome:** Solve the required medium exercises (distinct set B) with server-verified correctness.
+- **Before:** Basic tactics.
+- **After:** The learner converts a won endgame by force (material gain or promotion).
+- **Key concepts:** forcing promotion, winning the last defender, simplest conversion
+- **Teaching sequence:** identify the winning idea → force it → convert cleanly
+- **Explanation plan:** Teach converting concrete, force-verified endings; focus on the forcing path, not general theory.
+- **Common mistakes:** allowing counterplay; stalemate traps; promoting into a fork
+- **Practice material:** 5 puzzles (ids: 288, 291, 292, 294, 299)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH08-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH08-DEMO
+- **Video production brief:** Show the solving method on real verified endgame conversion positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH08-L006
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH08-L006 — Endgame Conversion: Hard Practice A
+- **Level number (seq):** 74
+- **World / Chapter:** Endgame Technique / Endgame Conversion
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH08-L005
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** endgame
+- **Primary skill:** endgame_conversion
+- **Secondary skills:** none
+- **Learning objective:** Convert a reduced-material position by winning material or promoting. (hard difficulty, set A)
+- **Measurable outcome:** Solve the required hard exercises (distinct set A) with server-verified correctness.
+- **Before:** Basic tactics.
+- **After:** The learner converts a won endgame by force (material gain or promotion).
+- **Key concepts:** forcing promotion, winning the last defender, simplest conversion
+- **Teaching sequence:** identify the winning idea → force it → convert cleanly
+- **Explanation plan:** Teach converting concrete, force-verified endings; focus on the forcing path, not general theory.
+- **Common mistakes:** allowing counterplay; stalemate traps; promoting into a fork
+- **Practice material:** 5 puzzles (ids: 215, 296, 307, 310, 320)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH08-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH08-DEMO
+- **Video production brief:** Show the solving method on real verified endgame conversion positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH08-L007
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH08-L007 — Endgame Conversion: Hard Practice B
+- **Level number (seq):** 75
+- **World / Chapter:** Endgame Technique / Endgame Conversion
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH08-L006
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** endgame
+- **Primary skill:** endgame_conversion
+- **Secondary skills:** none
+- **Learning objective:** Convert a reduced-material position by winning material or promoting. (hard difficulty, set B)
+- **Measurable outcome:** Solve the required hard exercises (distinct set B) with server-verified correctness.
+- **Before:** Basic tactics.
+- **After:** The learner converts a won endgame by force (material gain or promotion).
+- **Key concepts:** forcing promotion, winning the last defender, simplest conversion
+- **Teaching sequence:** identify the winning idea → force it → convert cleanly
+- **Explanation plan:** Teach converting concrete, force-verified endings; focus on the forcing path, not general theory.
+- **Common mistakes:** allowing counterplay; stalemate traps; promoting into a fork
+- **Practice material:** 5 puzzles (ids: 326, 328, 336, 340, 342)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH08-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH08-DEMO
+- **Video production brief:** Show the solving method on real verified endgame conversion positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH08-L008
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH08-L008 — Endgame Conversion: Expert Practice A
+- **Level number (seq):** 76
+- **World / Chapter:** Endgame Technique / Endgame Conversion
+- **Type:** independent_practice
+- **Difficulty band:** expert
+- **Publication status:** future_content_required
+- **Prerequisites:** CH08-L007
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** endgame
+- **Primary skill:** endgame_conversion
+- **Secondary skills:** none
+- **Learning objective:** Convert a reduced-material position by winning material or promoting. (expert difficulty, set A)
+- **Measurable outcome:** Solve the required expert exercises (distinct set A) with server-verified correctness.
+- **Before:** Basic tactics.
+- **After:** The learner converts a won endgame by force (material gain or promotion).
+- **Key concepts:** forcing promotion, winning the last defender, simplest conversion
+- **Teaching sequence:** identify the winning idea → force it → convert cleanly
+- **Explanation plan:** Teach converting concrete, force-verified endings; focus on the forcing path, not general theory.
+- **Common mistakes:** allowing counterplay; stalemate traps; promoting into a fork
+- **Practice material:** 2 puzzles (ids: 265, 271)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of expert exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH08-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH08-DEMO
+- **Video production brief:** Show the solving method on real verified endgame conversion positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH08-L009
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH08-L009 — Endgame Conversion: Expert Practice B
+- **Level number (seq):** 77
+- **World / Chapter:** Endgame Technique / Endgame Conversion
+- **Type:** independent_practice
+- **Difficulty band:** expert
+- **Publication status:** future_content_required
+- **Prerequisites:** CH08-L008
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** endgame
+- **Primary skill:** endgame_conversion
+- **Secondary skills:** none
+- **Learning objective:** Convert a reduced-material position by winning material or promoting. (expert difficulty, set B)
+- **Measurable outcome:** Solve the required expert exercises (distinct set B) with server-verified correctness.
+- **Before:** Basic tactics.
+- **After:** The learner converts a won endgame by force (material gain or promotion).
+- **Key concepts:** forcing promotion, winning the last defender, simplest conversion
+- **Teaching sequence:** identify the winning idea → force it → convert cleanly
+- **Explanation plan:** Teach converting concrete, force-verified endings; focus on the forcing path, not general theory.
+- **Common mistakes:** allowing counterplay; stalemate traps; promoting into a fork
+- **Practice material:** 0 puzzles (ids: none yet)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of expert exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH08-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH08-DEMO
+- **Video production brief:** Show the solving method on real verified endgame conversion positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH08-L010
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH08-L010 — Endgame Conversion: Review
+- **Level number (seq):** 78
+- **World / Chapter:** Endgame Technique / Endgame Conversion
+- **Type:** review
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** CH08-L001
+- **Prerequisite reason:** Reviews items already practised in this chapter.
+- **Primary domain:** endgame
+- **Primary skill:** endgame_conversion
+- **Secondary skills:** none
+- **Learning objective:** Retain endgame conversion via spaced review.
+- **Measurable outcome:** Clear all due review items for this skill.
+- **Before:** The learner converts a won endgame by force (material gain or promotion).
+- **After:** Retained skill after a delay.
+- **Key concepts:** forcing promotion, winning the last defender, simplest conversion
+- **Teaching sequence:** review due items
+- **Explanation plan:** No new teaching; spaced repetition of previously solved items.
+- **Common mistakes:** allowing counterplay; stalemate traps; promoting into a fork
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** No review items currently due, or all due items cleared.
+- **Mastery condition:** Retention reflected by R2 review state.
+- **Failure / retry:** Items reschedule per SM-2.
+- **Remediation:** CH08-L001
+- **Review rule:** This level IS the review surface for the chapter.
+- **Video lesson references:** V-CH08-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH08-L011
+- **Content coverage:** partial
+- **Known limitations:** Depends on prior practice; empty until items are due.
+
+---
+
+## CH08-L011 — Endgame Conversion: Chapter Boss
+- **Level number (seq):** 79
+- **World / Chapter:** Endgame Technique / Endgame Conversion
+- **Type:** boss_challenge
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH08-L002, CH08-L003, CH08-L004, CH08-L005, CH08-L006, CH08-L007, CH08-L008, CH08-L009
+- **Prerequisite reason:** Must practise the chapter's exercises before the cumulative boss.
+- **Primary domain:** endgame
+- **Primary skill:** endgame_conversion
+- **Secondary skills:** none
+- **Learning objective:** Apply endgame conversion under assessment across multiple exercises.
+- **Measurable outcome:** Pass the multi-exercise boss with the required success rate (server-authoritative).
+- **Before:** The learner converts a won endgame by force (material gain or promotion).
+- **After:** Demonstrated chapter mastery.
+- **Key concepts:** forcing promotion, winning the last defender, simplest conversion
+- **Teaching sequence:** recognise → calculate → execute
+- **Explanation plan:** No new teaching; a graded multi-step assessment.
+- **Common mistakes:** allowing counterplay; stalemate traps; promoting into a fork
+- **Practice material:** 5 puzzles (ids: 209, 210, 212, 214, 215)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 5 items
+- **Pass criteria:** Solve the required boss exercises at the chapter difficulty (server-verified).
+- **Mastery condition:** Boss pass + sufficient R2 evidence in the backing skill.
+- **Failure / retry:** Retry allowed; remediation to the chapter practice levels on failure.
+- **Remediation:** CH08-L001
+- **Review rule:** Boss items are review-eligible like any solved puzzle.
+- **Video lesson references:** V-CH08-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH09-L001
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH09-L001 — Endgame Theory (Opposition & Key Squares): Concepts
+- **Level number (seq):** 80
+- **World / Chapter:** Endgame Technique / Endgame Theory (Opposition & Key Squares)
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** future_content_required
+- **Prerequisites:** none
+- **Prerequisite reason:** Chapter awaits verified content.
+- **Primary domain:** endgame
+- **Primary skill:** n/a
+- **Secondary skills:** none
+- **Learning objective:** Master opposition, key squares and theoretical draws in king-and-pawn endings.
+- **Measurable outcome:** Learner proceeds after reading/watching the concept lesson.
+- **Before:** Endgame conversion.
+- **After:** The learner applies opposition and key-square rules.
+- **Key concepts:** opposition, key squares, triangulation, theoretical draw
+- **Teaching sequence:** opposition → key squares → triangulation → drawn structures
+- **Explanation plan:** Teach positional endgame rules verified by a tablebase or exact solver.
+- **Common mistakes:** losing the opposition; wrong-coloured rook-pawn; misjudging a draw
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Acknowledge the concept lesson (no graded exercise).
+- **Mastery condition:** n/a (concept only)
+- **Failure / retry:** Re-read the lesson.
+- **Remediation:** n/a
+- **Review rule:** Not review-scheduled (concept).
+- **Video lesson references:** V-CH09-CONCEPT
+- **Video production brief:** Teach the central idea of endgame theory (opposition & key squares) before practice. Outline: opposition → key squares → triangulation → drawn structures. Media: Board diagrams with highlighted squares and arrows for each demonstrated idea. Length: TBD (content not yet available). State: planned (script planned).
+- **Next level:** CH10-L001
+- **Content coverage:** none
+- **Known limitations:** These concepts require a tablebase / exact positional solver not available in this environment; no verified content yet.
+
+---
+
+## CH10-L001 — Opening Principles & Lines: Concepts
+- **Level number (seq):** 81
+- **World / Chapter:** Opening Knowledge / Opening Principles & Lines
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** none
+- **Prerequisite reason:** Introductory concept level.
+- **Primary domain:** opening_knowledge
+- **Primary skill:** __openings__
+- **Secondary skills:** none
+- **Learning objective:** Follow a verified opening line and understand its plan: development, centre, king safety.
+- **Measurable outcome:** Learner proceeds after reading/watching the concept lesson.
+- **Before:** Legal moves and basic tactics.
+- **After:** The learner can play a main opening line and state its plan.
+- **Key concepts:** development, centre control, king safety, typical plan
+- **Teaching sequence:** opening principles → a concrete line → the resulting plan
+- **Explanation plan:** Teach the three principles, then walk a verified line move by move and state the plan.
+- **Common mistakes:** moving the same piece twice; neglecting king safety; premature attacks
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Acknowledge the concept lesson (no graded exercise).
+- **Mastery condition:** n/a (concept only)
+- **Failure / retry:** Re-read the lesson.
+- **Remediation:** n/a
+- **Review rule:** Not review-scheduled (concept).
+- **Video lesson references:** V-CH10-CONCEPT
+- **Video production brief:** Teach the central idea of opening principles & lines before practice. Outline: opening principles → a concrete line → the resulting plan. Media: Board diagrams with highlighted squares and arrows for each demonstrated idea. Length: estimated 4–8 min (based on the outline). State: planned (script planned).
+- **Next level:** CH10-L002
+- **Content coverage:** partial
+- **Known limitations:** Text lesson available; explanatory video is planned, not yet recorded.
+
+---
+
+## CH10-L002 — Opening Principles & Lines: Easy Practice A
+- **Level number (seq):** 82
+- **World / Chapter:** Opening Knowledge / Opening Principles & Lines
+- **Type:** guided_practice
+- **Difficulty band:** easy
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH10-L001
+- **Prerequisite reason:** Requires the chapter concept before practising.
+- **Primary domain:** opening_knowledge
+- **Primary skill:** __openings__
+- **Secondary skills:** none
+- **Learning objective:** Follow a verified opening line and understand its plan: development, centre, king safety. (easy difficulty, set A)
+- **Measurable outcome:** Solve the required easy exercises (distinct set A) with server-verified correctness.
+- **Before:** Legal moves and basic tactics.
+- **After:** The learner can play a main opening line and state its plan.
+- **Key concepts:** development, centre control, king safety, typical plan
+- **Teaching sequence:** opening principles → a concrete line → the resulting plan
+- **Explanation plan:** Teach the three principles, then walk a verified line move by move and state the plan.
+- **Common mistakes:** moving the same piece twice; neglecting king safety; premature attacks
+- **Practice material:** 3 openings (ids: italian, caro, london)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 2 items
+- **Pass criteria:** Solve at least the required number of easy exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH10-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH10-DEMO
+- **Video production brief:** Show the solving method on real verified opening principles & lines positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH10-L003
+- **Content coverage:** full
+- **Known limitations:** Backed by project-authored verified opening lines (not human-reviewed theory).
+
+---
+
+## CH10-L003 — Opening Principles & Lines: Easy Practice B
+- **Level number (seq):** 83
+- **World / Chapter:** Opening Knowledge / Opening Principles & Lines
+- **Type:** independent_practice
+- **Difficulty band:** easy
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH10-L002
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** opening_knowledge
+- **Primary skill:** __openings__
+- **Secondary skills:** none
+- **Learning objective:** Follow a verified opening line and understand its plan: development, centre, king safety. (easy difficulty, set B)
+- **Measurable outcome:** Solve the required easy exercises (distinct set B) with server-verified correctness.
+- **Before:** Legal moves and basic tactics.
+- **After:** The learner can play a main opening line and state its plan.
+- **Key concepts:** development, centre control, king safety, typical plan
+- **Teaching sequence:** opening principles → a concrete line → the resulting plan
+- **Explanation plan:** Teach the three principles, then walk a verified line move by move and state the plan.
+- **Common mistakes:** moving the same piece twice; neglecting king safety; premature attacks
+- **Practice material:** 3 openings (ids: fourknights, scandinavian, philidor)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 2 items
+- **Pass criteria:** Solve at least the required number of easy exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH10-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH10-DEMO
+- **Video production brief:** Show the solving method on real verified opening principles & lines positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH10-L004
+- **Content coverage:** full
+- **Known limitations:** Backed by project-authored verified opening lines (not human-reviewed theory).
+
+---
+
+## CH10-L004 — Opening Principles & Lines: Medium Practice A
+- **Level number (seq):** 84
+- **World / Chapter:** Opening Knowledge / Opening Principles & Lines
+- **Type:** independent_practice
+- **Difficulty band:** medium
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH10-L003
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** opening_knowledge
+- **Primary skill:** __openings__
+- **Secondary skills:** none
+- **Learning objective:** Follow a verified opening line and understand its plan: development, centre, king safety. (medium difficulty, set A)
+- **Measurable outcome:** Solve the required medium exercises (distinct set A) with server-verified correctness.
+- **Before:** Legal moves and basic tactics.
+- **After:** The learner can play a main opening line and state its plan.
+- **Key concepts:** development, centre control, king safety, typical plan
+- **Teaching sequence:** opening principles → a concrete line → the resulting plan
+- **Explanation plan:** Teach the three principles, then walk a verified line move by move and state the plan.
+- **Common mistakes:** moving the same piece twice; neglecting king safety; premature attacks
+- **Practice material:** 3 openings (ids: ruy, french, qgd)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 2 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH10-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH10-DEMO
+- **Video production brief:** Show the solving method on real verified opening principles & lines positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH10-L005
+- **Content coverage:** full
+- **Known limitations:** Backed by project-authored verified opening lines (not human-reviewed theory).
+
+---
+
+## CH10-L005 — Opening Principles & Lines: Medium Practice B
+- **Level number (seq):** 85
+- **World / Chapter:** Opening Knowledge / Opening Principles & Lines
+- **Type:** independent_practice
+- **Difficulty band:** medium
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH10-L004
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** opening_knowledge
+- **Primary skill:** __openings__
+- **Secondary skills:** none
+- **Learning objective:** Follow a verified opening line and understand its plan: development, centre, king safety. (medium difficulty, set B)
+- **Measurable outcome:** Solve the required medium exercises (distinct set B) with server-verified correctness.
+- **Before:** Legal moves and basic tactics.
+- **After:** The learner can play a main opening line and state its plan.
+- **Key concepts:** development, centre control, king safety, typical plan
+- **Teaching sequence:** opening principles → a concrete line → the resulting plan
+- **Explanation plan:** Teach the three principles, then walk a verified line move by move and state the plan.
+- **Common mistakes:** moving the same piece twice; neglecting king safety; premature attacks
+- **Practice material:** 3 openings (ids: scotch, vienna, pirc)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 2 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH10-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH10-DEMO
+- **Video production brief:** Show the solving method on real verified opening principles & lines positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH10-L006
+- **Content coverage:** full
+- **Known limitations:** Backed by project-authored verified opening lines (not human-reviewed theory).
+
+---
+
+## CH10-L006 — Opening Principles & Lines: Hard Practice A
+- **Level number (seq):** 86
+- **World / Chapter:** Opening Knowledge / Opening Principles & Lines
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH10-L005
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** opening_knowledge
+- **Primary skill:** __openings__
+- **Secondary skills:** none
+- **Learning objective:** Follow a verified opening line and understand its plan: development, centre, king safety. (hard difficulty, set A)
+- **Measurable outcome:** Solve the required hard exercises (distinct set A) with server-verified correctness.
+- **Before:** Legal moves and basic tactics.
+- **After:** The learner can play a main opening line and state its plan.
+- **Key concepts:** development, centre control, king safety, typical plan
+- **Teaching sequence:** opening principles → a concrete line → the resulting plan
+- **Explanation plan:** Teach the three principles, then walk a verified line move by move and state the plan.
+- **Common mistakes:** moving the same piece twice; neglecting king safety; premature attacks
+- **Practice material:** 3 openings (ids: najdorf, kingsgambit, kid)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 2 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH10-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH10-DEMO
+- **Video production brief:** Show the solving method on real verified opening principles & lines positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH10-L007
+- **Content coverage:** full
+- **Known limitations:** Backed by project-authored verified opening lines (not human-reviewed theory).
+
+---
+
+## CH10-L007 — Opening Principles & Lines: Hard Practice B
+- **Level number (seq):** 87
+- **World / Chapter:** Opening Knowledge / Opening Principles & Lines
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH10-L006
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** opening_knowledge
+- **Primary skill:** __openings__
+- **Secondary skills:** none
+- **Learning objective:** Follow a verified opening line and understand its plan: development, centre, king safety. (hard difficulty, set B)
+- **Measurable outcome:** Solve the required hard exercises (distinct set B) with server-verified correctness.
+- **Before:** Legal moves and basic tactics.
+- **After:** The learner can play a main opening line and state its plan.
+- **Key concepts:** development, centre control, king safety, typical plan
+- **Teaching sequence:** opening principles → a concrete line → the resulting plan
+- **Explanation plan:** Teach the three principles, then walk a verified line move by move and state the plan.
+- **Common mistakes:** moving the same piece twice; neglecting king safety; premature attacks
+- **Practice material:** 3 openings (ids: nimzo, qid, catalan)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 2 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH10-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH10-DEMO
+- **Video production brief:** Show the solving method on real verified opening principles & lines positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH10-L008
+- **Content coverage:** full
+- **Known limitations:** Backed by project-authored verified opening lines (not human-reviewed theory).
+
+---
+
+## CH10-L008 — Opening Principles & Lines: Review
+- **Level number (seq):** 88
+- **World / Chapter:** Opening Knowledge / Opening Principles & Lines
+- **Type:** review
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** CH10-L001
+- **Prerequisite reason:** Reviews items already practised in this chapter.
+- **Primary domain:** opening_knowledge
+- **Primary skill:** __openings__
+- **Secondary skills:** none
+- **Learning objective:** Retain opening principles & lines via spaced review.
+- **Measurable outcome:** Clear all due review items for this skill.
+- **Before:** The learner can play a main opening line and state its plan.
+- **After:** Retained skill after a delay.
+- **Key concepts:** development, centre control, king safety, typical plan
+- **Teaching sequence:** review due items
+- **Explanation plan:** No new teaching; spaced repetition of previously solved items.
+- **Common mistakes:** moving the same piece twice; neglecting king safety; premature attacks
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** No review items currently due, or all due items cleared.
+- **Mastery condition:** Retention reflected by R2 review state.
+- **Failure / retry:** Items reschedule per SM-2.
+- **Remediation:** CH10-L001
+- **Review rule:** This level IS the review surface for the chapter.
+- **Video lesson references:** V-CH10-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH10-L009
+- **Content coverage:** partial
+- **Known limitations:** Depends on prior practice; empty until items are due.
+
+---
+
+## CH10-L009 — Opening Principles & Lines: Chapter Boss
+- **Level number (seq):** 89
+- **World / Chapter:** Opening Knowledge / Opening Principles & Lines
+- **Type:** boss_challenge
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH10-L002, CH10-L003, CH10-L004, CH10-L005, CH10-L006, CH10-L007
+- **Prerequisite reason:** Must practise the chapter's exercises before the cumulative boss.
+- **Primary domain:** opening_knowledge
+- **Primary skill:** __openings__
+- **Secondary skills:** none
+- **Learning objective:** Apply opening principles & lines under assessment across multiple exercises.
+- **Measurable outcome:** Pass the multi-exercise boss with the required success rate (server-authoritative).
+- **Before:** The learner can play a main opening line and state its plan.
+- **After:** Demonstrated chapter mastery.
+- **Key concepts:** development, centre control, king safety, typical plan
+- **Teaching sequence:** recognise → calculate → execute
+- **Explanation plan:** No new teaching; a graded multi-step assessment.
+- **Common mistakes:** moving the same piece twice; neglecting king safety; premature attacks
+- **Practice material:** 3 openings (ids: grunfeld, alekhine, benoni)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 2 items
+- **Pass criteria:** Solve the required boss exercises at the chapter difficulty (server-verified).
+- **Mastery condition:** Boss pass + sufficient R2 evidence in the backing skill.
+- **Failure / retry:** Retry allowed; remediation to the chapter practice levels on failure.
+- **Remediation:** CH10-L001
+- **Review rule:** Boss items are review-eligible like any solved puzzle.
+- **Video lesson references:** V-CH10-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH11-L001
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH11-L001 — Opening-Stage Tactics (provisional): Concepts
+- **Level number (seq):** 90
+- **World / Chapter:** Opening Knowledge / Opening-Stage Tactics (provisional)
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** none
+- **Prerequisite reason:** Introductory concept level.
+- **Primary domain:** opening_knowledge
+- **Primary skill:** opening_stage_tactics
+- **Secondary skills:** none
+- **Learning objective:** Apply tactical vision to positions arising in the opening stage.
+- **Measurable outcome:** Learner proceeds after reading/watching the concept lesson.
+- **Before:** Tactical recognition.
+- **After:** The learner punishes typical opening mistakes tactically.
+- **Key concepts:** early development tactics, punishing a loose move
+- **Teaching sequence:** spot the early tactic → convert it
+- **Explanation plan:** Practise tactics that arise in the opening; this is tactical practice, NOT verified opening theory.
+- **Common mistakes:** confusing an opening tactic with a theory move
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Acknowledge the concept lesson (no graded exercise).
+- **Mastery condition:** n/a (concept only)
+- **Failure / retry:** Re-read the lesson.
+- **Remediation:** n/a
+- **Review rule:** Not review-scheduled (concept).
+- **Video lesson references:** V-CH11-CONCEPT
+- **Video production brief:** Teach the central idea of opening-stage tactics (provisional) before practice. Outline: spot the early tactic → convert it. Media: Board diagrams with highlighted squares and arrows for each demonstrated idea. Length: estimated 4–8 min (based on the outline). State: planned (script planned).
+- **Next level:** CH11-L002
+- **Content coverage:** partial
+- **Known limitations:** Text lesson available; explanatory video is planned, not yet recorded.
+
+---
+
+## CH11-L002 — Opening-Stage Tactics (provisional): Easy Practice A
+- **Level number (seq):** 91
+- **World / Chapter:** Opening Knowledge / Opening-Stage Tactics (provisional)
+- **Type:** guided_practice
+- **Difficulty band:** easy
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH11-L001
+- **Prerequisite reason:** Requires the chapter concept before practising.
+- **Primary domain:** opening_knowledge
+- **Primary skill:** opening_stage_tactics
+- **Secondary skills:** none
+- **Learning objective:** Apply tactical vision to positions arising in the opening stage. (easy difficulty, set A)
+- **Measurable outcome:** Solve the required easy exercises (distinct set A) with server-verified correctness.
+- **Before:** Tactical recognition.
+- **After:** The learner punishes typical opening mistakes tactically.
+- **Key concepts:** early development tactics, punishing a loose move
+- **Teaching sequence:** spot the early tactic → convert it
+- **Explanation plan:** Practise tactics that arise in the opening; this is tactical practice, NOT verified opening theory.
+- **Common mistakes:** confusing an opening tactic with a theory move
+- **Practice material:** 5 puzzles (ids: 220, 225, 228, 232, 233)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 3 items
+- **Pass criteria:** Solve at least the required number of easy exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH11-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH11-DEMO
+- **Video production brief:** Show the solving method on real verified opening-stage tactics (provisional) positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH11-L003
+- **Content coverage:** full
+- **Known limitations:** Provisional mapping: opening-stage tactics, not verified opening theory.
+
+---
+
+## CH11-L003 — Opening-Stage Tactics (provisional): Easy Practice B
+- **Level number (seq):** 92
+- **World / Chapter:** Opening Knowledge / Opening-Stage Tactics (provisional)
+- **Type:** independent_practice
+- **Difficulty band:** easy
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH11-L002
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** opening_knowledge
+- **Primary skill:** opening_stage_tactics
+- **Secondary skills:** none
+- **Learning objective:** Apply tactical vision to positions arising in the opening stage. (easy difficulty, set B)
+- **Measurable outcome:** Solve the required easy exercises (distinct set B) with server-verified correctness.
+- **Before:** Tactical recognition.
+- **After:** The learner punishes typical opening mistakes tactically.
+- **Key concepts:** early development tactics, punishing a loose move
+- **Teaching sequence:** spot the early tactic → convert it
+- **Explanation plan:** Practise tactics that arise in the opening; this is tactical practice, NOT verified opening theory.
+- **Common mistakes:** confusing an opening tactic with a theory move
+- **Practice material:** 5 puzzles (ids: 235, 237, 243, 244, 246)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of easy exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH11-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH11-DEMO
+- **Video production brief:** Show the solving method on real verified opening-stage tactics (provisional) positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH11-L004
+- **Content coverage:** full
+- **Known limitations:** Provisional mapping: opening-stage tactics, not verified opening theory.
+
+---
+
+## CH11-L004 — Opening-Stage Tactics (provisional): Medium Practice A
+- **Level number (seq):** 93
+- **World / Chapter:** Opening Knowledge / Opening-Stage Tactics (provisional)
+- **Type:** independent_practice
+- **Difficulty band:** medium
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH11-L003
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** opening_knowledge
+- **Primary skill:** opening_stage_tactics
+- **Secondary skills:** none
+- **Learning objective:** Apply tactical vision to positions arising in the opening stage. (medium difficulty, set A)
+- **Measurable outcome:** Solve the required medium exercises (distinct set A) with server-verified correctness.
+- **Before:** Tactical recognition.
+- **After:** The learner punishes typical opening mistakes tactically.
+- **Key concepts:** early development tactics, punishing a loose move
+- **Teaching sequence:** spot the early tactic → convert it
+- **Explanation plan:** Practise tactics that arise in the opening; this is tactical practice, NOT verified opening theory.
+- **Common mistakes:** confusing an opening tactic with a theory move
+- **Practice material:** 5 puzzles (ids: 221, 222, 223, 224, 227)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH11-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH11-DEMO
+- **Video production brief:** Show the solving method on real verified opening-stage tactics (provisional) positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH11-L005
+- **Content coverage:** full
+- **Known limitations:** Provisional mapping: opening-stage tactics, not verified opening theory.
+
+---
+
+## CH11-L005 — Opening-Stage Tactics (provisional): Medium Practice B
+- **Level number (seq):** 94
+- **World / Chapter:** Opening Knowledge / Opening-Stage Tactics (provisional)
+- **Type:** independent_practice
+- **Difficulty band:** medium
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH11-L004
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** opening_knowledge
+- **Primary skill:** opening_stage_tactics
+- **Secondary skills:** none
+- **Learning objective:** Apply tactical vision to positions arising in the opening stage. (medium difficulty, set B)
+- **Measurable outcome:** Solve the required medium exercises (distinct set B) with server-verified correctness.
+- **Before:** Tactical recognition.
+- **After:** The learner punishes typical opening mistakes tactically.
+- **Key concepts:** early development tactics, punishing a loose move
+- **Teaching sequence:** spot the early tactic → convert it
+- **Explanation plan:** Practise tactics that arise in the opening; this is tactical practice, NOT verified opening theory.
+- **Common mistakes:** confusing an opening tactic with a theory move
+- **Practice material:** 5 puzzles (ids: 229, 234, 236, 238, 242)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH11-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH11-DEMO
+- **Video production brief:** Show the solving method on real verified opening-stage tactics (provisional) positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH11-L006
+- **Content coverage:** full
+- **Known limitations:** Provisional mapping: opening-stage tactics, not verified opening theory.
+
+---
+
+## CH11-L006 — Opening-Stage Tactics (provisional): Hard Practice A
+- **Level number (seq):** 95
+- **World / Chapter:** Opening Knowledge / Opening-Stage Tactics (provisional)
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH11-L005
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** opening_knowledge
+- **Primary skill:** opening_stage_tactics
+- **Secondary skills:** none
+- **Learning objective:** Apply tactical vision to positions arising in the opening stage. (hard difficulty, set A)
+- **Measurable outcome:** Solve the required hard exercises (distinct set A) with server-verified correctness.
+- **Before:** Tactical recognition.
+- **After:** The learner punishes typical opening mistakes tactically.
+- **Key concepts:** early development tactics, punishing a loose move
+- **Teaching sequence:** spot the early tactic → convert it
+- **Explanation plan:** Practise tactics that arise in the opening; this is tactical practice, NOT verified opening theory.
+- **Common mistakes:** confusing an opening tactic with a theory move
+- **Practice material:** 5 puzzles (ids: 226, 231, 240, 247, 252)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH11-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH11-DEMO
+- **Video production brief:** Show the solving method on real verified opening-stage tactics (provisional) positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH11-L007
+- **Content coverage:** full
+- **Known limitations:** Provisional mapping: opening-stage tactics, not verified opening theory.
+
+---
+
+## CH11-L007 — Opening-Stage Tactics (provisional): Hard Practice B
+- **Level number (seq):** 96
+- **World / Chapter:** Opening Knowledge / Opening-Stage Tactics (provisional)
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** future_content_required
+- **Prerequisites:** CH11-L006
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** opening_knowledge
+- **Primary skill:** opening_stage_tactics
+- **Secondary skills:** none
+- **Learning objective:** Apply tactical vision to positions arising in the opening stage. (hard difficulty, set B)
+- **Measurable outcome:** Solve the required hard exercises (distinct set B) with server-verified correctness.
+- **Before:** Tactical recognition.
+- **After:** The learner punishes typical opening mistakes tactically.
+- **Key concepts:** early development tactics, punishing a loose move
+- **Teaching sequence:** spot the early tactic → convert it
+- **Explanation plan:** Practise tactics that arise in the opening; this is tactical practice, NOT verified opening theory.
+- **Common mistakes:** confusing an opening tactic with a theory move
+- **Practice material:** 0 puzzles (ids: none yet)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH11-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH11-DEMO
+- **Video production brief:** Show the solving method on real verified opening-stage tactics (provisional) positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH11-L008
+- **Content coverage:** full
+- **Known limitations:** Provisional mapping: opening-stage tactics, not verified opening theory.
+
+---
+
+## CH11-L008 — Opening-Stage Tactics (provisional): Review
+- **Level number (seq):** 97
+- **World / Chapter:** Opening Knowledge / Opening-Stage Tactics (provisional)
+- **Type:** review
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** CH11-L001
+- **Prerequisite reason:** Reviews items already practised in this chapter.
+- **Primary domain:** opening_knowledge
+- **Primary skill:** opening_stage_tactics
+- **Secondary skills:** none
+- **Learning objective:** Retain opening-stage tactics (provisional) via spaced review.
+- **Measurable outcome:** Clear all due review items for this skill.
+- **Before:** The learner punishes typical opening mistakes tactically.
+- **After:** Retained skill after a delay.
+- **Key concepts:** early development tactics, punishing a loose move
+- **Teaching sequence:** review due items
+- **Explanation plan:** No new teaching; spaced repetition of previously solved items.
+- **Common mistakes:** confusing an opening tactic with a theory move
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** No review items currently due, or all due items cleared.
+- **Mastery condition:** Retention reflected by R2 review state.
+- **Failure / retry:** Items reschedule per SM-2.
+- **Remediation:** CH11-L001
+- **Review rule:** This level IS the review surface for the chapter.
+- **Video lesson references:** V-CH11-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH11-L009
+- **Content coverage:** partial
+- **Known limitations:** Depends on prior practice; empty until items are due.
+
+---
+
+## CH11-L009 — Opening-Stage Tactics (provisional): Assessment
+- **Level number (seq):** 98
+- **World / Chapter:** Opening Knowledge / Opening-Stage Tactics (provisional)
+- **Type:** assessment
+- **Difficulty band:** medium
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH11-L002, CH11-L003, CH11-L004, CH11-L005, CH11-L006, CH11-L007
+- **Prerequisite reason:** Assesses after the chapter's practice.
+- **Primary domain:** opening_knowledge
+- **Primary skill:** opening_stage_tactics
+- **Secondary skills:** none
+- **Learning objective:** Demonstrate opening-stage tactics (provisional) on fresh exercises.
+- **Measurable outcome:** Pass the assessment set (server-authoritative).
+- **Before:** The learner punishes typical opening mistakes tactically.
+- **After:** Verified chapter skill.
+- **Key concepts:** early development tactics, punishing a loose move
+- **Teaching sequence:** assess
+- **Explanation plan:** Graded assessment, no new teaching.
+- **Common mistakes:** confusing an opening tactic with a theory move
+- **Practice material:** 5 puzzles (ids: 220, 221, 222, 223, 224)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve the required assessment exercises (server-verified).
+- **Mastery condition:** Assessment pass + R2 evidence.
+- **Failure / retry:** Retry; remediation to practice.
+- **Remediation:** CH11-L001
+- **Review rule:** Review-eligible.
+- **Video lesson references:** V-CH11-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH12-L001
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH12-L001 — Combined Skills: Concepts
+- **Level number (seq):** 99
+- **World / Chapter:** Combined Skills / Combined Skills
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** none
+- **Prerequisite reason:** Introductory concept level.
+- **Primary domain:** n/a
+- **Primary skill:** __mixed__
+- **Secondary skills:** none
+- **Learning objective:** Apply tactical, calculation and defensive skills in mixed positions.
+- **Measurable outcome:** Learner proceeds after reading/watching the concept lesson.
+- **Before:** Tactical recognition, calculation and defence.
+- **After:** The learner selects the right skill under uncertainty.
+- **Key concepts:** skill selection, mixed tactics/defence/conversion
+- **Teaching sequence:** assess the position → pick the right method → execute
+- **Explanation plan:** Mixed practice drawing from several verified skills; teaches when to attack, defend or convert.
+- **Common mistakes:** applying the wrong method; tunnel vision
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Acknowledge the concept lesson (no graded exercise).
+- **Mastery condition:** n/a (concept only)
+- **Failure / retry:** Re-read the lesson.
+- **Remediation:** n/a
+- **Review rule:** Not review-scheduled (concept).
+- **Video lesson references:** V-CH12-CONCEPT
+- **Video production brief:** Teach the central idea of combined skills before practice. Outline: assess the position → pick the right method → execute. Media: Board diagrams with highlighted squares and arrows for each demonstrated idea. Length: estimated 4–8 min (based on the outline). State: planned (script planned).
+- **Next level:** CH12-L002
+- **Content coverage:** partial
+- **Known limitations:** Text lesson available; explanatory video is planned, not yet recorded.
+
+---
+
+## CH12-L002 — Combined Skills: Medium Practice A
+- **Level number (seq):** 100
+- **World / Chapter:** Combined Skills / Combined Skills
+- **Type:** guided_practice
+- **Difficulty band:** medium
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH12-L001
+- **Prerequisite reason:** Requires the chapter concept before practising.
+- **Primary domain:** n/a
+- **Primary skill:** __mixed__
+- **Secondary skills:** none
+- **Learning objective:** Apply tactical, calculation and defensive skills in mixed positions. (medium difficulty, set A)
+- **Measurable outcome:** Solve the required medium exercises (distinct set A) with server-verified correctness.
+- **Before:** Tactical recognition, calculation and defence.
+- **After:** The learner selects the right skill under uncertainty.
+- **Key concepts:** skill selection, mixed tactics/defence/conversion
+- **Teaching sequence:** assess the position → pick the right method → execute
+- **Explanation plan:** Mixed practice drawing from several verified skills; teaches when to attack, defend or convert.
+- **Common mistakes:** applying the wrong method; tunnel vision
+- **Practice material:** 5 puzzles (ids: 132, 139, 152, 155, 160)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 3 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH12-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH12-DEMO
+- **Video production brief:** Show the solving method on real verified combined skills positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH12-L003
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH12-L003 — Combined Skills: Medium Practice B
+- **Level number (seq):** 101
+- **World / Chapter:** Combined Skills / Combined Skills
+- **Type:** independent_practice
+- **Difficulty band:** medium
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH12-L002
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** n/a
+- **Primary skill:** __mixed__
+- **Secondary skills:** none
+- **Learning objective:** Apply tactical, calculation and defensive skills in mixed positions. (medium difficulty, set B)
+- **Measurable outcome:** Solve the required medium exercises (distinct set B) with server-verified correctness.
+- **Before:** Tactical recognition, calculation and defence.
+- **After:** The learner selects the right skill under uncertainty.
+- **Key concepts:** skill selection, mixed tactics/defence/conversion
+- **Teaching sequence:** assess the position → pick the right method → execute
+- **Explanation plan:** Mixed practice drawing from several verified skills; teaches when to attack, defend or convert.
+- **Common mistakes:** applying the wrong method; tunnel vision
+- **Practice material:** 5 puzzles (ids: 161, 162, 163, 166, 168)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of medium exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH12-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH12-DEMO
+- **Video production brief:** Show the solving method on real verified combined skills positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH12-L004
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH12-L004 — Combined Skills: Hard Practice A
+- **Level number (seq):** 102
+- **World / Chapter:** Combined Skills / Combined Skills
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH12-L003
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** n/a
+- **Primary skill:** __mixed__
+- **Secondary skills:** none
+- **Learning objective:** Apply tactical, calculation and defensive skills in mixed positions. (hard difficulty, set A)
+- **Measurable outcome:** Solve the required hard exercises (distinct set A) with server-verified correctness.
+- **Before:** Tactical recognition, calculation and defence.
+- **After:** The learner selects the right skill under uncertainty.
+- **Key concepts:** skill selection, mixed tactics/defence/conversion
+- **Teaching sequence:** assess the position → pick the right method → execute
+- **Explanation plan:** Mixed practice drawing from several verified skills; teaches when to attack, defend or convert.
+- **Common mistakes:** applying the wrong method; tunnel vision
+- **Practice material:** 5 puzzles (ids: 141, 165, 249, 364, 369)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH12-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH12-DEMO
+- **Video production brief:** Show the solving method on real verified combined skills positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH12-L005
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH12-L005 — Combined Skills: Hard Practice B
+- **Level number (seq):** 103
+- **World / Chapter:** Combined Skills / Combined Skills
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH12-L004
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** n/a
+- **Primary skill:** __mixed__
+- **Secondary skills:** none
+- **Learning objective:** Apply tactical, calculation and defensive skills in mixed positions. (hard difficulty, set B)
+- **Measurable outcome:** Solve the required hard exercises (distinct set B) with server-verified correctness.
+- **Before:** Tactical recognition, calculation and defence.
+- **After:** The learner selects the right skill under uncertainty.
+- **Key concepts:** skill selection, mixed tactics/defence/conversion
+- **Teaching sequence:** assess the position → pick the right method → execute
+- **Explanation plan:** Mixed practice drawing from several verified skills; teaches when to attack, defend or convert.
+- **Common mistakes:** applying the wrong method; tunnel vision
+- **Practice material:** 5 puzzles (ids: 371, 374, 127, 147, 154)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH12-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH12-DEMO
+- **Video production brief:** Show the solving method on real verified combined skills positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH12-L006
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH12-L006 — Combined Skills: Review
+- **Level number (seq):** 104
+- **World / Chapter:** Combined Skills / Combined Skills
+- **Type:** review
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** CH12-L001
+- **Prerequisite reason:** Reviews items already practised in this chapter.
+- **Primary domain:** n/a
+- **Primary skill:** __mixed__
+- **Secondary skills:** none
+- **Learning objective:** Retain combined skills via spaced review.
+- **Measurable outcome:** Clear all due review items for this skill.
+- **Before:** The learner selects the right skill under uncertainty.
+- **After:** Retained skill after a delay.
+- **Key concepts:** skill selection, mixed tactics/defence/conversion
+- **Teaching sequence:** review due items
+- **Explanation plan:** No new teaching; spaced repetition of previously solved items.
+- **Common mistakes:** applying the wrong method; tunnel vision
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** No review items currently due, or all due items cleared.
+- **Mastery condition:** Retention reflected by R2 review state.
+- **Failure / retry:** Items reschedule per SM-2.
+- **Remediation:** CH12-L001
+- **Review rule:** This level IS the review surface for the chapter.
+- **Video lesson references:** V-CH12-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH12-L007
+- **Content coverage:** partial
+- **Known limitations:** Depends on prior practice; empty until items are due.
+
+---
+
+## CH12-L007 — Combined Skills: Chapter Boss
+- **Level number (seq):** 105
+- **World / Chapter:** Combined Skills / Combined Skills
+- **Type:** boss_challenge
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH12-L002, CH12-L003, CH12-L004, CH12-L005
+- **Prerequisite reason:** Must practise the chapter's exercises before the cumulative boss.
+- **Primary domain:** n/a
+- **Primary skill:** __mixed__
+- **Secondary skills:** none
+- **Learning objective:** Apply combined skills under assessment across multiple exercises.
+- **Measurable outcome:** Pass the multi-exercise boss with the required success rate (server-authoritative).
+- **Before:** The learner selects the right skill under uncertainty.
+- **After:** Demonstrated chapter mastery.
+- **Key concepts:** skill selection, mixed tactics/defence/conversion
+- **Teaching sequence:** recognise → calculate → execute
+- **Explanation plan:** No new teaching; a graded multi-step assessment.
+- **Common mistakes:** applying the wrong method; tunnel vision
+- **Practice material:** 5 puzzles (ids: 130, 131, 132, 133, 136)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 5 items
+- **Pass criteria:** Solve the required boss exercises at the chapter difficulty (server-verified).
+- **Mastery condition:** Boss pass + sufficient R2 evidence in the backing skill.
+- **Failure / retry:** Retry allowed; remediation to the chapter practice levels on failure.
+- **Remediation:** CH12-L001
+- **Review rule:** Boss items are review-eligible like any solved puzzle.
+- **Video lesson references:** V-CH12-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH13-L001
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH13-L001 — Advanced Combinations: Concepts
+- **Level number (seq):** 106
+- **World / Chapter:** Advanced Mastery / Advanced Combinations
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** none
+- **Prerequisite reason:** Introductory concept level.
+- **Primary domain:** n/a
+- **Primary skill:** __advanced__
+- **Secondary skills:** none
+- **Learning objective:** Solve the hardest verified combinations across domains.
+- **Measurable outcome:** Learner proceeds after reading/watching the concept lesson.
+- **Before:** All prior chapters.
+- **After:** The learner solves expert-level verified tactics, mates and conversions.
+- **Key concepts:** deep calculation, sacrifice, precise conversion
+- **Teaching sequence:** recognise the idea → calculate deeply → convert
+- **Explanation plan:** Hard/expert verified content only; emphasise accuracy and depth.
+- **Common mistakes:** shallow calculation; missing the quiet move
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Acknowledge the concept lesson (no graded exercise).
+- **Mastery condition:** n/a (concept only)
+- **Failure / retry:** Re-read the lesson.
+- **Remediation:** n/a
+- **Review rule:** Not review-scheduled (concept).
+- **Video lesson references:** V-CH13-CONCEPT
+- **Video production brief:** Teach the central idea of advanced combinations before practice. Outline: recognise the idea → calculate deeply → convert. Media: Board diagrams with highlighted squares and arrows for each demonstrated idea. Length: estimated 4–8 min (based on the outline). State: planned (script planned).
+- **Next level:** CH13-L002
+- **Content coverage:** partial
+- **Known limitations:** Text lesson available; explanatory video is planned, not yet recorded.
+
+---
+
+## CH13-L002 — Advanced Combinations: Hard Practice A
+- **Level number (seq):** 107
+- **World / Chapter:** Advanced Mastery / Advanced Combinations
+- **Type:** guided_practice
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH13-L001
+- **Prerequisite reason:** Requires the chapter concept before practising.
+- **Primary domain:** n/a
+- **Primary skill:** __advanced__
+- **Secondary skills:** none
+- **Learning objective:** Solve the hardest verified combinations across domains. (hard difficulty, set A)
+- **Measurable outcome:** Solve the required hard exercises (distinct set A) with server-verified correctness.
+- **Before:** All prior chapters.
+- **After:** The learner solves expert-level verified tactics, mates and conversions.
+- **Key concepts:** deep calculation, sacrifice, precise conversion
+- **Teaching sequence:** recognise the idea → calculate deeply → convert
+- **Explanation plan:** Hard/expert verified content only; emphasise accuracy and depth.
+- **Common mistakes:** shallow calculation; missing the quiet move
+- **Practice material:** 5 puzzles (ids: 127, 147, 154, 159, 164)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 3 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH13-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH13-DEMO
+- **Video production brief:** Show the solving method on real verified advanced combinations positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH13-L003
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH13-L003 — Advanced Combinations: Hard Practice B
+- **Level number (seq):** 108
+- **World / Chapter:** Advanced Mastery / Advanced Combinations
+- **Type:** independent_practice
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH13-L002
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** n/a
+- **Primary skill:** __advanced__
+- **Secondary skills:** none
+- **Learning objective:** Solve the hardest verified combinations across domains. (hard difficulty, set B)
+- **Measurable outcome:** Solve the required hard exercises (distinct set B) with server-verified correctness.
+- **Before:** All prior chapters.
+- **After:** The learner solves expert-level verified tactics, mates and conversions.
+- **Key concepts:** deep calculation, sacrifice, precise conversion
+- **Teaching sequence:** recognise the idea → calculate deeply → convert
+- **Explanation plan:** Hard/expert verified content only; emphasise accuracy and depth.
+- **Common mistakes:** shallow calculation; missing the quiet move
+- **Practice material:** 5 puzzles (ids: 171, 172, 187, 188, 190)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of hard exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH13-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH13-DEMO
+- **Video production brief:** Show the solving method on real verified advanced combinations positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH13-L004
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH13-L004 — Advanced Combinations: Expert Practice A
+- **Level number (seq):** 109
+- **World / Chapter:** Advanced Mastery / Advanced Combinations
+- **Type:** independent_practice
+- **Difficulty band:** expert
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH13-L003
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** n/a
+- **Primary skill:** __advanced__
+- **Secondary skills:** none
+- **Learning objective:** Solve the hardest verified combinations across domains. (expert difficulty, set A)
+- **Measurable outcome:** Solve the required expert exercises (distinct set A) with server-verified correctness.
+- **Before:** All prior chapters.
+- **After:** The learner solves expert-level verified tactics, mates and conversions.
+- **Key concepts:** deep calculation, sacrifice, precise conversion
+- **Teaching sequence:** recognise the idea → calculate deeply → convert
+- **Explanation plan:** Hard/expert verified content only; emphasise accuracy and depth.
+- **Common mistakes:** shallow calculation; missing the quiet move
+- **Practice material:** 5 puzzles (ids: 145, 281, 390, 377, 265)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of expert exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH13-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH13-DEMO
+- **Video production brief:** Show the solving method on real verified advanced combinations positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH13-L005
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH13-L005 — Advanced Combinations: Expert Practice B
+- **Level number (seq):** 110
+- **World / Chapter:** Advanced Mastery / Advanced Combinations
+- **Type:** independent_practice
+- **Difficulty band:** expert
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH13-L004
+- **Prerequisite reason:** Builds on the previous practice set (progressive difficulty).
+- **Primary domain:** n/a
+- **Primary skill:** __advanced__
+- **Secondary skills:** none
+- **Learning objective:** Solve the hardest verified combinations across domains. (expert difficulty, set B)
+- **Measurable outcome:** Solve the required expert exercises (distinct set B) with server-verified correctness.
+- **Before:** All prior chapters.
+- **After:** The learner solves expert-level verified tactics, mates and conversions.
+- **Key concepts:** deep calculation, sacrifice, precise conversion
+- **Teaching sequence:** recognise the idea → calculate deeply → convert
+- **Explanation plan:** Hard/expert verified content only; emphasise accuracy and depth.
+- **Common mistakes:** shallow calculation; missing the quiet move
+- **Practice material:** 5 puzzles (ids: 271, 10, 11, 12, 129)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 4 items
+- **Pass criteria:** Solve at least the required number of expert exercises (server-authoritative).
+- **Mastery condition:** Contributes to the backing skill's R2/R5 proficiency (distinct solves + success rate).
+- **Failure / retry:** Unlimited retries; a wrong move resets the puzzle streak.
+- **Remediation:** CH13-L001
+- **Review rule:** Solved items enter R2 spaced repetition and resurface when due.
+- **Video lesson references:** V-CH13-DEMO
+- **Video production brief:** Show the solving method on real verified advanced combinations positions. Outline: present the position → find candidate moves → calculate the critical line → confirm the result. Media: Move-by-move board animation with arrows. Length: estimated 5–10 min. State: planned (script planned).
+- **Next level:** CH13-L006
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH13-L006 — Advanced Combinations: Review
+- **Level number (seq):** 111
+- **World / Chapter:** Advanced Mastery / Advanced Combinations
+- **Type:** review
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** CH13-L001
+- **Prerequisite reason:** Reviews items already practised in this chapter.
+- **Primary domain:** n/a
+- **Primary skill:** __advanced__
+- **Secondary skills:** none
+- **Learning objective:** Retain advanced combinations via spaced review.
+- **Measurable outcome:** Clear all due review items for this skill.
+- **Before:** The learner solves expert-level verified tactics, mates and conversions.
+- **After:** Retained skill after a delay.
+- **Key concepts:** deep calculation, sacrifice, precise conversion
+- **Teaching sequence:** review due items
+- **Explanation plan:** No new teaching; spaced repetition of previously solved items.
+- **Common mistakes:** shallow calculation; missing the quiet move
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** No review items currently due, or all due items cleared.
+- **Mastery condition:** Retention reflected by R2 review state.
+- **Failure / retry:** Items reschedule per SM-2.
+- **Remediation:** CH13-L001
+- **Review rule:** This level IS the review surface for the chapter.
+- **Video lesson references:** V-CH13-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH13-L007
+- **Content coverage:** partial
+- **Known limitations:** Depends on prior practice; empty until items are due.
+
+---
+
+## CH13-L007 — Advanced Combinations: Chapter Boss
+- **Level number (seq):** 112
+- **World / Chapter:** Advanced Mastery / Advanced Combinations
+- **Type:** boss_challenge
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** CH13-L002, CH13-L003, CH13-L004, CH13-L005
+- **Prerequisite reason:** Must practise the chapter's exercises before the cumulative boss.
+- **Primary domain:** n/a
+- **Primary skill:** __advanced__
+- **Secondary skills:** none
+- **Learning objective:** Apply advanced combinations under assessment across multiple exercises.
+- **Measurable outcome:** Pass the multi-exercise boss with the required success rate (server-authoritative).
+- **Before:** The learner solves expert-level verified tactics, mates and conversions.
+- **After:** Demonstrated chapter mastery.
+- **Key concepts:** deep calculation, sacrifice, precise conversion
+- **Teaching sequence:** recognise → calculate → execute
+- **Explanation plan:** No new teaching; a graded multi-step assessment.
+- **Common mistakes:** shallow calculation; missing the quiet move
+- **Practice material:** 5 puzzles (ids: 130, 131, 132, 133, 136)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 5 items
+- **Pass criteria:** Solve the required boss exercises at the chapter difficulty (server-verified).
+- **Mastery condition:** Boss pass + sufficient R2 evidence in the backing skill.
+- **Failure / retry:** Retry allowed; remediation to the chapter practice levels on failure.
+- **Remediation:** CH13-L001
+- **Review rule:** Boss items are review-eligible like any solved puzzle.
+- **Video lesson references:** V-CH13-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** CH14-L001
+- **Content coverage:** full
+- **Known limitations:** none
+
+---
+
+## CH14-L001 — Final Challenges & Strategic Application: Concepts
+- **Level number (seq):** 113
+- **World / Chapter:** Final Challenges / Final Challenges & Strategic Application
+- **Type:** concept
+- **Difficulty band:** n/a
+- **Publication status:** limited
+- **Prerequisites:** none
+- **Prerequisite reason:** Introductory concept level.
+- **Primary domain:** n/a
+- **Primary skill:** __final__
+- **Secondary skills:** none
+- **Learning objective:** Cumulative assessments across every taught skill; strategic application remains future content.
+- **Measurable outcome:** Learner proceeds after reading/watching the concept lesson.
+- **Before:** Completion of prior worlds.
+- **After:** The learner demonstrates cumulative skill; strategic play is deferred.
+- **Key concepts:** cumulative assessment, multi-skill boss
+- **Teaching sequence:** review → cumulative boss
+- **Explanation plan:** A cumulative boss across all verified skills. Positional/strategic middlegame play is future content.
+- **Common mistakes:** fatigue errors; misapplying a learned pattern
+- **Practice material:** n/a (no graded practice)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** none (concept/review)
+- **Pass criteria:** Acknowledge the concept lesson (no graded exercise).
+- **Mastery condition:** n/a (concept only)
+- **Failure / retry:** Re-read the lesson.
+- **Remediation:** n/a
+- **Review rule:** Not review-scheduled (concept).
+- **Video lesson references:** V-CH14-CONCEPT
+- **Video production brief:** Teach the central idea of final challenges & strategic application before practice. Outline: review → cumulative boss. Media: Board diagrams with highlighted squares and arrows for each demonstrated idea. Length: estimated 4–8 min (based on the outline). State: planned (script planned).
+- **Next level:** CH14-L002
+- **Content coverage:** partial
+- **Known limitations:** Text lesson available; explanatory video is planned, not yet recorded.
+
+---
+
+## CH14-L002 — Final Challenges & Strategic Application: Chapter Boss
+- **Level number (seq):** 114
+- **World / Chapter:** Final Challenges / Final Challenges & Strategic Application
+- **Type:** boss_challenge
+- **Difficulty band:** hard
+- **Publication status:** ready (content-backed)
+- **Prerequisites:** none
+- **Prerequisite reason:** Must practise the chapter's exercises before the cumulative boss.
+- **Primary domain:** n/a
+- **Primary skill:** __final__
+- **Secondary skills:** none
+- **Learning objective:** Apply final challenges & strategic application under assessment across multiple exercises.
+- **Measurable outcome:** Pass the multi-exercise boss with the required success rate (server-authoritative).
+- **Before:** The learner demonstrates cumulative skill; strategic play is deferred.
+- **After:** Demonstrated chapter mastery.
+- **Key concepts:** cumulative assessment, multi-skill boss
+- **Teaching sequence:** recognise → calculate → execute
+- **Explanation plan:** No new teaching; a graded multi-step assessment.
+- **Common mistakes:** fatigue errors; misapplying a learned pattern
+- **Practice material:** 5 puzzles (ids: 13, 14, 15, 101, 104)
+- **Practice sequence:** attempt required items in order; wrong move resets streak.
+- **Hint strategy:** server-issued next-move hint (resets streak), reusing the puzzle hint route.
+- **Assessment:** solve ≥ 5 items
+- **Pass criteria:** Solve the required boss exercises at the chapter difficulty (server-verified).
+- **Mastery condition:** Boss pass + sufficient R2 evidence in the backing skill.
+- **Failure / retry:** Retry allowed; remediation to the chapter practice levels on failure.
+- **Remediation:** CH14-L001
+- **Review rule:** Boss items are review-eligible like any solved puzzle.
+- **Video lesson references:** V-CH14-REVIEW
+- **Video production brief:** Prepare the learner for the cumulative boss. Outline: recap the chapter → boss strategy → time to attempt. Media: Board animation of a representative boss sequence. Length: estimated 4–7 min. State: planned (script planned).
+- **Next level:** none
+- **Content coverage:** full
+- **Known limitations:** none

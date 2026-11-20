@@ -1,0 +1,39 @@
+{
+  "name": "chessmaster-next",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import ./tests/register-alias.mjs --experimental-strip-types --test \"tests/*.test.ts\"",
+    "audit:foundations": "node --experimental-strip-types --import ./tests/register-alias.mjs scripts/audit-foundations.ts && node --experimental-strip-types --import ./tests/register-alias.mjs scripts/audit-foundation-assessment.ts",
+    "audit:assessment": "node --experimental-strip-types --import ./tests/register-alias.mjs scripts/audit-foundation-assessment.ts",
+    "test:pg": "bash scripts/run-pg-concurrency.sh",
+    "setup:engine": "node scripts/setup-engine.mjs"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.5.2",
+    "@supabase/supabase-js": "^2.45.4",
+    "chess.js": "^1.0.0",
+    "next": "16.3.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "^3.23.8",
+    "stockfish": "16.0.0",
+    "qrcode": "1.5.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.6",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "@types/qrcode": "1.5.5"
+  }
+}

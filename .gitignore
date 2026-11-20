@@ -1,0 +1,55 @@
+# ملفات عمل مؤقتة لا تخصّ المنصّة النهائية — المطوّر: Genius Ahmed Ibrahim
+app.js
+puzzles.json
+
+# نظام التشغيل والمحرّرات
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+node_modules/
+
+# Public release: secrets, local data, generated output, and personal backups
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+.turbo/
+.DS_Store
+*.log
+*.tsbuildinfo
+*.save
+*.bak
+*.zip
+*.tar
+*.tar.gz
+*.sqlite
+*.sqlite3
+*.db
+pgdata/
+.pgdata/
+postgres-data/
+browser-profile/
+playwright-report/
+test-results/
+chessmaster-next/_probe.mjs
+chessmaster-next/probe_tmp.mjs
+chessmaster-next/prof_tmp.mjs
+chessmaster-next/inspect_sim.mjs
+chessmaster-next/tests/_probe.mjs
+chessmaster-next/tests/_scratch_curr.mjs
+chessmaster-next/scripts/_probe731.mjs
+chessmaster-next/scripts/_probe732.mjs
+
+# Preserved originals containing local-only credentials
+.release-private/

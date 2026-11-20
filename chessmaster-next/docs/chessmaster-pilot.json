@@ -1,0 +1,397 @@
+{
+  "generatedAt": "2026-11-05T10:00:04.172Z",
+  "pilotChapter": "CH02",
+  "chapter": {
+    "id": "CH02",
+    "worldId": "W01",
+    "title": "Check & Checkmate Recognition",
+    "skillId": "mate_in_one",
+    "backingDomain": "checkmate_patterns"
+  },
+  "selectionRationale": "Earliest campaign-order chapter that is content-backed (mate_in_one) and coherent. CH01 (piece movement) has no verified content and remains a documented entrance gap; the pilot assumes basic piece movement and states this.",
+  "entranceGap": "CH01 Board & Piece Movement is future_content_required — a true beginner needs a movement tutorial before CH02. Documented, not hidden.",
+  "levels": [
+    {
+      "id": "CH02-L001",
+      "type": "concept",
+      "band": null,
+      "status": "limited",
+      "playable": false,
+      "objective": "Recognise check and deliver immediate checkmate in one move.",
+      "minExercises": 0,
+      "practiceKind": "none",
+      "practiceItemIds": [],
+      "videoIds": [
+        "V-CH02-CONCEPT"
+      ],
+      "prerequisites": [],
+      "nextLevelId": "CH02-L002"
+    },
+    {
+      "id": "CH02-L002",
+      "type": "guided_practice",
+      "band": "easy",
+      "status": "ready",
+      "playable": true,
+      "objective": "Recognise check and deliver immediate checkmate in one move. (easy difficulty, set A)",
+      "minExercises": 3,
+      "practiceKind": "puzzles",
+      "practiceItemIds": [
+        13,
+        14,
+        15
+      ],
+      "videoIds": [
+        "V-CH02-DEMO"
+      ],
+      "prerequisites": [
+        "CH02-L001"
+      ],
+      "nextLevelId": "CH02-L003"
+    },
+    {
+      "id": "CH02-L003",
+      "type": "independent_practice",
+      "band": "easy",
+      "status": "future_content_required",
+      "playable": false,
+      "objective": "Recognise check and deliver immediate checkmate in one move. (easy difficulty, set B)",
+      "minExercises": 4,
+      "practiceKind": "puzzles",
+      "practiceItemIds": [],
+      "videoIds": [
+        "V-CH02-DEMO"
+      ],
+      "prerequisites": [
+        "CH02-L002"
+      ],
+      "nextLevelId": "CH02-L004"
+    },
+    {
+      "id": "CH02-L004",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "ready",
+      "playable": true,
+      "objective": "Recognise check and deliver immediate checkmate in one move. (medium difficulty, set A)",
+      "minExercises": 4,
+      "practiceKind": "puzzles",
+      "practiceItemIds": [
+        101,
+        104,
+        105,
+        108,
+        110
+      ],
+      "videoIds": [
+        "V-CH02-DEMO"
+      ],
+      "prerequisites": [
+        "CH02-L003"
+      ],
+      "nextLevelId": "CH02-L005"
+    },
+    {
+      "id": "CH02-L005",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "ready",
+      "playable": true,
+      "objective": "Recognise check and deliver immediate checkmate in one move. (medium difficulty, set B)",
+      "minExercises": 4,
+      "practiceKind": "puzzles",
+      "practiceItemIds": [
+        111,
+        114,
+        116,
+        117
+      ],
+      "videoIds": [
+        "V-CH02-DEMO"
+      ],
+      "prerequisites": [
+        "CH02-L004"
+      ],
+      "nextLevelId": "CH02-L006"
+    },
+    {
+      "id": "CH02-L006",
+      "type": "review",
+      "band": null,
+      "status": "limited",
+      "playable": false,
+      "objective": "Retain check & checkmate recognition via spaced review.",
+      "minExercises": 0,
+      "practiceKind": "none",
+      "practiceItemIds": [],
+      "videoIds": [
+        "V-CH02-REVIEW"
+      ],
+      "prerequisites": [
+        "CH02-L001"
+      ],
+      "nextLevelId": "CH02-L007"
+    },
+    {
+      "id": "CH02-L007",
+      "type": "boss_challenge",
+      "band": "hard",
+      "status": "ready",
+      "playable": true,
+      "objective": "Apply check & checkmate recognition under assessment across multiple exercises.",
+      "minExercises": 5,
+      "practiceKind": "puzzles",
+      "practiceItemIds": [
+        13,
+        14,
+        15,
+        101,
+        104
+      ],
+      "videoIds": [
+        "V-CH02-REVIEW"
+      ],
+      "prerequisites": [
+        "CH02-L002",
+        "CH02-L003",
+        "CH02-L004",
+        "CH02-L005"
+      ],
+      "nextLevelId": "CH03-L001"
+    }
+  ],
+  "videos": [
+    {
+      "id": "V-CH02-CONCEPT",
+      "titleAr": "الكش والكش مات: المفهوم",
+      "titleEn": "Check & Checkmate Recognition: Concept",
+      "state": "script_ready",
+      "scriptStatus": "script_ready",
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "supplied"
+      },
+      "asset": null,
+      "levelIds": [
+        "CH02-L001",
+        "CH02-L002",
+        "CH02-L003",
+        "CH02-L004",
+        "CH02-L005",
+        "CH02-L006",
+        "CH02-L007"
+      ],
+      "scriptFile": "docs/video-scripts/V-CH02-CONCEPT.md"
+    },
+    {
+      "id": "V-CH02-DEMO",
+      "titleAr": "أمثلة محلولة على الكش مات",
+      "titleEn": "Check & Checkmate Recognition: Worked Examples",
+      "state": "script_ready",
+      "scriptStatus": "script_ready",
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "supplied"
+      },
+      "asset": null,
+      "levelIds": [
+        "CH02-L002",
+        "CH02-L003",
+        "CH02-L004",
+        "CH02-L005"
+      ],
+      "scriptFile": "docs/video-scripts/V-CH02-DEMO.md"
+    },
+    {
+      "id": "V-CH02-REVIEW",
+      "titleAr": "مراجعة تحدي زعيم الفصل",
+      "titleEn": "Check & Checkmate Recognition: Boss Review",
+      "state": "script_ready",
+      "scriptStatus": "script_ready",
+      "languageStatus": {
+        "en": "supplied",
+        "ar": "supplied"
+      },
+      "asset": null,
+      "levelIds": [
+        "CH02-L006",
+        "CH02-L007"
+      ],
+      "scriptFile": "docs/video-scripts/V-CH02-REVIEW.md"
+    }
+  ],
+  "demos": [
+    {
+      "id": "DEMO-CH02-01",
+      "videoId": "V-CH02-CONCEPT",
+      "levelId": "CH02-L001",
+      "objective": "A check is not mate when the king can simply walk away.",
+      "fen": "4k3/8/8/8/8/8/8/R3K3 w - - 0 1",
+      "move": {
+        "uci": "a1a8",
+        "san": "Ra8+"
+      },
+      "sideToMove": "w",
+      "highlight": [
+        "a8",
+        "d7",
+        "e7",
+        "f7"
+      ],
+      "arrows": [
+        [
+          "a1",
+          "a8"
+        ]
+      ],
+      "result": "check_escapable",
+      "observe": "The rook checks along the 8th rank, but d7, e7 and f7 are all free for the king.",
+      "conclusion": "First question for any check: can the king escape? If yes, it is only a check.",
+      "provenance": "project_authored"
+    },
+    {
+      "id": "DEMO-CH02-02",
+      "videoId": "V-CH02-CONCEPT",
+      "levelId": "CH02-L001",
+      "objective": "A check is not mate when the checking piece can be captured.",
+      "fen": "4k3/8/8/8/8/8/8/4Q1K1 w - - 0 1",
+      "move": {
+        "uci": "e1e7",
+        "san": "Qe7+"
+      },
+      "sideToMove": "w",
+      "highlight": [
+        "e7",
+        "e8"
+      ],
+      "arrows": [
+        [
+          "e1",
+          "e7"
+        ]
+      ],
+      "result": "check_not_mate",
+      "observe": "The queen checks from e7, but it is undefended — the black king just plays Kxe7.",
+      "conclusion": "Before calling a check 'mate', check whether the checking piece can be captured.",
+      "provenance": "project_authored"
+    },
+    {
+      "id": "DEMO-CH02-03",
+      "videoId": "V-CH02-DEMO",
+      "levelId": "CH02-L002",
+      "objective": "Deliver a back-rank checkmate — the king is walled in by its own pawns.",
+      "fen": "6k1/5ppp/8/8/8/8/8/4R1K1 w - - 0 1",
+      "move": {
+        "uci": "e1e8",
+        "san": "Re8#"
+      },
+      "sideToMove": "w",
+      "highlight": [
+        "e8",
+        "g8",
+        "f7",
+        "g7",
+        "h7"
+      ],
+      "arrows": [
+        [
+          "e1",
+          "e8"
+        ]
+      ],
+      "result": "checkmate",
+      "observe": "The rook checks on the back rank; f7/g7/h7 are blocked by Black's own pawns.",
+      "conclusion": "Back-rank mate: a heavy piece checks on the last rank and the king's pawns trap it.",
+      "provenance": "project_authored"
+    },
+    {
+      "id": "DEMO-CH02-04",
+      "videoId": "V-CH02-DEMO",
+      "levelId": "CH02-L002",
+      "objective": "Deliver a mate where the attacking king removes every escape square (box mate).",
+      "fen": "6k1/8/6K1/8/8/8/8/R7 w - - 0 1",
+      "move": {
+        "uci": "a1a8",
+        "san": "Ra8#"
+      },
+      "sideToMove": "w",
+      "highlight": [
+        "a8",
+        "f7",
+        "g7",
+        "h7",
+        "f8",
+        "h8"
+      ],
+      "arrows": [
+        [
+          "a1",
+          "a8"
+        ]
+      ],
+      "result": "checkmate",
+      "observe": "The rook checks on the 8th rank; the white king on g6 covers f7, g7 and h7.",
+      "conclusion": "A rook mates only when the enemy king's flight squares are also covered — here by the king.",
+      "provenance": "project_authored"
+    },
+    {
+      "id": "DEMO-CH02-05",
+      "videoId": "V-CH02-REVIEW",
+      "levelId": "CH02-L007",
+      "objective": "Boss-style: find the mate in one and confirm there is no escape or capture.",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/3Q2K1 w - - 0 1",
+      "move": {
+        "uci": "d1d8",
+        "san": "Qd8#"
+      },
+      "sideToMove": "w",
+      "highlight": [
+        "d8",
+        "g8",
+        "f7",
+        "g7",
+        "h7"
+      ],
+      "arrows": [
+        [
+          "d1",
+          "d8"
+        ]
+      ],
+      "result": "checkmate",
+      "observe": "The queen reaches the back rank with check; the king is boxed in by f7/g7/h7.",
+      "conclusion": "Same back-rank idea with the queen — always verify no escape, block or capture before calling mate.",
+      "provenance": "project_authored"
+    }
+  ],
+  "boss": {
+    "id": "BOSS-CH02",
+    "chapterId": "CH02",
+    "title": "Check & Checkmate Recognition Boss",
+    "assessedSkills": [
+      "mate_in_one"
+    ],
+    "learningObjectives": [
+      "Recognise check and deliver immediate checkmate in one move."
+    ],
+    "prerequisiteLevels": [
+      "CH02-L002",
+      "CH02-L003",
+      "CH02-L004",
+      "CH02-L005"
+    ],
+    "structure": [
+      "recognise the idea",
+      "identify candidate moves",
+      "calculate the critical reply",
+      "find the correct continuation",
+      "avoid the attractive-but-wrong line"
+    ],
+    "passRequirement": "Solve 5 boss exercises at hard difficulty (server-authoritative), each verified correct.",
+    "retry": "Retry permitted after remediation.",
+    "remediation": "Return to the chapter practice levels.",
+    "unlockReward": "Unlocks the next chapter.",
+    "minExercises": 5
+  },
+  "reviewStatus": "automated_integrity_pass + chess_content_verified (demos validated by chess.js). editorial_review_pending. human_educational_reviewed: NO."
+}

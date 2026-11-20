@@ -1,0 +1,3250 @@
+{
+  "generatedAt": "2026-11-05T10:44:18.241Z",
+  "worlds": [
+    {
+      "id": "W01",
+      "title": "Chess Foundations",
+      "theme": "board, pieces, check & checkmate"
+    },
+    {
+      "id": "W02",
+      "title": "Tactical Vision",
+      "theme": "recognising winning tactics"
+    },
+    {
+      "id": "W03",
+      "title": "Checkmate Patterns",
+      "theme": "delivering forced mate"
+    },
+    {
+      "id": "W04",
+      "title": "Calculation",
+      "theme": "calculating forcing sequences"
+    },
+    {
+      "id": "W05",
+      "title": "Defensive Thinking",
+      "theme": "finding the only defence"
+    },
+    {
+      "id": "W06",
+      "title": "Endgame Technique",
+      "theme": "converting reduced-material positions"
+    },
+    {
+      "id": "W07",
+      "title": "Opening Knowledge",
+      "theme": "principles and verified lines"
+    },
+    {
+      "id": "W08",
+      "title": "Combined Skills",
+      "theme": "multi-concept application"
+    },
+    {
+      "id": "W09",
+      "title": "Advanced Mastery",
+      "theme": "hard verified combinations"
+    },
+    {
+      "id": "W10",
+      "title": "Final Challenges",
+      "theme": "cumulative assessments"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "CH01",
+      "worldId": "W01",
+      "title": "Board & Piece Movement",
+      "skillId": null,
+      "backingDomain": null
+    },
+    {
+      "id": "CH02",
+      "worldId": "W01",
+      "title": "Check & Checkmate Recognition",
+      "skillId": "mate_in_one",
+      "backingDomain": "checkmate_patterns"
+    },
+    {
+      "id": "CH03",
+      "worldId": "W02",
+      "title": "Tactical Vision",
+      "skillId": "tactical_recognition",
+      "backingDomain": "tactical_vision"
+    },
+    {
+      "id": "CH04",
+      "worldId": "W03",
+      "title": "Mate in One",
+      "skillId": "mate_in_one",
+      "backingDomain": "checkmate_patterns"
+    },
+    {
+      "id": "CH05",
+      "worldId": "W03",
+      "title": "Forced Mating Sequences",
+      "skillId": "forced_mate",
+      "backingDomain": "checkmate_patterns"
+    },
+    {
+      "id": "CH06",
+      "worldId": "W04",
+      "title": "Calculating Combinations",
+      "skillId": "calculation_combinations",
+      "backingDomain": "calculation"
+    },
+    {
+      "id": "CH07",
+      "worldId": "W05",
+      "title": "Defensive Resources",
+      "skillId": "defensive_resources",
+      "backingDomain": "defensive_play"
+    },
+    {
+      "id": "CH08",
+      "worldId": "W06",
+      "title": "Endgame Conversion",
+      "skillId": "endgame_conversion",
+      "backingDomain": "endgame"
+    },
+    {
+      "id": "CH09",
+      "worldId": "W06",
+      "title": "Endgame Theory (Opposition & Key Squares)",
+      "skillId": null,
+      "backingDomain": "endgame"
+    },
+    {
+      "id": "CH10",
+      "worldId": "W07",
+      "title": "Opening Principles & Lines",
+      "skillId": null,
+      "backingDomain": "opening_knowledge"
+    },
+    {
+      "id": "CH11",
+      "worldId": "W07",
+      "title": "Opening-Stage Tactics (provisional)",
+      "skillId": "opening_stage_tactics",
+      "backingDomain": "opening_knowledge"
+    },
+    {
+      "id": "CH12",
+      "worldId": "W08",
+      "title": "Combined Skills",
+      "skillId": null,
+      "backingDomain": null
+    },
+    {
+      "id": "CH13",
+      "worldId": "W09",
+      "title": "Advanced Combinations",
+      "skillId": null,
+      "backingDomain": null
+    },
+    {
+      "id": "CH14",
+      "worldId": "W10",
+      "title": "Final Challenges & Strategic Application",
+      "skillId": null,
+      "backingDomain": null
+    }
+  ],
+  "summary": {
+    "worlds": 10,
+    "chapters": 14,
+    "levels": 114,
+    "playable": 69,
+    "statusCounts": {
+      "ready": 69,
+      "limited": 23,
+      "future_content_required": 22
+    },
+    "videos": 48,
+    "bosses": 10
+  },
+  "levels": [
+    {
+      "id": "CH01-L001",
+      "seq": 1,
+      "worldId": "W01",
+      "chapterId": "CH01",
+      "title": "Understanding the Board & Coordinates",
+      "type": "concept",
+      "band": null,
+      "status": "ready",
+      "domain": null,
+      "skillId": null,
+      "objective": "Identify squares by file/rank and read algebraic coordinates.",
+      "prerequisites": [],
+      "nextLevelId": "CH01-L002",
+      "videoIds": [
+        "V-CH01-L001"
+      ],
+      "practiceKind": "lesson",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": true
+    },
+    {
+      "id": "CH01-L002",
+      "seq": 2,
+      "worldId": "W01",
+      "chapterId": "CH01",
+      "title": "King & Queen Movement",
+      "type": "concept",
+      "band": null,
+      "status": "ready",
+      "domain": null,
+      "skillId": null,
+      "objective": "Move the king (one square) and the queen (lines & diagonals).",
+      "prerequisites": [
+        "CH01-L001"
+      ],
+      "nextLevelId": "CH01-L003",
+      "videoIds": [
+        "V-CH01-L002"
+      ],
+      "practiceKind": "lesson",
+      "practiceCount": 2,
+      "minExercises": 0,
+      "playable": true
+    },
+    {
+      "id": "CH01-L003",
+      "seq": 3,
+      "worldId": "W01",
+      "chapterId": "CH01",
+      "title": "Rook, Bishop & Knight Movement",
+      "type": "concept",
+      "band": null,
+      "status": "ready",
+      "domain": null,
+      "skillId": null,
+      "objective": "Move the rook (ranks/files), bishop (diagonals) and the jumping knight.",
+      "prerequisites": [
+        "CH01-L002"
+      ],
+      "nextLevelId": "CH01-L004",
+      "videoIds": [
+        "V-CH01-L003"
+      ],
+      "practiceKind": "lesson",
+      "practiceCount": 1,
+      "minExercises": 0,
+      "playable": true
+    },
+    {
+      "id": "CH01-L004",
+      "seq": 4,
+      "worldId": "W01",
+      "chapterId": "CH01",
+      "title": "Pawn Movement & Captures",
+      "type": "concept",
+      "band": null,
+      "status": "ready",
+      "domain": null,
+      "skillId": null,
+      "objective": "Move pawns forward but capture diagonally.",
+      "prerequisites": [
+        "CH01-L003"
+      ],
+      "nextLevelId": "CH01-L005",
+      "videoIds": [
+        "V-CH01-L004"
+      ],
+      "practiceKind": "lesson",
+      "practiceCount": 2,
+      "minExercises": 0,
+      "playable": true
+    },
+    {
+      "id": "CH01-L005",
+      "seq": 5,
+      "worldId": "W01",
+      "chapterId": "CH01",
+      "title": "Blocking & Legal Captures",
+      "type": "concept",
+      "band": null,
+      "status": "ready",
+      "domain": null,
+      "skillId": null,
+      "objective": "Understand that most pieces cannot pass through others.",
+      "prerequisites": [
+        "CH01-L004"
+      ],
+      "nextLevelId": "CH01-L006",
+      "videoIds": [
+        "V-CH01-L005"
+      ],
+      "practiceKind": "lesson",
+      "practiceCount": 1,
+      "minExercises": 0,
+      "playable": true
+    },
+    {
+      "id": "CH01-L006",
+      "seq": 6,
+      "worldId": "W01",
+      "chapterId": "CH01",
+      "title": "Understanding Check",
+      "type": "concept",
+      "band": null,
+      "status": "ready",
+      "domain": null,
+      "skillId": null,
+      "objective": "Recognise when a king is in check.",
+      "prerequisites": [
+        "CH01-L005"
+      ],
+      "nextLevelId": "CH01-L007",
+      "videoIds": [
+        "V-CH01-L006"
+      ],
+      "practiceKind": "lesson",
+      "practiceCount": 1,
+      "minExercises": 0,
+      "playable": true
+    },
+    {
+      "id": "CH01-L007",
+      "seq": 7,
+      "worldId": "W01",
+      "chapterId": "CH01",
+      "title": "Responding to Check",
+      "type": "concept",
+      "band": null,
+      "status": "ready",
+      "domain": null,
+      "skillId": null,
+      "objective": "Respond to check by moving, capturing or blocking.",
+      "prerequisites": [
+        "CH01-L006"
+      ],
+      "nextLevelId": "CH01-L008",
+      "videoIds": [
+        "V-CH01-L007"
+      ],
+      "practiceKind": "lesson",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": true
+    },
+    {
+      "id": "CH01-L008",
+      "seq": 8,
+      "worldId": "W01",
+      "chapterId": "CH01",
+      "title": "Checkmate & Stalemate",
+      "type": "concept",
+      "band": null,
+      "status": "ready",
+      "domain": null,
+      "skillId": null,
+      "objective": "Distinguish checkmate from stalemate.",
+      "prerequisites": [
+        "CH01-L007"
+      ],
+      "nextLevelId": "CH01-L009",
+      "videoIds": [
+        "V-CH01-L008"
+      ],
+      "practiceKind": "lesson",
+      "practiceCount": 2,
+      "minExercises": 0,
+      "playable": true
+    },
+    {
+      "id": "CH01-L009",
+      "seq": 9,
+      "worldId": "W01",
+      "chapterId": "CH01",
+      "title": "Castling",
+      "type": "concept",
+      "band": null,
+      "status": "ready",
+      "domain": null,
+      "skillId": null,
+      "objective": "Castle legally and recognise when castling is forbidden.",
+      "prerequisites": [
+        "CH01-L008"
+      ],
+      "nextLevelId": "CH01-L010",
+      "videoIds": [
+        "V-CH01-L009"
+      ],
+      "practiceKind": "lesson",
+      "practiceCount": 2,
+      "minExercises": 0,
+      "playable": true
+    },
+    {
+      "id": "CH01-L010",
+      "seq": 10,
+      "worldId": "W01",
+      "chapterId": "CH01",
+      "title": "En Passant",
+      "type": "concept",
+      "band": null,
+      "status": "ready",
+      "domain": null,
+      "skillId": null,
+      "objective": "Perform en passant and know its timing.",
+      "prerequisites": [
+        "CH01-L009"
+      ],
+      "nextLevelId": "CH01-L011",
+      "videoIds": [
+        "V-CH01-L010"
+      ],
+      "practiceKind": "lesson",
+      "practiceCount": 2,
+      "minExercises": 0,
+      "playable": true
+    },
+    {
+      "id": "CH01-L011",
+      "seq": 11,
+      "worldId": "W01",
+      "chapterId": "CH01",
+      "title": "Promotion",
+      "type": "concept",
+      "band": null,
+      "status": "ready",
+      "domain": null,
+      "skillId": null,
+      "objective": "Promote a pawn and choose the piece.",
+      "prerequisites": [
+        "CH01-L010"
+      ],
+      "nextLevelId": "CH01-L012",
+      "videoIds": [
+        "V-CH01-L011"
+      ],
+      "practiceKind": "lesson",
+      "practiceCount": 1,
+      "minExercises": 0,
+      "playable": true
+    },
+    {
+      "id": "CH01-L012",
+      "seq": 12,
+      "worldId": "W01",
+      "chapterId": "CH01",
+      "title": "Beginner Rules Assessment",
+      "type": "assessment",
+      "band": null,
+      "status": "ready",
+      "domain": null,
+      "skillId": "__foundation__",
+      "objective": "Demonstrate the fundamentals in a graded, server-verified assessment.",
+      "prerequisites": [
+        "CH01-L011"
+      ],
+      "nextLevelId": "CH02-L001",
+      "videoIds": [
+        "V-CH01-L012"
+      ],
+      "practiceKind": "rules_assessment",
+      "practiceCount": 1,
+      "minExercises": 1,
+      "playable": true
+    },
+    {
+      "id": "CH02-L001",
+      "seq": 13,
+      "worldId": "W01",
+      "chapterId": "CH02",
+      "title": "Check & Checkmate Recognition: Concepts",
+      "type": "concept",
+      "band": null,
+      "status": "limited",
+      "domain": "checkmate_patterns",
+      "skillId": "mate_in_one",
+      "objective": "Recognise check and deliver immediate checkmate in one move.",
+      "prerequisites": [
+        "CH01-L012"
+      ],
+      "nextLevelId": "CH02-L002",
+      "videoIds": [
+        "V-CH02-CONCEPT"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH02-L002",
+      "seq": 14,
+      "worldId": "W01",
+      "chapterId": "CH02",
+      "title": "Check & Checkmate Recognition: Easy Practice A",
+      "type": "guided_practice",
+      "band": "easy",
+      "status": "ready",
+      "domain": "checkmate_patterns",
+      "skillId": "mate_in_one",
+      "objective": "Recognise check and deliver immediate checkmate in one move. (easy difficulty, set A)",
+      "prerequisites": [
+        "CH02-L001"
+      ],
+      "nextLevelId": "CH02-L003",
+      "videoIds": [
+        "V-CH02-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 3,
+      "minExercises": 3,
+      "playable": true
+    },
+    {
+      "id": "CH02-L003",
+      "seq": 15,
+      "worldId": "W01",
+      "chapterId": "CH02",
+      "title": "Check & Checkmate Recognition: Easy Practice B",
+      "type": "independent_practice",
+      "band": "easy",
+      "status": "future_content_required",
+      "domain": "checkmate_patterns",
+      "skillId": "mate_in_one",
+      "objective": "Recognise check and deliver immediate checkmate in one move. (easy difficulty, set B)",
+      "prerequisites": [
+        "CH02-L002"
+      ],
+      "nextLevelId": "CH02-L004",
+      "videoIds": [
+        "V-CH02-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 0,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH02-L004",
+      "seq": 16,
+      "worldId": "W01",
+      "chapterId": "CH02",
+      "title": "Check & Checkmate Recognition: Medium Practice A",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "ready",
+      "domain": "checkmate_patterns",
+      "skillId": "mate_in_one",
+      "objective": "Recognise check and deliver immediate checkmate in one move. (medium difficulty, set A)",
+      "prerequisites": [
+        "CH02-L003"
+      ],
+      "nextLevelId": "CH02-L005",
+      "videoIds": [
+        "V-CH02-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH02-L005",
+      "seq": 17,
+      "worldId": "W01",
+      "chapterId": "CH02",
+      "title": "Check & Checkmate Recognition: Medium Practice B",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "ready",
+      "domain": "checkmate_patterns",
+      "skillId": "mate_in_one",
+      "objective": "Recognise check and deliver immediate checkmate in one move. (medium difficulty, set B)",
+      "prerequisites": [
+        "CH02-L004"
+      ],
+      "nextLevelId": "CH02-L006",
+      "videoIds": [
+        "V-CH02-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 4,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH02-L006",
+      "seq": 18,
+      "worldId": "W01",
+      "chapterId": "CH02",
+      "title": "Check & Checkmate Recognition: Review",
+      "type": "review",
+      "band": null,
+      "status": "limited",
+      "domain": "checkmate_patterns",
+      "skillId": "mate_in_one",
+      "objective": "Retain check & checkmate recognition via spaced review.",
+      "prerequisites": [
+        "CH02-L001"
+      ],
+      "nextLevelId": "CH02-L007",
+      "videoIds": [
+        "V-CH02-REVIEW"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH02-L007",
+      "seq": 19,
+      "worldId": "W01",
+      "chapterId": "CH02",
+      "title": "Check & Checkmate Recognition: Chapter Boss",
+      "type": "boss_challenge",
+      "band": "hard",
+      "status": "ready",
+      "domain": "checkmate_patterns",
+      "skillId": "mate_in_one",
+      "objective": "Apply check & checkmate recognition under assessment across multiple exercises.",
+      "prerequisites": [
+        "CH02-L002",
+        "CH02-L003",
+        "CH02-L004",
+        "CH02-L005"
+      ],
+      "nextLevelId": "CH03-L001",
+      "videoIds": [
+        "V-CH02-REVIEW"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 5,
+      "playable": true
+    },
+    {
+      "id": "CH03-L001",
+      "seq": 20,
+      "worldId": "W02",
+      "chapterId": "CH03",
+      "title": "Tactical Vision: Concepts",
+      "type": "concept",
+      "band": null,
+      "status": "limited",
+      "domain": "tactical_vision",
+      "skillId": "tactical_recognition",
+      "objective": "Recognise and play the move that wins material.",
+      "prerequisites": [],
+      "nextLevelId": "CH03-L002",
+      "videoIds": [
+        "V-CH03-CONCEPT"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH03-L002",
+      "seq": 21,
+      "worldId": "W02",
+      "chapterId": "CH03",
+      "title": "Tactical Vision: Easy Practice A",
+      "type": "guided_practice",
+      "band": "easy",
+      "status": "ready",
+      "domain": "tactical_vision",
+      "skillId": "tactical_recognition",
+      "objective": "Recognise and play the move that wins material. (easy difficulty, set A)",
+      "prerequisites": [
+        "CH03-L001"
+      ],
+      "nextLevelId": "CH03-L003",
+      "videoIds": [
+        "V-CH03-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 3,
+      "playable": true
+    },
+    {
+      "id": "CH03-L003",
+      "seq": 22,
+      "worldId": "W02",
+      "chapterId": "CH03",
+      "title": "Tactical Vision: Easy Practice B",
+      "type": "independent_practice",
+      "band": "easy",
+      "status": "ready",
+      "domain": "tactical_vision",
+      "skillId": "tactical_recognition",
+      "objective": "Recognise and play the move that wins material. (easy difficulty, set B)",
+      "prerequisites": [
+        "CH03-L002"
+      ],
+      "nextLevelId": "CH03-L004",
+      "videoIds": [
+        "V-CH03-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH03-L004",
+      "seq": 23,
+      "worldId": "W02",
+      "chapterId": "CH03",
+      "title": "Tactical Vision: Medium Practice A",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "ready",
+      "domain": "tactical_vision",
+      "skillId": "tactical_recognition",
+      "objective": "Recognise and play the move that wins material. (medium difficulty, set A)",
+      "prerequisites": [
+        "CH03-L003"
+      ],
+      "nextLevelId": "CH03-L005",
+      "videoIds": [
+        "V-CH03-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH03-L005",
+      "seq": 24,
+      "worldId": "W02",
+      "chapterId": "CH03",
+      "title": "Tactical Vision: Medium Practice B",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "ready",
+      "domain": "tactical_vision",
+      "skillId": "tactical_recognition",
+      "objective": "Recognise and play the move that wins material. (medium difficulty, set B)",
+      "prerequisites": [
+        "CH03-L004"
+      ],
+      "nextLevelId": "CH03-L006",
+      "videoIds": [
+        "V-CH03-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH03-L006",
+      "seq": 25,
+      "worldId": "W02",
+      "chapterId": "CH03",
+      "title": "Tactical Vision: Hard Practice A",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "future_content_required",
+      "domain": "tactical_vision",
+      "skillId": "tactical_recognition",
+      "objective": "Recognise and play the move that wins material. (hard difficulty, set A)",
+      "prerequisites": [
+        "CH03-L005"
+      ],
+      "nextLevelId": "CH03-L007",
+      "videoIds": [
+        "V-CH03-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 0,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH03-L007",
+      "seq": 26,
+      "worldId": "W02",
+      "chapterId": "CH03",
+      "title": "Tactical Vision: Hard Practice B",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "future_content_required",
+      "domain": "tactical_vision",
+      "skillId": "tactical_recognition",
+      "objective": "Recognise and play the move that wins material. (hard difficulty, set B)",
+      "prerequisites": [
+        "CH03-L006"
+      ],
+      "nextLevelId": "CH03-L008",
+      "videoIds": [
+        "V-CH03-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 0,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH03-L008",
+      "seq": 27,
+      "worldId": "W02",
+      "chapterId": "CH03",
+      "title": "Tactical Vision: Expert Practice A",
+      "type": "independent_practice",
+      "band": "expert",
+      "status": "future_content_required",
+      "domain": "tactical_vision",
+      "skillId": "tactical_recognition",
+      "objective": "Recognise and play the move that wins material. (expert difficulty, set A)",
+      "prerequisites": [
+        "CH03-L007"
+      ],
+      "nextLevelId": "CH03-L009",
+      "videoIds": [
+        "V-CH03-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 0,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH03-L009",
+      "seq": 28,
+      "worldId": "W02",
+      "chapterId": "CH03",
+      "title": "Tactical Vision: Expert Practice B",
+      "type": "independent_practice",
+      "band": "expert",
+      "status": "future_content_required",
+      "domain": "tactical_vision",
+      "skillId": "tactical_recognition",
+      "objective": "Recognise and play the move that wins material. (expert difficulty, set B)",
+      "prerequisites": [
+        "CH03-L008"
+      ],
+      "nextLevelId": "CH03-L010",
+      "videoIds": [
+        "V-CH03-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 0,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH03-L010",
+      "seq": 29,
+      "worldId": "W02",
+      "chapterId": "CH03",
+      "title": "Tactical Vision: Review",
+      "type": "review",
+      "band": null,
+      "status": "limited",
+      "domain": "tactical_vision",
+      "skillId": "tactical_recognition",
+      "objective": "Retain tactical vision via spaced review.",
+      "prerequisites": [
+        "CH03-L001"
+      ],
+      "nextLevelId": "CH03-L011",
+      "videoIds": [
+        "V-CH03-REVIEW"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH03-L011",
+      "seq": 30,
+      "worldId": "W02",
+      "chapterId": "CH03",
+      "title": "Tactical Vision: Chapter Boss",
+      "type": "boss_challenge",
+      "band": "hard",
+      "status": "ready",
+      "domain": "tactical_vision",
+      "skillId": "tactical_recognition",
+      "objective": "Apply tactical vision under assessment across multiple exercises.",
+      "prerequisites": [
+        "CH03-L002",
+        "CH03-L003",
+        "CH03-L004",
+        "CH03-L005",
+        "CH03-L006",
+        "CH03-L007",
+        "CH03-L008",
+        "CH03-L009"
+      ],
+      "nextLevelId": "CH04-L001",
+      "videoIds": [
+        "V-CH03-REVIEW"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 5,
+      "playable": true
+    },
+    {
+      "id": "CH04-L001",
+      "seq": 31,
+      "worldId": "W03",
+      "chapterId": "CH04",
+      "title": "Mate in One: Concepts",
+      "type": "concept",
+      "band": null,
+      "status": "limited",
+      "domain": "checkmate_patterns",
+      "skillId": "mate_in_one",
+      "objective": "Deliver forced checkmate in a single move across patterns.",
+      "prerequisites": [],
+      "nextLevelId": "CH04-L002",
+      "videoIds": [
+        "V-CH04-CONCEPT"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH04-L002",
+      "seq": 32,
+      "worldId": "W03",
+      "chapterId": "CH04",
+      "title": "Mate in One: Easy Practice A",
+      "type": "guided_practice",
+      "band": "easy",
+      "status": "future_content_required",
+      "domain": "checkmate_patterns",
+      "skillId": "mate_in_one",
+      "objective": "Deliver forced checkmate in a single move across patterns. (easy difficulty, set A)",
+      "prerequisites": [
+        "CH04-L001"
+      ],
+      "nextLevelId": "CH04-L003",
+      "videoIds": [
+        "V-CH04-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 0,
+      "minExercises": 3,
+      "playable": false
+    },
+    {
+      "id": "CH04-L003",
+      "seq": 33,
+      "worldId": "W03",
+      "chapterId": "CH04",
+      "title": "Mate in One: Easy Practice B",
+      "type": "independent_practice",
+      "band": "easy",
+      "status": "future_content_required",
+      "domain": "checkmate_patterns",
+      "skillId": "mate_in_one",
+      "objective": "Deliver forced checkmate in a single move across patterns. (easy difficulty, set B)",
+      "prerequisites": [
+        "CH04-L002"
+      ],
+      "nextLevelId": "CH04-L004",
+      "videoIds": [
+        "V-CH04-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 0,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH04-L004",
+      "seq": 34,
+      "worldId": "W03",
+      "chapterId": "CH04",
+      "title": "Mate in One: Medium Practice A",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "future_content_required",
+      "domain": "checkmate_patterns",
+      "skillId": "mate_in_one",
+      "objective": "Deliver forced checkmate in a single move across patterns. (medium difficulty, set A)",
+      "prerequisites": [
+        "CH04-L003"
+      ],
+      "nextLevelId": "CH04-L005",
+      "videoIds": [
+        "V-CH04-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 0,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH04-L005",
+      "seq": 35,
+      "worldId": "W03",
+      "chapterId": "CH04",
+      "title": "Mate in One: Medium Practice B",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "future_content_required",
+      "domain": "checkmate_patterns",
+      "skillId": "mate_in_one",
+      "objective": "Deliver forced checkmate in a single move across patterns. (medium difficulty, set B)",
+      "prerequisites": [
+        "CH04-L004"
+      ],
+      "nextLevelId": "CH04-L006",
+      "videoIds": [
+        "V-CH04-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 0,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH04-L006",
+      "seq": 36,
+      "worldId": "W03",
+      "chapterId": "CH04",
+      "title": "Mate in One: Hard Practice A",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "ready",
+      "domain": "checkmate_patterns",
+      "skillId": "mate_in_one",
+      "objective": "Deliver forced checkmate in a single move across patterns. (hard difficulty, set A)",
+      "prerequisites": [
+        "CH04-L005"
+      ],
+      "nextLevelId": "CH04-L007",
+      "videoIds": [
+        "V-CH04-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH04-L007",
+      "seq": 37,
+      "worldId": "W03",
+      "chapterId": "CH04",
+      "title": "Mate in One: Hard Practice B",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "future_content_required",
+      "domain": "checkmate_patterns",
+      "skillId": "mate_in_one",
+      "objective": "Deliver forced checkmate in a single move across patterns. (hard difficulty, set B)",
+      "prerequisites": [
+        "CH04-L006"
+      ],
+      "nextLevelId": "CH04-L008",
+      "videoIds": [
+        "V-CH04-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 3,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH04-L008",
+      "seq": 38,
+      "worldId": "W03",
+      "chapterId": "CH04",
+      "title": "Mate in One: Review",
+      "type": "review",
+      "band": null,
+      "status": "limited",
+      "domain": "checkmate_patterns",
+      "skillId": "mate_in_one",
+      "objective": "Retain mate in one via spaced review.",
+      "prerequisites": [
+        "CH04-L001"
+      ],
+      "nextLevelId": "CH04-L009",
+      "videoIds": [
+        "V-CH04-REVIEW"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH04-L009",
+      "seq": 39,
+      "worldId": "W03",
+      "chapterId": "CH04",
+      "title": "Mate in One: Assessment",
+      "type": "assessment",
+      "band": "medium",
+      "status": "ready",
+      "domain": "checkmate_patterns",
+      "skillId": "mate_in_one",
+      "objective": "Demonstrate mate in one on fresh exercises.",
+      "prerequisites": [
+        "CH04-L002",
+        "CH04-L003",
+        "CH04-L004",
+        "CH04-L005",
+        "CH04-L006",
+        "CH04-L007"
+      ],
+      "nextLevelId": "CH05-L001",
+      "videoIds": [
+        "V-CH04-REVIEW"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH05-L001",
+      "seq": 40,
+      "worldId": "W03",
+      "chapterId": "CH05",
+      "title": "Forced Mating Sequences: Concepts",
+      "type": "concept",
+      "band": null,
+      "status": "limited",
+      "domain": "checkmate_patterns",
+      "skillId": "forced_mate",
+      "objective": "Calculate a forced mate two to three moves deep.",
+      "prerequisites": [],
+      "nextLevelId": "CH05-L002",
+      "videoIds": [
+        "V-CH05-CONCEPT"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH05-L002",
+      "seq": 41,
+      "worldId": "W03",
+      "chapterId": "CH05",
+      "title": "Forced Mating Sequences: Medium Practice A",
+      "type": "guided_practice",
+      "band": "medium",
+      "status": "future_content_required",
+      "domain": "checkmate_patterns",
+      "skillId": "forced_mate",
+      "objective": "Calculate a forced mate two to three moves deep. (medium difficulty, set A)",
+      "prerequisites": [
+        "CH05-L001"
+      ],
+      "nextLevelId": "CH05-L003",
+      "videoIds": [
+        "V-CH05-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 0,
+      "minExercises": 3,
+      "playable": false
+    },
+    {
+      "id": "CH05-L003",
+      "seq": 42,
+      "worldId": "W03",
+      "chapterId": "CH05",
+      "title": "Forced Mating Sequences: Medium Practice B",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "future_content_required",
+      "domain": "checkmate_patterns",
+      "skillId": "forced_mate",
+      "objective": "Calculate a forced mate two to three moves deep. (medium difficulty, set B)",
+      "prerequisites": [
+        "CH05-L002"
+      ],
+      "nextLevelId": "CH05-L004",
+      "videoIds": [
+        "V-CH05-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 0,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH05-L004",
+      "seq": 43,
+      "worldId": "W03",
+      "chapterId": "CH05",
+      "title": "Forced Mating Sequences: Hard Practice A",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "ready",
+      "domain": "checkmate_patterns",
+      "skillId": "forced_mate",
+      "objective": "Calculate a forced mate two to three moves deep. (hard difficulty, set A)",
+      "prerequisites": [
+        "CH05-L003"
+      ],
+      "nextLevelId": "CH05-L005",
+      "videoIds": [
+        "V-CH05-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH05-L005",
+      "seq": 44,
+      "worldId": "W03",
+      "chapterId": "CH05",
+      "title": "Forced Mating Sequences: Hard Practice B",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "ready",
+      "domain": "checkmate_patterns",
+      "skillId": "forced_mate",
+      "objective": "Calculate a forced mate two to three moves deep. (hard difficulty, set B)",
+      "prerequisites": [
+        "CH05-L004"
+      ],
+      "nextLevelId": "CH05-L006",
+      "videoIds": [
+        "V-CH05-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH05-L006",
+      "seq": 45,
+      "worldId": "W03",
+      "chapterId": "CH05",
+      "title": "Forced Mating Sequences: Expert Practice A",
+      "type": "independent_practice",
+      "band": "expert",
+      "status": "ready",
+      "domain": "checkmate_patterns",
+      "skillId": "forced_mate",
+      "objective": "Calculate a forced mate two to three moves deep. (expert difficulty, set A)",
+      "prerequisites": [
+        "CH05-L005"
+      ],
+      "nextLevelId": "CH05-L007",
+      "videoIds": [
+        "V-CH05-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH05-L007",
+      "seq": 46,
+      "worldId": "W03",
+      "chapterId": "CH05",
+      "title": "Forced Mating Sequences: Expert Practice B",
+      "type": "independent_practice",
+      "band": "expert",
+      "status": "ready",
+      "domain": "checkmate_patterns",
+      "skillId": "forced_mate",
+      "objective": "Calculate a forced mate two to three moves deep. (expert difficulty, set B)",
+      "prerequisites": [
+        "CH05-L006"
+      ],
+      "nextLevelId": "CH05-L008",
+      "videoIds": [
+        "V-CH05-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH05-L008",
+      "seq": 47,
+      "worldId": "W03",
+      "chapterId": "CH05",
+      "title": "Forced Mating Sequences: Review",
+      "type": "review",
+      "band": null,
+      "status": "limited",
+      "domain": "checkmate_patterns",
+      "skillId": "forced_mate",
+      "objective": "Retain forced mating sequences via spaced review.",
+      "prerequisites": [
+        "CH05-L001"
+      ],
+      "nextLevelId": "CH05-L009",
+      "videoIds": [
+        "V-CH05-REVIEW"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH05-L009",
+      "seq": 48,
+      "worldId": "W03",
+      "chapterId": "CH05",
+      "title": "Forced Mating Sequences: Chapter Boss",
+      "type": "boss_challenge",
+      "band": "hard",
+      "status": "ready",
+      "domain": "checkmate_patterns",
+      "skillId": "forced_mate",
+      "objective": "Apply forced mating sequences under assessment across multiple exercises.",
+      "prerequisites": [
+        "CH05-L002",
+        "CH05-L003",
+        "CH05-L004",
+        "CH05-L005",
+        "CH05-L006",
+        "CH05-L007"
+      ],
+      "nextLevelId": "CH06-L001",
+      "videoIds": [
+        "V-CH05-REVIEW"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 5,
+      "playable": true
+    },
+    {
+      "id": "CH06-L001",
+      "seq": 49,
+      "worldId": "W04",
+      "chapterId": "CH06",
+      "title": "Calculating Combinations: Concepts",
+      "type": "concept",
+      "band": null,
+      "status": "limited",
+      "domain": "calculation",
+      "skillId": "calculation_combinations",
+      "objective": "Calculate a multi-move forcing sequence to a winning material result.",
+      "prerequisites": [],
+      "nextLevelId": "CH06-L002",
+      "videoIds": [
+        "V-CH06-CONCEPT"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH06-L002",
+      "seq": 50,
+      "worldId": "W04",
+      "chapterId": "CH06",
+      "title": "Calculating Combinations: Medium Practice A",
+      "type": "guided_practice",
+      "band": "medium",
+      "status": "ready",
+      "domain": "calculation",
+      "skillId": "calculation_combinations",
+      "objective": "Calculate a multi-move forcing sequence to a winning material result. (medium difficulty, set A)",
+      "prerequisites": [
+        "CH06-L001"
+      ],
+      "nextLevelId": "CH06-L003",
+      "videoIds": [
+        "V-CH06-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 4,
+      "minExercises": 3,
+      "playable": true
+    },
+    {
+      "id": "CH06-L003",
+      "seq": 51,
+      "worldId": "W04",
+      "chapterId": "CH06",
+      "title": "Calculating Combinations: Medium Practice B",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "future_content_required",
+      "domain": "calculation",
+      "skillId": "calculation_combinations",
+      "objective": "Calculate a multi-move forcing sequence to a winning material result. (medium difficulty, set B)",
+      "prerequisites": [
+        "CH06-L002"
+      ],
+      "nextLevelId": "CH06-L004",
+      "videoIds": [
+        "V-CH06-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 0,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH06-L004",
+      "seq": 52,
+      "worldId": "W04",
+      "chapterId": "CH06",
+      "title": "Calculating Combinations: Hard Practice A",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "ready",
+      "domain": "calculation",
+      "skillId": "calculation_combinations",
+      "objective": "Calculate a multi-move forcing sequence to a winning material result. (hard difficulty, set A)",
+      "prerequisites": [
+        "CH06-L003"
+      ],
+      "nextLevelId": "CH06-L005",
+      "videoIds": [
+        "V-CH06-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH06-L005",
+      "seq": 53,
+      "worldId": "W04",
+      "chapterId": "CH06",
+      "title": "Calculating Combinations: Hard Practice B",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "ready",
+      "domain": "calculation",
+      "skillId": "calculation_combinations",
+      "objective": "Calculate a multi-move forcing sequence to a winning material result. (hard difficulty, set B)",
+      "prerequisites": [
+        "CH06-L004"
+      ],
+      "nextLevelId": "CH06-L006",
+      "videoIds": [
+        "V-CH06-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH06-L006",
+      "seq": 54,
+      "worldId": "W04",
+      "chapterId": "CH06",
+      "title": "Calculating Combinations: Expert Practice A",
+      "type": "independent_practice",
+      "band": "expert",
+      "status": "future_content_required",
+      "domain": "calculation",
+      "skillId": "calculation_combinations",
+      "objective": "Calculate a multi-move forcing sequence to a winning material result. (expert difficulty, set A)",
+      "prerequisites": [
+        "CH06-L005"
+      ],
+      "nextLevelId": "CH06-L007",
+      "videoIds": [
+        "V-CH06-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 3,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH06-L007",
+      "seq": 55,
+      "worldId": "W04",
+      "chapterId": "CH06",
+      "title": "Calculating Combinations: Expert Practice B",
+      "type": "independent_practice",
+      "band": "expert",
+      "status": "future_content_required",
+      "domain": "calculation",
+      "skillId": "calculation_combinations",
+      "objective": "Calculate a multi-move forcing sequence to a winning material result. (expert difficulty, set B)",
+      "prerequisites": [
+        "CH06-L006"
+      ],
+      "nextLevelId": "CH06-L008",
+      "videoIds": [
+        "V-CH06-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 0,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH06-L008",
+      "seq": 56,
+      "worldId": "W04",
+      "chapterId": "CH06",
+      "title": "Calculating Combinations: Review",
+      "type": "review",
+      "band": null,
+      "status": "limited",
+      "domain": "calculation",
+      "skillId": "calculation_combinations",
+      "objective": "Retain calculating combinations via spaced review.",
+      "prerequisites": [
+        "CH06-L001"
+      ],
+      "nextLevelId": "CH06-L009",
+      "videoIds": [
+        "V-CH06-REVIEW"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH06-L009",
+      "seq": 57,
+      "worldId": "W04",
+      "chapterId": "CH06",
+      "title": "Calculating Combinations: Chapter Boss",
+      "type": "boss_challenge",
+      "band": "hard",
+      "status": "ready",
+      "domain": "calculation",
+      "skillId": "calculation_combinations",
+      "objective": "Apply calculating combinations under assessment across multiple exercises.",
+      "prerequisites": [
+        "CH06-L002",
+        "CH06-L003",
+        "CH06-L004",
+        "CH06-L005",
+        "CH06-L006",
+        "CH06-L007"
+      ],
+      "nextLevelId": "CH07-L001",
+      "videoIds": [
+        "V-CH06-REVIEW"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 5,
+      "playable": true
+    },
+    {
+      "id": "CH07-L001",
+      "seq": 58,
+      "worldId": "W05",
+      "chapterId": "CH07",
+      "title": "Defensive Resources: Concepts",
+      "type": "concept",
+      "band": null,
+      "status": "limited",
+      "domain": "defensive_play",
+      "skillId": "defensive_resources",
+      "objective": "Find the only move that avoids losing material or being mated.",
+      "prerequisites": [],
+      "nextLevelId": "CH07-L002",
+      "videoIds": [
+        "V-CH07-CONCEPT"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH07-L002",
+      "seq": 59,
+      "worldId": "W05",
+      "chapterId": "CH07",
+      "title": "Defensive Resources: Easy Practice A",
+      "type": "guided_practice",
+      "band": "easy",
+      "status": "ready",
+      "domain": "defensive_play",
+      "skillId": "defensive_resources",
+      "objective": "Find the only move that avoids losing material or being mated. (easy difficulty, set A)",
+      "prerequisites": [
+        "CH07-L001"
+      ],
+      "nextLevelId": "CH07-L003",
+      "videoIds": [
+        "V-CH07-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 3,
+      "playable": true
+    },
+    {
+      "id": "CH07-L003",
+      "seq": 60,
+      "worldId": "W05",
+      "chapterId": "CH07",
+      "title": "Defensive Resources: Easy Practice B",
+      "type": "independent_practice",
+      "band": "easy",
+      "status": "ready",
+      "domain": "defensive_play",
+      "skillId": "defensive_resources",
+      "objective": "Find the only move that avoids losing material or being mated. (easy difficulty, set B)",
+      "prerequisites": [
+        "CH07-L002"
+      ],
+      "nextLevelId": "CH07-L004",
+      "videoIds": [
+        "V-CH07-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH07-L004",
+      "seq": 61,
+      "worldId": "W05",
+      "chapterId": "CH07",
+      "title": "Defensive Resources: Medium Practice A",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "ready",
+      "domain": "defensive_play",
+      "skillId": "defensive_resources",
+      "objective": "Find the only move that avoids losing material or being mated. (medium difficulty, set A)",
+      "prerequisites": [
+        "CH07-L003"
+      ],
+      "nextLevelId": "CH07-L005",
+      "videoIds": [
+        "V-CH07-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH07-L005",
+      "seq": 62,
+      "worldId": "W05",
+      "chapterId": "CH07",
+      "title": "Defensive Resources: Medium Practice B",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "ready",
+      "domain": "defensive_play",
+      "skillId": "defensive_resources",
+      "objective": "Find the only move that avoids losing material or being mated. (medium difficulty, set B)",
+      "prerequisites": [
+        "CH07-L004"
+      ],
+      "nextLevelId": "CH07-L006",
+      "videoIds": [
+        "V-CH07-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH07-L006",
+      "seq": 63,
+      "worldId": "W05",
+      "chapterId": "CH07",
+      "title": "Defensive Resources: Hard Practice A",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "ready",
+      "domain": "defensive_play",
+      "skillId": "defensive_resources",
+      "objective": "Find the only move that avoids losing material or being mated. (hard difficulty, set A)",
+      "prerequisites": [
+        "CH07-L005"
+      ],
+      "nextLevelId": "CH07-L007",
+      "videoIds": [
+        "V-CH07-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH07-L007",
+      "seq": 64,
+      "worldId": "W05",
+      "chapterId": "CH07",
+      "title": "Defensive Resources: Hard Practice B",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "future_content_required",
+      "domain": "defensive_play",
+      "skillId": "defensive_resources",
+      "objective": "Find the only move that avoids losing material or being mated. (hard difficulty, set B)",
+      "prerequisites": [
+        "CH07-L006"
+      ],
+      "nextLevelId": "CH07-L008",
+      "videoIds": [
+        "V-CH07-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 2,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH07-L008",
+      "seq": 65,
+      "worldId": "W05",
+      "chapterId": "CH07",
+      "title": "Defensive Resources: Expert Practice A",
+      "type": "independent_practice",
+      "band": "expert",
+      "status": "future_content_required",
+      "domain": "defensive_play",
+      "skillId": "defensive_resources",
+      "objective": "Find the only move that avoids losing material or being mated. (expert difficulty, set A)",
+      "prerequisites": [
+        "CH07-L007"
+      ],
+      "nextLevelId": "CH07-L009",
+      "videoIds": [
+        "V-CH07-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 1,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH07-L009",
+      "seq": 66,
+      "worldId": "W05",
+      "chapterId": "CH07",
+      "title": "Defensive Resources: Expert Practice B",
+      "type": "independent_practice",
+      "band": "expert",
+      "status": "future_content_required",
+      "domain": "defensive_play",
+      "skillId": "defensive_resources",
+      "objective": "Find the only move that avoids losing material or being mated. (expert difficulty, set B)",
+      "prerequisites": [
+        "CH07-L008"
+      ],
+      "nextLevelId": "CH07-L010",
+      "videoIds": [
+        "V-CH07-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 0,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH07-L010",
+      "seq": 67,
+      "worldId": "W05",
+      "chapterId": "CH07",
+      "title": "Defensive Resources: Review",
+      "type": "review",
+      "band": null,
+      "status": "limited",
+      "domain": "defensive_play",
+      "skillId": "defensive_resources",
+      "objective": "Retain defensive resources via spaced review.",
+      "prerequisites": [
+        "CH07-L001"
+      ],
+      "nextLevelId": "CH07-L011",
+      "videoIds": [
+        "V-CH07-REVIEW"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH07-L011",
+      "seq": 68,
+      "worldId": "W05",
+      "chapterId": "CH07",
+      "title": "Defensive Resources: Chapter Boss",
+      "type": "boss_challenge",
+      "band": "hard",
+      "status": "ready",
+      "domain": "defensive_play",
+      "skillId": "defensive_resources",
+      "objective": "Apply defensive resources under assessment across multiple exercises.",
+      "prerequisites": [
+        "CH07-L002",
+        "CH07-L003",
+        "CH07-L004",
+        "CH07-L005",
+        "CH07-L006",
+        "CH07-L007",
+        "CH07-L008",
+        "CH07-L009"
+      ],
+      "nextLevelId": "CH08-L001",
+      "videoIds": [
+        "V-CH07-REVIEW"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 5,
+      "playable": true
+    },
+    {
+      "id": "CH08-L001",
+      "seq": 69,
+      "worldId": "W06",
+      "chapterId": "CH08",
+      "title": "Endgame Conversion: Concepts",
+      "type": "concept",
+      "band": null,
+      "status": "limited",
+      "domain": "endgame",
+      "skillId": "endgame_conversion",
+      "objective": "Convert a reduced-material position by winning material or promoting.",
+      "prerequisites": [],
+      "nextLevelId": "CH08-L002",
+      "videoIds": [
+        "V-CH08-CONCEPT"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH08-L002",
+      "seq": 70,
+      "worldId": "W06",
+      "chapterId": "CH08",
+      "title": "Endgame Conversion: Easy Practice A",
+      "type": "guided_practice",
+      "band": "easy",
+      "status": "ready",
+      "domain": "endgame",
+      "skillId": "endgame_conversion",
+      "objective": "Convert a reduced-material position by winning material or promoting. (easy difficulty, set A)",
+      "prerequisites": [
+        "CH08-L001"
+      ],
+      "nextLevelId": "CH08-L003",
+      "videoIds": [
+        "V-CH08-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 3,
+      "playable": true
+    },
+    {
+      "id": "CH08-L003",
+      "seq": 71,
+      "worldId": "W06",
+      "chapterId": "CH08",
+      "title": "Endgame Conversion: Easy Practice B",
+      "type": "independent_practice",
+      "band": "easy",
+      "status": "ready",
+      "domain": "endgame",
+      "skillId": "endgame_conversion",
+      "objective": "Convert a reduced-material position by winning material or promoting. (easy difficulty, set B)",
+      "prerequisites": [
+        "CH08-L002"
+      ],
+      "nextLevelId": "CH08-L004",
+      "videoIds": [
+        "V-CH08-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH08-L004",
+      "seq": 72,
+      "worldId": "W06",
+      "chapterId": "CH08",
+      "title": "Endgame Conversion: Medium Practice A",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "ready",
+      "domain": "endgame",
+      "skillId": "endgame_conversion",
+      "objective": "Convert a reduced-material position by winning material or promoting. (medium difficulty, set A)",
+      "prerequisites": [
+        "CH08-L003"
+      ],
+      "nextLevelId": "CH08-L005",
+      "videoIds": [
+        "V-CH08-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH08-L005",
+      "seq": 73,
+      "worldId": "W06",
+      "chapterId": "CH08",
+      "title": "Endgame Conversion: Medium Practice B",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "ready",
+      "domain": "endgame",
+      "skillId": "endgame_conversion",
+      "objective": "Convert a reduced-material position by winning material or promoting. (medium difficulty, set B)",
+      "prerequisites": [
+        "CH08-L004"
+      ],
+      "nextLevelId": "CH08-L006",
+      "videoIds": [
+        "V-CH08-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH08-L006",
+      "seq": 74,
+      "worldId": "W06",
+      "chapterId": "CH08",
+      "title": "Endgame Conversion: Hard Practice A",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "ready",
+      "domain": "endgame",
+      "skillId": "endgame_conversion",
+      "objective": "Convert a reduced-material position by winning material or promoting. (hard difficulty, set A)",
+      "prerequisites": [
+        "CH08-L005"
+      ],
+      "nextLevelId": "CH08-L007",
+      "videoIds": [
+        "V-CH08-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH08-L007",
+      "seq": 75,
+      "worldId": "W06",
+      "chapterId": "CH08",
+      "title": "Endgame Conversion: Hard Practice B",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "ready",
+      "domain": "endgame",
+      "skillId": "endgame_conversion",
+      "objective": "Convert a reduced-material position by winning material or promoting. (hard difficulty, set B)",
+      "prerequisites": [
+        "CH08-L006"
+      ],
+      "nextLevelId": "CH08-L008",
+      "videoIds": [
+        "V-CH08-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH08-L008",
+      "seq": 76,
+      "worldId": "W06",
+      "chapterId": "CH08",
+      "title": "Endgame Conversion: Expert Practice A",
+      "type": "independent_practice",
+      "band": "expert",
+      "status": "future_content_required",
+      "domain": "endgame",
+      "skillId": "endgame_conversion",
+      "objective": "Convert a reduced-material position by winning material or promoting. (expert difficulty, set A)",
+      "prerequisites": [
+        "CH08-L007"
+      ],
+      "nextLevelId": "CH08-L009",
+      "videoIds": [
+        "V-CH08-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 2,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH08-L009",
+      "seq": 77,
+      "worldId": "W06",
+      "chapterId": "CH08",
+      "title": "Endgame Conversion: Expert Practice B",
+      "type": "independent_practice",
+      "band": "expert",
+      "status": "future_content_required",
+      "domain": "endgame",
+      "skillId": "endgame_conversion",
+      "objective": "Convert a reduced-material position by winning material or promoting. (expert difficulty, set B)",
+      "prerequisites": [
+        "CH08-L008"
+      ],
+      "nextLevelId": "CH08-L010",
+      "videoIds": [
+        "V-CH08-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 0,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH08-L010",
+      "seq": 78,
+      "worldId": "W06",
+      "chapterId": "CH08",
+      "title": "Endgame Conversion: Review",
+      "type": "review",
+      "band": null,
+      "status": "limited",
+      "domain": "endgame",
+      "skillId": "endgame_conversion",
+      "objective": "Retain endgame conversion via spaced review.",
+      "prerequisites": [
+        "CH08-L001"
+      ],
+      "nextLevelId": "CH08-L011",
+      "videoIds": [
+        "V-CH08-REVIEW"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH08-L011",
+      "seq": 79,
+      "worldId": "W06",
+      "chapterId": "CH08",
+      "title": "Endgame Conversion: Chapter Boss",
+      "type": "boss_challenge",
+      "band": "hard",
+      "status": "ready",
+      "domain": "endgame",
+      "skillId": "endgame_conversion",
+      "objective": "Apply endgame conversion under assessment across multiple exercises.",
+      "prerequisites": [
+        "CH08-L002",
+        "CH08-L003",
+        "CH08-L004",
+        "CH08-L005",
+        "CH08-L006",
+        "CH08-L007",
+        "CH08-L008",
+        "CH08-L009"
+      ],
+      "nextLevelId": "CH09-L001",
+      "videoIds": [
+        "V-CH08-REVIEW"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 5,
+      "playable": true
+    },
+    {
+      "id": "CH09-L001",
+      "seq": 80,
+      "worldId": "W06",
+      "chapterId": "CH09",
+      "title": "Endgame Theory (Opposition & Key Squares): Concepts",
+      "type": "concept",
+      "band": null,
+      "status": "future_content_required",
+      "domain": "endgame",
+      "skillId": null,
+      "objective": "Master opposition, key squares and theoretical draws in king-and-pawn endings.",
+      "prerequisites": [],
+      "nextLevelId": "CH10-L001",
+      "videoIds": [
+        "V-CH09-CONCEPT"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH10-L001",
+      "seq": 81,
+      "worldId": "W07",
+      "chapterId": "CH10",
+      "title": "Opening Principles & Lines: Concepts",
+      "type": "concept",
+      "band": null,
+      "status": "limited",
+      "domain": "opening_knowledge",
+      "skillId": "__openings__",
+      "objective": "Follow a verified opening line and understand its plan: development, centre, king safety.",
+      "prerequisites": [],
+      "nextLevelId": "CH10-L002",
+      "videoIds": [
+        "V-CH10-CONCEPT"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH10-L002",
+      "seq": 82,
+      "worldId": "W07",
+      "chapterId": "CH10",
+      "title": "Opening Principles & Lines: Easy Practice A",
+      "type": "guided_practice",
+      "band": "easy",
+      "status": "ready",
+      "domain": "opening_knowledge",
+      "skillId": "__openings__",
+      "objective": "Follow a verified opening line and understand its plan: development, centre, king safety. (easy difficulty, set A)",
+      "prerequisites": [
+        "CH10-L001"
+      ],
+      "nextLevelId": "CH10-L003",
+      "videoIds": [
+        "V-CH10-DEMO"
+      ],
+      "practiceKind": "openings",
+      "practiceCount": 3,
+      "minExercises": 2,
+      "playable": true
+    },
+    {
+      "id": "CH10-L003",
+      "seq": 83,
+      "worldId": "W07",
+      "chapterId": "CH10",
+      "title": "Opening Principles & Lines: Easy Practice B",
+      "type": "independent_practice",
+      "band": "easy",
+      "status": "ready",
+      "domain": "opening_knowledge",
+      "skillId": "__openings__",
+      "objective": "Follow a verified opening line and understand its plan: development, centre, king safety. (easy difficulty, set B)",
+      "prerequisites": [
+        "CH10-L002"
+      ],
+      "nextLevelId": "CH10-L004",
+      "videoIds": [
+        "V-CH10-DEMO"
+      ],
+      "practiceKind": "openings",
+      "practiceCount": 3,
+      "minExercises": 2,
+      "playable": true
+    },
+    {
+      "id": "CH10-L004",
+      "seq": 84,
+      "worldId": "W07",
+      "chapterId": "CH10",
+      "title": "Opening Principles & Lines: Medium Practice A",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "ready",
+      "domain": "opening_knowledge",
+      "skillId": "__openings__",
+      "objective": "Follow a verified opening line and understand its plan: development, centre, king safety. (medium difficulty, set A)",
+      "prerequisites": [
+        "CH10-L003"
+      ],
+      "nextLevelId": "CH10-L005",
+      "videoIds": [
+        "V-CH10-DEMO"
+      ],
+      "practiceKind": "openings",
+      "practiceCount": 3,
+      "minExercises": 2,
+      "playable": true
+    },
+    {
+      "id": "CH10-L005",
+      "seq": 85,
+      "worldId": "W07",
+      "chapterId": "CH10",
+      "title": "Opening Principles & Lines: Medium Practice B",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "ready",
+      "domain": "opening_knowledge",
+      "skillId": "__openings__",
+      "objective": "Follow a verified opening line and understand its plan: development, centre, king safety. (medium difficulty, set B)",
+      "prerequisites": [
+        "CH10-L004"
+      ],
+      "nextLevelId": "CH10-L006",
+      "videoIds": [
+        "V-CH10-DEMO"
+      ],
+      "practiceKind": "openings",
+      "practiceCount": 3,
+      "minExercises": 2,
+      "playable": true
+    },
+    {
+      "id": "CH10-L006",
+      "seq": 86,
+      "worldId": "W07",
+      "chapterId": "CH10",
+      "title": "Opening Principles & Lines: Hard Practice A",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "ready",
+      "domain": "opening_knowledge",
+      "skillId": "__openings__",
+      "objective": "Follow a verified opening line and understand its plan: development, centre, king safety. (hard difficulty, set A)",
+      "prerequisites": [
+        "CH10-L005"
+      ],
+      "nextLevelId": "CH10-L007",
+      "videoIds": [
+        "V-CH10-DEMO"
+      ],
+      "practiceKind": "openings",
+      "practiceCount": 3,
+      "minExercises": 2,
+      "playable": true
+    },
+    {
+      "id": "CH10-L007",
+      "seq": 87,
+      "worldId": "W07",
+      "chapterId": "CH10",
+      "title": "Opening Principles & Lines: Hard Practice B",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "ready",
+      "domain": "opening_knowledge",
+      "skillId": "__openings__",
+      "objective": "Follow a verified opening line and understand its plan: development, centre, king safety. (hard difficulty, set B)",
+      "prerequisites": [
+        "CH10-L006"
+      ],
+      "nextLevelId": "CH10-L008",
+      "videoIds": [
+        "V-CH10-DEMO"
+      ],
+      "practiceKind": "openings",
+      "practiceCount": 3,
+      "minExercises": 2,
+      "playable": true
+    },
+    {
+      "id": "CH10-L008",
+      "seq": 88,
+      "worldId": "W07",
+      "chapterId": "CH10",
+      "title": "Opening Principles & Lines: Review",
+      "type": "review",
+      "band": null,
+      "status": "limited",
+      "domain": "opening_knowledge",
+      "skillId": "__openings__",
+      "objective": "Retain opening principles & lines via spaced review.",
+      "prerequisites": [
+        "CH10-L001"
+      ],
+      "nextLevelId": "CH10-L009",
+      "videoIds": [
+        "V-CH10-REVIEW"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH10-L009",
+      "seq": 89,
+      "worldId": "W07",
+      "chapterId": "CH10",
+      "title": "Opening Principles & Lines: Chapter Boss",
+      "type": "boss_challenge",
+      "band": "hard",
+      "status": "ready",
+      "domain": "opening_knowledge",
+      "skillId": "__openings__",
+      "objective": "Apply opening principles & lines under assessment across multiple exercises.",
+      "prerequisites": [
+        "CH10-L002",
+        "CH10-L003",
+        "CH10-L004",
+        "CH10-L005",
+        "CH10-L006",
+        "CH10-L007"
+      ],
+      "nextLevelId": "CH11-L001",
+      "videoIds": [
+        "V-CH10-REVIEW"
+      ],
+      "practiceKind": "openings",
+      "practiceCount": 3,
+      "minExercises": 2,
+      "playable": true
+    },
+    {
+      "id": "CH11-L001",
+      "seq": 90,
+      "worldId": "W07",
+      "chapterId": "CH11",
+      "title": "Opening-Stage Tactics (provisional): Concepts",
+      "type": "concept",
+      "band": null,
+      "status": "limited",
+      "domain": "opening_knowledge",
+      "skillId": "opening_stage_tactics",
+      "objective": "Apply tactical vision to positions arising in the opening stage.",
+      "prerequisites": [],
+      "nextLevelId": "CH11-L002",
+      "videoIds": [
+        "V-CH11-CONCEPT"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH11-L002",
+      "seq": 91,
+      "worldId": "W07",
+      "chapterId": "CH11",
+      "title": "Opening-Stage Tactics (provisional): Easy Practice A",
+      "type": "guided_practice",
+      "band": "easy",
+      "status": "ready",
+      "domain": "opening_knowledge",
+      "skillId": "opening_stage_tactics",
+      "objective": "Apply tactical vision to positions arising in the opening stage. (easy difficulty, set A)",
+      "prerequisites": [
+        "CH11-L001"
+      ],
+      "nextLevelId": "CH11-L003",
+      "videoIds": [
+        "V-CH11-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 3,
+      "playable": true
+    },
+    {
+      "id": "CH11-L003",
+      "seq": 92,
+      "worldId": "W07",
+      "chapterId": "CH11",
+      "title": "Opening-Stage Tactics (provisional): Easy Practice B",
+      "type": "independent_practice",
+      "band": "easy",
+      "status": "ready",
+      "domain": "opening_knowledge",
+      "skillId": "opening_stage_tactics",
+      "objective": "Apply tactical vision to positions arising in the opening stage. (easy difficulty, set B)",
+      "prerequisites": [
+        "CH11-L002"
+      ],
+      "nextLevelId": "CH11-L004",
+      "videoIds": [
+        "V-CH11-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH11-L004",
+      "seq": 93,
+      "worldId": "W07",
+      "chapterId": "CH11",
+      "title": "Opening-Stage Tactics (provisional): Medium Practice A",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "ready",
+      "domain": "opening_knowledge",
+      "skillId": "opening_stage_tactics",
+      "objective": "Apply tactical vision to positions arising in the opening stage. (medium difficulty, set A)",
+      "prerequisites": [
+        "CH11-L003"
+      ],
+      "nextLevelId": "CH11-L005",
+      "videoIds": [
+        "V-CH11-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH11-L005",
+      "seq": 94,
+      "worldId": "W07",
+      "chapterId": "CH11",
+      "title": "Opening-Stage Tactics (provisional): Medium Practice B",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "ready",
+      "domain": "opening_knowledge",
+      "skillId": "opening_stage_tactics",
+      "objective": "Apply tactical vision to positions arising in the opening stage. (medium difficulty, set B)",
+      "prerequisites": [
+        "CH11-L004"
+      ],
+      "nextLevelId": "CH11-L006",
+      "videoIds": [
+        "V-CH11-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH11-L006",
+      "seq": 95,
+      "worldId": "W07",
+      "chapterId": "CH11",
+      "title": "Opening-Stage Tactics (provisional): Hard Practice A",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "ready",
+      "domain": "opening_knowledge",
+      "skillId": "opening_stage_tactics",
+      "objective": "Apply tactical vision to positions arising in the opening stage. (hard difficulty, set A)",
+      "prerequisites": [
+        "CH11-L005"
+      ],
+      "nextLevelId": "CH11-L007",
+      "videoIds": [
+        "V-CH11-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH11-L007",
+      "seq": 96,
+      "worldId": "W07",
+      "chapterId": "CH11",
+      "title": "Opening-Stage Tactics (provisional): Hard Practice B",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "future_content_required",
+      "domain": "opening_knowledge",
+      "skillId": "opening_stage_tactics",
+      "objective": "Apply tactical vision to positions arising in the opening stage. (hard difficulty, set B)",
+      "prerequisites": [
+        "CH11-L006"
+      ],
+      "nextLevelId": "CH11-L008",
+      "videoIds": [
+        "V-CH11-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 0,
+      "minExercises": 4,
+      "playable": false
+    },
+    {
+      "id": "CH11-L008",
+      "seq": 97,
+      "worldId": "W07",
+      "chapterId": "CH11",
+      "title": "Opening-Stage Tactics (provisional): Review",
+      "type": "review",
+      "band": null,
+      "status": "limited",
+      "domain": "opening_knowledge",
+      "skillId": "opening_stage_tactics",
+      "objective": "Retain opening-stage tactics (provisional) via spaced review.",
+      "prerequisites": [
+        "CH11-L001"
+      ],
+      "nextLevelId": "CH11-L009",
+      "videoIds": [
+        "V-CH11-REVIEW"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH11-L009",
+      "seq": 98,
+      "worldId": "W07",
+      "chapterId": "CH11",
+      "title": "Opening-Stage Tactics (provisional): Assessment",
+      "type": "assessment",
+      "band": "medium",
+      "status": "ready",
+      "domain": "opening_knowledge",
+      "skillId": "opening_stage_tactics",
+      "objective": "Demonstrate opening-stage tactics (provisional) on fresh exercises.",
+      "prerequisites": [
+        "CH11-L002",
+        "CH11-L003",
+        "CH11-L004",
+        "CH11-L005",
+        "CH11-L006",
+        "CH11-L007"
+      ],
+      "nextLevelId": "CH12-L001",
+      "videoIds": [
+        "V-CH11-REVIEW"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH12-L001",
+      "seq": 99,
+      "worldId": "W08",
+      "chapterId": "CH12",
+      "title": "Combined Skills: Concepts",
+      "type": "concept",
+      "band": null,
+      "status": "limited",
+      "domain": null,
+      "skillId": "__mixed__",
+      "objective": "Apply tactical, calculation and defensive skills in mixed positions.",
+      "prerequisites": [],
+      "nextLevelId": "CH12-L002",
+      "videoIds": [
+        "V-CH12-CONCEPT"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH12-L002",
+      "seq": 100,
+      "worldId": "W08",
+      "chapterId": "CH12",
+      "title": "Combined Skills: Medium Practice A",
+      "type": "guided_practice",
+      "band": "medium",
+      "status": "ready",
+      "domain": null,
+      "skillId": "__mixed__",
+      "objective": "Apply tactical, calculation and defensive skills in mixed positions. (medium difficulty, set A)",
+      "prerequisites": [
+        "CH12-L001"
+      ],
+      "nextLevelId": "CH12-L003",
+      "videoIds": [
+        "V-CH12-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 3,
+      "playable": true
+    },
+    {
+      "id": "CH12-L003",
+      "seq": 101,
+      "worldId": "W08",
+      "chapterId": "CH12",
+      "title": "Combined Skills: Medium Practice B",
+      "type": "independent_practice",
+      "band": "medium",
+      "status": "ready",
+      "domain": null,
+      "skillId": "__mixed__",
+      "objective": "Apply tactical, calculation and defensive skills in mixed positions. (medium difficulty, set B)",
+      "prerequisites": [
+        "CH12-L002"
+      ],
+      "nextLevelId": "CH12-L004",
+      "videoIds": [
+        "V-CH12-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH12-L004",
+      "seq": 102,
+      "worldId": "W08",
+      "chapterId": "CH12",
+      "title": "Combined Skills: Hard Practice A",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "ready",
+      "domain": null,
+      "skillId": "__mixed__",
+      "objective": "Apply tactical, calculation and defensive skills in mixed positions. (hard difficulty, set A)",
+      "prerequisites": [
+        "CH12-L003"
+      ],
+      "nextLevelId": "CH12-L005",
+      "videoIds": [
+        "V-CH12-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH12-L005",
+      "seq": 103,
+      "worldId": "W08",
+      "chapterId": "CH12",
+      "title": "Combined Skills: Hard Practice B",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "ready",
+      "domain": null,
+      "skillId": "__mixed__",
+      "objective": "Apply tactical, calculation and defensive skills in mixed positions. (hard difficulty, set B)",
+      "prerequisites": [
+        "CH12-L004"
+      ],
+      "nextLevelId": "CH12-L006",
+      "videoIds": [
+        "V-CH12-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH12-L006",
+      "seq": 104,
+      "worldId": "W08",
+      "chapterId": "CH12",
+      "title": "Combined Skills: Review",
+      "type": "review",
+      "band": null,
+      "status": "limited",
+      "domain": null,
+      "skillId": "__mixed__",
+      "objective": "Retain combined skills via spaced review.",
+      "prerequisites": [
+        "CH12-L001"
+      ],
+      "nextLevelId": "CH12-L007",
+      "videoIds": [
+        "V-CH12-REVIEW"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH12-L007",
+      "seq": 105,
+      "worldId": "W08",
+      "chapterId": "CH12",
+      "title": "Combined Skills: Chapter Boss",
+      "type": "boss_challenge",
+      "band": "hard",
+      "status": "ready",
+      "domain": null,
+      "skillId": "__mixed__",
+      "objective": "Apply combined skills under assessment across multiple exercises.",
+      "prerequisites": [
+        "CH12-L002",
+        "CH12-L003",
+        "CH12-L004",
+        "CH12-L005"
+      ],
+      "nextLevelId": "CH13-L001",
+      "videoIds": [
+        "V-CH12-REVIEW"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 5,
+      "playable": true
+    },
+    {
+      "id": "CH13-L001",
+      "seq": 106,
+      "worldId": "W09",
+      "chapterId": "CH13",
+      "title": "Advanced Combinations: Concepts",
+      "type": "concept",
+      "band": null,
+      "status": "limited",
+      "domain": null,
+      "skillId": "__advanced__",
+      "objective": "Solve the hardest verified combinations across domains.",
+      "prerequisites": [],
+      "nextLevelId": "CH13-L002",
+      "videoIds": [
+        "V-CH13-CONCEPT"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH13-L002",
+      "seq": 107,
+      "worldId": "W09",
+      "chapterId": "CH13",
+      "title": "Advanced Combinations: Hard Practice A",
+      "type": "guided_practice",
+      "band": "hard",
+      "status": "ready",
+      "domain": null,
+      "skillId": "__advanced__",
+      "objective": "Solve the hardest verified combinations across domains. (hard difficulty, set A)",
+      "prerequisites": [
+        "CH13-L001"
+      ],
+      "nextLevelId": "CH13-L003",
+      "videoIds": [
+        "V-CH13-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 3,
+      "playable": true
+    },
+    {
+      "id": "CH13-L003",
+      "seq": 108,
+      "worldId": "W09",
+      "chapterId": "CH13",
+      "title": "Advanced Combinations: Hard Practice B",
+      "type": "independent_practice",
+      "band": "hard",
+      "status": "ready",
+      "domain": null,
+      "skillId": "__advanced__",
+      "objective": "Solve the hardest verified combinations across domains. (hard difficulty, set B)",
+      "prerequisites": [
+        "CH13-L002"
+      ],
+      "nextLevelId": "CH13-L004",
+      "videoIds": [
+        "V-CH13-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH13-L004",
+      "seq": 109,
+      "worldId": "W09",
+      "chapterId": "CH13",
+      "title": "Advanced Combinations: Expert Practice A",
+      "type": "independent_practice",
+      "band": "expert",
+      "status": "ready",
+      "domain": null,
+      "skillId": "__advanced__",
+      "objective": "Solve the hardest verified combinations across domains. (expert difficulty, set A)",
+      "prerequisites": [
+        "CH13-L003"
+      ],
+      "nextLevelId": "CH13-L005",
+      "videoIds": [
+        "V-CH13-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH13-L005",
+      "seq": 110,
+      "worldId": "W09",
+      "chapterId": "CH13",
+      "title": "Advanced Combinations: Expert Practice B",
+      "type": "independent_practice",
+      "band": "expert",
+      "status": "ready",
+      "domain": null,
+      "skillId": "__advanced__",
+      "objective": "Solve the hardest verified combinations across domains. (expert difficulty, set B)",
+      "prerequisites": [
+        "CH13-L004"
+      ],
+      "nextLevelId": "CH13-L006",
+      "videoIds": [
+        "V-CH13-DEMO"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 4,
+      "playable": true
+    },
+    {
+      "id": "CH13-L006",
+      "seq": 111,
+      "worldId": "W09",
+      "chapterId": "CH13",
+      "title": "Advanced Combinations: Review",
+      "type": "review",
+      "band": null,
+      "status": "limited",
+      "domain": null,
+      "skillId": "__advanced__",
+      "objective": "Retain advanced combinations via spaced review.",
+      "prerequisites": [
+        "CH13-L001"
+      ],
+      "nextLevelId": "CH13-L007",
+      "videoIds": [
+        "V-CH13-REVIEW"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH13-L007",
+      "seq": 112,
+      "worldId": "W09",
+      "chapterId": "CH13",
+      "title": "Advanced Combinations: Chapter Boss",
+      "type": "boss_challenge",
+      "band": "hard",
+      "status": "ready",
+      "domain": null,
+      "skillId": "__advanced__",
+      "objective": "Apply advanced combinations under assessment across multiple exercises.",
+      "prerequisites": [
+        "CH13-L002",
+        "CH13-L003",
+        "CH13-L004",
+        "CH13-L005"
+      ],
+      "nextLevelId": "CH14-L001",
+      "videoIds": [
+        "V-CH13-REVIEW"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 5,
+      "playable": true
+    },
+    {
+      "id": "CH14-L001",
+      "seq": 113,
+      "worldId": "W10",
+      "chapterId": "CH14",
+      "title": "Final Challenges & Strategic Application: Concepts",
+      "type": "concept",
+      "band": null,
+      "status": "limited",
+      "domain": null,
+      "skillId": "__final__",
+      "objective": "Cumulative assessments across every taught skill; strategic application remains future content.",
+      "prerequisites": [],
+      "nextLevelId": "CH14-L002",
+      "videoIds": [
+        "V-CH14-CONCEPT"
+      ],
+      "practiceKind": "none",
+      "practiceCount": 0,
+      "minExercises": 0,
+      "playable": false
+    },
+    {
+      "id": "CH14-L002",
+      "seq": 114,
+      "worldId": "W10",
+      "chapterId": "CH14",
+      "title": "Final Challenges & Strategic Application: Chapter Boss",
+      "type": "boss_challenge",
+      "band": "hard",
+      "status": "ready",
+      "domain": null,
+      "skillId": "__final__",
+      "objective": "Apply final challenges & strategic application under assessment across multiple exercises.",
+      "prerequisites": [],
+      "nextLevelId": null,
+      "videoIds": [
+        "V-CH14-REVIEW"
+      ],
+      "practiceKind": "puzzles",
+      "practiceCount": 5,
+      "minExercises": 5,
+      "playable": true
+    }
+  ],
+  "bosses": [
+    {
+      "id": "BOSS-CH02",
+      "chapterId": "CH02",
+      "title": "Check & Checkmate Recognition Boss",
+      "assessedSkills": [
+        "mate_in_one"
+      ],
+      "learningObjectives": [
+        "Recognise check and deliver immediate checkmate in one move."
+      ],
+      "prerequisiteLevels": [
+        "CH02-L002",
+        "CH02-L003",
+        "CH02-L004",
+        "CH02-L005"
+      ],
+      "structure": [
+        "recognise the idea",
+        "identify candidate moves",
+        "calculate the critical reply",
+        "find the correct continuation",
+        "avoid the attractive-but-wrong line"
+      ],
+      "passRequirement": "Solve 5 boss exercises at hard difficulty (server-authoritative), each verified correct.",
+      "retry": "Retry permitted after remediation.",
+      "remediation": "Return to the chapter practice levels.",
+      "unlockReward": "Unlocks the next chapter.",
+      "minExercises": 5
+    },
+    {
+      "id": "BOSS-CH03",
+      "chapterId": "CH03",
+      "title": "Tactical Vision Boss",
+      "assessedSkills": [
+        "tactical_recognition"
+      ],
+      "learningObjectives": [
+        "Recognise and play the move that wins material."
+      ],
+      "prerequisiteLevels": [
+        "CH03-L002",
+        "CH03-L003",
+        "CH03-L004",
+        "CH03-L005",
+        "CH03-L006",
+        "CH03-L007",
+        "CH03-L008",
+        "CH03-L009"
+      ],
+      "structure": [
+        "recognise the idea",
+        "identify candidate moves",
+        "calculate the critical reply",
+        "find the correct continuation",
+        "avoid the attractive-but-wrong line"
+      ],
+      "passRequirement": "Solve 5 boss exercises at hard difficulty (server-authoritative), each verified correct.",
+      "retry": "Retry permitted after remediation.",
+      "remediation": "Return to the chapter practice levels.",
+      "unlockReward": "Unlocks the next chapter.",
+      "minExercises": 5
+    },
+    {
+      "id": "BOSS-CH05",
+      "chapterId": "CH05",
+      "title": "Forced Mating Sequences Boss",
+      "assessedSkills": [
+        "forced_mate"
+      ],
+      "learningObjectives": [
+        "Calculate a forced mate two to three moves deep."
+      ],
+      "prerequisiteLevels": [
+        "CH05-L002",
+        "CH05-L003",
+        "CH05-L004",
+        "CH05-L005",
+        "CH05-L006",
+        "CH05-L007"
+      ],
+      "structure": [
+        "recognise the idea",
+        "identify candidate moves",
+        "calculate the critical reply",
+        "find the correct continuation",
+        "avoid the attractive-but-wrong line"
+      ],
+      "passRequirement": "Solve 5 boss exercises at hard difficulty (server-authoritative), each verified correct.",
+      "retry": "Retry permitted after remediation.",
+      "remediation": "Return to the chapter practice levels.",
+      "unlockReward": "Unlocks the next chapter.",
+      "minExercises": 5
+    },
+    {
+      "id": "BOSS-CH06",
+      "chapterId": "CH06",
+      "title": "Calculating Combinations Boss",
+      "assessedSkills": [
+        "calculation_combinations"
+      ],
+      "learningObjectives": [
+        "Calculate a multi-move forcing sequence to a winning material result."
+      ],
+      "prerequisiteLevels": [
+        "CH06-L002",
+        "CH06-L003",
+        "CH06-L004",
+        "CH06-L005",
+        "CH06-L006",
+        "CH06-L007"
+      ],
+      "structure": [
+        "recognise the idea",
+        "identify candidate moves",
+        "calculate the critical reply",
+        "find the correct continuation",
+        "avoid the attractive-but-wrong line"
+      ],
+      "passRequirement": "Solve 5 boss exercises at hard difficulty (server-authoritative), each verified correct.",
+      "retry": "Retry permitted after remediation.",
+      "remediation": "Return to the chapter practice levels.",
+      "unlockReward": "Unlocks the next chapter.",
+      "minExercises": 5
+    },
+    {
+      "id": "BOSS-CH07",
+      "chapterId": "CH07",
+      "title": "Defensive Resources Boss",
+      "assessedSkills": [
+        "defensive_resources"
+      ],
+      "learningObjectives": [
+        "Find the only move that avoids losing material or being mated."
+      ],
+      "prerequisiteLevels": [
+        "CH07-L002",
+        "CH07-L003",
+        "CH07-L004",
+        "CH07-L005",
+        "CH07-L006",
+        "CH07-L007",
+        "CH07-L008",
+        "CH07-L009"
+      ],
+      "structure": [
+        "recognise the idea",
+        "identify candidate moves",
+        "calculate the critical reply",
+        "find the correct continuation",
+        "avoid the attractive-but-wrong line"
+      ],
+      "passRequirement": "Solve 5 boss exercises at hard difficulty (server-authoritative), each verified correct.",
+      "retry": "Retry permitted after remediation.",
+      "remediation": "Return to the chapter practice levels.",
+      "unlockReward": "Unlocks the next chapter.",
+      "minExercises": 5
+    },
+    {
+      "id": "BOSS-CH08",
+      "chapterId": "CH08",
+      "title": "Endgame Conversion Boss",
+      "assessedSkills": [
+        "endgame_conversion"
+      ],
+      "learningObjectives": [
+        "Convert a reduced-material position by winning material or promoting."
+      ],
+      "prerequisiteLevels": [
+        "CH08-L002",
+        "CH08-L003",
+        "CH08-L004",
+        "CH08-L005",
+        "CH08-L006",
+        "CH08-L007",
+        "CH08-L008",
+        "CH08-L009"
+      ],
+      "structure": [
+        "recognise the idea",
+        "identify candidate moves",
+        "calculate the critical reply",
+        "find the correct continuation",
+        "avoid the attractive-but-wrong line"
+      ],
+      "passRequirement": "Solve 5 boss exercises at hard difficulty (server-authoritative), each verified correct.",
+      "retry": "Retry permitted after remediation.",
+      "remediation": "Return to the chapter practice levels.",
+      "unlockReward": "Unlocks the next chapter.",
+      "minExercises": 5
+    },
+    {
+      "id": "BOSS-CH10",
+      "chapterId": "CH10",
+      "title": "Opening Principles & Lines Boss",
+      "assessedSkills": [
+        "tactical_recognition",
+        "calculation_combinations",
+        "defensive_resources"
+      ],
+      "learningObjectives": [
+        "Follow a verified opening line and understand its plan: development, centre, king safety."
+      ],
+      "prerequisiteLevels": [
+        "CH10-L002",
+        "CH10-L003",
+        "CH10-L004",
+        "CH10-L005",
+        "CH10-L006",
+        "CH10-L007"
+      ],
+      "structure": [
+        "recognise the idea",
+        "identify candidate moves",
+        "calculate the critical reply",
+        "find the correct continuation",
+        "avoid the attractive-but-wrong line"
+      ],
+      "passRequirement": "Solve 5 boss exercises at hard difficulty (server-authoritative), each verified correct.",
+      "retry": "Retry permitted after remediation.",
+      "remediation": "Return to the chapter practice levels.",
+      "unlockReward": "Unlocks the next chapter.",
+      "minExercises": 5
+    },
+    {
+      "id": "BOSS-CH12",
+      "chapterId": "CH12",
+      "title": "Combined Skills Boss",
+      "assessedSkills": [
+        "tactical_recognition",
+        "calculation_combinations",
+        "defensive_resources"
+      ],
+      "learningObjectives": [
+        "Apply tactical, calculation and defensive skills in mixed positions."
+      ],
+      "prerequisiteLevels": [
+        "CH12-L002",
+        "CH12-L003",
+        "CH12-L004",
+        "CH12-L005"
+      ],
+      "structure": [
+        "recognise the idea",
+        "identify candidate moves",
+        "calculate the critical reply",
+        "find the correct continuation",
+        "avoid the attractive-but-wrong line"
+      ],
+      "passRequirement": "Solve 5 boss exercises at hard difficulty (server-authoritative), each verified correct.",
+      "retry": "Retry permitted after remediation.",
+      "remediation": "Return to the chapter practice levels.",
+      "unlockReward": "Unlocks the next chapter.",
+      "minExercises": 5
+    },
+    {
+      "id": "BOSS-CH13",
+      "chapterId": "CH13",
+      "title": "Advanced Combinations Boss",
+      "assessedSkills": [
+        "tactical_recognition",
+        "calculation_combinations",
+        "defensive_resources"
+      ],
+      "learningObjectives": [
+        "Solve the hardest verified combinations across domains."
+      ],
+      "prerequisiteLevels": [
+        "CH13-L002",
+        "CH13-L003",
+        "CH13-L004",
+        "CH13-L005"
+      ],
+      "structure": [
+        "recognise the idea",
+        "identify candidate moves",
+        "calculate the critical reply",
+        "find the correct continuation",
+        "avoid the attractive-but-wrong line"
+      ],
+      "passRequirement": "Solve 5 boss exercises at hard difficulty (server-authoritative), each verified correct.",
+      "retry": "Retry permitted after remediation.",
+      "remediation": "Return to the chapter practice levels.",
+      "unlockReward": "Unlocks the next chapter.",
+      "minExercises": 5
+    },
+    {
+      "id": "BOSS-CH14",
+      "chapterId": "CH14",
+      "title": "Final Challenges & Strategic Application Boss",
+      "assessedSkills": [
+        "tactical_recognition",
+        "calculation_combinations",
+        "defensive_resources"
+      ],
+      "learningObjectives": [
+        "Cumulative assessments across every taught skill; strategic application remains future content."
+      ],
+      "prerequisiteLevels": [],
+      "structure": [
+        "recognise the idea",
+        "identify candidate moves",
+        "calculate the critical reply",
+        "find the correct continuation",
+        "avoid the attractive-but-wrong line"
+      ],
+      "passRequirement": "Solve 5 boss exercises at hard difficulty (server-authoritative), each verified correct.",
+      "retry": "Retry permitted after remediation.",
+      "remediation": "Return to the chapter practice levels.",
+      "unlockReward": "Unlocks the next chapter.",
+      "minExercises": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "findings": []
+  }
+}

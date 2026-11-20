@@ -1,0 +1,756 @@
+{
+  "generatedAt": "2026-11-20T16:22:03.341Z",
+  "chapter": "CH01",
+  "assessmentLevel": "CH01-L012",
+  "version": {
+    "assessmentContractVersion": "2.0",
+    "implementationPhase": "R7.3.2.2.1",
+    "auditVersion": "R7.3.2.2.1"
+  },
+  "model": "competency-based mastery: chapter passes iff EVERY mandatory competency is demonstrated; aggregate score cannot compensate",
+  "evidencePolicy": "a competency is `demonstrated` only when answered correctly in >= its minContexts MEANINGFULLY DISTINCT contexts (distinct contextKey); repeating one item cannot manufacture mastery",
+  "evidenceAxes": "each competency declares requiredAxes (e.g. light+dark, legal+illegal); the selector GUARANTEES every required axis is covered in each issued attempt — two same-outcome contexts are not sufficient",
+  "rotation": {
+    "poolSize": 49,
+    "minContextsPerCompetencyInPool": 3,
+    "issuedPerCompetencyPerAttempt": 2,
+    "selection": "server-side selectAttemptItems with a crypto-secure RNG (node:crypto); coverage-first (required axes) then rotation (contexts not in the learner's last attempt)",
+    "attemptBinding": "POST /api/foundations/start issues an HMAC-signed token binding the exact issued item ids to the attempt (no answers); POST /api/foundations/attempt verifies it and grades only issued items"
+  },
+  "statuses": [
+    "not_attempted",
+    "insufficient_evidence",
+    "demonstrated",
+    "needs_remediation"
+  ],
+  "scoreDisplay": {
+    "role": "informational_only",
+    "competencyGateIsAuthoritative": true,
+    "poolSize": 49,
+    "issuedItemCount": 32,
+    "issuedContextsPerCompetency": 2,
+    "mandatoryCompetencies": 16,
+    "note": "the per-attempt score denominator is the issued item count (derived from the selection config), never the pool size; there is no fixed pass threshold"
+  },
+  "competencies": [
+    {
+      "competency": "foundation.board_coordinates",
+      "label": "Board coordinates & orientation",
+      "group": "board",
+      "lessonId": "CH01-L001",
+      "mandatory": true,
+      "evidencePolicy": {
+        "minContexts": 2,
+        "rule": "demonstrated requires >= 2 distinct correct contexts"
+      },
+      "requiredAxes": [
+        "light",
+        "dark"
+      ],
+      "contexts": [
+        "light-square",
+        "dark-square",
+        "light-corner-square",
+        "corner-square"
+      ],
+      "assessmentItems": [
+        {
+          "id": "FA-COORD",
+          "type": "square_color",
+          "contextKey": "light-square",
+          "axis": "light",
+          "objective": "light square by coordinate"
+        },
+        {
+          "id": "FA-COORD2",
+          "type": "square_color",
+          "contextKey": "dark-square",
+          "axis": "dark",
+          "objective": "dark square by coordinate"
+        },
+        {
+          "id": "FA-COORD4",
+          "type": "square_color",
+          "contextKey": "light-corner-square",
+          "axis": "light",
+          "objective": "light corner square by coordinate"
+        },
+        {
+          "id": "FA-COORD3",
+          "type": "square_color",
+          "contextKey": "corner-square",
+          "axis": "dark",
+          "objective": "corner square colour"
+        }
+      ],
+      "remediationLesson": "CH01-L001"
+    },
+    {
+      "competency": "foundation.king_movement",
+      "label": "King movement",
+      "group": "movement",
+      "lessonId": "CH01-L002",
+      "mandatory": true,
+      "evidencePolicy": {
+        "minContexts": 2,
+        "rule": "demonstrated requires >= 2 distinct correct contexts"
+      },
+      "requiredAxes": [
+        "legal",
+        "illegal"
+      ],
+      "contexts": [
+        "one-square-legal",
+        "two-square-illegal",
+        "diagonal-one-square-legal"
+      ],
+      "assessmentItems": [
+        {
+          "id": "FA-KING",
+          "type": "move_legal",
+          "contextKey": "one-square-legal",
+          "axis": "legal",
+          "objective": "king moves one square"
+        },
+        {
+          "id": "FA-KING2",
+          "type": "move_legal",
+          "contextKey": "two-square-illegal",
+          "axis": "illegal",
+          "objective": "king cannot move two squares"
+        },
+        {
+          "id": "FA-KING3",
+          "type": "move_legal",
+          "contextKey": "diagonal-one-square-legal",
+          "axis": "legal",
+          "objective": "king moves one square diagonally"
+        }
+      ],
+      "remediationLesson": "CH01-L002"
+    },
+    {
+      "competency": "foundation.queen_movement",
+      "label": "Queen movement",
+      "group": "movement",
+      "lessonId": "CH01-L002",
+      "mandatory": true,
+      "evidencePolicy": {
+        "minContexts": 2,
+        "rule": "demonstrated requires >= 2 distinct correct contexts"
+      },
+      "requiredAxes": [
+        "legal",
+        "illegal"
+      ],
+      "contexts": [
+        "line",
+        "diagonal",
+        "knight-shape-illegal"
+      ],
+      "assessmentItems": [
+        {
+          "id": "FA-QUEEN",
+          "type": "move_legal",
+          "contextKey": "line",
+          "axis": "legal",
+          "objective": "queen moves in a line"
+        },
+        {
+          "id": "FA-QUEEN2",
+          "type": "move_legal",
+          "contextKey": "diagonal",
+          "axis": "legal",
+          "objective": "queen moves on a diagonal"
+        },
+        {
+          "id": "FA-QUEEN3",
+          "type": "move_legal",
+          "contextKey": "knight-shape-illegal",
+          "axis": "illegal",
+          "objective": "queen cannot move like a knight"
+        }
+      ],
+      "remediationLesson": "CH01-L002"
+    },
+    {
+      "competency": "foundation.rook_movement",
+      "label": "Rook movement",
+      "group": "movement",
+      "lessonId": "CH01-L003",
+      "mandatory": true,
+      "evidencePolicy": {
+        "minContexts": 2,
+        "rule": "demonstrated requires >= 2 distinct correct contexts"
+      },
+      "requiredAxes": [
+        "legal",
+        "illegal"
+      ],
+      "contexts": [
+        "file",
+        "rank",
+        "diagonal-illegal"
+      ],
+      "assessmentItems": [
+        {
+          "id": "FA-ROOK",
+          "type": "move_legal",
+          "contextKey": "file",
+          "axis": "legal",
+          "objective": "rook moves on a file"
+        },
+        {
+          "id": "FA-ROOK2",
+          "type": "move_legal",
+          "contextKey": "rank",
+          "axis": "legal",
+          "objective": "rook moves on a rank"
+        },
+        {
+          "id": "FA-ROOK3",
+          "type": "move_legal",
+          "contextKey": "diagonal-illegal",
+          "axis": "illegal",
+          "objective": "rook cannot move diagonally"
+        }
+      ],
+      "remediationLesson": "CH01-L003"
+    },
+    {
+      "competency": "foundation.bishop_movement",
+      "label": "Bishop movement",
+      "group": "movement",
+      "lessonId": "CH01-L003",
+      "mandatory": true,
+      "evidencePolicy": {
+        "minContexts": 2,
+        "rule": "demonstrated requires >= 2 distinct correct contexts"
+      },
+      "requiredAxes": [
+        "legal",
+        "illegal"
+      ],
+      "contexts": [
+        "diagonal-legal",
+        "straight-illegal",
+        "other-diagonal-legal"
+      ],
+      "assessmentItems": [
+        {
+          "id": "FA-BISHOP",
+          "type": "move_legal",
+          "contextKey": "diagonal-legal",
+          "axis": "legal",
+          "objective": "bishop moves on a diagonal"
+        },
+        {
+          "id": "FA-BISHOP2",
+          "type": "move_legal",
+          "contextKey": "straight-illegal",
+          "axis": "illegal",
+          "objective": "bishop cannot move straight"
+        },
+        {
+          "id": "FA-BISHOP3",
+          "type": "move_legal",
+          "contextKey": "other-diagonal-legal",
+          "axis": "legal",
+          "objective": "bishop on the other diagonal"
+        }
+      ],
+      "remediationLesson": "CH01-L003"
+    },
+    {
+      "competency": "foundation.knight_movement",
+      "label": "Knight movement (jump)",
+      "group": "movement",
+      "lessonId": "CH01-L003",
+      "mandatory": true,
+      "evidencePolicy": {
+        "minContexts": 2,
+        "rule": "demonstrated requires >= 2 distinct correct contexts"
+      },
+      "requiredAxes": [
+        "legal",
+        "illegal"
+      ],
+      "contexts": [
+        "L-jump-legal",
+        "non-L-illegal",
+        "other-L-legal"
+      ],
+      "assessmentItems": [
+        {
+          "id": "FA-KNIGHT",
+          "type": "move_legal",
+          "contextKey": "L-jump-legal",
+          "axis": "legal",
+          "objective": "legal knight move (jump)"
+        },
+        {
+          "id": "FA-KNIGHT2",
+          "type": "move_legal",
+          "contextKey": "non-L-illegal",
+          "axis": "illegal",
+          "objective": "knight cannot move straight"
+        },
+        {
+          "id": "FA-KNIGHT3",
+          "type": "move_legal",
+          "contextKey": "other-L-legal",
+          "axis": "legal",
+          "objective": "another legal knight L-move"
+        }
+      ],
+      "remediationLesson": "CH01-L003"
+    },
+    {
+      "competency": "foundation.pawn_movement",
+      "label": "Pawn forward movement",
+      "group": "movement",
+      "lessonId": "CH01-L004",
+      "mandatory": true,
+      "evidencePolicy": {
+        "minContexts": 2,
+        "rule": "demonstrated requires >= 2 distinct correct contexts"
+      },
+      "requiredAxes": [
+        "legal",
+        "illegal"
+      ],
+      "contexts": [
+        "double-step",
+        "blocked-forward",
+        "single-step-legal"
+      ],
+      "assessmentItems": [
+        {
+          "id": "FA-PAWNFWD",
+          "type": "move_legal",
+          "contextKey": "double-step",
+          "axis": "legal",
+          "objective": "pawn first-move double step"
+        },
+        {
+          "id": "FA-PAWNNOCAP",
+          "type": "move_legal",
+          "contextKey": "blocked-forward",
+          "axis": "illegal",
+          "objective": "pawn cannot capture forward"
+        },
+        {
+          "id": "FA-PAWN3",
+          "type": "move_legal",
+          "contextKey": "single-step-legal",
+          "axis": "legal",
+          "objective": "pawn single forward step"
+        }
+      ],
+      "remediationLesson": "CH01-L004"
+    },
+    {
+      "competency": "foundation.pawn_capture",
+      "label": "Pawn captures",
+      "group": "movement",
+      "lessonId": "CH01-L004",
+      "mandatory": true,
+      "evidencePolicy": {
+        "minContexts": 2,
+        "rule": "demonstrated requires >= 2 distinct correct contexts"
+      },
+      "requiredAxes": [
+        "capture",
+        "no-capture"
+      ],
+      "contexts": [
+        "diagonal-capture",
+        "diagonal-empty-illegal",
+        "capture-right"
+      ],
+      "assessmentItems": [
+        {
+          "id": "DR-PAWNCAP",
+          "type": "move_objective",
+          "contextKey": "diagonal-capture",
+          "axis": "capture",
+          "objective": "capture the pawn diagonally"
+        },
+        {
+          "id": "FA-PAWNCAP-NEG",
+          "type": "move_legal",
+          "contextKey": "diagonal-empty-illegal",
+          "axis": "no-capture",
+          "objective": "pawn cannot move diagonally to an empty square"
+        },
+        {
+          "id": "DR-PAWNCAP3",
+          "type": "move_objective",
+          "contextKey": "capture-right",
+          "axis": "capture",
+          "objective": "capture to the other side diagonally"
+        }
+      ],
+      "remediationLesson": "CH01-L004"
+    },
+    {
+      "competency": "foundation.blocking",
+      "label": "Blocking & occupied squares",
+      "group": "rules",
+      "lessonId": "CH01-L005",
+      "mandatory": true,
+      "evidencePolicy": {
+        "minContexts": 2,
+        "rule": "demonstrated requires >= 2 distinct correct contexts"
+      },
+      "requiredAxes": [
+        "legal",
+        "illegal"
+      ],
+      "contexts": [
+        "slide-blocked",
+        "friendly-dest-illegal",
+        "capture-enemy-dest-legal"
+      ],
+      "assessmentItems": [
+        {
+          "id": "FA-BLOCK",
+          "type": "move_legal",
+          "contextKey": "slide-blocked",
+          "axis": "illegal",
+          "objective": "cannot move through own piece"
+        },
+        {
+          "id": "FA-BLOCK2",
+          "type": "move_legal",
+          "contextKey": "friendly-dest-illegal",
+          "axis": "illegal",
+          "objective": "cannot capture a friendly piece"
+        },
+        {
+          "id": "FA-BLOCK3",
+          "type": "move_legal",
+          "contextKey": "capture-enemy-dest-legal",
+          "axis": "legal",
+          "objective": "a slider CAN capture an enemy at the end of its path"
+        }
+      ],
+      "remediationLesson": "CH01-L005"
+    },
+    {
+      "competency": "foundation.check",
+      "label": "Recognising check",
+      "group": "king_safety",
+      "lessonId": "CH01-L006",
+      "mandatory": true,
+      "evidencePolicy": {
+        "minContexts": 2,
+        "rule": "demonstrated requires >= 2 distinct correct contexts"
+      },
+      "requiredAxes": [
+        "check",
+        "not-check"
+      ],
+      "contexts": [
+        "is-check",
+        "not-check",
+        "knight-check"
+      ],
+      "assessmentItems": [
+        {
+          "id": "FA-CHECK",
+          "type": "is_check",
+          "contextKey": "is-check",
+          "axis": "check",
+          "objective": "recognise check"
+        },
+        {
+          "id": "FA-CHECK2",
+          "type": "is_check",
+          "contextKey": "not-check",
+          "axis": "not-check",
+          "objective": "recognise a non-check position"
+        },
+        {
+          "id": "FA-CHECK3",
+          "type": "is_check",
+          "contextKey": "knight-check",
+          "axis": "check",
+          "objective": "recognise a knight check"
+        }
+      ],
+      "remediationLesson": "CH01-L006"
+    },
+    {
+      "competency": "foundation.check_response",
+      "label": "Legal responses to check",
+      "group": "king_safety",
+      "lessonId": "CH01-L007",
+      "mandatory": true,
+      "evidencePolicy": {
+        "minContexts": 2,
+        "rule": "demonstrated requires >= 2 distinct correct contexts"
+      },
+      "requiredAxes": [
+        "valid-response",
+        "must-resolve"
+      ],
+      "contexts": [
+        "capture-checker",
+        "must-resolve-check",
+        "king-sidestep-legal"
+      ],
+      "assessmentItems": [
+        {
+          "id": "DR-CHECKRESP",
+          "type": "move_objective",
+          "contextKey": "capture-checker",
+          "axis": "valid-response",
+          "objective": "capture the checking piece"
+        },
+        {
+          "id": "FA-CHECKRESP-MUST",
+          "type": "move_legal",
+          "contextKey": "must-resolve-check",
+          "axis": "must-resolve",
+          "objective": "a move that ignores the check is illegal"
+        },
+        {
+          "id": "FA-CHECKRESP3",
+          "type": "move_legal",
+          "contextKey": "king-sidestep-legal",
+          "axis": "valid-response",
+          "objective": "move the king to a safe square"
+        }
+      ],
+      "remediationLesson": "CH01-L007"
+    },
+    {
+      "competency": "foundation.checkmate",
+      "label": "Recognising checkmate",
+      "group": "king_safety",
+      "lessonId": "CH01-L008",
+      "mandatory": true,
+      "evidencePolicy": {
+        "minContexts": 2,
+        "rule": "demonstrated requires >= 2 distinct correct contexts"
+      },
+      "requiredAxes": [
+        "mate",
+        "not-mate"
+      ],
+      "contexts": [
+        "is-mate",
+        "check-not-mate",
+        "king-rook-box-mate"
+      ],
+      "assessmentItems": [
+        {
+          "id": "FA-MATE",
+          "type": "is_checkmate",
+          "contextKey": "is-mate",
+          "axis": "mate",
+          "objective": "recognise checkmate"
+        },
+        {
+          "id": "FA-MATE2",
+          "type": "is_checkmate",
+          "contextKey": "check-not-mate",
+          "axis": "not-mate",
+          "objective": "a check with an escape is not mate"
+        },
+        {
+          "id": "FA-MATE3",
+          "type": "is_checkmate",
+          "contextKey": "king-rook-box-mate",
+          "axis": "mate",
+          "objective": "recognise a king+rook box mate"
+        }
+      ],
+      "remediationLesson": "CH01-L008"
+    },
+    {
+      "competency": "foundation.stalemate",
+      "label": "Recognising stalemate",
+      "group": "king_safety",
+      "lessonId": "CH01-L008",
+      "mandatory": true,
+      "evidencePolicy": {
+        "minContexts": 2,
+        "rule": "demonstrated requires >= 2 distinct correct contexts"
+      },
+      "requiredAxes": [
+        "stalemate",
+        "not-stalemate"
+      ],
+      "contexts": [
+        "is-stalemate",
+        "not-stalemate",
+        "king-pawn-stalemate"
+      ],
+      "assessmentItems": [
+        {
+          "id": "FA-STALE",
+          "type": "is_stalemate",
+          "contextKey": "is-stalemate",
+          "axis": "stalemate",
+          "objective": "recognise stalemate"
+        },
+        {
+          "id": "FA-STALE2",
+          "type": "is_stalemate",
+          "contextKey": "not-stalemate",
+          "axis": "not-stalemate",
+          "objective": "a position with a legal move is not stalemate"
+        },
+        {
+          "id": "FA-STALE3",
+          "type": "is_stalemate",
+          "contextKey": "king-pawn-stalemate",
+          "axis": "stalemate",
+          "objective": "recognise a king+pawn stalemate (different mechanism from the queen case)"
+        }
+      ],
+      "remediationLesson": "CH01-L008"
+    },
+    {
+      "competency": "foundation.castling",
+      "label": "Castling rules",
+      "group": "special",
+      "lessonId": "CH01-L009",
+      "mandatory": true,
+      "evidencePolicy": {
+        "minContexts": 2,
+        "rule": "demonstrated requires >= 2 distinct correct contexts"
+      },
+      "requiredAxes": [
+        "legal",
+        "illegal"
+      ],
+      "contexts": [
+        "legal-castle",
+        "through-check-illegal",
+        "squares-blocked-illegal"
+      ],
+      "assessmentItems": [
+        {
+          "id": "FA-CASTLE-OK",
+          "type": "castling_allowed",
+          "contextKey": "legal-castle",
+          "axis": "legal",
+          "objective": "castling legal case"
+        },
+        {
+          "id": "FA-CASTLE-NO",
+          "type": "castling_allowed",
+          "contextKey": "through-check-illegal",
+          "axis": "illegal",
+          "objective": "castling through check is illegal"
+        },
+        {
+          "id": "FA-CASTLE-BLOCKED",
+          "type": "castling_allowed",
+          "contextKey": "squares-blocked-illegal",
+          "axis": "illegal",
+          "objective": "castling blocked by pieces is illegal"
+        }
+      ],
+      "remediationLesson": "CH01-L009"
+    },
+    {
+      "competency": "foundation.en_passant",
+      "label": "En passant",
+      "group": "special",
+      "lessonId": "CH01-L010",
+      "mandatory": true,
+      "evidencePolicy": {
+        "minContexts": 2,
+        "rule": "demonstrated requires >= 2 distinct correct contexts"
+      },
+      "requiredAxes": [
+        "available",
+        "expired"
+      ],
+      "contexts": [
+        "ep-available",
+        "ep-expired",
+        "ep-available-other-file"
+      ],
+      "assessmentItems": [
+        {
+          "id": "FA-EP-OK",
+          "type": "en_passant_legal",
+          "contextKey": "ep-available",
+          "axis": "available",
+          "objective": "en passant available"
+        },
+        {
+          "id": "FA-EP-NO",
+          "type": "en_passant_legal",
+          "contextKey": "ep-expired",
+          "axis": "expired",
+          "objective": "en passant expired"
+        },
+        {
+          "id": "FA-EP3",
+          "type": "en_passant_legal",
+          "contextKey": "ep-available-other-file",
+          "axis": "available",
+          "objective": "en passant available on another file"
+        }
+      ],
+      "remediationLesson": "CH01-L010"
+    },
+    {
+      "competency": "foundation.promotion",
+      "label": "Promotion",
+      "group": "special",
+      "lessonId": "CH01-L011",
+      "mandatory": true,
+      "evidencePolicy": {
+        "minContexts": 2,
+        "rule": "demonstrated requires >= 2 distinct correct contexts"
+      },
+      "requiredAxes": [
+        "concept",
+        "legal-move"
+      ],
+      "contexts": [
+        "promotion-choices",
+        "promotion-move-legal",
+        "underpromotion-legal"
+      ],
+      "assessmentItems": [
+        {
+          "id": "FA-PROMO",
+          "type": "promotion_choices",
+          "contextKey": "promotion-choices",
+          "axis": "concept",
+          "objective": "promotion choices"
+        },
+        {
+          "id": "FA-PROMO-MOVE",
+          "type": "move_legal",
+          "contextKey": "promotion-move-legal",
+          "axis": "legal-move",
+          "objective": "promotion move is legal"
+        },
+        {
+          "id": "FA-PROMO3",
+          "type": "move_legal",
+          "contextKey": "underpromotion-legal",
+          "axis": "legal-move",
+          "objective": "underpromotion move is legal"
+        }
+      ],
+      "remediationLesson": "CH01-L011"
+    }
+  ],
+  "gating": "CH02 first level requires CH01-L012 passed (foundation_assessment latch) — server-authoritative.",
+  "persistence": "foundation_attempt (0014 + 0015 items jsonb + 0016 attempt_id/unique index) = append-only, DB-idempotent per-attempt + per-item evidence (no answers); foundation_assessment (0013) = authoritative pass latch (never downgraded).",
+  "security": "correct answers + accepted-move sets are computed in foundations.answers.server.ts (import \"server-only\") and never shipped; the attempt token carries no answers; this report intentionally contains none.",
+  "validation": {
+    "errors": 0,
+    "rotationShortfalls": []
+  }
+}

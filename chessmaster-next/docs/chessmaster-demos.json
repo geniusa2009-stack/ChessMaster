@@ -1,0 +1,517 @@
+{
+  "generatedAt": "2026-11-20T16:22:02.973Z",
+  "demos": [
+    {
+      "id": "DEMO-CH01-KING",
+      "lessonId": "CH01-L002",
+      "title": "King moves one square",
+      "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
+      "sideToMove": "w",
+      "legal": true,
+      "sequence": [
+        {
+          "uci": "e1e2",
+          "san": "Ke2",
+          "explain": "الملك يتحرك مربع واحد في أي اتجاه."
+        }
+      ],
+      "shows": "movement",
+      "highlight": [
+        "e1",
+        "e2"
+      ],
+      "arrows": [
+        [
+          "e1",
+          "e2"
+        ]
+      ],
+      "observe": "الملك نقل من e1 إلى e2 — مربع واحد بس.",
+      "conclusion": "الملك (King) يتحرّك مربعاً واحداً في كل الاتجاهات.",
+      "provenance": "project_authored"
+    },
+    {
+      "id": "DEMO-CH01-QUEEN",
+      "lessonId": "CH01-L002",
+      "title": "Queen moves in straight lines",
+      "fen": "3qk3/8/8/8/8/8/8/3QK3 w - - 0 1",
+      "sideToMove": "w",
+      "legal": true,
+      "sequence": [
+        {
+          "uci": "d1d7",
+          "san": "Qd7+",
+          "explain": "الوزير يتحرّك أي عدد من المربعات في خط مستقيم أو قطري."
+        }
+      ],
+      "shows": "movement",
+      "highlight": [
+        "d1",
+        "d7"
+      ],
+      "arrows": [
+        [
+          "d1",
+          "d7"
+        ]
+      ],
+      "observe": "الوزير قطع العمود كله من d1 لـ d7.",
+      "conclusion": "الوزير (Queen) أقوى قطعة: صفوف وأعمدة وأقطار.",
+      "provenance": "project_authored"
+    },
+    {
+      "id": "DEMO-CH01-KNIGHT",
+      "lessonId": "CH01-L003",
+      "title": "Knight jumps over pieces",
+      "fen": "4k3/8/8/8/8/8/1P6/N3K3 w - - 0 1",
+      "sideToMove": "w",
+      "legal": true,
+      "sequence": [
+        {
+          "uci": "a1b3",
+          "san": "Nb3",
+          "explain": "الحصان يقفز على شكل حرف L ويتخطّى القطع."
+        }
+      ],
+      "shows": "movement",
+      "highlight": [
+        "a1",
+        "b3",
+        "b2"
+      ],
+      "arrows": [
+        [
+          "a1",
+          "b3"
+        ]
+      ],
+      "observe": "الحصان قفز من a1 إلى b3 رغم وجود البيدق على b2.",
+      "conclusion": "الحصان (Knight) القطعة الوحيدة اللي بتقفز فوق القطع.",
+      "provenance": "project_authored"
+    },
+    {
+      "id": "DEMO-CH01-PAWN-FWD",
+      "lessonId": "CH01-L004",
+      "title": "Pawn moves forward",
+      "fen": "4k3/8/8/3p4/4P3/8/8/4K3 w - - 0 1",
+      "sideToMove": "w",
+      "legal": true,
+      "sequence": [
+        {
+          "uci": "e4e5",
+          "san": "e5",
+          "explain": "البيدق يتقدّم للأمام مربعاً واحداً."
+        }
+      ],
+      "shows": "movement",
+      "highlight": [
+        "e4",
+        "e5"
+      ],
+      "arrows": [
+        [
+          "e4",
+          "e5"
+        ]
+      ],
+      "observe": "البيدق اتقدّم من e4 لـ e5.",
+      "conclusion": "البيدق (Pawn) بيتقدّم للأمام، لكنه لا يأخذ للأمام.",
+      "provenance": "project_authored"
+    },
+    {
+      "id": "DEMO-CH01-PAWN-CAP",
+      "lessonId": "CH01-L004",
+      "title": "Pawn captures diagonally",
+      "fen": "4k3/8/8/3p4/4P3/8/8/4K3 w - - 0 1",
+      "sideToMove": "w",
+      "legal": true,
+      "sequence": [
+        {
+          "uci": "e4d5",
+          "san": "exd5",
+          "explain": "البيدق يأخذ قطريّاً فقط."
+        }
+      ],
+      "shows": "capture",
+      "highlight": [
+        "e4",
+        "d5"
+      ],
+      "arrows": [
+        [
+          "e4",
+          "d5"
+        ]
+      ],
+      "observe": "البيدق أخذ البيدق الأسود قطريّاً على d5.",
+      "conclusion": "البيدق يأخذ قطريّاً — عكس حركته للأمام.",
+      "provenance": "project_authored"
+    },
+    {
+      "id": "DEMO-CH01-BLOCK",
+      "lessonId": "CH01-L005",
+      "title": "A piece cannot move through its own army",
+      "fen": "4k3/8/8/8/8/8/8/R2BK3 w - - 0 1",
+      "sideToMove": "w",
+      "legal": false,
+      "sequence": [],
+      "rejectedUci": "a1e1",
+      "rejectReason": "الطابية ماتقدرش تعدّي الفيل اللي على d1 — الطريق مسدود.",
+      "shows": "blocking",
+      "highlight": [
+        "a1",
+        "d1",
+        "e1"
+      ],
+      "arrows": [
+        [
+          "a1",
+          "e1"
+        ]
+      ],
+      "observe": "محاولة Ra1–e1 مرفوضة لأن الفيل على d1 بيسدّ الطريق.",
+      "conclusion": "معظم القطع لا تقفز فوق غيرها؛ الطريق لازم يكون فاضي.",
+      "provenance": "project_authored"
+    },
+    {
+      "id": "DEMO-CH01-CHECK",
+      "lessonId": "CH01-L006",
+      "title": "This is a check (king can run)",
+      "fen": "4k3/8/8/8/8/8/8/R3K3 w - - 0 1",
+      "sideToMove": "w",
+      "legal": true,
+      "sequence": [
+        {
+          "uci": "a1a8",
+          "san": "Ra8+",
+          "explain": "الطابية بتهدّد الملك — ده كش."
+        }
+      ],
+      "shows": "check",
+      "highlight": [
+        "a8",
+        "d7",
+        "e7",
+        "f7"
+      ],
+      "arrows": [
+        [
+          "a1",
+          "a8"
+        ]
+      ],
+      "observe": "الملك في كش لكن عنده مربعات هروب d7/e7/f7.",
+      "conclusion": "الكش (Check) تهديد للملك — مش بالضرورة نهاية.",
+      "provenance": "project_authored"
+    },
+    {
+      "id": "DEMO-CH01-MATE",
+      "lessonId": "CH01-L008",
+      "title": "This is checkmate",
+      "fen": "6k1/5ppp/8/8/8/8/8/R5K1 w - - 0 1",
+      "sideToMove": "w",
+      "legal": true,
+      "sequence": [
+        {
+          "uci": "a1a8",
+          "san": "Ra8#",
+          "explain": "كش بلا مهرب — كش مات."
+        }
+      ],
+      "shows": "checkmate",
+      "highlight": [
+        "a8",
+        "g8",
+        "f7",
+        "g7",
+        "h7"
+      ],
+      "arrows": [
+        [
+          "a1",
+          "a8"
+        ]
+      ],
+      "observe": "الملك في كش والبيادق قافلة الهروب — مفيش رد قانوني.",
+      "conclusion": "كش مات (Checkmate): كش بدون أي رد قانوني = نهاية المباراة.",
+      "provenance": "project_authored"
+    },
+    {
+      "id": "DEMO-CH01-STALE",
+      "lessonId": "CH01-L008",
+      "title": "This is stalemate (not mate)",
+      "fen": "7k/5Q2/7K/8/8/8/8/8 b - - 0 1",
+      "sideToMove": "b",
+      "legal": true,
+      "sequence": [],
+      "shows": "stalemate",
+      "highlight": [
+        "h8",
+        "g8",
+        "g7",
+        "h7"
+      ],
+      "arrows": [],
+      "observe": "الأسود مش في كش، لكن مفيش عنده أي نقلة قانونية.",
+      "conclusion": "التعادل بالخنق (Stalemate): مفيش كش + مفيش نقلة = تعادل، مش مات.",
+      "provenance": "project_authored"
+    },
+    {
+      "id": "DEMO-CH01-CASTLE-OK",
+      "lessonId": "CH01-L009",
+      "title": "Kingside castling (legal)",
+      "fen": "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1",
+      "sideToMove": "w",
+      "legal": true,
+      "sequence": [
+        {
+          "uci": "e1g1",
+          "san": "O-O",
+          "explain": "التبييت: الملك مربعين ناحية الطابية والطابية تقفز جنبه."
+        }
+      ],
+      "shows": "castling",
+      "highlight": [
+        "e1",
+        "g1",
+        "h1",
+        "f1"
+      ],
+      "arrows": [
+        [
+          "e1",
+          "g1"
+        ]
+      ],
+      "observe": "الملك e1→g1 والطابية h1→f1 في نقلة واحدة.",
+      "conclusion": "التبييت (Castling) ممكن لو الملك والطابية ما اتحرّكوش والمربعات فاضية.",
+      "provenance": "project_authored"
+    },
+    {
+      "id": "DEMO-CH01-CASTLE-NO",
+      "lessonId": "CH01-L009",
+      "title": "Castling through check (illegal)",
+      "fen": "r3k2r/8/8/8/8/5q2/8/R3K2R w KQkq - 0 1",
+      "sideToMove": "w",
+      "legal": false,
+      "sequence": [],
+      "rejectedUci": "e1g1",
+      "rejectReason": "الملك بيعدّي على f1 المهدَّد بالوزير الأسود — ممنوع التبييت خلال الكش.",
+      "shows": "castling",
+      "highlight": [
+        "e1",
+        "f1",
+        "g1",
+        "f3"
+      ],
+      "arrows": [
+        [
+          "f3",
+          "f1"
+        ]
+      ],
+      "observe": "محاولة O-O مرفوضة لأن f1 مربع مهاجَم.",
+      "conclusion": "ممنوع التبييت لو الملك في كش أو بيعدّي على/ينتهي في مربع مهاجَم.",
+      "provenance": "project_authored"
+    },
+    {
+      "id": "DEMO-CH01-EP-OK",
+      "lessonId": "CH01-L010",
+      "title": "En passant (legal, same move)",
+      "fen": "4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1",
+      "sideToMove": "w",
+      "legal": true,
+      "sequence": [
+        {
+          "uci": "e5d6",
+          "san": "exd6",
+          "explain": "الأخذ بالتجاوز: ناخد البيدق اللي عدّى جنبنا للتوّ."
+        }
+      ],
+      "shows": "en_passant",
+      "highlight": [
+        "e5",
+        "d5",
+        "d6"
+      ],
+      "arrows": [
+        [
+          "e5",
+          "d6"
+        ]
+      ],
+      "observe": "البيدق الأبيض أخذ البيدق الأسود بالتجاوز على d6.",
+      "conclusion": "الأخذ بالتجاوز (En Passant) متاح فقط في النقلة التالية مباشرة.",
+      "provenance": "project_authored"
+    },
+    {
+      "id": "DEMO-CH01-EP-NO",
+      "lessonId": "CH01-L010",
+      "title": "En passant expired (illegal)",
+      "fen": "4k3/8/8/3pP3/8/8/8/4K3 w - - 0 1",
+      "sideToMove": "w",
+      "legal": false,
+      "sequence": [],
+      "rejectedUci": "e5d6",
+      "rejectReason": "فات وقت الأخذ بالتجاوز — مفيش مربع تجاوز متاح.",
+      "shows": "en_passant",
+      "highlight": [
+        "e5",
+        "d5",
+        "d6"
+      ],
+      "arrows": [
+        [
+          "e5",
+          "d6"
+        ]
+      ],
+      "observe": "نفس الموقف لكن من غير فرصة التجاوز — النقلة مرفوضة.",
+      "conclusion": "الفرصة بتضيع لو ما استغلّيتهاش فوراً.",
+      "provenance": "project_authored"
+    },
+    {
+      "id": "DEMO-CH01-PROMO",
+      "lessonId": "CH01-L011",
+      "title": "Promotion",
+      "fen": "4k3/P7/8/8/8/8/8/4K3 w - - 0 1",
+      "sideToMove": "w",
+      "legal": true,
+      "sequence": [
+        {
+          "uci": "a7a8q",
+          "san": "a8=Q+",
+          "explain": "البيدق يوصل الصف الأخير فيترقّى."
+        }
+      ],
+      "shows": "promotion",
+      "highlight": [
+        "a7",
+        "a8"
+      ],
+      "arrows": [
+        [
+          "a7",
+          "a8"
+        ]
+      ],
+      "observe": "البيدق على a7 ترقّى لوزير على a8.",
+      "conclusion": "الترقية (Promotion): تقدر تختار وزير أو طابية أو فيل أو حصان — مش بس وزير.",
+      "provenance": "project_authored"
+    }
+  ],
+  "validation": [
+    {
+      "id": "DEMO-CH01-KING",
+      "lessonId": "CH01-L002",
+      "legal": true,
+      "shows": "movement",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DEMO-CH01-QUEEN",
+      "lessonId": "CH01-L002",
+      "legal": true,
+      "shows": "movement",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DEMO-CH01-KNIGHT",
+      "lessonId": "CH01-L003",
+      "legal": true,
+      "shows": "movement",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DEMO-CH01-PAWN-FWD",
+      "lessonId": "CH01-L004",
+      "legal": true,
+      "shows": "movement",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DEMO-CH01-PAWN-CAP",
+      "lessonId": "CH01-L004",
+      "legal": true,
+      "shows": "capture",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DEMO-CH01-BLOCK",
+      "lessonId": "CH01-L005",
+      "legal": false,
+      "shows": "blocking",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DEMO-CH01-CHECK",
+      "lessonId": "CH01-L006",
+      "legal": true,
+      "shows": "check",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DEMO-CH01-MATE",
+      "lessonId": "CH01-L008",
+      "legal": true,
+      "shows": "checkmate",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DEMO-CH01-STALE",
+      "lessonId": "CH01-L008",
+      "legal": true,
+      "shows": "stalemate",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DEMO-CH01-CASTLE-OK",
+      "lessonId": "CH01-L009",
+      "legal": true,
+      "shows": "castling",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DEMO-CH01-CASTLE-NO",
+      "lessonId": "CH01-L009",
+      "legal": false,
+      "shows": "castling",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DEMO-CH01-EP-OK",
+      "lessonId": "CH01-L010",
+      "legal": true,
+      "shows": "en_passant",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DEMO-CH01-EP-NO",
+      "lessonId": "CH01-L010",
+      "legal": false,
+      "shows": "en_passant",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DEMO-CH01-PROMO",
+      "lessonId": "CH01-L011",
+      "legal": true,
+      "shows": "promotion",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}

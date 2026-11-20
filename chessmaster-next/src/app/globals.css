@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+/* ChessMaster identity — preserved from the original single-file app */
+:root {
+  --green: #81b64c;
+  --green-deep: #769656;
+  --green-glow: #a3d160;
+  --light-sq: #eeeed2;
+  --dark-sq: #769656;
+  --off-white: #eeeed2;
+  --bg: #161513;
+  --dark: #1d1b18;
+  --panel: #262320;
+  --line: rgba(238, 238, 210, 0.09);
+  --muted: #a39e95;
+  --gold: #e6b04a;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--off-white);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+}
+a { color: var(--green-glow); }
+.cm-panel { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; }
+.cm-btn {
+  background: var(--green); color: #10240a; font-weight: 800;
+  border: none; border-radius: 10px; padding: 10px 20px; cursor: pointer;
+}
+.cm-btn:hover { background: var(--green-glow); }
+.cm-input {
+  background: #1a1916; border: 1px solid var(--line); border-radius: 10px;
+  padding: 10px 12px; color: var(--off-white); width: 100%;
+}
+
+/* ChessMaster themes (ported). default = classic green (:root above). */
+html[data-theme="light"] {
+  --green: #769656; --green-deep: #5f7d43; --green-glow: #5f7d43;
+  --off-white: #2c2c2c; --bg: #ffffff; --dark: #f3f3f4; --panel: #f3f3f4;
+  --line: rgba(0,0,0,.10); --muted: #6b6b6b; --gold: #b7791f;
+}
+html[data-theme="midnight"] {
+  --green: #facc15; --green-deep: #d4a90f; --green-glow: #ffe066;
+  --off-white: #e2e8f0; --bg: #0b101e; --dark: #0f1626; --panel: #131b2f;
+  --line: rgba(148,163,184,.15); --muted: #94a3b8; --gold: #facc15;
+}
+
+/* ---- Phase N: accessibility + responsive hardening (presentation only) ---- */
+
+/* Visible keyboard focus in every theme (never remove outline without a replacement). */
+:focus-visible {
+  outline: 3px solid var(--green-glow);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Respect reduced-motion: damp decorative animation/transition, keep functionality. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Comfortable touch targets for controls. */
+.cm-btn { min-height: 40px; }
+
+/* Responsive two-column game layout: board + side panel, stacks on narrow screens.
+   min-width:0 on the board column prevents grid blow-out / horizontal overflow. */
+.game-layout {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.game-layout > * { min-width: 0; }
+@media (max-width: 860px) {
+  .game-layout { grid-template-columns: 1fr; }
+}
+
+/* Fluid square board: fills its container up to its max size, scales down on mobile. */
+.board-wrap { width: min(480px, 92vw); max-width: 100%; }
+
+/* Horizontally scrollable wrapper for data tables on narrow screens. */
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+/* TopNav wraps and stays usable on mobile. */
+@media (max-width: 560px) {
+  nav a, nav [role="link"] { font-size: 13px; }
+}

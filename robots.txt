@@ -1,0 +1,5 @@
+# ChessMaster Academy — Developed by Genius Ahmed Ibrahim
+User-agent: *
+Allow: /
+
+Sitemap: https://chessmaster.vercel.app/sitemap.xml

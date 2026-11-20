@@ -1,0 +1,391 @@
+{
+  "generatedAt": "2026-11-20T16:22:02.967Z",
+  "chapter": "CH01",
+  "lessons": [
+    {
+      "id": "CH01-L001",
+      "title": "Understanding the Board & Coordinates",
+      "objectiveEn": "Identify squares by file/rank and read algebraic coordinates.",
+      "objectiveAr": "تمييز المربعات بالملف والصف وقراءة الإحداثيات.",
+      "concepts": [
+        "8×8 board",
+        "files a–h",
+        "ranks 1–8",
+        "light/dark squares",
+        "algebraic notation"
+      ]
+    },
+    {
+      "id": "CH01-L002",
+      "title": "King & Queen Movement",
+      "objectiveEn": "Move the king (one square) and the queen (lines & diagonals).",
+      "objectiveAr": "تحريك الملك (مربع واحد) والوزير (خطوط وأقطار).",
+      "concepts": [
+        "king one square",
+        "queen any distance straight/diagonal"
+      ]
+    },
+    {
+      "id": "CH01-L003",
+      "title": "Rook, Bishop & Knight Movement",
+      "objectiveEn": "Move the rook (ranks/files), bishop (diagonals) and the jumping knight.",
+      "objectiveAr": "تحريك الطابية والفيل والحصان القافز.",
+      "concepts": [
+        "rook straight",
+        "bishop diagonal",
+        "knight L-shape jump"
+      ]
+    },
+    {
+      "id": "CH01-L004",
+      "title": "Pawn Movement & Captures",
+      "objectiveEn": "Move pawns forward but capture diagonally.",
+      "objectiveAr": "البيدق يتقدّم للأمام ويأخذ قطريّاً.",
+      "concepts": [
+        "forward move",
+        "first-move double step",
+        "diagonal capture"
+      ]
+    },
+    {
+      "id": "CH01-L005",
+      "title": "Blocking & Legal Captures",
+      "objectiveEn": "Understand that most pieces cannot pass through others.",
+      "objectiveAr": "معظم القطع لا تعدّي فوق غيرها.",
+      "concepts": [
+        "blocked paths",
+        "friendly pieces block",
+        "enemy pieces are targets",
+        "knight exception"
+      ]
+    },
+    {
+      "id": "CH01-L006",
+      "title": "Understanding Check",
+      "objectiveEn": "Recognise when a king is in check.",
+      "objectiveAr": "تمييز وجود الملك في كش.",
+      "concepts": [
+        "king attacked",
+        "check vs ordinary attack"
+      ]
+    },
+    {
+      "id": "CH01-L007",
+      "title": "Responding to Check",
+      "objectiveEn": "Respond to check by moving, capturing or blocking.",
+      "objectiveAr": "الرد على الكش: تحريك/أخذ/حجب.",
+      "concepts": [
+        "move the king",
+        "capture the checker",
+        "block the check"
+      ]
+    },
+    {
+      "id": "CH01-L008",
+      "title": "Checkmate & Stalemate",
+      "objectiveEn": "Distinguish checkmate from stalemate.",
+      "objectiveAr": "التفرقة بين الكش مات والتعادل بالخنق.",
+      "concepts": [
+        "checkmate = check + no reply",
+        "stalemate = no check + no move"
+      ]
+    },
+    {
+      "id": "CH01-L009",
+      "title": "Castling",
+      "objectiveEn": "Castle legally and recognise when castling is forbidden.",
+      "objectiveAr": "التبييت القانوني ومتى يُمنع.",
+      "concepts": [
+        "king + rook unmoved",
+        "squares empty",
+        "not through/into check"
+      ]
+    },
+    {
+      "id": "CH01-L010",
+      "title": "En Passant",
+      "objectiveEn": "Perform en passant and know its timing.",
+      "objectiveAr": "الأخذ بالتجاوز وتوقيته.",
+      "concepts": [
+        "immediate opportunity",
+        "diagonal pawn capture"
+      ]
+    },
+    {
+      "id": "CH01-L011",
+      "title": "Promotion",
+      "objectiveEn": "Promote a pawn and choose the piece.",
+      "objectiveAr": "ترقية البيدق واختيار القطعة.",
+      "concepts": [
+        "reach last rank",
+        "choose Q/R/B/N"
+      ]
+    },
+    {
+      "id": "CH01-L012",
+      "title": "Beginner Rules Assessment",
+      "objectiveEn": "Demonstrate the fundamentals in a graded, server-verified assessment.",
+      "objectiveAr": "إثبات الأساسيات في اختبار مُقيَّم ومُتحقَّق على الخادم.",
+      "concepts": [
+        "all CH01 rules"
+      ]
+    }
+  ],
+  "assessment": {
+    "items": [
+      {
+        "id": "FA-COORD",
+        "type": "square_color",
+        "objective": "light square by coordinate"
+      },
+      {
+        "id": "FA-COORD2",
+        "type": "square_color",
+        "objective": "dark square by coordinate"
+      },
+      {
+        "id": "FA-COORD4",
+        "type": "square_color",
+        "objective": "light corner square by coordinate"
+      },
+      {
+        "id": "FA-KING",
+        "type": "move_legal",
+        "objective": "king moves one square"
+      },
+      {
+        "id": "FA-KING2",
+        "type": "move_legal",
+        "objective": "king cannot move two squares"
+      },
+      {
+        "id": "FA-QUEEN",
+        "type": "move_legal",
+        "objective": "queen moves in a line"
+      },
+      {
+        "id": "FA-QUEEN2",
+        "type": "move_legal",
+        "objective": "queen moves on a diagonal"
+      },
+      {
+        "id": "FA-ROOK",
+        "type": "move_legal",
+        "objective": "rook moves on a file"
+      },
+      {
+        "id": "FA-ROOK2",
+        "type": "move_legal",
+        "objective": "rook moves on a rank"
+      },
+      {
+        "id": "FA-BISHOP",
+        "type": "move_legal",
+        "objective": "bishop moves on a diagonal"
+      },
+      {
+        "id": "FA-BISHOP2",
+        "type": "move_legal",
+        "objective": "bishop cannot move straight"
+      },
+      {
+        "id": "FA-KNIGHT",
+        "type": "move_legal",
+        "objective": "legal knight move (jump)"
+      },
+      {
+        "id": "FA-KNIGHT2",
+        "type": "move_legal",
+        "objective": "knight cannot move straight"
+      },
+      {
+        "id": "FA-PAWNFWD",
+        "type": "move_legal",
+        "objective": "pawn first-move double step"
+      },
+      {
+        "id": "FA-PAWNNOCAP",
+        "type": "move_legal",
+        "objective": "pawn cannot capture forward"
+      },
+      {
+        "id": "DR-PAWNCAP",
+        "type": "move_objective",
+        "objective": "capture the pawn diagonally"
+      },
+      {
+        "id": "FA-PAWNCAP-NEG",
+        "type": "move_legal",
+        "objective": "pawn cannot move diagonally to an empty square"
+      },
+      {
+        "id": "FA-BLOCK",
+        "type": "move_legal",
+        "objective": "cannot move through own piece"
+      },
+      {
+        "id": "FA-BLOCK2",
+        "type": "move_legal",
+        "objective": "cannot capture a friendly piece"
+      },
+      {
+        "id": "FA-CHECK",
+        "type": "is_check",
+        "objective": "recognise check"
+      },
+      {
+        "id": "FA-CHECK2",
+        "type": "is_check",
+        "objective": "recognise a non-check position"
+      },
+      {
+        "id": "DR-CHECKRESP",
+        "type": "move_objective",
+        "objective": "capture the checking piece"
+      },
+      {
+        "id": "FA-CHECKRESP-MUST",
+        "type": "move_legal",
+        "objective": "a move that ignores the check is illegal"
+      },
+      {
+        "id": "FA-MATE",
+        "type": "is_checkmate",
+        "objective": "recognise checkmate"
+      },
+      {
+        "id": "FA-MATE2",
+        "type": "is_checkmate",
+        "objective": "a check with an escape is not mate"
+      },
+      {
+        "id": "FA-STALE",
+        "type": "is_stalemate",
+        "objective": "recognise stalemate"
+      },
+      {
+        "id": "FA-STALE2",
+        "type": "is_stalemate",
+        "objective": "a position with a legal move is not stalemate"
+      },
+      {
+        "id": "FA-CASTLE-OK",
+        "type": "castling_allowed",
+        "objective": "castling legal case"
+      },
+      {
+        "id": "FA-CASTLE-NO",
+        "type": "castling_allowed",
+        "objective": "castling through check is illegal"
+      },
+      {
+        "id": "FA-CASTLE-BLOCKED",
+        "type": "castling_allowed",
+        "objective": "castling blocked by pieces is illegal"
+      },
+      {
+        "id": "FA-EP-OK",
+        "type": "en_passant_legal",
+        "objective": "en passant available"
+      },
+      {
+        "id": "FA-EP-NO",
+        "type": "en_passant_legal",
+        "objective": "en passant expired"
+      },
+      {
+        "id": "FA-PROMO",
+        "type": "promotion_choices",
+        "objective": "promotion choices"
+      },
+      {
+        "id": "FA-PROMO-MOVE",
+        "type": "move_legal",
+        "objective": "promotion move is legal"
+      },
+      {
+        "id": "FA-COORD3",
+        "type": "square_color",
+        "objective": "corner square colour"
+      },
+      {
+        "id": "FA-KING3",
+        "type": "move_legal",
+        "objective": "king moves one square diagonally"
+      },
+      {
+        "id": "FA-QUEEN3",
+        "type": "move_legal",
+        "objective": "queen cannot move like a knight"
+      },
+      {
+        "id": "FA-ROOK3",
+        "type": "move_legal",
+        "objective": "rook cannot move diagonally"
+      },
+      {
+        "id": "FA-BISHOP3",
+        "type": "move_legal",
+        "objective": "bishop on the other diagonal"
+      },
+      {
+        "id": "FA-KNIGHT3",
+        "type": "move_legal",
+        "objective": "another legal knight L-move"
+      },
+      {
+        "id": "FA-PAWN3",
+        "type": "move_legal",
+        "objective": "pawn single forward step"
+      },
+      {
+        "id": "DR-PAWNCAP3",
+        "type": "move_objective",
+        "objective": "capture to the other side diagonally"
+      },
+      {
+        "id": "FA-BLOCK3",
+        "type": "move_legal",
+        "objective": "a slider CAN capture an enemy at the end of its path"
+      },
+      {
+        "id": "FA-CHECK3",
+        "type": "is_check",
+        "objective": "recognise a knight check"
+      },
+      {
+        "id": "FA-CHECKRESP3",
+        "type": "move_legal",
+        "objective": "move the king to a safe square"
+      },
+      {
+        "id": "FA-MATE3",
+        "type": "is_checkmate",
+        "objective": "recognise a king+rook box mate"
+      },
+      {
+        "id": "FA-STALE3",
+        "type": "is_stalemate",
+        "objective": "recognise a king+pawn stalemate (different mechanism from the queen case)"
+      },
+      {
+        "id": "FA-EP3",
+        "type": "en_passant_legal",
+        "objective": "en passant available on another file"
+      },
+      {
+        "id": "FA-PROMO3",
+        "type": "move_legal",
+        "objective": "underpromotion move is legal"
+      }
+    ],
+    "poolSize": 49,
+    "level": "CH01-L012",
+    "passRule": "every mandatory competency demonstrated (competency gate); score is informational only"
+  },
+  "gating": "CH02 first level requires CH01-L012 (foundations assessment) passed — server-authoritative.",
+  "validation": {
+    "demoErrors": 0,
+    "assessErrors": 0
+  }
+}

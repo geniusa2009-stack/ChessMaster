@@ -1,0 +1,190 @@
+{
+  "auditTimestamp": "2026-10-29T21:54:13.041Z",
+  "corpus": {
+    "productionPuzzles": 271,
+    "mapped": 271,
+    "unmapped": 0,
+    "excluded": 0
+  },
+  "mappingConfidence": {
+    "verified": 231,
+    "provisional": 40
+  },
+  "skills": [
+    {
+      "id": "mate_in_one",
+      "domain": "checkmate_patterns",
+      "confidence": "verified",
+      "prerequisites": [],
+      "eligibleItems": 20,
+      "difficulties": [
+        "easy",
+        "hard",
+        "medium"
+      ],
+      "coverage": "available",
+      "hasObjective": true
+    },
+    {
+      "id": "forced_mate",
+      "domain": "checkmate_patterns",
+      "confidence": "verified",
+      "prerequisites": [
+        "mate_in_one"
+      ],
+      "eligibleItems": 39,
+      "difficulties": [
+        "expert",
+        "hard"
+      ],
+      "coverage": "available",
+      "hasObjective": true
+    },
+    {
+      "id": "tactical_recognition",
+      "domain": "tactical_vision",
+      "confidence": "verified",
+      "prerequisites": [],
+      "eligibleItems": 57,
+      "difficulties": [
+        "easy",
+        "medium"
+      ],
+      "coverage": "available",
+      "hasObjective": true
+    },
+    {
+      "id": "calculation_combinations",
+      "domain": "calculation",
+      "confidence": "verified",
+      "prerequisites": [
+        "tactical_recognition"
+      ],
+      "eligibleItems": 35,
+      "difficulties": [
+        "expert",
+        "hard",
+        "medium"
+      ],
+      "coverage": "available",
+      "hasObjective": true
+    },
+    {
+      "id": "defensive_resources",
+      "domain": "defensive_play",
+      "confidence": "verified",
+      "prerequisites": [],
+      "eligibleItems": 34,
+      "difficulties": [
+        "easy",
+        "expert",
+        "hard",
+        "medium"
+      ],
+      "coverage": "available",
+      "hasObjective": true
+    },
+    {
+      "id": "endgame_conversion",
+      "domain": "endgame",
+      "confidence": "verified",
+      "prerequisites": [],
+      "eligibleItems": 46,
+      "difficulties": [
+        "easy",
+        "expert",
+        "hard",
+        "medium"
+      ],
+      "coverage": "available",
+      "hasObjective": true
+    },
+    {
+      "id": "opening_stage_tactics",
+      "domain": "opening_knowledge",
+      "confidence": "provisional",
+      "prerequisites": [],
+      "eligibleItems": 40,
+      "difficulties": [
+        "easy",
+        "hard",
+        "medium"
+      ],
+      "coverage": "limited",
+      "hasObjective": true
+    }
+  ],
+  "unavailableSkills": [
+    {
+      "id": "pins_and_skewers",
+      "domain": "tactical_vision",
+      "status": "future_content_required"
+    },
+    {
+      "id": "deflection_overload",
+      "domain": "tactical_vision",
+      "status": "future_content_required"
+    },
+    {
+      "id": "opposition_key_squares",
+      "domain": "endgame",
+      "status": "future_content_required"
+    },
+    {
+      "id": "opening_principles",
+      "domain": "opening_knowledge",
+      "status": "future_content_required"
+    }
+  ],
+  "graph": {
+    "acyclic": true,
+    "cycle": [],
+    "topoOrder": [
+      "mate_in_one",
+      "tactical_recognition",
+      "defensive_resources",
+      "endgame_conversion",
+      "opening_stage_tactics",
+      "forced_mate",
+      "calculation_combinations"
+    ],
+    "missingPrerequisites": []
+  },
+  "validator": {
+    "ok": true,
+    "findings": []
+  },
+  "domainCoverage": {
+    "checkmate_patterns": {
+      "items": 59,
+      "skills": 2
+    },
+    "tactical_vision": {
+      "items": 57,
+      "skills": 1
+    },
+    "calculation": {
+      "items": 35,
+      "skills": 1
+    },
+    "defensive_play": {
+      "items": 34,
+      "skills": 1
+    },
+    "endgame": {
+      "items": 46,
+      "skills": 1
+    },
+    "opening_knowledge": {
+      "items": 40,
+      "skills": 1
+    }
+  },
+  "limitations": [
+    "opening_stage_tactics is provisional: opening-stage tactical positions, NOT verified opening theory.",
+    "calculation/defensive_play/endgame remain limited in item count (carried from R4.1).",
+    "No human pedagogical review performed; all mappings are automated/metadata-supported only.",
+    "Concept skills (pins/skewers/deflection/opposition/opening-principles) have no verified content (future_content_required)."
+  ],
+  "notes": "Generated from current catalog + corpus. Contains no puzzle solutions."
+}

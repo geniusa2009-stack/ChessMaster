@@ -1,0 +1,96 @@
+{
+  "auditTimestamp": "2026-10-29T22:02:21.282Z",
+  "corpus": {
+    "count": 271,
+    "uniqueIds": 271,
+    "duplicateIds": [],
+    "invalidRecords": []
+  },
+  "origin": {
+    "project_authored": 16,
+    "programmatically_generated": 255
+  },
+  "verification": {
+    "engine_verified": 271
+  },
+  "domain": {
+    "checkmate_patterns": 59,
+    "calculation": 35,
+    "tactical_vision": 57,
+    "defensive_play": 34,
+    "endgame": 46,
+    "opening_knowledge": 40
+  },
+  "theme": {
+    "mateIn2": 32,
+    "mateIn3": 7,
+    "mateIn1": 20,
+    "win_material": 118,
+    "defensive": 34,
+    "fork": 21,
+    "promotion": 37,
+    "discovered_attack": 2
+  },
+  "difficulty": {
+    "hard": 86,
+    "expert": 18,
+    "easy": 79,
+    "medium": 88
+  },
+  "objective": {
+    "Find the forced mate in 2": 30,
+    "Find the forced mate in 3": 7,
+    "Back-rank mate in one": 1,
+    "Deliver back-rank mate in one": 1,
+    "Corner the king: mate in one": 1,
+    "Two-rook ladder: mate in two": 1,
+    "Rook ladder technique: mate in two": 1,
+    "Find the forced mate in 1": 17,
+    "Win material with the best tactic": 137,
+    "Find the only move that avoids losing": 34,
+    "Convert the endgame: win material or promote": 41
+  },
+  "duplicates": {
+    "exact": [],
+    "equivalentPositions": [],
+    "highSimilarityCandidates": [
+      {
+        "pair": [
+          16,
+          17
+        ],
+        "sameSquares": 60,
+        "disposition": "retained: intentional authored teaching variants (rook-ladder technique)"
+      },
+      {
+        "pair": [
+          367,
+          368
+        ],
+        "sameSquares": 60,
+        "disposition": "retained: distinct verified positions sharing a material structure but with different solutions/ideas"
+      }
+    ],
+    "methods": [
+      "exact normalized position",
+      "mirror-equivalent board",
+      "all-pairs material+side+board-overlap(>=60/64)+theme"
+    ],
+    "limitations": "structural/material similarity only; does not prove motif-level tactical equivalence"
+  },
+  "metadataConsistency": {
+    "fabricatedOriginClaims": [],
+    "originVerificationConflations": [],
+    "objectiveThemeMismatches": []
+  },
+  "solverReverification": {
+    "sample": "bounded deterministic spot-check at maxPly 6 (defensive 12, mate 15, material 18); full re-verification of all items is run in the audit workspace",
+    "mateProven": 14,
+    "mateNeedsFullWidth": 1,
+    "materialProven": 18,
+    "materialUnproven": 0,
+    "defenseUnique": 12,
+    "defenseWeak": 0,
+    "note": "mateNeedsFullWidth = authored quiet-move rook-ladder mates the forcing solver cannot certify; proven forced by the full-width isForcedMateInPlies (see content-authored-mates.test.ts). A few deep combinations resolve only at maxPly 7 (documented in CHESS-CONTENT-AUDIT.md); the spot-check uses maxPly 6. No solutions are included in this report."
+  }
+}
