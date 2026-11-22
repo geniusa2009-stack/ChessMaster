@@ -1,0 +1,26 @@
+[
+  {
+    "source": "chesscom-puzzles",
+    "url": "https://github.com/IchNukeDichWeg/chess.com-puzzles/releases/download/v2/puzzles-json.zip",
+    "name": "v2-puzzles-json.zip"
+  },
+  {
+    "source": "stockfish-tests",
+    "url": "https://github.com/official-stockfish/Stockfish/releases/download/sf_19/stockfish-macos-universal.tar.gz"
+  },
+  {
+    "source": "chesscom-puzzles",
+    "url": "https://github.com/IchNukeDichWeg/chess.com-puzzles/releases/download/v2/puzzles-csv.zip",
+    "name": "v2-puzzles-csv.zip"
+  },
+  {
+    "source": "chesscom-puzzles",
+    "url": "https://github.com/IchNukeDichWeg/chess.com-puzzles/releases/download/v1/puzzles-csv.zip",
+    "name": "v1-puzzles-csv.zip"
+  },
+  {
+    "source": "chesscom-puzzles",
+    "url": "https://github.com/IchNukeDichWeg/chess.com-puzzles/releases/download/v1/puzzles-json.zip",
+    "name": "v1-puzzles-json.zip"
+  }
+]

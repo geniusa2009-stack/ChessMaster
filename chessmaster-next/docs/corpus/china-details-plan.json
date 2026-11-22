@@ -1,0 +1,1286 @@
+[
+  {
+    "source": "popeye",
+    "url": "https://github.com/thomas-maeder/popeye/releases/download/v4.103/pymacos-arm"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/00.json",
+    "name": "00.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/01.json",
+    "name": "01.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/02.json",
+    "name": "02.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/03.json",
+    "name": "03.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/04.json",
+    "name": "04.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/05.json",
+    "name": "05.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/06.json",
+    "name": "06.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/07.json",
+    "name": "07.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/08.json",
+    "name": "08.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/09.json",
+    "name": "09.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/0a.json",
+    "name": "0a.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/0b.json",
+    "name": "0b.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/0c.json",
+    "name": "0c.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/0d.json",
+    "name": "0d.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/0e.json",
+    "name": "0e.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/0f.json",
+    "name": "0f.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/10.json",
+    "name": "10.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/11.json",
+    "name": "11.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/12.json",
+    "name": "12.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/13.json",
+    "name": "13.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/14.json",
+    "name": "14.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/15.json",
+    "name": "15.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/16.json",
+    "name": "16.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/17.json",
+    "name": "17.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/18.json",
+    "name": "18.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/19.json",
+    "name": "19.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/1a.json",
+    "name": "1a.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/1b.json",
+    "name": "1b.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/1c.json",
+    "name": "1c.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/1d.json",
+    "name": "1d.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/1e.json",
+    "name": "1e.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/1f.json",
+    "name": "1f.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/20.json",
+    "name": "20.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/21.json",
+    "name": "21.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/22.json",
+    "name": "22.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/23.json",
+    "name": "23.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/24.json",
+    "name": "24.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/25.json",
+    "name": "25.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/26.json",
+    "name": "26.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/27.json",
+    "name": "27.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/28.json",
+    "name": "28.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/29.json",
+    "name": "29.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/2a.json",
+    "name": "2a.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/2b.json",
+    "name": "2b.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/2c.json",
+    "name": "2c.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/2d.json",
+    "name": "2d.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/2e.json",
+    "name": "2e.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/2f.json",
+    "name": "2f.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/30.json",
+    "name": "30.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/31.json",
+    "name": "31.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/32.json",
+    "name": "32.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/33.json",
+    "name": "33.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/34.json",
+    "name": "34.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/35.json",
+    "name": "35.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/36.json",
+    "name": "36.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/37.json",
+    "name": "37.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/38.json",
+    "name": "38.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/39.json",
+    "name": "39.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/3a.json",
+    "name": "3a.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/3b.json",
+    "name": "3b.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/3c.json",
+    "name": "3c.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/3d.json",
+    "name": "3d.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/3e.json",
+    "name": "3e.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/3f.json",
+    "name": "3f.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/40.json",
+    "name": "40.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/41.json",
+    "name": "41.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/42.json",
+    "name": "42.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/43.json",
+    "name": "43.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/44.json",
+    "name": "44.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/45.json",
+    "name": "45.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/46.json",
+    "name": "46.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/47.json",
+    "name": "47.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/48.json",
+    "name": "48.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/49.json",
+    "name": "49.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/4a.json",
+    "name": "4a.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/4b.json",
+    "name": "4b.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/4c.json",
+    "name": "4c.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/4d.json",
+    "name": "4d.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/4e.json",
+    "name": "4e.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/4f.json",
+    "name": "4f.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/50.json",
+    "name": "50.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/51.json",
+    "name": "51.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/52.json",
+    "name": "52.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/53.json",
+    "name": "53.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/54.json",
+    "name": "54.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/55.json",
+    "name": "55.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/56.json",
+    "name": "56.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/57.json",
+    "name": "57.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/58.json",
+    "name": "58.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/59.json",
+    "name": "59.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/5a.json",
+    "name": "5a.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/5b.json",
+    "name": "5b.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/5c.json",
+    "name": "5c.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/5d.json",
+    "name": "5d.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/5e.json",
+    "name": "5e.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/5f.json",
+    "name": "5f.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/60.json",
+    "name": "60.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/61.json",
+    "name": "61.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/62.json",
+    "name": "62.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/63.json",
+    "name": "63.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/64.json",
+    "name": "64.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/65.json",
+    "name": "65.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/66.json",
+    "name": "66.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/67.json",
+    "name": "67.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/68.json",
+    "name": "68.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/69.json",
+    "name": "69.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/6a.json",
+    "name": "6a.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/6b.json",
+    "name": "6b.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/6c.json",
+    "name": "6c.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/6d.json",
+    "name": "6d.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/6e.json",
+    "name": "6e.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/6f.json",
+    "name": "6f.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/70.json",
+    "name": "70.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/71.json",
+    "name": "71.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/72.json",
+    "name": "72.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/73.json",
+    "name": "73.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/74.json",
+    "name": "74.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/75.json",
+    "name": "75.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/76.json",
+    "name": "76.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/77.json",
+    "name": "77.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/78.json",
+    "name": "78.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/79.json",
+    "name": "79.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/7a.json",
+    "name": "7a.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/7b.json",
+    "name": "7b.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/7c.json",
+    "name": "7c.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/7d.json",
+    "name": "7d.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/7e.json",
+    "name": "7e.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/7f.json",
+    "name": "7f.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/80.json",
+    "name": "80.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/81.json",
+    "name": "81.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/82.json",
+    "name": "82.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/83.json",
+    "name": "83.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/84.json",
+    "name": "84.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/85.json",
+    "name": "85.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/86.json",
+    "name": "86.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/87.json",
+    "name": "87.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/88.json",
+    "name": "88.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/89.json",
+    "name": "89.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/8a.json",
+    "name": "8a.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/8b.json",
+    "name": "8b.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/8c.json",
+    "name": "8c.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/8d.json",
+    "name": "8d.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/8e.json",
+    "name": "8e.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/8f.json",
+    "name": "8f.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/90.json",
+    "name": "90.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/91.json",
+    "name": "91.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/92.json",
+    "name": "92.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/93.json",
+    "name": "93.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/94.json",
+    "name": "94.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/95.json",
+    "name": "95.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/96.json",
+    "name": "96.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/97.json",
+    "name": "97.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/98.json",
+    "name": "98.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/99.json",
+    "name": "99.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/9a.json",
+    "name": "9a.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/9b.json",
+    "name": "9b.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/9c.json",
+    "name": "9c.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/9d.json",
+    "name": "9d.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/9e.json",
+    "name": "9e.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/9f.json",
+    "name": "9f.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/a0.json",
+    "name": "a0.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/a1.json",
+    "name": "a1.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/a2.json",
+    "name": "a2.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/a3.json",
+    "name": "a3.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/a4.json",
+    "name": "a4.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/a5.json",
+    "name": "a5.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/a6.json",
+    "name": "a6.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/a7.json",
+    "name": "a7.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/a8.json",
+    "name": "a8.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/a9.json",
+    "name": "a9.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/aa.json",
+    "name": "aa.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/ab.json",
+    "name": "ab.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/ac.json",
+    "name": "ac.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/ad.json",
+    "name": "ad.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/ae.json",
+    "name": "ae.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/af.json",
+    "name": "af.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/b0.json",
+    "name": "b0.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/b1.json",
+    "name": "b1.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/b2.json",
+    "name": "b2.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/b3.json",
+    "name": "b3.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/b4.json",
+    "name": "b4.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/b5.json",
+    "name": "b5.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/b6.json",
+    "name": "b6.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/b7.json",
+    "name": "b7.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/b8.json",
+    "name": "b8.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/b9.json",
+    "name": "b9.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/ba.json",
+    "name": "ba.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/bb.json",
+    "name": "bb.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/bc.json",
+    "name": "bc.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/bd.json",
+    "name": "bd.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/be.json",
+    "name": "be.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/bf.json",
+    "name": "bf.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/c0.json",
+    "name": "c0.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/c1.json",
+    "name": "c1.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/c2.json",
+    "name": "c2.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/c3.json",
+    "name": "c3.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/c4.json",
+    "name": "c4.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/c5.json",
+    "name": "c5.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/c6.json",
+    "name": "c6.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/c7.json",
+    "name": "c7.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/c8.json",
+    "name": "c8.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/c9.json",
+    "name": "c9.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/ca.json",
+    "name": "ca.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/cb.json",
+    "name": "cb.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/cc.json",
+    "name": "cc.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/cd.json",
+    "name": "cd.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/ce.json",
+    "name": "ce.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/cf.json",
+    "name": "cf.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/d0.json",
+    "name": "d0.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/d1.json",
+    "name": "d1.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/d2.json",
+    "name": "d2.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/d3.json",
+    "name": "d3.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/d4.json",
+    "name": "d4.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/d5.json",
+    "name": "d5.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/d6.json",
+    "name": "d6.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/d7.json",
+    "name": "d7.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/d8.json",
+    "name": "d8.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/d9.json",
+    "name": "d9.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/da.json",
+    "name": "da.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/db.json",
+    "name": "db.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/dc.json",
+    "name": "dc.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/dd.json",
+    "name": "dd.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/de.json",
+    "name": "de.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/df.json",
+    "name": "df.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/e0.json",
+    "name": "e0.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/e1.json",
+    "name": "e1.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/e2.json",
+    "name": "e2.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/e3.json",
+    "name": "e3.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/e4.json",
+    "name": "e4.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/e5.json",
+    "name": "e5.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/e6.json",
+    "name": "e6.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/e7.json",
+    "name": "e7.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/e8.json",
+    "name": "e8.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/e9.json",
+    "name": "e9.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/ea.json",
+    "name": "ea.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/eb.json",
+    "name": "eb.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/ec.json",
+    "name": "ec.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/ed.json",
+    "name": "ed.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/ee.json",
+    "name": "ee.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/ef.json",
+    "name": "ef.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/f0.json",
+    "name": "f0.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/f1.json",
+    "name": "f1.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/f2.json",
+    "name": "f2.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/f3.json",
+    "name": "f3.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/f4.json",
+    "name": "f4.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/f5.json",
+    "name": "f5.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/f6.json",
+    "name": "f6.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/f7.json",
+    "name": "f7.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/f8.json",
+    "name": "f8.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/f9.json",
+    "name": "f9.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/fa.json",
+    "name": "fa.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/fb.json",
+    "name": "fb.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/fc.json",
+    "name": "fc.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/fd.json",
+    "name": "fd.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/fe.json",
+    "name": "fe.json"
+  },
+  {
+    "source": "chessdb-brilliancies",
+    "url": "https://raw.githubusercontent.com/keluoke/china-chess-player-pgn/main/docs/data/brilliancies/shards/ff.json",
+    "name": "ff.json"
+  }
+]

@@ -53,3 +53,19 @@ chessmaster-next/scripts/_probe732.mjs
 
 # Preserved originals containing local-only credentials
 .release-private/
+
+# Bulk content staging belongs outside the source tree.
+__pycache__/
+*.pyc
+content-private/
+*.csv.zst
+*.ndjson
+
+# Private corpus files and local engines
+chessmaster-global-corpus/
+*.duckdb
+*.duckdb.wal
+*.parquet
+*.rtbw
+*.rtbz
+*.part

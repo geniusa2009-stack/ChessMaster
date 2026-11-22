@@ -1,0 +1,848 @@
+[
+  {
+    "source": "chessnerd",
+    "url": "https://github.com/ianrastall/chessnerd/releases/download/pgn-downloads-2026-10-21/can-base.zip"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/IntFiles/40H-Openings.epd",
+    "name": "Resources__IntFiles__40H-Openings.epd"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/IntFiles/Routes/Transsiberian/level1/tactics.fns",
+    "name": "Resources__IntFiles__Routes__Transsiberian__level1__tactics.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/IntFiles/Routes/Transsiberian/level2/tactics.fns",
+    "name": "Resources__IntFiles__Routes__Transsiberian__level2__tactics.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/IntFiles/Routes/Transsiberian/level3/tactics.fns",
+    "name": "Resources__IntFiles__Routes__Transsiberian__level3__tactics.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/IntFiles/Routes/Transsiberian/level4/tactics.fns",
+    "name": "Resources__IntFiles__Routes__Transsiberian__level4__tactics.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/IntFiles/Routes/Transsiberian/level5/tactics.fns",
+    "name": "Resources__IntFiles__Routes__Transsiberian__level5__tactics.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Mate%20in%20two%20with%20specific%20pieces/BN.fns",
+    "name": "Resources__Tactics__Mate in two with specific pieces__BN.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Mate%20in%20two%20with%20specific%20pieces/BQ.fns",
+    "name": "Resources__Tactics__Mate in two with specific pieces__BQ.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Mate%20in%20two%20with%20specific%20pieces/BR.fns",
+    "name": "Resources__Tactics__Mate in two with specific pieces__BR.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Mate%20in%20two%20with%20specific%20pieces/NQ.fns",
+    "name": "Resources__Tactics__Mate in two with specific pieces__NQ.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Mate%20in%20two%20with%20specific%20pieces/NR.fns",
+    "name": "Resources__Tactics__Mate in two with specific pieces__NR.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Mate%20in%20two%20with%20specific%20pieces/QR.fns",
+    "name": "Resources__Tactics__Mate in two with specific pieces__QR.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Decoy_0.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Decoy_0.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Decoy_1.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Decoy_1.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Decoy_2.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Decoy_2.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Decoy_3.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Decoy_3.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Decoy_4.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Decoy_4.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Deflection_0.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Deflection_0.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Deflection_1.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Deflection_1.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Deflection_2.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Deflection_2.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Deflection_3.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Deflection_3.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Deflection_4.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Deflection_4.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Different%20themes_0.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Different themes_0.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Different%20themes_1.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Different themes_1.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Different%20themes_2.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Different themes_2.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Different%20themes_3.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Different themes_3.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Different%20themes_4.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Different themes_4.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Drawing%20Combinations_0.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Drawing Combinations_0.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Drawing%20Combinations_1.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Drawing Combinations_1.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Drawing%20Combinations_2.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Drawing Combinations_2.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Drawing%20Combinations_3.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Drawing Combinations_3.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Drawing%20Combinations_4.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Drawing Combinations_4.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Interference_0.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Interference_0.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Interference_1.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Interference_1.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Interference_2.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Interference_2.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Interference_3.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Interference_3.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Pawn%20promotion_0.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Pawn promotion_0.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Pawn%20promotion_1.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Pawn promotion_1.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Pawn%20promotion_2.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Pawn promotion_2.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Pawn%20promotion_3.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Pawn promotion_3.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Pawn%20promotion_4.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Pawn promotion_4.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Pin_0.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Pin_0.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Pin_1.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Pin_1.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Pin_2.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Pin_2.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Pin_3.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Pin_3.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Pin_4.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Pin_4.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Removal%20of%20defence_0.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Removal of defence_0.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Removal%20of%20defence_1.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Removal of defence_1.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Removal%20of%20defence_2.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Removal of defence_2.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Removal%20of%20defence_3.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Removal of defence_3.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Removal%20of%20defence_4.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Removal of defence_4.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Removal_0.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Removal_0.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Removal_1.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Removal_1.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Removal_2.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Removal_2.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Removal_3.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Removal_3.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Tactics/Tactics%20by%20Uwe%20Auerswald/Removal_4.fns",
+    "name": "Resources__Tactics__Tactics by Uwe Auerswald__Removal_4.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Checkmates%20by%20Eduardo%20Sadier/180805%20positions%20of%20mate%20in%20two.fns",
+    "name": "Resources__Trainings__Checkmates by Eduardo Sadier__180805 positions of mate in two.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Checkmates%20by%20Eduardo%20Sadier/Mate%20in%20one%20%28derived%20from%20mate%20in%20two%29.fns",
+    "name": "Resources__Trainings__Checkmates by Eduardo Sadier__Mate in one (derived from mate in two).fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Checkmates%20from%20FICS%20database/Attacking%20the%20king%20in%20the%20castle%20M1.fns",
+    "name": "Resources__Trainings__Checkmates from FICS database__Attacking the king in the castle M1.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Checkmates%20from%20FICS%20database/Attacking%20the%20king%20in%20the%20castle%20M2-7.fns",
+    "name": "Resources__Trainings__Checkmates from FICS database__Attacking the king in the castle M2-7.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Checkmates%20from%20FICS%20database/Endings%20with%20just%20pawns.fns",
+    "name": "Resources__Trainings__Checkmates from FICS database__Endings with just pawns.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Checkmates%20from%20FICS%20database/Endings%20with%20pawns%20and%20rooks.fns",
+    "name": "Resources__Trainings__Checkmates from FICS database__Endings with pawns and rooks.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Checkmates%20from%20FICS%20database/The%20kick%20of%20the%20knight.fns",
+    "name": "Resources__Trainings__Checkmates from FICS database__The kick of the knight.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Checkmates%20in%20GM%20games/Mate%20in%201.fns",
+    "name": "Resources__Trainings__Checkmates in GM games__Mate in 1.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Checkmates%20in%20GM%20games/Mate%20in%202.fns",
+    "name": "Resources__Trainings__Checkmates in GM games__Mate in 2.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Checkmates%20in%20GM%20games/Mate%20in%203.fns",
+    "name": "Resources__Trainings__Checkmates in GM games__Mate in 3.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Checkmates%20in%20GM%20games/Mate%20in%204.fns",
+    "name": "Resources__Trainings__Checkmates in GM games__Mate in 4.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Checkmates%20in%20GM%20games/Mate%20in%205.fns",
+    "name": "Resources__Trainings__Checkmates in GM games__Mate in 5.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Checkmates%20in%20GM%20games/Mate%20in%206.fns",
+    "name": "Resources__Trainings__Checkmates in GM games__Mate in 6.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Checkmates%20in%20GM%20games/Mate%20in%207.fns",
+    "name": "Resources__Trainings__Checkmates in GM games__Mate in 7.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Checkmates%20in%20GM%20games/Mate%20in%208.fns",
+    "name": "Resources__Trainings__Checkmates in GM games__Mate in 8.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Checkmates%20in%20GM%20games/Mate%20in%209.fns",
+    "name": "Resources__Trainings__Checkmates in GM games__Mate in 9.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/Famous%20Studies/Arabic.Manuscript.Position.1140.%5BWhite%20always%20win%5D.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__Famous Studies__Arabic.Manuscript.Position.1140.[White always win].fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/Famous%20Studies/Centurini.Position.%5BWhite%20to%20play%20and%20win%5D.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__Famous Studies__Centurini.Position.[White to play and win].fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/Famous%20Studies/Lucena.Position.%5BWhite%20to%20play%20and%20win%5D.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__Famous Studies__Lucena.Position.[White to play and win].fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/Famous%20Studies/Philidor.Position.%5BBlack%20to%20play%20and%20White%20draws%5D.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__Famous Studies__Philidor.Position.[Black to play and White draws].fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/Famous%20Studies/Reti.Position.%5BWhite%20to%20play%20and%20draw%5D.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__Famous Studies__Reti.Position.[White to play and draw].fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/Famous%20Studies/Saavedra.Position.%5BWhite%20to%20play%20and%20win%5D.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__Famous Studies__Saavedra.Position.[White to play and win].fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/Famous%20Studies/Vancura.Position.%5BWhite%20to%20play%20and%20Black%20draws%5D.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__Famous Studies__Vancura.Position.[White to play and Black draws].fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/Major%20Pieces%20Endings/King.And.Two.Rooks.Vs.King.And.Queen.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__Major Pieces Endings__King.And.Two.Rooks.Vs.King.And.Queen.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/Major%20Pieces%20Endings/King.And.Two.Rooks.Vs.King.And.Rook.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__Major Pieces Endings__King.And.Two.Rooks.Vs.King.And.Rook.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/Major%20Pieces%20Endings/King.And.Two.Rooks.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__Major Pieces Endings__King.And.Two.Rooks.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/Major%20Vs%20Minor%20Pieces%20Endings/King.And.Queen.Versus.King.And.Bishop.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__Major Vs Minor Pieces Endings__King.And.Queen.Versus.King.And.Bishop.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/Major%20Vs%20Minor%20Pieces%20Endings/King.And.Queen.Versus.King.And.Knight.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__Major Vs Minor Pieces Endings__King.And.Queen.Versus.King.And.Knight.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/Major%20Vs%20Minor%20Pieces%20Endings/King.And.Rook.Versus.King.And.Bishop.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__Major Vs Minor Pieces Endings__King.And.Rook.Versus.King.And.Bishop.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/Major%20Vs%20Minor%20Pieces%20Endings/King.And.Rook.Versus.King.And.Knight.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__Major Vs Minor Pieces Endings__King.And.Rook.Versus.King.And.Knight.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/Pawns%20Breaks/Complex.Pawns.Break.%5BBlack%20to%20play%20and%20win%5D.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__Pawns Breaks__Complex.Pawns.Break.[Black to play and win].fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/Pawns%20Breaks/Four.Pawns.Break.%5BWhite%20to%20play%20and%20win%5D.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__Pawns Breaks__Four.Pawns.Break.[White to play and win].fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/Pawns%20Breaks/Outside.Passed.Pawn.Break.%5BWhite%20to%20play%20and%20win%5D.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__Pawns Breaks__Outside.Passed.Pawn.Break.[White to play and win].fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/Pawns%20Breaks/Three.Pawns.Easy.Break.%5BWhite%20to%20play%20and%20win%5D.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__Pawns Breaks__Three.Pawns.Easy.Break.[White to play and win].fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/The%20Four%20Basic%20Mates/2%20Bishops%20Mate.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__The Four Basic Mates__2 Bishops Mate.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/The%20Four%20Basic%20Mates/King%20and%20Queen%20Mate.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__The Four Basic Mates__King and Queen Mate.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/The%20Four%20Basic%20Mates/King%20and%20Rook%20Mate.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__The Four Basic Mates__King and Rook Mate.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Rui%20Grafino/The%20Four%20Basic%20Mates/Knight%20and%20Bishop%20Mate.fns",
+    "name": "Resources__Trainings__Endgames by Rui Grafino__The Four Basic Mates__Knight and Bishop Mate.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Endgames%20by%20Victor%20Perez/Various%20positions.fns",
+    "name": "Resources__Trainings__Endgames by Victor Perez__Various positions.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Pawn%20endings/KPK.fns",
+    "name": "Resources__Trainings__Pawn endings__KPK.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Pawn%20endings/KPKP.fns",
+    "name": "Resources__Trainings__Pawn endings__KPKP.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Pawn%20endings/KPPK.fns",
+    "name": "Resources__Trainings__Pawn endings__KPPK.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Pawn%20endings/KPPKP.fns",
+    "name": "Resources__Trainings__Pawn endings__KPPKP.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Pawn%20endings/KPPKPP.fns",
+    "name": "Resources__Trainings__Pawn endings__KPPKPP.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Pawn%20endings/KPPKPPP.fns",
+    "name": "Resources__Trainings__Pawn endings__KPPKPPP.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Pawn%20endings/KPPPKP.fns",
+    "name": "Resources__Trainings__Pawn endings__KPPPKP.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Pawn%20endings/KPPPKPP.fns",
+    "name": "Resources__Trainings__Pawn endings__KPPPKPP.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Pawn%20endings/KPPPKPPP.fns",
+    "name": "Resources__Trainings__Pawn endings__KPPPKPPP.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Pawn%20endings/KPPPPKPPP.fns",
+    "name": "Resources__Trainings__Pawn endings__KPPPPKPPP.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Singular%20moves%20to%20equalize/Level%201.fns",
+    "name": "Resources__Trainings__Singular moves to equalize__Level 1.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Singular%20moves%20to%20equalize/Level%202.fns",
+    "name": "Resources__Trainings__Singular moves to equalize__Level 2.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Singular%20moves%20to%20equalize/Level%203.fns",
+    "name": "Resources__Trainings__Singular moves to equalize__Level 3.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Singular%20moves%20to%20equalize/Level%204.fns",
+    "name": "Resources__Trainings__Singular moves to equalize__Level 4.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Singular%20moves%20to%20equalize/Level%205.fns",
+    "name": "Resources__Trainings__Singular moves to equalize__Level 5.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Singular%20moves%20to%20win/Level%201.fns",
+    "name": "Resources__Trainings__Singular moves to win__Level 1.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Singular%20moves%20to%20win/Level%202.fns",
+    "name": "Resources__Trainings__Singular moves to win__Level 2.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Singular%20moves%20to%20win/Level%203.fns",
+    "name": "Resources__Trainings__Singular moves to win__Level 3.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Singular%20moves%20to%20win/Level%204.fns",
+    "name": "Resources__Trainings__Singular moves to win__Level 4.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Singular%20moves%20to%20win/Level%205.fns",
+    "name": "Resources__Trainings__Singular moves to win__Level 5.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Tactics%20by%20UNED%20chess%20school/Annihilation%20of%20defense.fns",
+    "name": "Resources__Trainings__Tactics by UNED chess school__Annihilation of defense.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Tactics%20by%20UNED%20chess%20school/Attacking%20Defender.fns",
+    "name": "Resources__Trainings__Tactics by UNED chess school__Attacking Defender.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Tactics%20by%20UNED%20chess%20school/Decoy.fns",
+    "name": "Resources__Trainings__Tactics by UNED chess school__Decoy.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Tactics%20by%20UNED%20chess%20school/Discovered%20attack.fns",
+    "name": "Resources__Trainings__Tactics by UNED chess school__Discovered attack.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Tactics%20by%20UNED%20chess%20school/Double%20attack.fns",
+    "name": "Resources__Trainings__Tactics by UNED chess school__Double attack.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Tactics%20by%20UNED%20chess%20school/Interception-blocade.fns",
+    "name": "Resources__Trainings__Tactics by UNED chess school__Interception-blocade.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Tactics%20by%20UNED%20chess%20school/Pawn%20promotion.fns",
+    "name": "Resources__Trainings__Tactics by UNED chess school__Pawn promotion.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Tactics%20by%20UNED%20chess%20school/Pin.fns",
+    "name": "Resources__Trainings__Tactics by UNED chess school__Pin.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Tactics%20by%20UNED%20chess%20school/X-ray%20attack.fns",
+    "name": "Resources__Trainings__Tactics by UNED chess school__X-ray attack.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Tactics%20by%20Uwe%20Auerswald/Decoy.fns",
+    "name": "Resources__Trainings__Tactics by Uwe Auerswald__Decoy.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Tactics%20by%20Uwe%20Auerswald/Deflection.fns",
+    "name": "Resources__Trainings__Tactics by Uwe Auerswald__Deflection.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Tactics%20by%20Uwe%20Auerswald/Different%20themes.fns",
+    "name": "Resources__Trainings__Tactics by Uwe Auerswald__Different themes.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Tactics%20by%20Uwe%20Auerswald/Drawing%20Combinations.fns",
+    "name": "Resources__Trainings__Tactics by Uwe Auerswald__Drawing Combinations.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Tactics%20by%20Uwe%20Auerswald/Interference.fns",
+    "name": "Resources__Trainings__Tactics by Uwe Auerswald__Interference.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Tactics%20by%20Uwe%20Auerswald/Pawn%20promotion.fns",
+    "name": "Resources__Trainings__Tactics by Uwe Auerswald__Pawn promotion.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Tactics%20by%20Uwe%20Auerswald/Pin.fns",
+    "name": "Resources__Trainings__Tactics by Uwe Auerswald__Pin.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Tactics%20by%20Uwe%20Auerswald/Removal%20of%20defence.fns",
+    "name": "Resources__Trainings__Tactics by Uwe Auerswald__Removal of defence.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Tactics%20by%20Uwe%20Auerswald/Removal.fns",
+    "name": "Resources__Trainings__Tactics by Uwe Auerswald__Removal.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Technique%20by%20Michele%20Tumbarello/Endings%2C%20bishops%20and%20pawns.fns",
+    "name": "Resources__Trainings__Technique by Michele Tumbarello__Endings, bishops and pawns.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Technique%20by%20Michele%20Tumbarello/Endings%2C%20generic%20positions.fns",
+    "name": "Resources__Trainings__Technique by Michele Tumbarello__Endings, generic positions.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Technique%20by%20Michele%20Tumbarello/Endings%2C%20knights%20and%20pawns.fns",
+    "name": "Resources__Trainings__Technique by Michele Tumbarello__Endings, knights and pawns.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Technique%20by%20Michele%20Tumbarello/Endings%2C%20major%20pieces%20and%20pawns.fns",
+    "name": "Resources__Trainings__Technique by Michele Tumbarello__Endings, major pieces and pawns.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Technique%20by%20Michele%20Tumbarello/Endings%2C%20minor%20pieces%20and%20pawns.fns",
+    "name": "Resources__Trainings__Technique by Michele Tumbarello__Endings, minor pieces and pawns.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Technique%20by%20Michele%20Tumbarello/Endings%2C%20pawns.fns",
+    "name": "Resources__Trainings__Technique by Michele Tumbarello__Endings, pawns.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Technique%20by%20Michele%20Tumbarello/Endings%2C%20queens%20and%20pawns.fns",
+    "name": "Resources__Trainings__Technique by Michele Tumbarello__Endings, queens and pawns.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Technique%20by%20Michele%20Tumbarello/Endings%2C%20rooks%20and%20pawns.fns",
+    "name": "Resources__Trainings__Technique by Michele Tumbarello__Endings, rooks and pawns.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Technique%20by%20Michele%20Tumbarello/Middlegames%2C%20attack%20against%20castling.fns",
+    "name": "Resources__Trainings__Technique by Michele Tumbarello__Middlegames, attack against castling.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Technique%20by%20Michele%20Tumbarello/Middlegames%2C%20complicated%20positions.fns",
+    "name": "Resources__Trainings__Technique by Michele Tumbarello__Middlegames, complicated positions.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Technique%20by%20Michele%20Tumbarello/Middlegames%2C%20king%20in%20the%20center.fns",
+    "name": "Resources__Trainings__Technique by Michele Tumbarello__Middlegames, king in the center.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Technique%20by%20Michele%20Tumbarello/Middlegames%2C%20transition%20to%20favourable%20endgame.fns",
+    "name": "Resources__Trainings__Technique by Michele Tumbarello__Middlegames, transition to favourable endgame.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Varied%20positions%20by%20Joaquin%20Alvarez/Capablanca%20positions.fns",
+    "name": "Resources__Trainings__Varied positions by Joaquin Alvarez__Capablanca positions.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Varied%20positions%20by%20Joaquin%20Alvarez/Giri-Nakamura.fns",
+    "name": "Resources__Trainings__Varied positions by Joaquin Alvarez__Giri-Nakamura.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/Resources/Trainings/Varied%20positions%20by%20Joaquin%20Alvarez/Nunn%20positions.fns",
+    "name": "Resources__Trainings__Varied positions by Joaquin Alvarez__Nunn positions.fns"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/bin/OS/win32/Engines/roce/perftsuite.epd",
+    "name": "bin__OS__win32__Engines__roce__perftsuite.epd"
+  },
+  {
+    "source": "lucas",
+    "url": "https://raw.githubusercontent.com/lukasmonk/lucaschessR2/b3ab7678077d6433e45d85f55acac2102e13e82e/bin/OS/win32/Engines/ufim/ufim802.epd",
+    "name": "bin__OS__win32__Engines__ufim__ufim802.epd"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/players/Capablanca.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/players/Steinitz.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/players/Tal.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/players/Fischer.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/players/Morphy.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/players/Lasker.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/event/WWC/2023/WWC202301.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/event/WWC/2023/WWC202302.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/event/WWC/2023/WWC202303.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/event/WWC/2023/WWC202304.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/event/WWC/2023/WWC202305.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/event/WWC/2023/WWC202306.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/event/WWC/2023/WWC202307.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/event/WWC/2023/WWC202308.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/event/WWC/2023/WWC202309.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/event/WWC/2023/WWC202310.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/event/WWC/2023/WWC202311.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/event/WWC/2023/WWC202312.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/event/WCC/wcc2021.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/event/WCC/wcc2018.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/event/WCC/wcc2016.pgn"
+  },
+  {
+    "source": "japan",
+    "url": "https://www.chess-lovers.com/games/files/event/WCC/wcc2014.pgn"
+  },
+  {
+    "source": "fics",
+    "url": "https://ficsgames.org/dl/ficsgamesdb_pre199911.pgn"
+  }
+]

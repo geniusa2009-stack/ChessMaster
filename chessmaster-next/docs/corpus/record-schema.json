@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "administrative_status": "RIGHTS_REVIEW_PENDING",
+  "domains": ["practical_tactical_puzzle", "openings", "games", "training_positions", "compositions", "endgame_studies", "brilliancies", "evaluations", "statistics", "similarity_labels"],
+  "source_identity": ["source_id", "source_url", "snapshot_or_revision", "raw_file_sha256", "original_metadata", "retrieval_timestamp_or_explicit_unknown"],
+  "puzzle_identity": "SHA256(canonical display-position hash plus exact solution line). Alternatives and cross-source equivalents remain separate pending verification.",
+  "opening_identity": "SHA256(domain, opening name, ECO and canonical UCI path); transpositions link position hashes without deleting paths.",
+  "game_identity": "SHA256(domain, event/site/date/round/players/result/variant, initial FEN and UCI mainline); raw PGN variations retained.",
+  "composition_identity": "Source ID, genre and stipulation; no merge based solely on FEN.",
+  "verification_states": ["legal_pending", "legal_move_validation", "position_valid_only", "specialized_verification_pending", "local_verification_pending"],
+  "not_claimed": ["global uniqueness", "exhaustive worldwide discovery", "automatic objective proof from an engine score", "rights approval"]
+}
