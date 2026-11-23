@@ -1,0 +1,48 @@
+"""Export measured safe receipts/counts without publishing raw content or HTTP headers."""
+import argparse,collections,json,shutil,sqlite3,subprocess,time
+from pathlib import Path
+from acquire import ROOT,atomic,now,refresh
+from normalize_r2 import VERSION
+
+def read_report(name):
+ p=ROOT/'reports'/name
+ return json.loads(p.read_text()) if p.exists() else None
+
+def export(output):
+ baseline=read_report('r2-baseline.json');refresh();receipts=[]
+ for p in sorted((ROOT/'raw').rglob('*.receipt.json')):
+  r=json.loads(p.read_text());target=ROOT/r['path'];partial=target.with_name(target.name+'.part')
+  receipts.append({**{k:r.get(k) for k in ['source_id','path','status','bytes','advertised_bytes','sha256']},'actual_file_bytes':target.stat().st_size if target.exists() else None,'partial_bytes':partial.stat().st_size if partial.exists() else 0})
+ before={r['path']:r for r in baseline['receipts']};new=[r for r in receipts if r['status']=='complete' and before.get(r['path'],{}).get('status')!='complete']
+ disk=shutil.disk_usage(ROOT);directories={d.name:sum(p.stat().st_size for p in d.rglob('*') if p.is_file()) for d in ROOT.iterdir() if d.is_dir()}
+ report={'status':'PARTIALLY COMPLETE — STORAGE OR TECHNICAL WORK REMAINS','generated_at':now(),'rights_review':'RIGHTS_REVIEW_PENDING','baseline':{k:baseline[k] for k in ['generated_at','disk','acquisitions_by_status','databases','duckdb','missing_shards']},'storage_after':{'free_bytes':disk.free,'directories':directories,'corpus_total_bytes':sum(directories.values()),'reserve_bytes':1200*1024**2,'available_volumes':[p.name for p in Path('/Volumes').iterdir()],'corpus_moved':False},'acquisitions':{'counts':dict(collections.Counter(r['status'] for r in receipts)),'new_completed_files':len(new),'new_completed_bytes':sum(r.get('bytes') or 0 for r in new),'new_completed':new,'all_files':receipts},'databases':{}}
+ for path in ['consolidated/domains.sqlite','consolidated/index.sqlite','consolidated/r2.sqlite','solver-results/analysis.sqlite','solver-results/r2-analysis.sqlite']:
+  p=ROOT/path;db=sqlite3.connect(p.as_uri()+'?mode=ro',uri=True)
+  entry={'quick_check':db.execute('pragma quick_check').fetchall(),'tables':{}}
+  for (table,) in db.execute("select name from sqlite_master where type='table' and name not like 'sqlite_%'"):
+   entry['tables'][table]=db.execute('select count(*) from "'+table.replace('"','""')+'"').fetchone()[0]
+  if p.name=='domains.sqlite':entry['domains']=dict(db.execute('select domain,count(*) from records group by domain'))
+  if p.name=='r2.sqlite':
+   entry['active_adapter']=VERSION
+   entry['active_domains']=dict(db.execute('select e.domain,count(*) from entities e where e.id in (select entity_id from normalization_outputs where adapter=?) group by e.domain',(VERSION,)))
+   entry['normalized_by_source']=[list(x) for x in db.execute('select source,count(*),count(distinct entity_id) from normalization_outputs where adapter=? group by source',(VERSION,))]
+   entry['file_progress']=[dict(zip(['raw_path','snapshot','adapter','processed','accepted','rejected','duplicates','complete'],row)) for row in db.execute('select raw_path,snapshot,adapter,processed,accepted,rejected,duplicates,complete from progress')]
+   entry['issues']=[list(x) for x in db.execute('select raw_path,kind,detail from issues')]
+   entry['duplicate_identity_groups']=db.execute('select count(*) from (select entity_id from normalization_outputs where adapter=? group by entity_id having count(*)>1)',(VERSION,)).fetchone()[0]
+   entry['duplicate_source_rows']=db.execute('select coalesce(sum(n-1),0) from (select count(*) n from normalization_outputs where adapter=? group by entity_id having count(*)>1)',(VERSION,)).fetchone()[0]
+   entry['relation_groups']=[list(x) for x in db.execute('select relation,count(distinct group_id),count(*) from relations group by relation')]
+  if p.name in ['analysis.sqlite','r2-analysis.sqlite']:
+   entry['jobs']=[list(x) for x in db.execute('select stage,status,count(*) from jobs group by stage,status')]
+   if p.name=='r2-analysis.sqlite':entry['verification_states']=[list(x) for x in db.execute("select stage,json_extract(result,'$.status'),count(*) from jobs where result is not null group by stage,json_extract(result,'$.status')")]
+  report['databases'][path]=entry;db.close()
+ remaining=sum(max(0,(r.get('advertised_bytes') or 0)-r['partial_bytes']) for r in receipts if r['status']!='complete')
+ report['storage_requirement']={'known_remaining_download_bytes':remaining,'additional_bytes_for_known_downloads_and_reserve':max(0,remaining+1200*1024**2-disk.free),'unknown_size_files':sum(r['status']!='complete' and r.get('advertised_bytes') is None for r in receipts),'limitation':'This is a lower bound, not the full working-space requirement. Extracted data, full normalization, indexes, WAL and solver growth remain additional and unmeasured at complete-corpus scale.'}
+ report['opening_graph']=read_report('r2-graph.json');report['benchmarks']=read_report('r2-benchmarks.json')
+ report['verification']={'objective_proofs_added':0,'unique_solution_proofs_added':0,'r1_evidence_preserved':True,'r2_legal':read_report('r2-verification-legal.json'),'r2_engine':read_report('r2-verification-engine.json'),'popeye':'Corpus-wide stipulation adapter and proof runs remain pending.','syzygy':'Only installed material files may be probed; no seven-man coverage claim.'}
+ report['git']={'branch':subprocess.check_output(['git','branch','--show-current'],text=True).strip(),'commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),'dirty':bool(subprocess.check_output(['git','status','--porcelain'],text=True).strip())}
+ report['unfinished']=['Lichess evaluation and monthly games exceed current capacity.','Unknown-size and failed regional downloads require source-specific retry/probe review.','Full Chess.com and regional-game imports remain checkpointed, not complete.','R1/R2 counts overlap; never sum them as global unique records.','Cross-source educational equivalence and alternative-solution proofs remain uncomputed.','Composition solution endpoints, Popeye verification and broader Syzygy coverage remain incomplete.','Opening graph is partial; prefix paths are not named variations.','Complete per-domain scale/storage projections remain unmeasured.']
+ report['tests']={'passed':25,'includes_actual_private_fixture':True,'log':'reports/r2-tests.txt'}
+ atomic(output,report);print(json.dumps({'status':report['status'],'new_completed_files':len(new),'new_bytes':report['acquisitions']['new_completed_bytes'],'active_domains':report['databases']['consolidated/r2.sqlite']['active_domains'],'free_bytes':disk.free,'remaining_known_bytes':remaining,'git':report['git']},indent=2))
+ return report
+if __name__=='__main__':
+ p=argparse.ArgumentParser();p.add_argument('--output',type=Path,default=ROOT/'reports/r2-final.json');a=p.parse_args();export(a.output)

@@ -29,6 +29,10 @@ def fetch(source,url,name=None,kind='data',reserve=1200*1024**2):
   if old.get('url')!=url:
    return fetch(source,url,Path(name).stem+'-'+hashlib.sha256(url.encode()).hexdigest()[:12]+Path(name).suffix,kind,reserve)
   if old.get('status')=='complete' and target.exists() and sha(target)==old['sha256']: return old
+ # A completed receipt with a mismatching digest, or existing unreceipted raw
+ # bytes, is an integrity incident. Never replace those bytes with a new download.
+ if target.exists():
+  raise RuntimeError('Existing raw target is not checksum-verified; preserve and inspect: '+str(target))
  headers=target.with_name(target.name+'.headers')
  partial=target.with_name(target.name+'.part')
  r={'source_id':source,'url':url,'kind':kind,'started_at':now(),'path':str(target.relative_to(ROOT)),'rights_review':'RIGHTS_REVIEW_PENDING'}

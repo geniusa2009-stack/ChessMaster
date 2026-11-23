@@ -69,3 +69,6 @@ chessmaster-global-corpus/
 *.rtbw
 *.rtbz
 *.part
+*.sqlite-wal
+*.sqlite-shm
+*.duckdb.tmp/
