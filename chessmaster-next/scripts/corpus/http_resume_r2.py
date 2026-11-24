@@ -41,4 +41,8 @@ def validate_range(response,start,total=None):
  match=re.fullmatch(r'bytes (\d+)-(\d+)/(\d+|\*)',response['headers'].get('content-range',''))
  if not match or int(match[1])!=start:raise ValueError('Content-Range does not start at verified prefix')
  if int(match[2])<int(match[1]):raise ValueError('Invalid Content-Range interval')
- if total is not None and match[3]!='*' and int(match[3])!=total:raise ValueError('Content-Range total changed')
+ if match[3]=='*':raise ValueError('Cannot establish complete resumed object length')
+ length=int(match[3])
+ if total is not None and length!=total:raise ValueError('Content-Range total changed')
+ if int(match[2])!=length-1:raise ValueError('Open-ended resume did not reach object end')
+ return length

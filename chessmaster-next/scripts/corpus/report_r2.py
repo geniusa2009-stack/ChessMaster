@@ -6,6 +6,10 @@ from pathlib import Path
 from acquire import ROOT,atomic,now,refresh
 from normalize_r2 import VERSION,unpack
 
+def fixture_passed(test_text,module):
+ pattern=r'(?ms)^test_[^\n]*\('+re.escape(module)+r'\.[^\n]*\).*?(?=^test_|\Z)'
+ return any(re.search(r'(?m)(?:\.\.\. )?ok$',block) for block in re.findall(pattern,test_text))
+
 def read_report(name):
  p=ROOT/'reports'/name
  return json.loads(p.read_text()) if p.exists() else None
@@ -68,7 +72,7 @@ def export(output,baseline_path=None,verified_audit_path=None):
  report['raw_parsed_record_copies']={'by_source':{s:dict(c) for s,c in raw_counts.items()},'files_without_record_count':uncounted,'scope':'Parsed source-record copies by format/domain, including alternate snapshots and representations; not globally unique counts.'}
  report['storage_requirement']={'known_remaining_download_bytes':remaining,'additional_bytes_for_known_downloads_and_reserve':max(0,remaining+1200*1024**2-disk.free),'unknown_size_files':sum(r['status']!='complete' and r.get('advertised_bytes') is None for r in receipts),'limitation':'This is a lower bound, not the full working-space requirement. Extracted data, full normalization, indexes, WAL and solver growth remain additional and unmeasured at complete-corpus scale.'}
  report['file_ledger']=read_report('r2-file-ledger.json')
- report['opening_graph']=read_report('r2-graph.json');report['opening_graph_last_work_pass']=read_report('r2-graph-work-pass.json');report['benchmarks']=read_report('r2-benchmarks.json')
+ report['opening_graph']=read_report('r2-graph.json');report['latest_pending_size_probes']=read_report('r2-latest-pending-probes.json');report['opening_graph_last_work_pass']=read_report('r2-graph-work-pass.json');report['benchmarks']=read_report('r2-benchmarks.json')
  proof_db=sqlite3.connect((ROOT/'solver-results/r2-analysis.sqlite').as_uri()+'?mode=ro',uri=True)
  objective_jobs=proof_db.execute("select stage,count(distinct id),count(*) from jobs where stage in ('objective','popeye','syzygy') and status='completed' and json_extract(result,'$.objective_verified')=1 group by stage").fetchall()
  unique_jobs=proof_db.execute("select count(distinct id) from jobs where stage='objective' and status='completed' and json_extract(result,'$.unique_solution_verified')=1").fetchone()[0];proof_db.close()
@@ -76,7 +80,8 @@ def export(output,baseline_path=None,verified_audit_path=None):
  report['git']={'branch':subprocess.check_output(['git','branch','--show-current'],text=True,cwd=Path(__file__).resolve().parents[3]).strip(),'commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True,cwd=Path(__file__).resolve().parents[3]).strip(),'dirty':bool(subprocess.check_output(['git','status','--porcelain'],text=True,cwd=Path(__file__).resolve().parents[3]).strip())}
  report['unfinished']=['R1 final position-index completion and any remaining normalization are recorded separately in the current checkpoint and R1 normalization report.','Cross-source matching is checkpointed and partial; compare scanned high-water mark with final R1 committed count.','Cross-store canonical game reconciliation remains incomplete; source stores overlap.','Lichess evaluation and monthly games exceed current capacity.','Unknown-size and failed regional downloads require source-specific retry/probe review.','Full Chess.com and regional-game imports remain checkpointed, not complete.','R1/R2 counts overlap; never sum them as global unique records.','Global educational equivalence remains incomplete; verified alternative first-move groups are scoped to available proof certificates.','Composition source-solution retrieval, full stipulation soundness and broader Syzygy coverage remain incomplete; directmate model proofs are recorded separately.','Opening graph is partial; prefix paths are not named variations.','Material-gain, unique-defense, promotion and other tactical objective proof models remain unsupported.','Complete per-domain scale/storage projections remain unmeasured.']
  test_log=ROOT/'reports/r2-continuation-tests.txt';test_text=test_log.read_text() if test_log.exists() else '';match=re.search(r'Ran (\d+) tests',test_text)
- report['tests']={'passed':int(match[1]) if match and '\nOK' in test_text else None,'includes_actual_private_fixture':True,'log':'reports/r2-continuation-tests.txt'}
+ skipped_match=re.search(r'OK \(skipped=(\d+)\)',test_text);skipped=int(skipped_match[1]) if skipped_match else 0
+ report['tests']={'run':int(match[1]) if match else None,'passed':int(match[1])-skipped if match and '\nOK' in test_text else None,'skipped':skipped,'includes_actual_private_fixture':fixture_passed(test_text,'test_private_formats_r2'),'includes_loopback_http_fixture':fixture_passed(test_text,'test_http_fetch_integration_r2'),'log':'reports/r2-continuation-tests.txt'}
  report['r1_puzzle_checkpoint']=json.loads((ROOT/'checkpoints/lichess-puzzles.json').read_text())
  report['r1_puzzle_normalization']=read_report('lichess-puzzles-normalization.json')
  report['certificate_replay']=read_report('r2-certificate-replay.json')
@@ -88,6 +93,11 @@ def export(output,baseline_path=None,verified_audit_path=None):
  cross=report.get('cross_source_relations') or {}
  if not cross.get('blocked_storage',True) and cross.get('r1_scanned_through',0)>=report['r1_puzzle_checkpoint']['unique']:
   report['unfinished']=[x for x in report['unfinished'] if not x.startswith('Cross-source matching is checkpointed')]
+ graph=report.get('opening_graph') or {}
+ if not graph.get('blocked_storage',True) and not graph.get('invalid_lines_skipped_this_run',0):
+  report['unfinished']=[x for x in report['unfinished'] if not x.startswith('Opening graph is partial')]
+  report['unfinished'].append('Graph covers current normalized standard games through 20 plies and full named source paths; remaining game imports and variant-specific graphs are unfinished. Prefixes are not named variations.')
+ report['unfinished'].append('Family/variation/subvariation taxonomy is not fully extracted from source-specific names; original names and metadata remain available.')
  coverage=report['verification'].get('coverage_inventory') or {}
  pending_native=coverage.get('popeye',{}).get('eligible_without_completed_native_job')
  if pending_native:report['unfinished'].append(str(pending_native)+' eligible composition entities have no completed native job; completed native jobs without a mate proof also remain unproved.')

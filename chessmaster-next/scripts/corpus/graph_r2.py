@@ -6,6 +6,11 @@ import chess
 from acquire import ROOT,atomic,now
 from normalize_r2 import connection,digest,unpack,RESERVE,VERSION
 
+def standard_game_board(payload):
+ if payload.get('variant','Standard') not in ['Standard','Chess','From Position']:return None
+ board=chess.Board(payload.get('initial_fen',chess.STARTING_FEN))
+ return None if board.has_chess960_castling_rights() else board
+
 def graph_records(db,source_db):
  # Materialize only 1000 IDs at a time; never pin the writer WAL with a long cursor.
  for domain in ['openings','games']:
@@ -37,7 +42,7 @@ def _run_claimed(game_limit=0):
  select 'same_game_position',p.final_position,count(distinct s.source_db||':'||s.entity_id)
  from graph_sources s join graph_paths p on p.id=s.path_id where s.domain='games'
  group by p.final_position having count(distinct s.source_db||':'||s.entity_id)>1;''')
- start=time.monotonic();processed=games=0;blocked=False
+ start=time.monotonic();processed=games=0;blocked=False;excluded_variants={};invalid_lines=0
  legacy=sqlite3.connect((ROOT/'consolidated/domains.sqlite').as_uri()+'?mode=ro',uri=True);legacy.execute('pragma cache_size=-65536')
  try:
   for source_db in ['r1','r2']:
@@ -48,12 +53,16 @@ def _run_claimed(game_limit=0):
     blob=(legacy.execute('select payload from records where canonical_id=?',(id,)).fetchone()[0] if source_db=='r1' else db.execute('select payload from entities where id=?',(id,)).fetchone()[0])
     payload=unpack(blob);moves=payload.get('moves') or payload.get('uci');initial=payload.get('initial_fen',chess.STARTING_FEN)
     if not moves:continue
-    if domain=='games' and payload.get('variant','Standard') not in ['Standard','Chess']:continue
-    board=chess.Board(initial);moves=moves[:20] if domain=='games' else moves
+    board=standard_game_board(payload) if domain=='games' else chess.Board(initial)
+    if board is None:
+     variant=payload.get('variant','Standard')
+     if variant in ['Standard','Chess','From Position']:variant+=' (Chess960 castling state)'
+     excluded_variants[variant]=excluded_variants.get(variant,0)+1;continue
+    moves=moves[:20] if domain=='games' else moves
     positions=[digest([board.uci_variant,board.fen(en_passant='legal').split()[:4]])];fens=[board.fen(en_passant='legal')]
     try:
      for move in moves:board.push_uci(move);positions.append(digest([board.uci_variant,board.fen(en_passant='legal').split()[:4]]));fens.append(board.fen(en_passant='legal'))
-    except ValueError:continue
+    except ValueError:invalid_lines+=1;continue
     if not db.in_transaction:db.execute('begin immediate')
     try:
      for pos,fen in zip(positions,fens):db.execute('insert or ignore into graph_nodes values(?,?)',(pos,fen))
@@ -71,7 +80,7 @@ def _run_claimed(game_limit=0):
   db.commit()
   counts={t:db.execute('select count(*) from '+t).fetchone()[0] for t in ['graph_nodes','graph_paths','graph_edges','graph_sources','graph_done']}
   trans=db.execute('select count(*) from (select final_position from graph_paths group by final_position having count(*)>1)').fetchone()[0]
-  atomic(ROOT/'reports/r2-graph.json',{'generated_at':now(),'counts':counts,'transposition_groups':trans,'position_relation_groups':[list(x) for x in db.execute('select relation,count(*),sum(members) from graph_relation_groups group by relation')],'processed_this_run':processed,'game_paths_this_run':games,'blocked_storage':blocked,'seconds':time.monotonic()-start,'scope':'All imported named paths plus first 20 plies of each processed standard game. Prefix counts are not named-variation counts.','rights_review':'RIGHTS_REVIEW_PENDING'})
+  atomic(ROOT/'reports/r2-graph.json',{'generated_at':now(),'counts':counts,'transposition_groups':trans,'position_relation_groups':[list(x) for x in db.execute('select relation,count(*),sum(members) from graph_relation_groups group by relation')],'processed_this_run':processed,'game_paths_this_run':games,'blocked_storage':blocked,'excluded_variant_counts_this_run':excluded_variants,'invalid_lines_skipped_this_run':invalid_lines,'seconds':time.monotonic()-start,'scope':'All imported named paths plus first 20 plies of each processed standard game. Prefix counts are not named-variation counts.','rights_review':'RIGHTS_REVIEW_PENDING'})
   print(counts,trans,flush=True)
  finally:
   if db.in_transaction:db.rollback()

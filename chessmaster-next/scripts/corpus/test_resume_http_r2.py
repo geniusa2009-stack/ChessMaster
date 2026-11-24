@@ -13,6 +13,10 @@ class ResumeTests(unittest.TestCase):
   validate_range({'status':206,'headers':{'content-range':'bytes 3-9/10'}},3,10)
   for response in [{'status':200,'headers':{}},{'status':206,'headers':{'content-range':'bytes 0-9/10'}}]:
    with self.assertRaises(ValueError):validate_range(response,3,10)
+ def test_open_ended_range_requires_complete_known_extent(self):
+  self.assertEqual(validate_range({'status':206,'headers':{'content-range':'bytes 3-9/10'}},3),10)
+  for value in ['bytes 3-8/10','bytes 3-9/*']:
+   with self.assertRaises(ValueError):validate_range({'status':206,'headers':{'content-range':value}},3)
  def test_weak_etag_is_not_if_range_validator(self):
   self.assertEqual(validator({'etag':'W/"weak"'}),(None,None))
 if __name__=='__main__':unittest.main()

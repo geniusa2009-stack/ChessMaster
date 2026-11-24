@@ -59,7 +59,7 @@ def _fetch_locked(source,url,name=None,kind='data',reserve=1200*1024**2):
   from http_resume_r2 import final_headers,validator,safe_partial,validate_range,prefix_sha
   head=subprocess.run(['curl','-sSIL','--max-time','25',url],capture_output=True,text=True)
   r['head_response']=head.stdout;head_info=final_headers(head.stdout)
-  length=head_info['headers'].get('content-length');size=int(length) if length and length.isdigit() else None;r['advertised_bytes']=size
+  length=head_info['headers'].get('content-length') if head_info['status'] and 200<=head_info['status']<300 else None;size=int(length) if length and length.isdigit() else None;r['advertised_bytes']=size
   resume_path=target.with_name(target.name+'.resume.json');resume_start=0
   if partial.exists():
    safe,reason=safe_partial(partial,resume_path,url,head_info)
@@ -83,13 +83,13 @@ def _fetch_locked(source,url,name=None,kind='data',reserve=1200*1024**2):
   resume_ok=bool(token and response['status'] in [200,206])
   if resume_start:
    try:
-    validate_range(response,resume_start,size)
+    size=validate_range(response,resume_start,size);r['advertised_bytes']=size
     if token!=previous['validator']:raise ValueError('Resume response validator changed or missing')
    except ValueError:resume_ok=False;raise
   atomic(resume_path,{'validator':token,'validator_type':token_type,'url':url,'resume_safe':resume_ok,'partial_bytes':partial.stat().st_size if partial.exists() else 0,'partial_sha256':prefix_sha(partial) if partial.exists() and resume_ok else None})
   r['response_headers']=text
   if run.returncode: raise RuntimeError(run.stderr.strip() or str(run.returncode))
-  if size is not None and partial.stat().st_size!=size: raise RuntimeError('Downloaded bytes differ from HEAD Content-Length')
+  if size is not None and partial.stat().st_size!=size: raise RuntimeError('Downloaded bytes differ from validated object length')
   with partial.open('rb') as saved:os.fsync(saved.fileno())
   if target.exists():raise RuntimeError('Concurrent completed raw target; refusing overwrite')
   partial.replace(target)
