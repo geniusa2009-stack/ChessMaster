@@ -1,4 +1,5 @@
 """Export measured safe receipts/counts without publishing raw content or HTTP headers."""
+import re
 import argparse,collections,json,shutil,sqlite3,subprocess,time
 from pathlib import Path
 from acquire import ROOT,atomic,now,refresh
@@ -8,16 +9,19 @@ def read_report(name):
  p=ROOT/'reports'/name
  return json.loads(p.read_text()) if p.exists() else None
 
-def export(output):
- baseline=read_report('r2-baseline.json');refresh();receipts=[]
+def export(output,baseline_path=None):
+ baseline=json.loads(baseline_path.read_text()) if baseline_path else read_report('r2-baseline.json');refresh();receipts=[]
  for p in sorted((ROOT/'raw').rglob('*.receipt.json')):
   r=json.loads(p.read_text());target=ROOT/r['path'];partial=target.with_name(target.name+'.part')
   receipts.append({**{k:r.get(k) for k in ['source_id','path','status','bytes','advertised_bytes','sha256']},'actual_file_bytes':target.stat().st_size if target.exists() else None,'partial_bytes':partial.stat().st_size if partial.exists() else 0})
  before={r['path']:r for r in baseline['receipts']};new=[r for r in receipts if r['status']=='complete' and before.get(r['path'],{}).get('status')!='complete']
  disk=shutil.disk_usage(ROOT);directories={d.name:sum(p.stat().st_size for p in d.rglob('*') if p.is_file()) for d in ROOT.iterdir() if d.is_dir()}
  report={'status':'PARTIALLY COMPLETE — STORAGE OR TECHNICAL WORK REMAINS','generated_at':now(),'rights_review':'RIGHTS_REVIEW_PENDING','baseline':{k:baseline[k] for k in ['generated_at','disk','acquisitions_by_status','databases','duckdb','missing_shards']},'storage_after':{'free_bytes':disk.free,'directories':directories,'corpus_total_bytes':sum(directories.values()),'reserve_bytes':1200*1024**2,'available_volumes':[p.name for p in Path('/Volumes').iterdir()],'corpus_moved':False},'acquisitions':{'counts':dict(collections.Counter(r['status'] for r in receipts)),'new_completed_files':len(new),'new_completed_bytes':sum(r.get('bytes') or 0 for r in new),'new_completed':new,'all_files':receipts},'databases':{}}
- for path in ['consolidated/domains.sqlite','consolidated/index.sqlite','consolidated/r2.sqlite','solver-results/analysis.sqlite','solver-results/r2-analysis.sqlite']:
-  p=ROOT/path;db=sqlite3.connect(p.as_uri()+'?mode=ro',uri=True)
+ for path in ['consolidated/domains.sqlite','consolidated/index.sqlite','consolidated/r2.sqlite','solver-results/analysis.sqlite','solver-results/r2-analysis.sqlite','consolidated/cross-source.sqlite']:
+  p=ROOT/path
+  if not p.exists():continue
+  db=sqlite3.connect(p.as_uri()+'?mode=ro',uri=True)
+  db.execute('pragma cache_size=-131072')
   entry={'quick_check':db.execute('pragma quick_check').fetchall(),'tables':{}}
   for (table,) in db.execute("select name from sqlite_master where type='table' and name not like 'sqlite_%'"):
    entry['tables'][table]=db.execute('select count(*) from "'+table.replace('"','""')+'"').fetchone()[0]
@@ -37,12 +41,18 @@ def export(output):
   report['databases'][path]=entry;db.close()
  remaining=sum(max(0,(r.get('advertised_bytes') or 0)-r['partial_bytes']) for r in receipts if r['status']!='complete')
  report['storage_requirement']={'known_remaining_download_bytes':remaining,'additional_bytes_for_known_downloads_and_reserve':max(0,remaining+1200*1024**2-disk.free),'unknown_size_files':sum(r['status']!='complete' and r.get('advertised_bytes') is None for r in receipts),'limitation':'This is a lower bound, not the full working-space requirement. Extracted data, full normalization, indexes, WAL and solver growth remain additional and unmeasured at complete-corpus scale.'}
+ report['file_ledger']=read_report('r2-file-ledger.json')
  report['opening_graph']=read_report('r2-graph.json');report['benchmarks']=read_report('r2-benchmarks.json')
- report['verification']={'objective_proofs_added':0,'unique_solution_proofs_added':0,'r1_evidence_preserved':True,'r2_legal':read_report('r2-verification-legal.json'),'r2_engine':read_report('r2-verification-engine.json'),'popeye':'Corpus-wide stipulation adapter and proof runs remain pending.','syzygy':'Only installed material files may be probed; no seven-man coverage claim.'}
- report['git']={'branch':subprocess.check_output(['git','branch','--show-current'],text=True).strip(),'commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),'dirty':bool(subprocess.check_output(['git','status','--porcelain'],text=True).strip())}
- report['unfinished']=['Lichess evaluation and monthly games exceed current capacity.','Unknown-size and failed regional downloads require source-specific retry/probe review.','Full Chess.com and regional-game imports remain checkpointed, not complete.','R1/R2 counts overlap; never sum them as global unique records.','Cross-source educational equivalence and alternative-solution proofs remain uncomputed.','Composition solution endpoints, Popeye verification and broader Syzygy coverage remain incomplete.','Opening graph is partial; prefix paths are not named variations.','Complete per-domain scale/storage projections remain unmeasured.']
- report['tests']={'passed':25,'includes_actual_private_fixture':True,'log':'reports/r2-tests.txt'}
+ proof_db=sqlite3.connect((ROOT/'solver-results/r2-analysis.sqlite').as_uri()+'?mode=ro',uri=True)
+ objective_jobs=proof_db.execute("select stage,count(distinct id),count(*) from jobs where stage in ('objective','popeye','syzygy') and status='completed' and json_extract(result,'$.objective_verified')=1 group by stage").fetchall()
+ unique_jobs=proof_db.execute("select count(*) from jobs where stage='objective' and status='completed' and json_extract(result,'$.unique_solution_verified')=1").fetchone()[0];proof_db.close()
+ report['verification']={'objective_proofs_added':sum(x[1] for x in objective_jobs),'objective_entities_and_jobs_by_stage':[list(x) for x in objective_jobs],'unique_solution_proofs_added':unique_jobs,'uniqueness_scope':'Unique first move for the explicitly modeled mate horizon, not full-line uniqueness','r1_evidence_preserved':True,'r2_legal':read_report('r2-verification-legal.json'),'r2_engine':read_report('r2-verification-engine.json'),'popeye':read_report('r2-popeye.json'),'syzygy':read_report('r2-endgames.json')}
+ report['git']={'branch':subprocess.check_output(['git','branch','--show-current'],text=True,cwd=Path(__file__).resolve().parents[3]).strip(),'commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True,cwd=Path(__file__).resolve().parents[3]).strip(),'dirty':bool(subprocess.check_output(['git','status','--porcelain'],text=True,cwd=Path(__file__).resolve().parents[3]).strip())}
+ report['unfinished']=['Lichess evaluation and monthly games exceed current capacity.','Unknown-size and failed regional downloads require source-specific retry/probe review.','Full Chess.com and regional-game imports remain checkpointed, not complete.','R1/R2 counts overlap; never sum them as global unique records.','Global educational equivalence remains incomplete; verified alternative first-move groups are scoped to available proof certificates.','Composition source-solution retrieval, full stipulation soundness and broader Syzygy coverage remain incomplete; directmate model proofs are recorded separately.','Opening graph is partial; prefix paths are not named variations.','Complete per-domain scale/storage projections remain unmeasured.']
+ test_log=ROOT/'reports/r2-continuation-tests.txt';test_text=test_log.read_text() if test_log.exists() else '';match=re.search(r'Ran (\d+) tests',test_text)
+ report['tests']={'passed':int(match[1]) if match and '\nOK' in test_text else None,'includes_actual_private_fixture':True,'log':'reports/r2-continuation-tests.txt'}
+ report['cross_source_relations']=read_report('r2-cross-source.json');report['mate_proof_run']=read_report('r2-objectives-r1.json');report['storage_projection']=read_report('r2-storage-projection.json');report['normalization_performance_history']=[json.loads(line) for line in (ROOT/'reports/r2-import-history.jsonl').read_text().splitlines()] if (ROOT/'reports/r2-import-history.jsonl').exists() else []
  atomic(output,report);print(json.dumps({'status':report['status'],'new_completed_files':len(new),'new_bytes':report['acquisitions']['new_completed_bytes'],'active_domains':report['databases']['consolidated/r2.sqlite']['active_domains'],'free_bytes':disk.free,'remaining_known_bytes':remaining,'git':report['git']},indent=2))
  return report
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('--output',type=Path,default=ROOT/'reports/r2-final.json');a=p.parse_args();export(a.output)
+ p=argparse.ArgumentParser();p.add_argument('--output',type=Path,default=ROOT/'reports/r2-final.json');p.add_argument('--baseline',type=Path);a=p.parse_args();export(a.output,a.baseline)

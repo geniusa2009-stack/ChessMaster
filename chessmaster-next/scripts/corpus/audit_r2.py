@@ -7,7 +7,7 @@ def audit(verify_raw=False, integrity='quick_check'):
  start=time.monotonic(); report={'generated_at':now(),'rights_review':'RIGHTS_REVIEW_PENDING','disk':{},'databases':{},'receipts':[],'checkpoints':{},'plans':{},'missing_shards':[]}
  usage=shutil.disk_usage(ROOT);report['disk']={'total_bytes':usage.total,'free_bytes':usage.free,'reserve_bytes':1200*1024**2}
  report['disk']['directories']={d.name:sum(p.stat().st_size for p in d.rglob('*') if p.is_file()) for d in ROOT.iterdir() if d.is_dir()}
- for receipt in sorted((ROOT/'raw').rglob('*.receipt.json')):
+ for receipt_number,receipt in enumerate(sorted((ROOT/'raw').rglob('*.receipt.json')),1):
   r=json.loads(receipt.read_text());p=ROOT/r['path'];part=p.with_name(p.name+'.part')
   item={k:r.get(k) for k in ['source_id','path','status','bytes','advertised_bytes','sha256']}
   item.update(exists=p.exists(),partial_bytes=part.stat().st_size if part.exists() else 0)
@@ -15,11 +15,14 @@ def audit(verify_raw=False, integrity='quick_check'):
    item['size_matches']=p.exists() and p.stat().st_size==r.get('bytes')
    if verify_raw and p.exists():item['sha256_matches']=sha(p)==r.get('sha256')
   report['receipts'].append(item)
+  if receipt_number%100==0:print('Raw receipts checked:',receipt_number,flush=True)
  for p in sorted((ROOT/'checkpoints').glob('*.json')):report['checkpoints'][p.name]=json.loads(p.read_text())
  for p in sorted((ROOT/'manifests').glob('*plan.json')):
   data=json.loads(p.read_text());report['plans'][p.name]={'entries':len(data),'advertised_bytes':sum(x.get('bytes',x.get('advertised_bytes',0)) or 0 for x in data) if isinstance(data,list) else None}
+ atomic(ROOT/'reports/r2-audit-raw-progress.json',{'generated_at':now(),'verify_raw':verify_raw,'receipts':report['receipts']})
  for p in [*(ROOT/'consolidated').glob('*.sqlite'),*(ROOT/'solver-results').glob('*.sqlite')]:
   db=sqlite3.connect(p.as_uri()+'?mode=ro',uri=True,timeout=5)
+  db.execute('pragma cache_size=-131072');print('Checking database:',p.name,flush=True)
   result={'integrity':db.execute('pragma '+integrity).fetchall(),'tables':{}}
   for (table,) in db.execute("select name from sqlite_master where type='table' and name not like 'sqlite_%'"):
    result['tables'][table]=db.execute('select count(*) from "'+table.replace('"','""')+'"').fetchone()[0]
@@ -29,6 +32,7 @@ def audit(verify_raw=False, integrity='quick_check'):
   if p.name=='domains.sqlite':result['domains']=dict(db.execute('select domain,count(*) from records group by domain'))
   if p.name=='analysis.sqlite':result['jobs']=[list(x) for x in db.execute('select stage,status,count(*) from jobs group by stage,status')]
   db.close();report['databases'][str(p.relative_to(ROOT))]=result
+  atomic(ROOT/'reports/r2-audit-db-progress.json',{'databases':report['databases'],'updated_at':now()});print('Database complete:',p.name,flush=True)
  try:
   import duckdb
   db=duckdb.connect(str(ROOT/'consolidated/evaluations.duckdb'),read_only=True)

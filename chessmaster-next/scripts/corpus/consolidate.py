@@ -1,6 +1,7 @@
 """Checkpointed local puzzle normalization; immutable gzip batches plus SQLite hash index.
 No source ratings are recast as measured difficulty. No engine verification is implied.
 """
+import fcntl
 import argparse,csv,gzip,hashlib,io,json,os,re,shutil,sqlite3,sys,time,zipfile
 from pathlib import Path
 import chess,zstandard
@@ -40,6 +41,16 @@ def lichess(row):
    verification_metadata={'setup_move_legally_replayed':True,'remaining_solution_verified':False},original_metadata=row)
 
 def run(file,kind,source,batch_size=10000):
+ folder=ROOT/'checkpoints/normalization-locks';folder.mkdir(parents=True,exist_ok=True)
+ identity=hashlib.sha256(('r1|'+source+'|'+kind).encode()).hexdigest()
+ with (folder/'maintenance.lock').open('a') as maintenance:
+  fcntl.flock(maintenance,fcntl.LOCK_SH|fcntl.LOCK_NB)
+  with (folder/(identity+'.lock')).open('a') as lock:
+   try:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+   except BlockingIOError:raise RuntimeError('R1 source normalization is already claimed')
+   return _run_claimed(file,kind,source,batch_size)
+
+def _run_claimed(file,kind,source,batch_size=10000):
  if kind!='lichess':raise NotImplementedError('No adapter available; source records are not quarantined for an unsupported format')
  started=time.monotonic();snapshot=sha(file);db=connect()
  batches=db.execute('select batch,processed,unique_count,duplicates,rejected,shard from batches where source=? and snapshot=? order by batch',(source,snapshot)).fetchall()

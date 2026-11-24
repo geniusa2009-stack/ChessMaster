@@ -8,18 +8,21 @@ from normalize_r2 import connection,unpack,digest
 class Queue:
  def __init__(self,path):
   self.db=sqlite3.connect(path,timeout=30);self.db.execute('pragma journal_mode=WAL');self.db.execute('pragma synchronous=FULL')
-  self.db.execute('''create table if not exists jobs(id text,stage text,config text,status text,attempts integer,lease_until real,owner text,result text,updated_at text,primary key(id,stage,config))''');self.db.commit()
+  self.db.execute('''create table if not exists jobs(id text,stage text,config text,status text,attempts integer,lease_until real,owner text,result text,updated_at text,primary key(id,stage,config))''');self.db.execute('''create table if not exists attempts(id text,stage text,config text,owner text,attempt integer,status text,result text,finished_at text,primary key(id,stage,config,owner))''');self.db.commit()
  def claim(self,id,stage,config,lease=120,stamp=None):
   stamp=time.time() if stamp is None else stamp;owner=uuid.uuid4().hex
   self.db.execute('begin immediate')
   try:
-   old=self.db.execute('select status,attempts,lease_until from jobs where id=? and stage=? and config=?',(id,stage,config)).fetchone()
+   old=self.db.execute('select status,attempts,lease_until,owner,result,updated_at from jobs where id=? and stage=? and config=?',(id,stage,config)).fetchone()
    if old and (old[0]=='completed' or old[1]>=3 or (old[0]=='running' and old[2]>stamp)):
     self.db.commit();return None
-   self.db.execute('insert or replace into jobs values(?,?,?,?,?,?,?,?,?)',(id,stage,config,'running',old[1]+1 if old else 1,stamp+lease,owner,None,now()));self.db.commit();return owner
+   if old:
+    self.db.execute('insert or ignore into attempts values(?,?,?,?,?,?,?,?)',(id,stage,config,old[3],old[1],old[0],old[4],old[5]))
+   self.db.execute('insert or replace into jobs values(?,?,?,?,?,?,?,?,?)',(id,stage,config,'running',old[1]+1 if old else 1,stamp+lease,owner,None,now()));self.db.execute('insert into attempts values(?,?,?,?,?,?,?,?)',(id,stage,config,owner,old[1]+1 if old else 1,'running',None,None));self.db.commit();return owner
   except BaseException:self.db.rollback();raise
  def finish(self,id,stage,config,owner,result,failed=False):
   changed=self.db.execute('update jobs set status=?,result=?,lease_until=0,updated_at=? where id=? and stage=? and config=? and owner=? and status=?',('failed' if failed else 'completed',json.dumps(result),now(),id,stage,config,owner,'running')).rowcount
+  if changed:self.db.execute('update attempts set status=?,result=?,finished_at=? where id=? and stage=? and config=? and owner=?',('failed' if failed else 'completed',json.dumps(result),now(),id,stage,config,owner))
   self.db.commit();return bool(changed)
  def close(self):self.db.close()
 

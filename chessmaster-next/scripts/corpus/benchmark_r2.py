@@ -15,6 +15,8 @@ def run():
  ('duplicate_identity','select id from entities where id=?',db.execute('select id from entities limit 1000').fetchall()),
  ('opening_path','select moves from graph_paths where id=?',db.execute('select id from graph_paths limit 1000').fetchall()),
  ('game_retrieval','select payload from entities where id=?',db.execute("select id from entities where domain='games' limit 1000").fetchall()),
+ ('composition_retrieval','select payload from entities where id=?',db.execute("select id from entities where domain='compositions' limit 1000").fetchall()),
+ ('endgame_retrieval','select payload from entities where id=?',db.execute("select id from entities where domain='endgame_studies' limit 1000").fetchall()),
  ('position_lookup','select id from entities where position_hash=? limit 1',db.execute('select position_hash from entities where position_hash is not null limit 1000').fetchall())]:report['queries'][name]=measure(db,sql,keys)
  entities=db.execute('select count(*) from entities').fetchone()[0];db.close()
  size=(ROOT/'consolidated/r2.sqlite').stat().st_size
@@ -28,7 +30,11 @@ def run():
   d=duckdb.connect(str(ROOT/'consolidated/evaluations.duckdb'),read_only=True);samples=[]
   for _ in range(20):
    start=time.perf_counter_ns();d.execute('select * from evaluations limit 1').fetchone();samples.append((time.perf_counter_ns()-start)/1e6)
-  report['queries']['duckdb_evaluation_sample']={'samples':20,'median_ms':statistics.median(samples),'p95_ms':sorted(samples)[18]};d.close()
+  report['queries']['duckdb_evaluation_sample']={'samples':20,'median_ms':statistics.median(samples),'p95_ms':sorted(samples)[18]}
+  fen=d.execute('select fen from evaluations limit 1').fetchone()[0];samples=[]
+  for _ in range(10):
+   start=time.perf_counter_ns();d.execute('select fen from evaluations where fen=? limit 1',[fen]).fetchone();samples.append((time.perf_counter_ns()-start)/1e6)
+  report['queries']['duckdb_fen_filter']={'samples':10,'median_ms':statistics.median(samples),'p95_ms':sorted(samples)[8]};d.close()
  except Exception as exc:report['queries']['duckdb_evaluation_sample']={'error':str(exc)}
  report['benchmark_process_peak_rss_bytes']=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
  report['rss_platform']='macOS ru_maxrss bytes';atomic(ROOT/'reports/r2-benchmarks.json',report);print(json.dumps(report,indent=2))

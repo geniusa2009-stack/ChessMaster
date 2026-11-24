@@ -1,4 +1,5 @@
 """Traceable corpus acquisition. Network via curl; no production access."""
+import fcntl,uuid
 import concurrent.futures, hashlib, html, json, os, re, shutil, subprocess, time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -15,8 +16,26 @@ def sha(p):
   for b in iter(lambda:f.read(1048576),b''): h.update(b)
  return h.hexdigest()
 def atomic(p,v):
- p.parent.mkdir(parents=True,exist_ok=True); q=p.with_suffix(p.suffix+'.tmp'); q.write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n'); q.replace(p)
+ p.parent.mkdir(parents=True,exist_ok=True);q=p.with_name(p.name+'.'+uuid.uuid4().hex+'.tmp')
+ with q.open('w',encoding='utf-8') as f:
+  json.dump(v,f,ensure_ascii=False,indent=2);f.write('\n');f.flush();os.fsync(f.fileno())
+ q.replace(p)
+ directory=os.open(p.parent,os.O_RDONLY)
+ try:os.fsync(directory)
+ finally:os.close(directory)
+
 def fetch(source,url,name=None,kind='data',reserve=1200*1024**2):
+ if not re.fullmatch(r'[A-Za-z0-9_.-]+',source):raise ValueError('Invalid source namespace')
+ locks=ROOT/'checkpoints/download-locks';locks.mkdir(parents=True,exist_ok=True)
+ url=quote(url,safe=':/?&=%+#@;,')
+ candidate=re.sub(r'[^A-Za-z0-9._-]','_',name or (Path(urlparse(url).path).name or 'index.html'))
+ identity=hashlib.sha256((source+'|'+candidate).encode()).hexdigest()
+ with (locks/(identity+'.lock')).open('a') as lock:
+  try:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+  except BlockingIOError:raise RuntimeError('Download already claimed by another worker')
+  return _fetch_locked(source,url,name,kind,reserve)
+
+def _fetch_locked(source,url,name=None,kind='data',reserve=1200*1024**2):
  url=quote(url,safe=':/?&=%+#@;,')
  folder=ROOT/('raw' if kind=='data' else 'reports/pages')/source
  folder.mkdir(parents=True,exist_ok=True)
@@ -37,32 +56,48 @@ def fetch(source,url,name=None,kind='data',reserve=1200*1024**2):
  partial=target.with_name(target.name+'.part')
  r={'source_id':source,'url':url,'kind':kind,'started_at':now(),'path':str(target.relative_to(ROOT)),'rights_review':'RIGHTS_REVIEW_PENDING'}
  try:
+  from http_resume_r2 import final_headers,validator,safe_partial,validate_range,prefix_sha
   head=subprocess.run(['curl','-sSIL','--max-time','25',url],capture_output=True,text=True)
-  r['head_response']=head.stdout; sizes=re.findall(r'(?im)^content-length:\s*(\d+)',head.stdout)
-  size=int(sizes[-1]) if sizes else None; r['advertised_bytes']=size
+  r['head_response']=head.stdout;head_info=final_headers(head.stdout)
+  length=head_info['headers'].get('content-length');size=int(length) if length and length.isdigit() else None;r['advertised_bytes']=size
+  resume_path=target.with_name(target.name+'.resume.json');resume_start=0
+  if partial.exists():
+   safe,reason=safe_partial(partial,resume_path,url,head_info)
+   if safe:resume_start=partial.stat().st_size
+   else:
+    saved=ROOT/'reports/incomplete-prefixes';saved.mkdir(parents=True,exist_ok=True)
+    old=saved/(name+'.'+uuid.uuid4().hex+'.part');partial.replace(old)
+    r['preserved_partial']={'path':str(old.relative_to(ROOT)),'reason':reason,'bytes':old.stat().st_size}
+  needed=max(0,size-resume_start) if size is not None else None
   free=shutil.disk_usage(ROOT).free
-  if kind=='data' and (free<=reserve or (size is not None and size>free-reserve)):
+  if kind=='data' and (free<=reserve or (needed is not None and needed>free-reserve)):
    r.update(status='blocked_storage' if size else 'pending_size_probe',free_bytes=free,storage_reserve_bytes=reserve)
    atomic(receipt,r); return r
   args=['curl','-sS','--fail-with-body','--location','--connect-timeout','15','--max-time','1800','--retry','1','--dump-header',str(headers),'--output',str(partial)]
-  if partial.exists():
-   previous=target.with_name(target.name+'.resume.json')
-   if not previous.exists(): raise RuntimeError('Partial file has no validator; preserve and inspect before resuming')
-   validator=json.loads(previous.read_text()).get('validator')
-   if not validator: raise RuntimeError('Server supplied no resume validator; preserve partial file')
-   args+=['--continue-at','-','--header','If-Range: '+validator]
-  args+=['--max-filesize',str(max(1,free-reserve) if kind=='data' else 8*1024**2),url]
+  if resume_start:
+   previous=json.loads(resume_path.read_text());args+=['--continue-at','-','--header','If-Range: '+previous['validator']]
+  args+=['--max-filesize',str(size if kind=='data' and size is not None else max(1,free-reserve) if kind=='data' else 8*1024**2),url]
   run=subprocess.run(args,capture_output=True,text=True)
   text=headers.read_text(errors='replace') if headers.exists() else ''
-  vals=re.findall(r'(?im)^(?:etag|last-modified):\s*(.+)',text)
-  atomic(target.with_name(target.name+'.resume.json'),{'validator':vals[0].strip() if vals else None,'url':url})
+  response=final_headers(text);token,token_type=validator(response['headers'])
+  resume_ok=bool(token and response['status'] in [200,206])
+  if resume_start:
+   try:
+    validate_range(response,resume_start,size)
+    if token!=previous['validator']:raise ValueError('Resume response validator changed or missing')
+   except ValueError:resume_ok=False;raise
+  atomic(resume_path,{'validator':token,'validator_type':token_type,'url':url,'resume_safe':resume_ok,'partial_bytes':partial.stat().st_size if partial.exists() else 0,'partial_sha256':prefix_sha(partial) if partial.exists() and resume_ok else None})
   r['response_headers']=text
   if run.returncode: raise RuntimeError(run.stderr.strip() or str(run.returncode))
   if size is not None and partial.stat().st_size!=size: raise RuntimeError('Downloaded bytes differ from HEAD Content-Length')
+  with partial.open('rb') as saved:os.fsync(saved.fileno())
+  if target.exists():raise RuntimeError('Concurrent completed raw target; refusing overwrite')
   partial.replace(target)
   r.update(status='complete',bytes=target.stat().st_size,sha256=sha(target),completed_at=now())
  except Exception as e: r.update(status='failed',error=str(e),partial_bytes=partial.stat().st_size if partial.exists() else 0)
- atomic(receipt,r); print(source,r['status'],r.get('bytes',r.get('error','')),flush=True); return r
+ atomic(receipt,r)
+ if kind=='data' and r.get('status')=='complete':refresh()
+ print(source,r['status'],r.get('bytes',r.get('error','')),flush=True); return r
 
 def inspect(s):
  r=fetch(s['source_id'],s['source_url'],'index.html','inspection')
@@ -77,6 +112,11 @@ def inspect(s):
  return s
 
 def refresh():
+ locks=ROOT/'checkpoints';locks.mkdir(parents=True,exist_ok=True)
+ with (locks/'manifest.lock').open('a') as lock:
+  fcntl.flock(lock,fcntl.LOCK_EX);return _refresh_locked()
+
+def _refresh_locked():
  rows=[]
  for p in sorted((ROOT/'manifests/inspections').glob('*.json')): rows.append(json.loads(p.read_text()))
  atomic(ROOT/'manifests/sources.json',rows)

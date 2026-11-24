@@ -1,6 +1,7 @@
 """Additive, bounded, provenance-preserving adapters. Never mutates R1 databases.
 Raw snapshots remain authoritative. Analysis variations are not accepted solutions.
 """
+import bz2,resource,fcntl
 import argparse,csv,gzip,hashlib,io,json,logging,shutil,sqlite3,time,zipfile,zlib
 from contextlib import contextmanager
 from pathlib import Path
@@ -35,7 +36,9 @@ def connection(root=ROOT):
 @contextmanager
 def open_text(path):
  errors='surrogateescape' if '.pgn' in path.name.lower() else 'strict'
- if path.name.lower().endswith('.gz'):
+ if path.name.lower().endswith('.bz2'):
+  with bz2.open(path,'rt',encoding='utf-8-sig',errors=errors,newline='') as f:yield f
+ elif path.name.lower().endswith('.gz'):
   with gzip.open(path,'rt',encoding='utf-8-sig',errors=errors,newline='') as f:yield f
  elif path.name.lower().endswith('.zst'):
   with path.open('rb') as f,zstandard.ZstdDecompressor().stream_reader(f) as z,io.TextIOWrapper(z,encoding='utf-8-sig',errors=errors,newline='') as t:yield t
@@ -43,7 +46,10 @@ def open_text(path):
   with path.open(encoding='utf-8-sig',errors=errors,newline='') as f:yield f
 
 def parse_rows(f,name,source):
- suffix=Path(name.removesuffix('.gz').removesuffix('.zst')).suffix.lower()
+ logical=name
+ for compression in ['.gz','.zst','.bz2']:
+  if logical.lower().endswith(compression):logical=logical[:-len(compression)]
+ suffix=Path(logical).suffix.lower()
  if suffix in ['.csv','.tsv']:
   for n,row in enumerate(csv.DictReader(f,delimiter='\t' if suffix=='.tsv' else ','),1):yield name,n,row
  elif suffix=='.json':
@@ -97,6 +103,11 @@ def rows(path,source):
     with z.open(entry) as f,io.TextIOWrapper(f,encoding='utf-8-sig',errors='surrogateescape' if entry.filename.lower().endswith('.pgn') else 'strict',newline='') as t:yield from parse_rows(t,entry.filename,source)
    if not supported:raise UnsupportedFormat('ZIP has no supported data members')
  else:
+  logical=path.name.lower()
+  for compression in ['.gz','.zst','.bz2']:
+   if logical.endswith(compression):logical=logical[:-len(compression)]
+  if Path(logical).suffix not in ['.csv','.tsv','.json','.pgn','.fns','.epd']:
+   raise UnsupportedFormat('Native/binary format requires its dedicated adapter: '+path.name+'; evaluation Parquet uses evaluation_view.py')
   with open_text(path) as f:yield from parse_rows(f,path.name,source)
 
 def position(fen,chess960=False):
@@ -136,7 +147,8 @@ def normalized(source,row,member):
   if not text or not name:raise ValueError('Missing opening path or name')
   game=chess.pgn.read_game(io.StringIO(text))
   if game is None or game.errors:raise ValueError('Malformed opening PGN')
-  initial=game.board();board=initial.copy();line=[];sans=[]
+  initial=game.board()
+  board=initial.copy();line=[];sans=[]
   for move in game.mainline_moves():sans.append(board.san(move));line.append(move.uci());board.push(move)
   if not line:raise ValueError('Empty opening path')
   domain='openings';lines=[line];objective='opening_path';context=[name,row.get('eco')]
@@ -174,7 +186,8 @@ def normalized(source,row,member):
   if row.get('parse_errors'):raise ValueError('PGN parser errors')
   game=chess.pgn.read_game(io.StringIO(row['pgn']))
   if game is None or game.errors:raise ValueError('Invalid PGN')
-  initial=game.board();board=initial.copy();line=[]
+  initial=game.board()
+  board=initial.copy();line=[]
   for move in game.mainline_moves():
    if move not in board.legal_moves:raise ValueError('Illegal game move')
    line.append(move.uci());board.push(move)
@@ -196,7 +209,18 @@ def normalized(source,row,member):
  return entity,domain,state_hash,position_hash,board_hash,solution_hash,objective,status,payload
 
 def import_file(db,root,receipt,limit=0,seconds=0):
+ locks=root/'checkpoints/normalization-locks';locks.mkdir(parents=True,exist_ok=True)
+ lock_id=digest([receipt['path'],VERSION])
+ with (locks/(lock_id+'.lock')).open('a') as lock:
+  try:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+  except BlockingIOError:return {'state':'already_claimed'}
+  return _import_file_claimed(db,root,receipt,limit,seconds)
+
+def _import_file_claimed(db,root,receipt,limit=0,seconds=0):
  path=root/receipt['path'];snapshot=receipt['sha256'];source=receipt['source_id'];start=time.monotonic()
+ database_path=Path(db.execute('pragma database_list').fetchone()[2])
+ def disk_bytes():return sum(p.stat().st_size for p in [database_path,Path(str(database_path)+'-wal')] if p.exists())
+ bytes_before=disk_bytes()
  old=db.execute('select processed,accepted,rejected,duplicates,complete from progress where raw_path=? and snapshot=? and adapter=?',(receipt['path'],snapshot,VERSION)).fetchone()
  if old and old[4]:return {'state':'already_complete'}
  if not path.exists() or path.stat().st_size!=receipt['bytes']:raise ValueError('Receipt size mismatch: '+receipt['path'])
@@ -214,7 +238,7 @@ def import_file(db,root,receipt,limit=0,seconds=0):
    if seen<=skip:continue
    if (limit and processed_now>=limit) or (seconds and time.monotonic()-start>=seconds):break
    if processed_now%100==0 and shutil.disk_usage(root).free<RESERVE+8*1024**2:
-    checkpoint();return {'state':'blocked_storage','counts':counts}
+    checkpoint();return {'state':'blocked_storage','counts':counts,'processed_this_run':processed_now,'seconds':round(time.monotonic()-start,3),'database_growth_bytes':disk_bytes()-bytes_before,'peak_rss_bytes':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss}
    try:
     result=normalized(source,row,member);entity,*values,payload=result
     inserted=db.execute('insert or ignore into entities values(?,?,?,?,?,?,?,?,?)',(entity,*values,pack(payload))).rowcount
@@ -233,7 +257,7 @@ def import_file(db,root,receipt,limit=0,seconds=0):
   checkpoint();db.execute('insert or replace into issues values(?,?,?,?)',(receipt['path'],snapshot,'unsupported_format',str(exc)));db.commit()
   return {'state':'unsupported_format','detail':str(exc),'counts':counts}
  except BaseException:db.rollback();raise
- return {'state':'complete' if complete else 'partial','counts':counts,'processed_this_run':processed_now,'seconds':round(time.monotonic()-start,3)}
+ return {'state':'complete' if complete else 'partial','counts':counts,'processed_this_run':processed_now,'seconds':round(time.monotonic()-start,3),'database_growth_bytes':disk_bytes()-bytes_before,'peak_rss_bytes':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss}
 
 def build_relations(db):
  # Indexed SQL groups avoid pairwise expansion. These are candidates, not proofs of equivalence.
@@ -243,7 +267,13 @@ def build_relations(db):
  db.commit()
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('--sources',nargs='+',required=True);p.add_argument('--limit',type=int,default=1000);p.add_argument('--seconds',type=float,default=60);a=p.parse_args()
+ locks=ROOT/'checkpoints/normalization-locks';locks.mkdir(parents=True,exist_ok=True)
+ with (locks/'r2-maintenance.lock').open('a') as maintenance:
+  fcntl.flock(maintenance,fcntl.LOCK_SH)
+  return _main_claimed()
+
+def _main_claimed():
+ p=argparse.ArgumentParser();p.add_argument('--sources',nargs='+',required=True);p.add_argument('--paths',nargs='*',help='Select whole acquired files, e.g. the latest snapshot, without record sampling');p.add_argument('--limit',type=int,default=0,help='Optional benchmark limit; default drains work to the storage guard');p.add_argument('--seconds',type=float,default=0,help='Optional benchmark duration; 0 has no time cap');a=p.parse_args()
  audit=json.loads((ROOT/'reports/r2-audit.json').read_text())
  verified={x['path']:x for x in audit['receipts'] if x.get('sha256_matches') and x.get('size_matches')}
  db=connection();runs=[]
@@ -251,8 +281,11 @@ def main():
   for receipt_path in sorted((ROOT/'raw').rglob('*.receipt.json')):
    r=json.loads(receipt_path.read_text())
    if r.get('status')!='complete' or r['source_id'] not in a.sources:continue
+   if a.paths and r['path'] not in a.paths:continue
    # Existing audit is the baseline; newly acquired files are SHA-256 checked in import_file.
-   result=import_file(db,ROOT,r,a.limit,a.seconds);runs.append(dict(path=r['path'],**result));print(r['path'],result,flush=True)
+   result=import_file(db,ROOT,r,a.limit,a.seconds);runs.append(dict(path=r['path'],**result))
+   with (ROOT/'reports/r2-import-history.jsonl').open('a') as history:history.write(json.dumps({'at':now(),'source':r['source_id'],'snapshot':r['sha256'],'adapter':VERSION,'path':r['path'],**result})+'\n')
+   print(r['path'],result,flush=True)
    if result['state']=='blocked_storage':break
   build_relations(db)
   report={'rights_review':'RIGHTS_REVIEW_PENDING','generated_at':now(),'runs':runs,'domains':dict(db.execute('select domain,count(*) from entities group by domain')),'provenance':db.execute('select count(*) from provenance').fetchone()[0],'quarantined':db.execute('select count(*) from rejected').fetchone()[0],'relation_groups':[list(x) for x in db.execute('select relation,count(distinct group_id),count(*) from relations group by relation')],'limitations':['R2 is additive; R1 counts must not be added to R2 counts as globally unique.','Similarity groups are exact board/turn candidates with state differences; they are not educational equivalence.','Objective proofs and equivalent_solution_group require a separate verifier.']}
