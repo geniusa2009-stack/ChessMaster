@@ -6,7 +6,7 @@ import argparse,gzip,hashlib,json,shutil,sqlite3,time
 from pathlib import Path
 import chess
 from acquire import ROOT,atomic,now
-from normalize_r2 import unpack,digest
+from normalize_r2 import unpack,digest,VERSION
 from mate_proof_r2 import check_certificate
 
 def position_key(fen):return hashlib.sha256(' '.join(chess.Board(fen).fen(en_passant='legal').split()[:4]).encode()).digest()
@@ -36,7 +36,9 @@ def run():
  db.execute('create temp view current_targets as select t.* from targets t join active_targets a on a.id=t.id')
  signature=hashlib.sha256();count=0
  # Targets reflect active outputs, not obsolete adapter entities.
- for id,domain,blob in source.execute("select id,domain,payload from entities where domain in ('puzzles','training_positions') and id in (select entity_id from normalization_outputs where adapter=(select adapter from normalization_outputs order by rowid desc limit 1)) order by id"):
+ source.execute('pragma cache_size=-131072')
+ for id,domain in source.execute("select e.id,e.domain from entities e indexed by entity_domain where e.domain in ('puzzles','training_positions') and exists(select 1 from normalization_outputs o where o.entity_id=e.id and o.adapter=?) order by e.id",(VERSION,)):
+  blob=source.execute('select payload from entities where id=?',(id,)).fetchone()[0]
   r=unpack(blob);fen=r.get('display_fen')
   if not fen:continue
   signature.update(id.encode());count+=1
@@ -50,6 +52,13 @@ def run():
  db.commit();max_id=legacy.execute('select coalesce(max(id),0) from tasks').fetchone()[0]
  sig=signature.hexdigest()+':'+str(max_id);run=digest(['cross-source-2',sig]);db.execute('insert or ignore into runs values(?,?,0,?)',(run,sig,now()));db.commit()
  checkpoint=db.execute('select last_r1_id from scan_progress where run=?',(run,)).fetchone();last=checkpoint[0] if checkpoint else 0
+ if checkpoint is None:
+  # Same immutable active targets: carry prior completed edges and scan only new R1 IDs.
+  for prior,prior_sig in db.execute('select id,source_signature from runs where complete=1 and source_signature like ? order by cast(substr(source_signature,66) as integer) desc',(signature.hexdigest()+':%',)).fetchall():
+   prior_max=int(prior_sig.rsplit(':',1)[1])
+   if prior_max<=max_id and prior==digest(['cross-source-2',prior_sig]):
+    db.execute('insert or ignore into relations select ?,relation,group_id,left_namespace,left_id,right_namespace,right_id,evidence from relations where run=?',(run,prior))
+    last=prior_max;db.execute('insert into scan_progress values(?,?)',(run,last));db.commit();break
  # Cross-join order deliberately makes the large R1 table the outer sequential scan.
  db.execute('attach database ? as legacy',(str(ROOT/'consolidated/index.sqlite'),))
  scanned=last;matched=0;blocked=False
@@ -102,6 +111,6 @@ def run():
    db.execute('insert or ignore into relations values(?,?,?,?,?,?,?,?)',(run,'equivalent_solution_group',group,*anchor.split(':',1),*id.split(':',1),json.dumps({'certificate_verified':True,'scope':'same modeled mate objective and full FEN','educational_merge_allowed':False})))
   proofs.close();db.execute('update runs set complete=?,updated_at=? where id=?',(int(not blocked and scanned>=max_id),now(),run));db.commit()
   counts=[list(x) for x in db.execute('select relation,count(distinct group_id),count(*) from relations where run=? group by relation',(run,))]
-  atomic(ROOT/'reports/r2-cross-source.json',{'generated_at':now(),'run':run,'r1_max_id':max_id,'r1_scanned_through':scanned,'active_r2_targets':count,'relation_counts':counts,'blocked_storage':blocked,'seconds':time.monotonic()-start,'scope':'Committed normalized R1 plus current active R2 targets; not raw unnormalized records','similarity_limitations':'Single SimHash prefix and 64-prior-candidate bound are incomplete candidate generation, not exhaustive near-position equivalence','rights_review':'RIGHTS_REVIEW_PENDING'});print(counts,flush=True)
+  atomic(ROOT/'reports/r2-cross-source.json',{'generated_at':now(),'run':run,'r1_max_id':max_id,'r1_scanned_through':scanned,'r1_start_checkpoint':last,'active_r2_targets':count,'relation_counts':counts,'blocked_storage':blocked,'seconds':time.monotonic()-start,'scope':'Committed normalized R1 plus current active R2 targets; not raw unnormalized records','similarity_limitations':'Single SimHash prefix and 64-prior-candidate bound are incomplete candidate generation, not exhaustive near-position equivalence','rights_review':'RIGHTS_REVIEW_PENDING'});print(counts,flush=True)
  finally:legacy.close();source.close();db.execute('pragma wal_checkpoint(TRUNCATE)');db.close()
 if __name__=='__main__':run()

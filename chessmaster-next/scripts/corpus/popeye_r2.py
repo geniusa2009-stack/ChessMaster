@@ -7,7 +7,7 @@ import chess
 from acquire import ROOT,atomic,now
 from normalize_r2 import unpack,digest
 from verify_r2 import Queue
-from mate_proof_r2 import prove,check_certificate
+from mate_proof_r2 import prove,check_certificate,VERSION as CERTIFICATE_VERSION
 
 def problem(fen,stipulation):
  match=re.fullmatch(r'#([1-5])',stipulation or '')
@@ -25,7 +25,7 @@ def keys(output):
  return out
 
 def run(seconds=60):
- binary=ROOT/'extracted/popeye/popeye';configuration={'adapter':'popeye-direct-1','binary_sha256':hashlib.sha256(binary.read_bytes()).hexdigest(),'native_maxmem_mib':32,'native_maxtime_seconds':1,'python_certificate_nodes':20000,'python_certificate_seconds':1};config=digest(configuration)
+ binary=ROOT/'extracted/popeye/popeye';configuration={'adapter':'popeye-direct-1','certificate_verifier':CERTIFICATE_VERSION,'chess_version':chess.__version__,'binary_sha256':hashlib.sha256(binary.read_bytes()).hexdigest(),'native_maxmem_mib':32,'native_maxtime_seconds':1,'python_certificate_nodes':20000,'python_certificate_seconds':1};config=digest(configuration)
  db=sqlite3.connect((ROOT/'consolidated/r2.sqlite').as_uri()+'?mode=ro',uri=True);q=Queue(ROOT/'solver-results/r2-analysis.sqlite');start=time.monotonic();states={};processed=0;unsupported={}
  try:
   for id,blob in db.execute("select id,payload from entities where domain='compositions' and id in(select entity_id from normalization_outputs where adapter=(select adapter from normalization_outputs order by rowid desc limit 1)) order by id"):

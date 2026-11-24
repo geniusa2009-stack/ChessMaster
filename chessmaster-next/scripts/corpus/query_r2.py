@@ -6,7 +6,7 @@ from normalize_r2 import VERSION,unpack
 def query(domain=None,id=None,limit=20,after=None,with_evidence=False):
  limit=max(1,min(limit,100))
  db=sqlite3.connect((ROOT/'consolidated/r2.sqlite').as_uri()+'?mode=ro',uri=True)
- where=['e.id in (select entity_id from normalization_outputs where adapter=?)'];args=[VERSION]
+ where=['exists(select 1 from normalization_outputs o where o.entity_id=e.id and o.adapter=?)'];args=[VERSION]
  if domain:where.append('e.domain=?');args.append(domain)
  if id:where.append('e.id=?');args.append(id)
  if after:where.append('e.id>?');args.append(after)

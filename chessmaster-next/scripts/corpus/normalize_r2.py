@@ -25,6 +25,8 @@ def connection(root=ROOT):
  CREATE INDEX IF NOT EXISTS provenance_entity ON provenance(entity_id);
  CREATE TABLE IF NOT EXISTS normalization_outputs(source TEXT,snapshot TEXT,member TEXT,ordinal INTEGER,adapter TEXT,entity_id TEXT,PRIMARY KEY(source,snapshot,member,ordinal,adapter));
  CREATE INDEX IF NOT EXISTS entity_position ON entities(position_hash,domain);
+ CREATE INDEX IF NOT EXISTS entity_domain ON entities(domain,id);
+ CREATE INDEX IF NOT EXISTS normalization_active ON normalization_outputs(adapter,entity_id);
  CREATE INDEX IF NOT EXISTS entity_board ON entities(board_hash,domain);
  CREATE TABLE IF NOT EXISTS progress(raw_path TEXT,snapshot TEXT,adapter TEXT,processed INTEGER,accepted INTEGER,rejected INTEGER,duplicates INTEGER,complete INTEGER,updated_at TEXT,PRIMARY KEY(raw_path,snapshot,adapter));
  CREATE TABLE IF NOT EXISTS rejected(raw_path TEXT,snapshot TEXT,member TEXT,ordinal INTEGER,reason TEXT,original BLOB,PRIMARY KEY(raw_path,snapshot,member,ordinal));
@@ -278,8 +280,9 @@ def _main_claimed():
  verified={x['path']:x for x in audit['receipts'] if x.get('sha256_matches') and x.get('size_matches')}
  db=connection();runs=[]
  try:
-  for receipt_path in sorted((ROOT/'raw').rglob('*.receipt.json')):
-   r=json.loads(receipt_path.read_text())
+  receipts=[json.loads(p.read_text()) for p in (ROOT/'raw').rglob('*.receipt.json')]
+  # Complete small snapshots first, leaving large archives at durable checkpoints.
+  for r in sorted(receipts,key=lambda r:(r.get('bytes') or 0,r['path'])):
    if r.get('status')!='complete' or r['source_id'] not in a.sources:continue
    if a.paths and r['path'] not in a.paths:continue
    # Existing audit is the baseline; newly acquired files are SHA-256 checked in import_file.

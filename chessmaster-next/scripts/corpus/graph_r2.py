@@ -4,7 +4,18 @@ Names stay linked to complete source paths. Prefixes derived from games are unna
 import argparse,json,shutil,sqlite3,time,fcntl
 import chess
 from acquire import ROOT,atomic,now
-from normalize_r2 import connection,digest,unpack,RESERVE
+from normalize_r2 import connection,digest,unpack,RESERVE,VERSION
+
+def graph_records(db,source_db):
+ # Materialize only 1000 IDs at a time; never pin the writer WAL with a long cursor.
+ for domain in ['openings','games']:
+  after=''
+  while True:
+   if source_db=='r1':keys=db.execute('select canonical_id from records where domain=? and canonical_id>? order by canonical_id limit 1000',(domain,after)).fetchall()
+   else:keys=db.execute('select e.id from entities e indexed by entity_domain where e.domain=? and e.id>? and exists(select 1 from normalization_outputs o where o.entity_id=e.id and o.adapter=?) order by e.id limit 1000',(domain,after,VERSION)).fetchall()
+   if not keys:break
+   for (id,) in keys:yield id,domain
+   after=keys[-1][0]
 
 def run(game_limit=0):
  locks=ROOT/'checkpoints/normalization-locks';locks.mkdir(parents=True,exist_ok=True)
@@ -13,7 +24,7 @@ def run(game_limit=0):
   return _run_claimed(game_limit)
 
 def _run_claimed(game_limit=0):
- db=connection();db.executescript('''create table if not exists graph_nodes(id text primary key,fen text not null);
+ db=connection();db.execute('pragma cache_size=-131072');db.executescript('''create table if not exists graph_nodes(id text primary key,fen text not null);
  create table if not exists graph_paths(id text primary key,initial_fen text not null,moves text not null,final_position text not null);
  create table if not exists graph_edges(path_id text,ply integer,from_position text,move text,to_position text,primary key(path_id,ply));
  create index if not exists graph_to on graph_edges(to_position);
@@ -29,8 +40,8 @@ def _run_claimed(game_limit=0):
  start=time.monotonic();processed=games=0;blocked=False
  legacy=sqlite3.connect((ROOT/'consolidated/domains.sqlite').as_uri()+'?mode=ro',uri=True);legacy.execute('pragma cache_size=-65536')
  try:
-  for source_db,cursor in [('r1',legacy.execute("select canonical_id,domain from records where domain in ('openings','games') order by domain desc,canonical_id")),('r2',db.execute("select id,domain from entities where domain in ('openings','games') and id in (select entity_id from normalization_outputs where adapter=(select adapter from normalization_outputs order by rowid desc limit 1)) order by domain desc,id"))]:
-   for id,domain in cursor:
+  for source_db in ['r1','r2']:
+   for id,domain in graph_records(legacy if source_db=='r1' else db,source_db):
     if db.execute('select 1 from graph_done where entity_id=? and source_db=?',(id,source_db)).fetchone():continue
     if domain=='games' and game_limit and games>=game_limit:continue
     if shutil.disk_usage(ROOT).free<RESERVE+20*1024**2:blocked=True;break
@@ -43,7 +54,7 @@ def _run_claimed(game_limit=0):
     try:
      for move in moves:board.push_uci(move);positions.append(digest([board.uci_variant,board.fen(en_passant='legal').split()[:4]]));fens.append(board.fen(en_passant='legal'))
     except ValueError:continue
-    db.execute('begin immediate')
+    if not db.in_transaction:db.execute('begin immediate')
     try:
      for pos,fen in zip(positions,fens):db.execute('insert or ignore into graph_nodes values(?,?)',(pos,fen))
      for length in range(1,len(moves)+1):
@@ -51,14 +62,19 @@ def _run_claimed(game_limit=0):
       db.execute('insert or ignore into graph_paths values(?,?,?,?)',(path,initial,json.dumps(moves[:length]),positions[length]))
       db.execute('insert or ignore into graph_edges values(?,?,?,?,?)',(path,length,positions[length-1],moves[length-1],positions[length]))
       db.execute('insert or ignore into graph_sources values(?,?,?,?,?,?)',(path,id,source_db,domain,payload.get('name') if domain=='openings' and length==len(moves) else None,payload.get('eco') if domain=='openings' and length==len(moves) else None))
-     db.execute('insert into graph_done values(?,?)',(id,source_db));db.commit()
+     db.execute('insert into graph_done values(?,?)',(id,source_db))
+     if (processed+1)%100==0:db.commit()
     except BaseException:db.rollback();raise
     processed+=1;games+=domain=='games'
+    if processed%1000==0:print('Graph records processed:',processed,source_db,domain,flush=True)
    if blocked:break
+  db.commit()
   counts={t:db.execute('select count(*) from '+t).fetchone()[0] for t in ['graph_nodes','graph_paths','graph_edges','graph_sources','graph_done']}
   trans=db.execute('select count(*) from (select final_position from graph_paths group by final_position having count(*)>1)').fetchone()[0]
   atomic(ROOT/'reports/r2-graph.json',{'generated_at':now(),'counts':counts,'transposition_groups':trans,'position_relation_groups':[list(x) for x in db.execute('select relation,count(*),sum(members) from graph_relation_groups group by relation')],'processed_this_run':processed,'game_paths_this_run':games,'blocked_storage':blocked,'seconds':time.monotonic()-start,'scope':'All imported named paths plus first 20 plies of each processed standard game. Prefix counts are not named-variation counts.','rights_review':'RIGHTS_REVIEW_PENDING'})
   print(counts,trans,flush=True)
- finally:legacy.close();db.execute('pragma wal_checkpoint(TRUNCATE)');db.close()
+ finally:
+  if db.in_transaction:db.rollback()
+  legacy.close();db.execute('pragma wal_checkpoint(TRUNCATE)');db.close()
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--game-limit',type=int,default=0);a=p.parse_args();run(a.game_limit)

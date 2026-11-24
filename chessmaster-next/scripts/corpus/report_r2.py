@@ -3,7 +3,7 @@ import re
 import argparse,collections,json,shutil,sqlite3,subprocess,time
 from pathlib import Path
 from acquire import ROOT,atomic,now,refresh
-from normalize_r2 import VERSION
+from normalize_r2 import VERSION,unpack
 
 def read_report(name):
  p=ROOT/'reports'/name
@@ -28,6 +28,10 @@ def export(output,baseline_path=None):
   if p.name=='domains.sqlite':entry['domains']=dict(db.execute('select domain,count(*) from records group by domain'))
   if p.name=='r2.sqlite':
    entry['active_adapter']=VERSION
+   missing={}
+   for domain,blob in db.execute("select e.domain,e.payload from entities e where e.domain in('compositions','endgame_studies') and exists(select 1 from normalization_outputs o where o.adapter=? and o.entity_id=e.id)",(VERSION,)):
+    if unpack(blob).get('missing_solution'):missing[domain]=missing.get(domain,0)+1
+   entry['missing_source_solution_records']=missing
    entry['active_domains']=dict(db.execute('select e.domain,count(*) from entities e where e.id in (select entity_id from normalization_outputs where adapter=?) group by e.domain',(VERSION,)))
    entry['normalized_by_source']=[list(x) for x in db.execute('select source,count(*),count(distinct entity_id) from normalization_outputs where adapter=? group by source',(VERSION,))]
    entry['file_progress']=[dict(zip(['raw_path','snapshot','adapter','processed','accepted','rejected','duplicates','complete'],row)) for row in db.execute('select raw_path,snapshot,adapter,processed,accepted,rejected,duplicates,complete from progress')]
@@ -51,6 +55,11 @@ def export(output,baseline_path=None):
  report['unfinished']=['Lichess evaluation and monthly games exceed current capacity.','Unknown-size and failed regional downloads require source-specific retry/probe review.','Full Chess.com and regional-game imports remain checkpointed, not complete.','R1/R2 counts overlap; never sum them as global unique records.','Global educational equivalence remains incomplete; verified alternative first-move groups are scoped to available proof certificates.','Composition source-solution retrieval, full stipulation soundness and broader Syzygy coverage remain incomplete; directmate model proofs are recorded separately.','Opening graph is partial; prefix paths are not named variations.','Complete per-domain scale/storage projections remain unmeasured.']
  test_log=ROOT/'reports/r2-continuation-tests.txt';test_text=test_log.read_text() if test_log.exists() else '';match=re.search(r'Ran (\d+) tests',test_text)
  report['tests']={'passed':int(match[1]) if match and '\nOK' in test_text else None,'includes_actual_private_fixture':True,'log':'reports/r2-continuation-tests.txt'}
+ report['r1_puzzle_checkpoint']=json.loads((ROOT/'checkpoints/lichess-puzzles.json').read_text())
+ report['r1_puzzle_normalization']=read_report('lichess-puzzles-normalization.json')
+ report['certificate_replay']=read_report('r2-certificate-replay.json')
+ report['new_file_verification']=read_report('r2-new-file-verification.json')
+ report['final_integrity']=read_report('r2-final-mutated-integrity.json')
  report['cross_source_relations']=read_report('r2-cross-source.json');report['mate_proof_run']=read_report('r2-objectives-r1.json');report['storage_projection']=read_report('r2-storage-projection.json');report['normalization_performance_history']=[json.loads(line) for line in (ROOT/'reports/r2-import-history.jsonl').read_text().splitlines()] if (ROOT/'reports/r2-import-history.jsonl').exists() else []
  atomic(output,report);print(json.dumps({'status':report['status'],'new_completed_files':len(new),'new_bytes':report['acquisitions']['new_completed_bytes'],'active_domains':report['databases']['consolidated/r2.sqlite']['active_domains'],'free_bytes':disk.free,'remaining_known_bytes':remaining,'git':report['git']},indent=2))
  return report
