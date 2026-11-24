@@ -2,7 +2,7 @@
 import argparse,gzip,json,re,shutil,sqlite3,time
 import chess
 from acquire import ROOT,atomic,now
-from normalize_r2 import unpack,digest
+from normalize_r2 import unpack,digest,VERSION as ADAPTER_VERSION
 from verify_r2 import Queue,legal
 from mate_proof_r2 import prove,check_certificate,VERSION
 
@@ -10,7 +10,13 @@ def records(scope):
  if scope=='r2':
   db=sqlite3.connect((ROOT/'consolidated/r2.sqlite').as_uri()+'?mode=ro',uri=True)
   try:
-   for id,blob in db.execute("select id,payload from entities where domain in ('puzzles','training_positions') and id in(select entity_id from normalization_outputs where adapter=(select adapter from normalization_outputs order by rowid desc limit 1)) order by id"):yield 'r2:'+id,unpack(blob)
+   for domain in ['puzzles','training_positions']:
+    after=''
+    while True:
+     keys=db.execute('select e.id from entities e indexed by entity_domain where e.domain=? and e.id>? and exists(select 1 from normalization_outputs o where o.entity_id=e.id and o.adapter=?) order by e.id limit 1000',(domain,after,ADAPTER_VERSION)).fetchall()
+     if not keys:break
+     for (id,) in keys:yield 'r2:'+id,unpack(db.execute('select payload from entities where id=?',(id,)).fetchone()[0])
+     after=keys[-1][0]
   finally:db.close()
  else:
   db=sqlite3.connect((ROOT/'consolidated/index.sqlite').as_uri()+'?mode=ro',uri=True)

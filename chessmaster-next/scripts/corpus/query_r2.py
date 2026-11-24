@@ -25,4 +25,4 @@ def query(domain=None,id=None,limit=20,after=None,with_evidence=False):
  finally:db.close()
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--domain');p.add_argument('--id');p.add_argument('--limit',type=int,default=20);p.add_argument('--after');p.add_argument('--with-evidence',action='store_true');a=p.parse_args()
- for r in query(a.domain,a.id,a.limit,a.after,a.with_evidence):print(json.dumps(r,ensure_ascii=False))
+ for r in query(a.domain,a.id,a.limit,a.after,a.with_evidence):print(json.dumps(r,ensure_ascii=True))

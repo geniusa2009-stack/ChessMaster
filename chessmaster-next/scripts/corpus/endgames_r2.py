@@ -2,15 +2,23 @@
 import argparse,json,shutil,sqlite3,time
 import chess,chess.syzygy
 from acquire import ROOT,sha,atomic,now
-from normalize_r2 import unpack,digest
+from normalize_r2 import unpack,digest,VERSION as ADAPTER_VERSION
 from verify_r2 import Queue
+
+def study_records(db):
+ after=''
+ while True:
+  keys=db.execute("select e.id from entities e indexed by entity_domain where e.domain='endgame_studies' and e.id>? and exists(select 1 from normalization_outputs o where o.entity_id=e.id and o.adapter=?) order by e.id limit 1000",(after,ADAPTER_VERSION)).fetchall()
+  if not keys:break
+  for (id,) in keys:yield id,db.execute('select payload from entities where id=?',(id,)).fetchone()[0]
+  after=keys[-1][0]
 
 def run():
  files=sorted(p for p in (ROOT/'raw/syzygy').iterdir() if p.suffix in ('.rtbw','.rtbz'));config={'verifier':'syzygy-study-value-1','chess_version':chess.__version__,'files':{p.name:sha(p) for p in files},'rule_policy':'Fresh FEN, halfmove clock zero, unconditional WDL only; no source-solution comparison'};identity=digest(config)
  db=sqlite3.connect((ROOT/'consolidated/r2.sqlite').as_uri()+'?mode=ro',uri=True);db.execute('pragma cache_size=-32768');queue=Queue(ROOT/'solver-results/r2-analysis.sqlite');started=time.monotonic();states={};processed=0
  try:
   with chess.syzygy.open_tablebase(str(ROOT/'raw/syzygy')) as tables:
-   for id,blob in db.execute("select id,payload from entities where domain='endgame_studies' and id in(select entity_id from normalization_outputs where adapter=(select adapter from normalization_outputs order by rowid desc limit 1)) order by id"):
+   for id,blob in study_records(db):
     if shutil.disk_usage(ROOT).free<1200*1024**2:break
     owner=queue.claim('r2:'+id,'syzygy',identity)
     if not owner:continue

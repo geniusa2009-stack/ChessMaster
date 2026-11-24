@@ -97,9 +97,15 @@ def _run_claimed(file,kind,source,batch_size=10000):
    pending.append(row)
    if len(pending)>=batch_size:commit(pending,batch_number);pending=[];batch_number+=1
   if pending:commit(pending,batch_number)
+  atomic(ROOT/'reports'/f'{source}-normalization.json',{'source':source,'snapshot':snapshot,'complete':False,'source_rows_complete':True,'position_index_complete':False,'source_records_seen':seen,'checkpoint':json.loads((ROOT/'checkpoints'/f'{source}.json').read_text())})
   # Costly indexes built only after all batches, not per individual insertion.
+  if not db.execute("select 1 from sqlite_master where type='index' and name='task_position'").fetchone():
+   indexed_rows=db.execute('select coalesce(sum(unique_count),0) from batches').fetchone()[0]
+   # Reserve both the final B-tree and its temporary sort, plus existing floor.
+   required=1100*1024**2+indexed_rows*100+32*1024**2
+   if shutil.disk_usage(ROOT).free<required:raise RuntimeError('STORAGE_FLOOR: all source rows checkpointed; position index needs additional final/sort headroom: '+str(required))
   db.execute('create index if not exists task_position on tasks(position_hash)');db.commit()
-  atomic(ROOT/'reports'/f'{source}-normalization.json',{'source':source,'snapshot':snapshot,'complete':True,'source_records_seen':seen,'seconds_this_run':round(time.monotonic()-started,2),'checkpoint':json.loads((ROOT/'checkpoints'/f'{source}.json').read_text())})
+  atomic(ROOT/'reports'/f'{source}-normalization.json',{'source':source,'snapshot':snapshot,'complete':True,'source_rows_complete':True,'position_index_complete':True,'source_records_seen':seen,'seconds_this_run':round(time.monotonic()-started,2),'checkpoint':json.loads((ROOT/'checkpoints'/f'{source}.json').read_text())})
  finally:db.execute('pragma wal_checkpoint(TRUNCATE)');db.close()
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--file',type=Path,required=True);p.add_argument('--kind',choices=['lichess'],required=True);p.add_argument('--source',required=True);a=p.parse_args();run(a.file,a.kind,a.source)

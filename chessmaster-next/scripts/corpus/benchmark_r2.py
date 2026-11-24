@@ -19,6 +19,9 @@ def run():
  ('endgame_retrieval','select payload from entities where id=?',db.execute("select id from entities where domain='endgame_studies' limit 1000").fetchall()),
  ('position_lookup','select id from entities where position_hash=? limit 1',db.execute('select position_hash from entities where position_hash is not null limit 1000').fetchall())]:report['queries'][name]=measure(db,sql,keys)
  entities=db.execute('select count(*) from entities').fetchone()[0];db.close()
+ r1=sqlite3.connect((ROOT/'consolidated/index.sqlite').as_uri()+'?mode=ro',uri=True)
+ report['queries']['r1_task_hash_lookup']=measure(r1,'select id from tasks where task_hash=?',r1.execute('select task_hash from tasks limit 1000').fetchall())
+ report['queries']['r1_position_index_lookup']=measure(r1,'select id from tasks where position_hash=? limit 1',r1.execute('select position_hash from tasks limit 1000').fetchall());r1.close()
  size=(ROOT/'consolidated/r2.sqlite').stat().st_size
  report['storage']={'r2_sqlite_bytes':size,'historical_entities':entities,'observed_mixed_db_bytes_per_million_entities':size/entities*1e6 if entities else None,'limitation':'Includes provenance, rejected history, indexes and graph. Not a domain-specific linear capacity guarantee.'}
  try:

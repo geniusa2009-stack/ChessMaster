@@ -1,0 +1,278 @@
+{
+  "status": "PARTIALLY COMPLETE \u2014 STORAGE OR TECHNICAL WORK REMAINS",
+  "measured_at": "2026-11-24T16:15:37.119850+00:00",
+  "rights_review": "RIGHTS_REVIEW_PENDING",
+  "implementation_parent_commit": "d5682f7a89f4170da0e01c83ccfad4afcd6c88c6",
+  "branch": "codex/global-chess-corpus",
+  "raw_acquisition": {
+    "counts": {
+      "complete": 1129,
+      "failed": 95,
+      "blocked_storage": 3
+    },
+    "new_completed_files": 190,
+    "new_completed_bytes": 161783174
+  },
+  "planned_url_job_statuses": {
+    "complete": 1114,
+    "failed": 90,
+    "blocked_storage": 3,
+    "pending_unattempted": 1374
+  },
+  "storage": {
+    "baseline_free_bytes": 1826029568,
+    "final_free_bytes": 1346588672,
+    "corpus_total_bytes": 9371556549,
+    "corpus_moved": false,
+    "known_remaining_download_bytes": 53482003594,
+    "complete_working_space_total_known": false
+  },
+  "r1_puzzles": {
+    "processed": 6193530,
+    "unique": 6163273,
+    "duplicates": 30257,
+    "quarantined": 0,
+    "last_batch": 619
+  },
+  "r1_snapshot_normalization_complete": true,
+  "r2_active_domains": {
+    "brilliancies": 7515,
+    "compositions": 16479,
+    "endgame_studies": 15000,
+    "games": 87798,
+    "openings": 5368,
+    "puzzles": 265111,
+    "statistics": 2090,
+    "training_positions": 46355
+  },
+  "r2_recovered_historical_rejections": 4317,
+  "opening_graph": {
+    "generated_at": "2026-11-24T15:50:56.991235+00:00",
+    "counts": {
+      "graph_nodes": 339040,
+      "graph_paths": 446447,
+      "graph_edges": 446447,
+      "graph_sources": 1208866,
+      "graph_done": 66015
+    },
+    "transposition_groups": 45439,
+    "position_relation_groups": [
+      [
+        "same_game_position",
+        100765,
+        863076
+      ],
+      [
+        "transposition_group",
+        45439,
+        152849
+      ]
+    ],
+    "processed_this_run": 18300,
+    "game_paths_this_run": 18300,
+    "blocked_storage": true,
+    "seconds": 248.74860687495675,
+    "scope": "All imported named paths plus first 20 plies of each processed standard game. Prefix counts are not named-variation counts.",
+    "rights_review": "RIGHTS_REVIEW_PENDING"
+  },
+  "cross_source_relations": {
+    "generated_at": "2026-11-24T15:53:03.179205+00:00",
+    "run": "81494979e4f5ab0622c9c722b80f46ae459c1f06b61a03bf2a0b3d5c211c785d",
+    "r1_max_id": 6163273,
+    "r1_scanned_through": 6163273,
+    "r1_start_checkpoint": 0,
+    "active_r2_targets": 311466,
+    "relation_counts": [
+      [
+        "equivalent_solution_group",
+        38,
+        42
+      ],
+      [
+        "exact_duplicate_of",
+        580,
+        580
+      ],
+      [
+        "same_position_candidate",
+        1541,
+        2365
+      ],
+      [
+        "similar_position_group",
+        5521,
+        11296
+      ]
+    ],
+    "blocked_storage": false,
+    "seconds": 105.34911224996904,
+    "scope": "Committed normalized R1 plus current active R2 targets; not raw unnormalized records",
+    "similarity_limitations": "Single SimHash prefix and 64-prior-candidate bound are incomplete candidate generation, not exhaustive near-position equivalence",
+    "rights_review": "RIGHTS_REVIEW_PENDING"
+  },
+  "verification": {
+    "objective_proofs_added": 4550,
+    "objective_entities_and_jobs_by_stage": [
+      [
+        "objective",
+        3045,
+        3045
+      ],
+      [
+        "popeye",
+        1480,
+        1480
+      ],
+      [
+        "syzygy",
+        25,
+        38
+      ]
+    ],
+    "unique_solution_proofs_added": 2732,
+    "uniqueness_scope": "Unique first move for the explicitly modeled mate horizon, not full-line uniqueness"
+  },
+  "mate_certificate_replay": {
+    "generated_at": "2026-11-24T15:30:31.348176+00:00",
+    "objective_proof_jobs_replayed": {
+      "objective": 3045,
+      "popeye": 1480
+    },
+    "failures": [],
+    "seconds": 3.588300250004977,
+    "scope": "All stored exhaustive mate certificates and alternatives; uniqueness nonexistence search and source-solution agreement are separate"
+  },
+  "validation": {
+    "tests_passed": 54,
+    "sqlite_integrity": {
+      "consolidated/domains.sqlite": [
+        [
+          "ok"
+        ]
+      ],
+      "consolidated/index.sqlite": [
+        [
+          "ok"
+        ]
+      ],
+      "consolidated/r2.sqlite": [
+        [
+          "ok"
+        ]
+      ],
+      "solver-results/analysis.sqlite": [
+        [
+          "ok"
+        ]
+      ],
+      "solver-results/r2-analysis.sqlite": [
+        [
+          "ok"
+        ]
+      ],
+      "consolidated/cross-source.sqlite": [
+        [
+          "ok"
+        ]
+      ]
+    },
+    "missing_committed_shards": [],
+    "committed_puzzle_shards": 620,
+    "duckdb_accessible": true,
+    "new_raw_checksum_failures": 0
+  },
+  "benchmarks": {
+    "generated_at": "2026-11-24T16:04:41.617297+00:00",
+    "scope": "Warm-cache point queries on the actual local databases; not cold-cache throughput.",
+    "queries": {
+      "duplicate_identity": {
+        "samples": 1000,
+        "median_ms": 0.002041,
+        "p95_ms": 0.002333,
+        "lookups_per_second": 478885.9197961862
+      },
+      "opening_path": {
+        "samples": 1000,
+        "median_ms": 0.203646,
+        "p95_ms": 1.22975,
+        "lookups_per_second": 2415.1524636843487
+      },
+      "game_retrieval": {
+        "samples": 1000,
+        "median_ms": 0.321709,
+        "p95_ms": 1.527792,
+        "lookups_per_second": 1884.2240315014524
+      },
+      "composition_retrieval": {
+        "samples": 1000,
+        "median_ms": 0.30481250000000004,
+        "p95_ms": 1.505292,
+        "lookups_per_second": 2004.8525531390278
+      },
+      "endgame_retrieval": {
+        "samples": 1000,
+        "median_ms": 0.12252099999999999,
+        "p95_ms": 1.103,
+        "lookups_per_second": 3147.0800513248473
+      },
+      "position_lookup": {
+        "samples": 1000,
+        "median_ms": 0.2325,
+        "p95_ms": 1.298834,
+        "lookups_per_second": 2262.884517087523
+      },
+      "r1_task_hash_lookup": {
+        "samples": 1000,
+        "median_ms": 0.001959,
+        "p95_ms": 0.00225,
+        "lookups_per_second": 495469.9185348359
+      },
+      "r1_position_index_lookup": {
+        "samples": 1000,
+        "median_ms": 0.001958,
+        "p95_ms": 0.002125,
+        "lookups_per_second": 509998.78110291314
+      },
+      "solver_job_lookup": {
+        "samples": 1000,
+        "median_ms": 0.002125,
+        "p95_ms": 0.003666,
+        "lookups_per_second": 99742.11675712446
+      },
+      "duckdb_evaluation_sample": {
+        "samples": 20,
+        "median_ms": 4.127458000000001,
+        "p95_ms": 6.067167
+      },
+      "duckdb_fen_filter": {
+        "samples": 10,
+        "median_ms": 3.4785630000000003,
+        "p95_ms": 4.966708
+      }
+    },
+    "storage": {
+      "r2_sqlite_bytes": 2449752064,
+      "historical_entities": 447806,
+      "observed_mixed_db_bytes_per_million_entities": 5470565521.676797,
+      "limitation": "Includes provenance, rejected history, indexes and graph. Not a domain-specific linear capacity guarantee."
+    },
+    "benchmark_process_peak_rss_bytes": 121438208,
+    "rss_platform": "macOS ru_maxrss bytes"
+  },
+  "unfinished": [
+    "Cross-store canonical game reconciliation remains incomplete; source stores overlap.",
+    "Lichess evaluation and monthly games exceed current capacity.",
+    "Unknown-size and failed regional downloads require source-specific retry/probe review.",
+    "Full Chess.com and regional-game imports remain checkpointed, not complete.",
+    "R1/R2 counts overlap; never sum them as global unique records.",
+    "Global educational equivalence remains incomplete; verified alternative first-move groups are scoped to available proof certificates.",
+    "Composition source-solution retrieval, full stipulation soundness and broader Syzygy coverage remain incomplete; directmate model proofs are recorded separately.",
+    "Opening graph is partial; prefix paths are not named variations.",
+    "Material-gain, unique-defense, promotion and other tactical objective proof models remain unsupported.",
+    "Complete per-domain scale/storage projections remain unmeasured.",
+    "4113 eligible composition entities have no completed native job; completed native jobs without a mate proof also remain unproved."
+  ],
+  "production_modified": false,
+  "raw_data_published": false,
+  "count_scope": "R1/R2 counts overlap. Prefix paths are not named variations. Counts of modeled proofs are scoped to source identities, not globally unique educational puzzles."
+}

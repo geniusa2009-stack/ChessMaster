@@ -23,6 +23,7 @@ class CrossResumeTests(unittest.TestCase):
    write_rows(1);legacy.execute('insert into tasks values(1,?,?,?,0)',(task,pos,shard.name));legacy.commit()
    with patch.object(relations_r2,'ROOT',root),patch.object(relations_r2.shutil,'disk_usage',return_value=SimpleNamespace(free=10**12)):
     relations_r2.run();first=json.loads((root/'reports/r2-cross-source.json').read_text());self.assertEqual(first['r1_start_checkpoint'],0)
+    pending=sqlite3.connect(root/'consolidated/cross-source.sqlite');pending.execute('update runs set complete=0');pending.commit();pending.close()
     write_rows(2);legacy.execute('insert into tasks values(2,?,?,?,1)',(b'x'*32,pos,shard.name));legacy.commit()
     relations_r2.run();second=json.loads((root/'reports/r2-cross-source.json').read_text());self.assertEqual(second['r1_start_checkpoint'],1);self.assertEqual(sum(x[2] for x in second['relation_counts']),2)
     relations_r2.run();third=json.loads((root/'reports/r2-cross-source.json').read_text());self.assertEqual(third['r1_start_checkpoint'],2);self.assertEqual(third['relation_counts'],second['relation_counts'])

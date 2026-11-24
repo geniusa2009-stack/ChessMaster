@@ -32,12 +32,13 @@ def connection(root=ROOT):
  CREATE TABLE IF NOT EXISTS rejected(raw_path TEXT,snapshot TEXT,member TEXT,ordinal INTEGER,reason TEXT,original BLOB,PRIMARY KEY(raw_path,snapshot,member,ordinal));
  CREATE TABLE IF NOT EXISTS issues(raw_path TEXT,snapshot TEXT,kind TEXT,detail TEXT,PRIMARY KEY(raw_path,snapshot,kind));
  CREATE TABLE IF NOT EXISTS relations(relation TEXT,group_id TEXT,entity_id TEXT,PRIMARY KEY(relation,group_id,entity_id));
+ CREATE TABLE IF NOT EXISTS normalization_recoveries(raw_path TEXT,snapshot TEXT,member TEXT,ordinal INTEGER,revision TEXT,entity_id TEXT,PRIMARY KEY(raw_path,snapshot,member,ordinal,revision));
  CREATE INDEX IF NOT EXISTS relation_entity ON relations(entity_id,relation);
  ''');return db
 
 @contextmanager
 def open_text(path):
- errors='surrogateescape' if '.pgn' in path.name.lower() else 'strict'
+ errors='surrogateescape' if any(ext in path.name.lower() for ext in ['.pgn','.fns','.epd']) else 'strict'
  if path.name.lower().endswith('.bz2'):
   with bz2.open(path,'rt',encoding='utf-8-sig',errors=errors,newline='') as f:yield f
  elif path.name.lower().endswith('.gz'):
@@ -102,7 +103,7 @@ def rows(path,source):
      if not entry.filename.lower().endswith(('.txt','.md','.html')):raise UnsupportedFormat('Unsupported ZIP member: '+entry.filename)
      continue
     supported=True
-    with z.open(entry) as f,io.TextIOWrapper(f,encoding='utf-8-sig',errors='surrogateescape' if entry.filename.lower().endswith('.pgn') else 'strict',newline='') as t:yield from parse_rows(t,entry.filename,source)
+    with z.open(entry) as f,io.TextIOWrapper(f,encoding='utf-8-sig',errors='surrogateescape' if entry.filename.lower().endswith(('.pgn','.fns','.epd')) else 'strict',newline='') as t:yield from parse_rows(t,entry.filename,source)
    if not supported:raise UnsupportedFormat('ZIP has no supported data members')
  else:
   logical=path.name.lower()
@@ -208,7 +209,9 @@ def normalized(source,row,member):
  solution_hash=digest(lines) if lines else None
  # Unknown tactical purpose is kept source-scoped. Position groups are candidate links, not educational equivalence.
  entity=digest([domain,state_hash,solution_hash,objective,context,payload if not board else None])
- return entity,domain,state_hash,position_hash,board_hash,solution_hash,objective,status,payload
+ sql_objective=objective.encode('utf-8',errors='backslashreplace').decode('utf-8')
+ if sql_objective!=objective:payload['objective_sql_text_escaped']=True
+ return entity,domain,state_hash,position_hash,board_hash,solution_hash,sql_objective,status,payload
 
 def import_file(db,root,receipt,limit=0,seconds=0):
  locks=root/'checkpoints/normalization-locks';locks.mkdir(parents=True,exist_ok=True)
@@ -223,7 +226,8 @@ def _import_file_claimed(db,root,receipt,limit=0,seconds=0):
  database_path=Path(db.execute('pragma database_list').fetchone()[2])
  def disk_bytes():return sum(p.stat().st_size for p in [database_path,Path(str(database_path)+'-wal')] if p.exists())
  bytes_before=disk_bytes()
- old=db.execute('select processed,accepted,rejected,duplicates,complete from progress where raw_path=? and snapshot=? and adapter=?',(receipt['path'],snapshot,VERSION)).fetchone()
+ progress_adapter=VERSION+':legacy-text-1' if path.suffix.lower() in ('.fns','.epd') else VERSION
+ old=db.execute('select processed,accepted,rejected,duplicates,complete from progress where raw_path=? and snapshot=? and adapter=?',(receipt['path'],snapshot,progress_adapter)).fetchone()
  if old and old[4]:return {'state':'already_complete'}
  if not path.exists() or path.stat().st_size!=receipt['bytes']:raise ValueError('Receipt size mismatch: '+receipt['path'])
  from acquire import sha
@@ -233,7 +237,7 @@ def _import_file_claimed(db,root,receipt,limit=0,seconds=0):
  if previous:raise ValueError('Snapshot changed at existing path; preserve and inspect')
  counts=list(old[:4]) if old else [0,0,0,0];skip=counts[0];processed_now=0;complete=False
  def checkpoint():
-  db.execute('insert or replace into progress values(?,?,?,?,?,?,?,?,?)',(receipt['path'],snapshot,VERSION,*counts,int(complete),now()));db.commit()
+  db.execute('insert or replace into progress values(?,?,?,?,?,?,?,?,?)',(receipt['path'],snapshot,progress_adapter,*counts,int(complete),now()));db.commit()
  try:
   db.execute('begin immediate')
   for seen,(member,ordinal,row) in enumerate(rows(path,source),1):
@@ -246,6 +250,7 @@ def _import_file_claimed(db,root,receipt,limit=0,seconds=0):
     inserted=db.execute('insert or ignore into entities values(?,?,?,?,?,?,?,?,?)',(entity,*values,pack(payload))).rowcount
     db.execute('insert or ignore into provenance values(?,?,?,?,?,?,?,?)',(source,snapshot,member,ordinal,str(row.get('id',row.get('source_object_key',ordinal))),entity,receipt['path'],pack(row)))
     db.execute('insert or ignore into normalization_outputs values(?,?,?,?,?,?)',(source,snapshot,member,ordinal,VERSION,entity))
+    if progress_adapter!=VERSION:db.execute('insert or ignore into normalization_recoveries select raw_path,snapshot,member,ordinal,?,? from rejected where raw_path=? and snapshot=? and member=? and ordinal=?',(progress_adapter,entity,receipt['path'],snapshot,member,ordinal))
     counts[1]+=1;counts[3]+=not bool(inserted)
    except UnsupportedFormat:raise
    except (ValueError,KeyError,TypeError,IndexError) as exc:
@@ -265,7 +270,11 @@ def build_relations(db):
  # Indexed SQL groups avoid pairwise expansion. These are candidates, not proofs of equivalence.
  db.execute('begin immediate')
  for relation,column,where in [('same_game_position','position_hash',"domain='games'"),('transposition_group','position_hash',"domain='openings'"),('similar_position_group','board_hash',"domain in ('puzzles','training_positions')")]:
-  db.execute(f'''insert or ignore into relations select ?,e.{column},e.id from entities e join (select {column} k from entities where {where} and {column} is not null group by {column} having count(*)>1) g on e.{column}=g.k where {where}''',(relation,))
+  index='entity_board' if column=='board_hash' else 'entity_position'
+  outer_where=where.replace('domain','e.domain')
+  db.execute(f'''insert or ignore into relations select ?,e.{column},e.id from
+   (select {column} k from entities indexed by {index} where {where} and {column} is not null group by {column} having count(*)>1) g
+   cross join entities e indexed by {index} on e.{column}=g.k where {outer_where}''',(relation,))
  db.commit()
 
 def main():
@@ -290,7 +299,7 @@ def _main_claimed():
    with (ROOT/'reports/r2-import-history.jsonl').open('a') as history:history.write(json.dumps({'at':now(),'source':r['source_id'],'snapshot':r['sha256'],'adapter':VERSION,'path':r['path'],**result})+'\n')
    print(r['path'],result,flush=True)
    if result['state']=='blocked_storage':break
-  build_relations(db)
+  if any(run['state'] not in ('already_complete','already_claimed') for run in runs):build_relations(db)
   report={'rights_review':'RIGHTS_REVIEW_PENDING','generated_at':now(),'runs':runs,'domains':dict(db.execute('select domain,count(*) from entities group by domain')),'provenance':db.execute('select count(*) from provenance').fetchone()[0],'quarantined':db.execute('select count(*) from rejected').fetchone()[0],'relation_groups':[list(x) for x in db.execute('select relation,count(distinct group_id),count(*) from relations group by relation')],'limitations':['R2 is additive; R1 counts must not be added to R2 counts as globally unique.','Similarity groups are exact board/turn candidates with state differences; they are not educational equivalence.','Objective proofs and equivalent_solution_group require a separate verifier.']}
   atomic(ROOT/'reports/r2-normalization.json',report)
  finally:db.execute('pragma wal_checkpoint(TRUNCATE)');db.close()

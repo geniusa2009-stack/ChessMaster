@@ -2,7 +2,7 @@
 Near-position candidates use a material/turn + SimHash-prefix index, at most 64
 prior candidates per record. Relations never delete records or assert pedagogy.
 """
-import argparse,gzip,hashlib,json,shutil,sqlite3,time
+import argparse,gzip,hashlib,json,shutil,sqlite3,time,fcntl
 from pathlib import Path
 import chess
 from acquire import ROOT,atomic,now
@@ -21,6 +21,12 @@ def similarity(fen):
  return digest([material,board.turn])[:16],value
 
 def run():
+ locks=ROOT/'checkpoints/normalization-locks';locks.mkdir(parents=True,exist_ok=True)
+ with (locks/'r2-maintenance.lock').open('a') as maintenance:
+  fcntl.flock(maintenance,fcntl.LOCK_EX)
+  return _run_claimed()
+
+def _run_claimed():
  start=time.monotonic();file=ROOT/'consolidated/cross-source.sqlite';db=sqlite3.connect(file,timeout=30)
  db.execute('pragma journal_mode=WAL');db.execute('pragma cache_size=-32768')
  db.executescript('''create table if not exists targets(id text primary key,position blob,full_state text,task blob,domain text,material text,simhash text,prefix integer);
@@ -53,12 +59,12 @@ def run():
  sig=signature.hexdigest()+':'+str(max_id);run=digest(['cross-source-2',sig]);db.execute('insert or ignore into runs values(?,?,0,?)',(run,sig,now()));db.commit()
  checkpoint=db.execute('select last_r1_id from scan_progress where run=?',(run,)).fetchone();last=checkpoint[0] if checkpoint else 0
  if checkpoint is None:
-  # Same immutable active targets: carry prior completed edges and scan only new R1 IDs.
-  for prior,prior_sig in db.execute('select id,source_signature from runs where complete=1 and source_signature like ? order by cast(substr(source_signature,66) as integer) desc',(signature.hexdigest()+':%',)).fetchall():
+  # Same immutable targets: carry committed edges from complete or partial runs.
+  for prior,prior_sig,prior_scanned in db.execute('select r.id,r.source_signature,coalesce(p.last_r1_id,0) from runs r left join scan_progress p on p.run=r.id where r.source_signature like ? order by coalesce(p.last_r1_id,0) desc',(signature.hexdigest()+':%',)).fetchall():
    prior_max=int(prior_sig.rsplit(':',1)[1])
    if prior_max<=max_id and prior==digest(['cross-source-2',prior_sig]):
     db.execute('insert or ignore into relations select ?,relation,group_id,left_namespace,left_id,right_namespace,right_id,evidence from relations where run=?',(run,prior))
-    last=prior_max;db.execute('insert into scan_progress values(?,?)',(run,last));db.commit();break
+    last=min(prior_max,prior_scanned);db.execute('insert into scan_progress values(?,?)',(run,last));db.commit();break
  # Cross-join order deliberately makes the large R1 table the outer sequential scan.
  db.execute('attach database ? as legacy',(str(ROOT/'consolidated/index.sqlite'),))
  scanned=last;matched=0;blocked=False
